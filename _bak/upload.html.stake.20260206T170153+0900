@@ -1,8 +1,0 @@
-<!doctype html><html><body>
-<h3>EV424 Upload</h3>
-<form action="upload.php" method="post" enctype="multipart/form-data">
-Password:<br><input type="password" name="pw"><br><br>
-File:<br><input type="file" name="file"><br><br>
-<button>Upload</button>
-</form>
-</body></html>
