@@ -16,3 +16,6 @@ _quarantine*/
 *.broken_bak_*
 *.STAKE_*
 *.ROLLBACK_*
+
+pages_baton_log.jsonl
+pages_baton_log.jsonl.sha256
