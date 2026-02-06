@@ -10,3 +10,9 @@ _quarantine*/
 *.save*
 *ROLLBACK*
 *_last*
+*.bak
+*.bak.*
+*.bak_*
+*.broken_bak_*
+*.STAKE_*
+*.ROLLBACK_*
