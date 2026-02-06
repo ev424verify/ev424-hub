@@ -1,1 +1,17 @@
 _quarantine_untracked_*/
+
+# EV424: never commit local deps/caches
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.wrangler/
+.cache/
+*~
+*.save
+*.bak_*
+*.stake_*
+*.roll_*
+_bak/
+QUAR/
+_quarantine*/
