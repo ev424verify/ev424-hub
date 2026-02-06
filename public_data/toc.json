@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-02-01T12:17:15+0900",
+  "months": [
+    {
+      "counts": {
+        "CHANGELOG": 0,
+        "EVIDENCE": 5,
+        "SPEC": 0
+      },
+      "href": "index_2026-01.json",
+      "month": "2026-01",
+      "sha256": "76d2c690298f3f59931f2a88e6efd4b484eab772ba1fb2fdd74b1ca4c923de88",
+      "sha256_file": "index_2026-01.json.sha256"
+    },
+    {
+      "month": "2026-02",
+      "href": "index_2026-02.json",
+      "sha256": "74ca73f6aceed5ffd22a6fc5f0bafc000a9f2c65e3117cae564460219c884184",
+      "sha256_file": "index_2026-02.json.sha256",
+      "counts": {
+        "EVIDENCE": 8
+      }
+    }
+  ],
+  "rails": {
+    "claim_blocklist": [
+      "immutable",
+      "tamper-proof",
+      "guarantee",
+      "cannot be modified",
+      "수정 불가능",
+      "보장"
+    ],
+    "default_status": "UNKNOWN",
+    "public_exposure_blocklist": [
+      "/home",
+      "/tmp",
+      "ip-",
+      "ec2-user",
+      "[REDACTED]",
+      "ssh-rsa"
+    ]
+  },
+  "schema_version": "EV424_PUBLIC_TOC_V1",
+  "counts": {
+    "CHANGELOG": 0,
+    "EVIDENCE": 8,
+    "SPEC": 0
+  }
+}

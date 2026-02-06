@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000009",
+  "type": "doc_passport",
+  "source": "Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf",
+  "url": "https://www.cisa.gov/sites/default/files/2024-08/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf",
+  "issued_date": "2026-02-02T09:57:50+0900",
+  "fingerprint_sha256": "2277247542d844d2258c0f6892d649d6885f783fc629664924e60638086f47f0",
+  "result_rep_sha256": "a29fb011a5934a06e458691ca3004d44cc1275fd572e60726f0bba5da3f82362",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf\nISSUED_DATE  2026-02-02T09:57:50+0900\nFINGERPRINT  2277247542d844d2258c0f6892d649d6885f783fc629664924e60638086f47f0\nURL          https://www.cisa.gov/sites/default/files/2024-08/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=a29fb011a5934a06e458691ca3004d44cc1275fd572e60726f0bba5da3f82362\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

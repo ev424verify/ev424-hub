@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000011",
+  "type": "doc_passport",
+  "source": "guidance-mobile-communications-best-practices.pdf",
+  "url": "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf",
+  "issued_date": "2026-02-04T12:57:26+0900",
+  "fingerprint_sha256": "aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3",
+  "result_rep_sha256": "8501bff950b370cf341e69bb3e494f6a1db5e71c133293e6dff3b101c268d1db",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       guidance-mobile-communications-best-practices.pdf\nISSUED_DATE  2026-02-04T12:57:26+0900\nFINGERPRINT  aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3\nURL          https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=8501bff950b370cf341e69bb3e494f6a1db5e71c133293e6dff3b101c268d1db\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

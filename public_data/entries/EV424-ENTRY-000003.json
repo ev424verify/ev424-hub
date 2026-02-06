@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000003",
+  "issued_at": "2026-01-30T22:12:31+0900",
+  "type": "DOC_PASSPORT_FINAL_RECEIPT",
+  "source": "NIST.CSWP.29.pdf",
+  "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+  "fingerprint_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+  "rep_sha256": "84ef22f97b3b623025eb2778ee9cb3dfc0b644b1d0fc00781e6ae25415076726",
+  "verify": {
+    "LOCAL_SHA": "OK",
+    "SRC_RECORD": "OK",
+    "REDOWNLOAD": "OK",
+    "CHAIN": "OK"
+  },
+  "reverify": "+7d -> CONSISTENCY+REDOWNLOAD"
+}

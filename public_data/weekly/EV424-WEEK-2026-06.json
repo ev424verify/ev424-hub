@@ -1,0 +1,14 @@
+{
+  "entries_n": 2,
+  "entry_ids": [
+    "EV424-ENTRY-000009",
+    "EV424-ENTRY-000010"
+  ],
+  "range_kst": {
+    "end": "2026-02-08T23:50:00+09:00",
+    "start": "2026-02-02T00:10:00+09:00"
+  },
+  "rule_str": "KST:[Mon 00:10, Sun 23:50] | include:verify.chain=OK | sort:lexicographic uniq",
+  "type": "weekly_pack",
+  "week_id": "EV424-WEEK-2026-06"
+}

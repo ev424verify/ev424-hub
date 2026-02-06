@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="classification" content="read-only verification platform" />
+  <meta name="noinput" content="true" />
+  <meta name="nowallet" content="true" />
+  <meta name="nodatacollection" content="true" />
+  <meta name="nophishing" content="true" />
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>EV424 — Evidence Policy</title>
+  <meta name="description" content="Reproducible-only evidence policy. Verification uses only official sources with clear provenance." />
+
+  <style>
+    :root{
+      --bg0:#070b0e;
+      --bg1:#0b1116;
+      --panel:#0f1720cc;
+      --stroke:#22313f;
+      --text:#e7edf6;
+      --muted:#a6b3c3;
+
+      --green:#36d37a;
+      --blue:#57a6ff;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--text);
+      background:linear-gradient(180deg,var(--bg0),var(--bg1));
+    }
+
+    .bg{
+      position:fixed; inset:0;
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(54,211,122,.12), transparent 60%),
+        radial-gradient(900px 500px at 80% 20%, rgba(87,166,255,.10), transparent 55%),
+        radial-gradient(900px 600px at 50% 100%, rgba(54,211,122,.08), transparent 60%);
+      pointer-events:none;
+      filter: blur(0.2px);
+    }
+
+    .wrap{ width:min(980px,92vw); margin:24px auto 40px; }
+
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between; gap:14px;
+      margin-bottom:18px;
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800;}
+    .dot{
+      width:10px; height:10px; border-radius:999px;
+      background:var(--green);
+      box-shadow:0 0 18px rgba(54,211,122,.35);
+    }
+    .brandname{letter-spacing:.2px}
+
+    .hero{
+      padding:18px 18px 14px;
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      background:rgba(12,18,24,.55);
+      backdrop-filter: blur(8px);
+    }
+    .hero h1{
+      margin:8px 0 6px;
+      font-size:clamp(26px,4.4vw,40px);
+      line-height:1.08;
+    }
+    .sub{
+      margin:0;
+      color:var(--muted);
+      max-width:78ch;
+      line-height:1.55;
+    }
+
+    .panel{
+      margin-top:14px;
+      padding:16px 16px;
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      background:var(--panel);
+      backdrop-filter: blur(8px);
+    }
+    .panel h2{
+      margin:0 0 12px;
+      font-size:16px;
+      letter-spacing:.2px;
+      color:#dfe7f2;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:10px;
+    }
+
+    .card{
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(9,14,18,.55);
+      border-radius:14px;
+      padding:12px;
+      box-shadow:0 6px 18px rgba(0,0,0,.22);
+    }
+    .k{font-size:12px; color:var(--muted); margin-bottom:6px;}
+    .v{font-size:15px; font-weight:900;}
+    .p{margin:10px 0 0; color:var(--muted); line-height:1.58; font-size:13px;}
+
+    .bul{margin:0; padding-left:18px; color:var(--muted);}
+    .bul li{margin:7px 0; line-height:1.50;}
+
+    .hr{
+      height:1px;
+      background:rgba(255,255,255,.08);
+      margin:12px 0;
+    }
+
+    .btnrow{display:flex; gap:10px; flex-wrap:wrap;}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding:12px 16px; border-radius:14px;
+      border:1px solid rgba(210,190,255,.18);
+      text-decoration:none; color:var(--text); font-weight:900;
+      cursor:pointer; user-select:none;
+      background:rgba(88,64,160,.20);
+        -webkit-tap-highlight-color:transparent;
+}
+    .btn:hover{border-color:rgba(210,190,255,.28)}
+      .btn:active{border-color:rgba(255,170,85,.45);background:rgba(255,140,60,.26)}
+      .btn:focus-visible{outline:2px solid rgba(255,170,85,.38);outline-offset:2px}
+
+
+    .pill{
+      display:inline-flex; align-items:center; justify-content:center;
+      font-size:11px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(87,166,255,.32);
+      background:rgba(10,18,26,.55);
+      color:var(--blue);
+      font-weight:900;
+      letter-spacing:.3px;
+    }
+    .tagline{
+      display:flex; align-items:center; gap:10px;
+      margin:10px 0 0;
+      flex-wrap:wrap;
+    }
+    .tagtext{
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.3px;
+      color:rgba(231,237,246,.92);
+    }
+
+    details{
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:14px;
+      background:rgba(9,14,18,.35);
+      padding:10px 12px;
+    }
+    summary{
+      cursor:pointer;
+      color:#cfe2ff;
+      font-weight:900;
+      letter-spacing:.2px;
+    }
+    details p{
+      margin:8px 0 0;
+      color:var(--muted);
+      line-height:1.55;
+      font-size:13px;
+    }
+
+    .motto{
+      margin-top:18px;
+      color:rgba(166,179,195,.55);
+      font-size:11px;
+      font-weight:500;
+      letter-spacing:.3px;
+      text-align:center;
+      width:100%;
+    }
+
+    @media (max-width:820px){
+      .wrap{width:min(980px,94vw)}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg"></div>
+
+  <main class="wrap">
+    <header class="topbar">
+      <div class="brand"><span class="dot"></span><span class="brandname">EV424</span></div>
+    </header>
+
+    <section class="hero">
+      <div class="btnrow">
+        <a class="btn" href="javascript:history.back()">
+          <span aria-hidden="true">←</span><span>Back</span>
+        </a>
+      </div>
+
+      <div class="tagline">
+        <span class="pill">REPRODUCIBLE ONLY</span>
+        <span class="tagtext">Evidence Policy</span>
+      </div>
+
+      <h1>Evidence Policy</h1>
+      <p class="sub">
+        Verification uses only official sources with clear provenance.<br />
+        If the official bytes change, the SHA-256 fingerprint changes — and the change is detected.
+      </p>
+
+      <div style="margin-top:12px;">
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Policy summary</h2>
+      <ul class="bul">
+        <li><b>Non-reproducible data is rejected.</b></li>
+        <li><b>Verification uses only official sources with clear provenance.</b></li>
+        <li><b>Only re-verifiable evidence is preserved.</b></li>
+      </ul>
+
+      <div style="margin-top:12px;">
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Key definitions</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="k">Official source</div>
+          <div class="v">Publisher-controlled original</div>
+          <p class="p">
+            The original document published and controlled by the issuer (organization/company/project) on an official channel.
+          </p>
+          <div style="margin-top:10px;">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="k">REPRODUCIBLE ONLY</div>
+          <div class="v">Same input → same output</div>
+          <p class="p">
+            Same official bytes + same rules must reproduce the same fingerprint and receipt.
+          </p>
+          <div style="margin-top:10px;">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="k">No PDF mirroring</div>
+          <div class="v">Publish verification, not redistribution</div>
+          <p class="p">
+            EV424 publishes URL, SHA-256 fingerprint, re-verify method, and receipt — not the original PDF content.
+          </p>
+          <div style="margin-top:10px;">
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="k">How users verify</div>
+          <div class="v">Exact-match lookup</div>
+          <p class="p">
+            Public search accepts only Evidence ID (EV424-ENTRY-0000xx) or a 64-hex PASS hash.
+          </p>
+          <div style="margin-top:10px;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>How reproducible verification closes</h2>
+      <ul class="bul">
+        <li>Confirm an official source URL with clear provenance</li>
+        <li>Compute SHA-256 from the official bytes</li>
+        <li>Re-download check: the SHA-256 must match</li>
+        <li>Lock the record: same input must not drift</li>
+        <li>Close as a re-verifiable receipt</li>
+      </ul>
+
+      <div style="margin-top:12px;">
+      </div>
+
+      <div class="hr"></div>
+
+      <h2>Rejected examples</h2>
+      <ul class="bul">
+        <li>Anything that cannot be re-downloaded from an official source</li>
+        <li>Reuploads/copies/screenshots that replace the official original</li>
+        <li>Standalone claims without a verifiable official original</li>
+      </ul>
+
+      <div style="margin-top:12px;">
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Next</h2>
+      <div class="btnrow">
+        <a class="btn" href="/sha256-fingerprint.html">Core Technology — SHA-256</a>
+        <a class="btn" href="/public_data/index.html" target="_blank" rel="noopener">Open Main Site</a>
+        <a class="btn" href="/public_docs/index_v2.html" target="_blank" rel="noopener">Public Docs (Viewer)</a>
+      </div>
+    </section>
+
+    <div class="motto">Accuracy(4)=Truth(2)=Life(4)</div>
+  </main>
+</body>
+</html>

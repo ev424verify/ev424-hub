@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>EV424 — Public Docs</title>
+  <meta name="description" content="EV424 public documents viewer." />
+  <style>
+    :root{
+      --bg:#070b0e;
+      --panel:#0f1720;
+      --stroke:#22313f;
+      --text:#e7edf6;
+      --muted:#a6b3c3;
+      --blue:#57a6ff;
+    }
+
+    /* ===== Layout + Scrollbar Artifact Fix ===== */
+    html, body{
+      height:100%;
+      margin:0;
+      padding:0;
+      overflow:hidden;
+      overscroll-behavior:none;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font:15px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+    }
+
+    /* hide overlay scrollbars (Chrome/Whale artifact) */
+    ::-webkit-scrollbar{width:0;height:0}
+    *{scrollbar-width:none}
+
+    .wrap{
+      max-width:980px;
+      margin:32px auto;
+      padding:0 16px;
+    }
+
+    .h{
+      display:flex;
+      align-items:baseline;
+      gap:12px;
+      margin-bottom:18px;
+    }
+
+    .h h1{
+      font-size:22px;
+      margin:0;
+    }
+
+    .h .m{
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .cards{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin:12px 0 18px;
+    }
+
+    .card{
+      background:var(--panel);
+      border:1px solid var(--stroke);
+      border-radius:14px;
+      padding:12px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:12px;
+      border:1px solid var(--stroke);
+      color:var(--blue);
+      text-decoration:none;
+      user-select:none;
+    }
+
+    .btn:active{
+      transform:translateY(1px);
+    }
+
+    .viewer{
+      width:100%;
+      height:78vh;
+      border:1px solid var(--stroke);
+      border-radius:14px;
+      background:#0b1116;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="h">
+      <h1>Public Docs</h1>
+      <div class="m">EV424 — viewer</div>
+    </div>
+
+    <div class="cards">
+      <div class="card"><a class="btn" id="openIdentity" href="#">Open PDF</a></div>
+      <div class="card"><a class="btn" id="openPage1" href="#">Open Page1</a></div>
+    </div>
+
+    <iframe
+      id="docFrame"
+      class="viewer"
+      src="/public_docs/identity/EV424_Identity_SSOT_EN.pdf"
+      title="EV424 Public Doc">
+    </iframe>
+  </div>
+  <script>
+  (function(){
+    var frame = document.getElementById("docFrame");
+    var a = document.getElementById("openIdentity");
+    var b = document.getElementById("openPage1");
+
+    var ID = "/public_docs/identity/EV424_Identity_SSOT_EN.pdf";
+    var P1 = "/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";
+
+    function setSrc(src){
+      if(frame) frame.src = src;
+    }
+
+    if(a){ a.addEventListener("click", function(e){ e.preventDefault(); setSrc(ID); }); }
+    if(b){ b.addEventListener("click", function(e){ e.preventDefault(); setSrc(P1); }); }
+
+    setSrc(ID);
+  })();
+</script>
+</body>
+</html>

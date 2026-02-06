@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-01-30T12:34:22+0900",
+  "months": [
+    {
+      "counts": {
+        "CHANGELOG": 0,
+        "EVIDENCE": 2,
+        "SPEC": 0
+      },
+      "href": "index_2026-01.json",
+      "month": "2026-01",
+      "sha256": "13a5b6fd3baee84dbdf7595c93dc6b249ef3098c1ceb1e8c2684908e00be37ef",
+      "sha256_file": "index_2026-01.json.sha256"
+    }
+  ],
+  "rails": {
+    "claim_blocklist": [
+      "immutable",
+      "tamper-proof",
+      "guarantee",
+      "cannot be modified",
+      "수정 불가능",
+      "보장"
+    ],
+    "default_status": "UNKNOWN",
+    "public_exposure_blocklist": [
+      "/home",
+      "/tmp",
+      "ip-",
+      "ec2-user",
+      "BEGIN PRIVATE KEY",
+      "ssh-rsa"
+    ]
+  },
+  "schema_version": "EV424_PUBLIC_TOC_V1"
+}

@@ -1,0 +1,22 @@
+{
+  "entry_id": "EV424-ENTRY-000007",
+  "fingerprint_sha256": "d27dae85980c6b2c0c6d2a9a55338244c52e4f416c3573394311d3252916cafe",
+  "issued_date": "2026-02-01T13:42:40+0900",
+
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required CHECKS are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       OpenDocument-v1.3-os-part1-introduction.pdf\nISSUED_DATE  2026-02-01T13:42:40+0900\nFINGERPRINT  d27dae85980c6b2c0c6d2a9a55338244c52e4f416c3573394311d3252916cafe\nURL          https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part1-introduction/OpenDocument-v1.3-os-part1-introduction.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=46736c7afce25681e7e5efd75947ec53364dc61e1e3f9ef6aea818d43722960d\n\nAccuracy(4)=Truth(2)=Life(4)",
+
+  "result_rep_sha256": "46736c7afce25681e7e5efd75947ec53364dc61e1e3f9ef6aea818d43722960d",
+
+  "source": "OpenDocument-v1.3-os-part1-introduction.pdf",
+
+  "type": "doc_passport",
+
+  "url": "https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part1-introduction/OpenDocument-v1.3-os-part1-introduction.pdf",
+
+  "verify": {
+    "chain": "OK",
+    "local_sha": "OK",
+    "redownload": "OK",
+    "src_record": "OK"
+  }
+}

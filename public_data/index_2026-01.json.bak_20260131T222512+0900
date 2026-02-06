@@ -1,0 +1,48 @@
+{
+  "counts": {
+    "CHANGELOG": 0,
+    "EVIDENCE": 5,
+    "SPEC": 0
+  },
+  "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000005",
+      "href": "entries/EV424-ENTRY-000005.json",
+      "sha256": "16999bf509368de38f0362e42bd3e2e966defb3e462bab37cb5ec74bbfdfc828",
+      "sha256_file": "entries/EV424-ENTRY-000005.json.sha256"
+    },
+    {
+      "date": "2026-01-30",
+      "entry_id": "EV424-ENTRY-000001",
+      "entry_type": "EVIDENCE",
+      "href": "entries/EV424-ENTRY-000001.json",
+      "sha256": "a401342c64215c2eadfde1bdbdd053fa5f3960ed1cb72e44051d933f627caa4e",
+      "sha256_file": "entries/EV424-ENTRY-000001.json.sha256",
+      "status": "UNKNOWN"
+    },
+    {
+      "date": "2026-01-30",
+      "entry_id": "EV424-ENTRY-000002",
+      "entry_type": "EVIDENCE",
+      "href": "entries/EV424-ENTRY-000002.json",
+      "sha256": "2b397279d2e83bb4e9e60056a3abf41fac109742295c809fcb6f0fa164467e98",
+      "sha256_file": "entries/EV424-ENTRY-000002.json.sha256",
+      "status": "UNKNOWN"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000003",
+      "href": "entries/EV424-ENTRY-000003.json",
+      "sha256": "f78b12c3841eaaa78c7cf18e04c1d4bb5bce2088cc6f0775bd5ac25f48effba2",
+      "sha256_file": "entries/EV424-ENTRY-000003.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000004",
+      "href": "entries/EV424-ENTRY-000004.json",
+      "sha256": "12e435e2c9e49f2cae8bdd13c55efacb0de897b10a2350bfc21c610564135d18",
+      "sha256_file": "entries/EV424-ENTRY-000004.json.sha256"
+    }
+  ],
+  "generated_at": "2026-01-30T12:34:22+0900",
+  "month": "2026-01",
+  "schema_version": "EV424_PUBLIC_INDEX_MONTH_V1"
+}

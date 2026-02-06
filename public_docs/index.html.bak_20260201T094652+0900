@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>EV424 — Public Docs (Viewer)</title>
+  <style>
+    :root{--bg:#070b0e;--panel:#0f1720cc;--stroke:#22313f;--text:#e7edf6;--muted:#a6b3c3;--blue:#57a6ff;}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;background:linear-gradient(180deg,#070b0e,#0b1116);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    .wrap{width:min(980px,92vw);margin:24px auto 24px}
+    .hdr{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+    .ttl{font-weight:800;letter-spacing:.2px}
+    .sub{color:var(--muted);font-size:12px}
+    .panel{border:1px solid var(--stroke);background:var(--panel);border-radius:18px;overflow:hidden}
+    .bar{display:flex;gap:10px;align-items:center;padding:12px 12px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:14px;border:1px solid rgba(87,166,255,.45);background:rgba(10,18,26,.55);color:var(--blue);font-weight:800;text-decoration:none;cursor:pointer}
+    iframe{width:100%;height:78vh;border:0;background:#000}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hdr">
+      <div>
+        <div class="ttl">EV424 — Public Docs (Viewer)</div>
+        <div class="sub">Viewer-only. No login. No payment. No data collection.</div>
+      </div>
+      <a class="btn" href="/" rel="noopener">Home</a>
+    </div>
+
+    <div class="panel">
+      <div class="bar">
+        <span class="sub">Document:</span>
+        <a class="btn" href="/public_docs/identity/EV424_Identity_SSOT_EN.pdf" target="_blank" rel="noopener">Open PDF</a>
+    <div class="card"><a class="btn" href="#" onclick="var f=document.querySelector("iframe,embed,object"); if(f){if(f.src!==undefined){f.src="/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";} if(f.data!==undefined){f.data="/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";}} return false;"iframe"); if(f){f.src="/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";} return false;">Open Page1</a></div>
+      </div>
+      <iframe src="/public_docs/identity/EV424_Identity_SSOT_EN.pdf"></iframe>
+    <div class="card"><a class="btn" href="#" onclick="var f=document.querySelector("iframe,embed,object"); if(f){if(f.src!==undefined){f.src="/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";} if(f.data!==undefined){f.data="/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";}} return false;"iframe"); if(f){f.src="/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";} return false;">Open Page1</a></div>
+    </div>
+  </div>
+</body>
+</html>

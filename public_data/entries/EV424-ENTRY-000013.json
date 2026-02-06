@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000013",
+  "type": "doc_passport",
+  "source": "NIST.GCR.26-069.pdf",
+  "url": "https://nvlpubs.nist.gov/nistpubs/gcr/2026/NIST.GCR.26-069.pdf",
+  "issued_date": "2026-02-06T09:45:41+0900",
+  "fingerprint_sha256": "0ec892280f1a8360a2189cdce6be896e2f4fb1a3260fb8b9ba17a3beb78354e3",
+  "result_rep_sha256": "ca3b0167286a577b934ee266c0c7647bb5723020b75e333e47db3425a30ce1e9",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIST.GCR.26-069.pdf\nISSUED_DATE  2026-02-06T09:45:41+0900\nFINGERPRINT  0ec892280f1a8360a2189cdce6be896e2f4fb1a3260fb8b9ba17a3beb78354e3\nURL          https://nvlpubs.nist.gov/nistpubs/gcr/2026/NIST.GCR.26-069.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=ca3b0167286a577b934ee266c0c7647bb5723020b75e333e47db3425a30ce1e9\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

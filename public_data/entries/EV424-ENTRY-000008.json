@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000008",
+  "fingerprint_sha256": "7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1",
+  "issued_date": "2026-02-01T21:17:53+0900",
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIST.AI.100-1.pdf?download=true\nISSUED_DATE  2026-02-01T21:17:53+0900\nFINGERPRINT  7576edb531d9848825814ee88e28b1795d3a84b435b4b797d3670eafdc4a89f1\nURL          https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf?download=true\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=492596e6b2583ac16f7282cff2911feb01c604fb58513badaae602b695ad724f\n\nAccuracy(4)=Truth(2)=Life(4)\n",
+  "result_rep_sha256": "492596e6b2583ac16f7282cff2911feb01c604fb58513badaae602b695ad724f",
+  "source": "NIST.AI.100-1.pdf?download=true",
+  "type": "doc_passport",
+  "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf?download=true",
+  "verify": {
+    "chain": "OK",
+    "local_sha": "OK",
+    "redownload": "OK",
+    "src_record": "OK"
+  }
+}

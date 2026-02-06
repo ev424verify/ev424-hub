@@ -1,0 +1,13 @@
+{
+  "type": "weekly_index_v1",
+  "updated_kst": "2026-02-03T21:34:19+09:00",
+  "weeks": [
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-06.json",
+      "issued_kst": "2026-02-02T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-06.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-06"
+    }
+  ],
+  "weeks_n": 1
+}

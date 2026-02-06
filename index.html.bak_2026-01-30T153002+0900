@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EV424 — Verifiable Evidence Layer</title>
+
+  <!-- Inline SVG favicon (no external /assets dependency) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Cdefs%3E%3CradialGradient id=%27g%27 cx=%2750%25%27 cy=%2735%25%27 r=%2770%25%27%3E%3Cstop offset=%270%25%27 stop-color=%27%23dfe7f1%27/%3E%3Cstop offset=%27100%25%27 stop-color=%27%230b0d10%27/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width=%2764%27 height=%2764%27 rx=%2716%27 fill=%27url(%23g)%27/%3E%3Cpath d=%27M20 26l12-7 12 7v14l-12 7-12-7V26z%27 fill=%27%23151a22%27 stroke=%27%23ffffff%27 stroke-opacity=%270.25%27/%3E%3Cpath d=%27M32 19v28%27 stroke=%27%23ffffff%27 stroke-opacity=%270.20%27/%3E%3C/svg%3E" />
+
+  <meta name="description" content="EV424 is NOT a prediction model. It verifies byte-level integrity via SHA-256. Same input → same output." />
+  <meta property="og:title" content="EV424 — Verifiable Evidence Layer" />
+  <meta property="og:description" content="NOT a prediction model. Byte-level integrity verified by SHA-256. Same input → same output." />
+
+  <style>
+    :root{
+      --bg0:#0b0d10; --bg1:#10141a; --panel:#0c0f13cc;
+      --text:#eef2f6; --muted:#c9d0d8; --soft:#94a1af;
+      --line:rgba(255,255,255,.14);
+      --chip:rgba(255,255,255,.08);
+      --shadow:rgba(0,0,0,.55);
+      --max:1180px;
+
+      --pass:#00ff41;
+      --fail:#9aa0a6;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1100px 520px at 68% 45%, rgba(255,255,255,.08) 0%, rgba(255,255,255,0) 60%),
+        radial-gradient(900px 450px at 20% 30%, rgba(255,255,255,.06) 0%, rgba(255,255,255,0) 55%),
+        linear-gradient(180deg, var(--bg1), var(--bg0));
+      overflow-x:hidden;
+    }
+    a{color:inherit; text-decoration:none}
+    a:hover{opacity:.92}
+
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+    .wrap{min-height:100%; display:flex; align-items:center; justify-content:center; padding:36px 18px;}
+    .frame{
+      width:min(var(--max), 100%);
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:28px;
+      overflow:hidden;
+      box-shadow: 0 30px 80px var(--shadow);
+      background:rgba(0,0,0,.25);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Top bar */
+    .topbar{
+      display:flex; gap:14px; align-items:center; justify-content:space-between;
+      padding:16px 18px;
+      border-bottom:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.25);
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:900; letter-spacing:.2px;}
+    .logo{
+      width:28px; height:28px; border-radius:9px;
+      background: radial-gradient(120% 120% at 40% 30%, #dfe7f1 0%, #0b0d10 65%);
+      position:relative;
+      box-shadow:0 12px 26px rgba(0,0,0,.55);
+      border:1px solid rgba(255,255,255,.10);
+    }
+    .logo:before{
+      content:"";
+      position:absolute; inset:6px;
+      border-radius:7px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,0)),
+        linear-gradient(0deg, rgba(0,0,0,.25), rgba(0,0,0,0));
+      border:1px solid rgba(255,255,255,.14);
+    }
+    .nav{display:flex; gap:10px; flex-wrap:wrap; font-size:13px; color:var(--muted);}
+    .nav a{
+      padding:8px 10px;
+      border:1px solid rgba(255,255,255,.10);
+      border-radius:999px;
+      background:rgba(255,255,255,.04);
+      white-space:nowrap;
+    }
+
+    /* Layout */
+    .hero{display:grid; grid-template-columns: 1.05fr 1.45fr; gap:0;}
+    .left{
+      background:var(--panel);
+      padding:34px 30px;
+      border-right:1px solid rgba(255,255,255,.10);
+      display:flex; flex-direction:column; gap:16px;
+    }
+    .right{
+      position:relative;
+      padding:30px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:
+        radial-gradient(900px 520px at 50% 48%, rgba(255,255,255,.12) 0%, rgba(255,255,255,0) 64%),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.00));
+    }
+
+    /* Text blocks */
+    .title h1{margin:0; font-size:36px; line-height:1.05; letter-spacing:.2px;}
+    .title p{margin:10px 0 0 0; color:var(--muted); font-size:16px; line-height:1.35;}
+    .subline{
+      margin-top:10px;
+      font-size:13px;
+      color:var(--soft);
+      line-height:1.35;
+    }
+    .subline strong{color:var(--text); font-weight:900}
+
+    .chips{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;}
+    .chip{
+      font-size:12px; color:var(--muted);
+      padding:7px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:var(--chip);
+      letter-spacing:.15px;
+    }
+
+    /* Panels */
+    .panel{
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:18px;
+      background:rgba(0,0,0,.28);
+      padding:16px 16px 14px 16px;
+    }
+    .panel h2{
+      margin:0 0 10px 0;
+      font-size:14px;
+      color:var(--muted);
+      letter-spacing:.2px;
+      font-weight:900;
+      text-transform:uppercase;
+    }
+    pre{
+      margin:0;
+      padding:12px 12px;
+      border-radius:14px;
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.08);
+      overflow:auto;
+      font-size:12.5px;
+      line-height:1.35;
+      color:var(--text);
+      white-space:pre;
+    }
+    .hint{margin:10px 0 0 0; color:var(--soft); font-size:12.5px; line-height:1.35;}
+
+    /* Buttons */
+    .cta{display:flex; gap:10px; flex-wrap:wrap;}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:8px;
+      padding:10px 12px; border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      color:var(--text); font-size:13px; font-weight:900;
+    }
+    .btn.primary{background:rgba(255,255,255,.14); border-color:rgba(255,255,255,.22);}
+
+    /* Links grid */
+    .links{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+    .link{
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+      border-radius:16px;
+      padding:12px;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.25;
+    }
+    .link strong{color:var(--text); display:block; margin-bottom:4px; font-size:13px}
+
+    /* Stage */
+    .stage{
+      width:min(760px, 100%);
+      aspect-ratio: 16/10;
+      border-radius:24px;
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow:0 18px 60px rgba(0,0,0,.55);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      position:relative;
+      background:
+        radial-gradient(60% 45% at 50% 55%, rgba(0,255,65,.10), transparent 60%),
+        radial-gradient(55% 40% at 50% 70%, rgba(255,255,255,.06), transparent 70%),
+        radial-gradient(90% 70% at 50% 50%, rgba(0,0,0,0), rgba(0,0,0,.55) 70%),
+        rgba(255,255,255,.03);
+    }
+
+    /* CSS 3D cube — 6 faces, PASS/FAIL split */
+    .cubeWrap{
+      width:360px; height:360px;
+      perspective:1100px;
+      transform: translateY(-6px);
+    }
+    .cube{
+      width:100%; height:100%;
+      position:relative;
+      transform-style:preserve-3d;
+      transform: rotateX(-18deg) rotateY(35deg);
+      filter:
+        drop-shadow(0 26px 55px rgba(0,0,0,.70))
+        drop-shadow(0 0 28px rgba(0,255,65,.10));
+      animation: spin 18s linear infinite;
+    }
+    @keyframes spin {
+      0%{ transform: rotateX(-18deg) rotateY(35deg); }
+      100%{ transform: rotateX(-18deg) rotateY(395deg); }
+    }
+
+    .face{
+      position:absolute;
+      width:360px; height:360px;
+      border-radius:18px;
+      border:1px solid rgba(255,255,255,.14);
+      backface-visibility:hidden;
+      box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.06),
+        inset 0 0 44px rgba(0,0,0,.35);
+    }
+    .face.pass{
+      border-color: rgba(0,255,65,.30);
+      background:
+        radial-gradient(120% 120% at 35% 25%, rgba(0,255,65,.30), transparent 55%),
+        linear-gradient(155deg, rgba(0,255,65,.18), rgba(11,13,16,.95)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 1px, transparent 1px 12px);
+    }
+    .face.fail{
+      border-color: rgba(154,160,166,.28);
+      background:
+        radial-gradient(120% 120% at 35% 25%, rgba(154,160,166,.22), transparent 55%),
+        linear-gradient(155deg, rgba(154,160,166,.14), rgba(11,13,16,.95)),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.030) 0 1px, transparent 1px 12px);
+    }
+    .face::after{
+      content:"";
+      position:absolute;
+      inset: 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      pointer-events:none;
+    }
+    .face.pass::after{ border-color: rgba(0,255,65,.18); }
+    .face.fail::after{ border-color: rgba(154,160,166,.16); }
+
+    /* 3D placement (360/2=180) */
+    .front   { transform: translateZ(180px); }
+    .back    { transform: rotateY(180deg) translateZ(180px); }
+    .rightF  { transform: rotateY( 90deg) translateZ(180px); }
+    .leftF   { transform: rotateY(-90deg) translateZ(180px); }
+    .topF    { transform: rotateX( 90deg) translateZ(180px); }
+    .bottomF { transform: rotateX(-90deg) translateZ(180px); }
+
+    .seal{
+      position:absolute;
+      inset:22px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background:
+        radial-gradient(120% 120% at 40% 30%, rgba(255,255,255,.07), transparent 60%);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
+    }
+    .mark{
+      position:absolute;
+      left:22px; right:22px; bottom:18px;
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.9px;
+      text-transform:uppercase;
+      opacity:.95;
+    }
+    .pass .mark{ color: rgba(0,255,65,.92); }
+    .fail .mark{ color: rgba(154,160,166,.92); }
+
+    /* Sections below hero */
+    .sections{
+      border-top:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.12);
+      padding:22px 18px 6px 18px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap:10px;
+      margin-bottom:12px;
+    }
+    .card{
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+      border-radius:18px;
+      padding:14px 14px 12px 14px;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.35;
+    }
+    .card strong{display:block; color:var(--text); margin-bottom:6px; font-weight:900; letter-spacing:.2px;}
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.05);
+      color:var(--soft);
+      font-size:12px;
+      margin-top:8px;
+    }
+
+    /* Footer */
+    .footer{
+      padding:16px 18px;
+      border-top:1px solid rgba(255,255,255,.10);
+      background:rgba(0,0,0,.20);
+      color:var(--soft);
+      font-size:12px;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+    .footer span{white-space:nowrap}
+
+    /* Mobile usability: cube first, big buttons, glanceable */
+    @media (max-width: 720px){
+      .wrap{padding:18px 12px;}
+      .frame{border-radius:22px;}
+      .topbar{
+        position:sticky; top:0; z-index:5;
+        backdrop-filter: blur(10px);
+      }
+      .nav{gap:8px}
+      .nav a{padding:7px 9px}
+
+      .hero{grid-template-columns:1fr;}
+      .right{order:0; padding:16px 14px;}
+      .left{order:1; padding:18px 14px; border-right:none; border-bottom:none;}
+
+      .title h1{font-size:26px; line-height:1.08;}
+      .title p{font-size:14px; line-height:1.35;}
+
+      .stage{aspect-ratio: 1/1; border-radius:20px;}
+      .cubeWrap{width:240px; height:240px;}
+      .face{width:240px; height:240px;}
+      .front{ transform: translateZ(120px); }
+      .back{ transform: rotateY(180deg) translateZ(120px); }
+      .rightF{ transform: rotateY(90deg) translateZ(120px); }
+      .leftF{ transform: rotateY(-90deg) translateZ(120px); }
+      .topF{ transform: rotateX(90deg) translateZ(120px); }
+      .bottomF{ transform: rotateX(-90deg) translateZ(120px); }
+      .mark{font-size:11px;}
+
+      .cta{display:grid; grid-template-columns:1fr; gap:10px;}
+      .btn{padding:12px 12px; border-radius:14px; font-size:14px;}
+
+      .chips{gap:8px}
+      .chip{font-size:11px; padding:6px 9px}
+
+      .links{grid-template-columns:1fr}
+      pre{font-size:12px}
+      .grid{grid-template-columns:1fr}
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      .cube{animation:none}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="frame">
+      <div class="topbar">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div>EV424</div>
+        </div>
+        <div class="nav" aria-label="Quick links">
+          <a href="/public_data/toc.json">public_data</a>
+          <a href="#how">how</a>
+          <a href="#scope">scope</a>
+          <a href="#public">verify</a>
+          <a href="#threat">threat</a>
+        </div>
+      </div>
+
+      <div class="hero">
+        <section class="left">
+          <div class="title">
+            <h1>Verifiable Evidence in 5 seconds</h1>
+            <p><strong>NOT a prediction model.</strong> EV424 verifies byte-level integrity via SHA-256.<br/>Same input → same output. PASS is earned. FAIL is preserved.</p>
+
+            <div class="chips" aria-label="Key principles">
+              <span class="chip">SHA-256 gate</span>
+              <span class="chip">exposure-min</span>
+              <span class="chip">external assets: 0</span>
+              <span class="chip">manual deploy</span>
+            </div>
+
+            <div class="subline">
+              Domain-agnostic rail (FACT): if it produces <strong>files/logs/records</strong>, EV424 can seal and re-verify bytes.
+              What we publish is only <strong>public_data</strong> + verifiable SHA-256 proofs. No secrets. No PII. No internal paths.
+            </div>
+          </div>
+
+          <div class="panel" id="public" aria-label="Verify (FACT)">
+            <h2>Verify (FACT)</h2>
+            <pre class="mono"><code>1) Download public_data/toc.json and public_data/toc.json.sha256
+2) Run: sha256sum -c toc.json.sha256
+3) Expect: toc.json: OK</code></pre>
+            <p class="hint">“OK” means the bytes match the published SHA-256. (Integrity verification only)</p>
+          </div>
+
+          <div class="cta" role="group" aria-label="Primary actions">
+            <a class="btn primary" href="/public_data/toc.json">Open public_data</a>
+            <a class="btn" href="/public_data/toc.json.sha256">Get sha256 proof</a>
+            <a class="btn" href="#how">How verification works</a>
+          </div>
+
+          <div class="links" aria-label="Public data entries">
+            <a class="link" href="/public_data/toc.json">
+              <strong>TOC</strong>
+              public_data/toc.json
+            </a>
+            <a class="link" href="/public_data/index_2026-01.json">
+              <strong>Index</strong>
+              public_data/index_2026-01.json
+            </a>
+            <a class="link" href="/public_data/entries/EV424-ENTRY-000001.json">
+              <strong>Entry 000001</strong>
+              public_data/entries/EV424-ENTRY-000001.json
+            </a>
+            <a class="link" href="/public_data/entries/EV424-ENTRY-000002.json">
+              <strong>Entry 000002</strong>
+              public_data/entries/EV424-ENTRY-000002.json
+            </a>
+          </div>
+
+          <!-- Closure panel: values MUST be filled only after you close (local + remote==local) -->
+          <div class="panel" aria-label="Closure facts (static)">
+            <h2>CLOSURE FACT (STATIC)</h2>
+            <pre class="mono"><code>AS_OF_KST: TBD-YYYY-MM-DD
+LOCAL_FILE: index.html
+LOCAL_LINES: TBD
+LOCAL_SHA256: TBD
+
+PREFLIGHT: PASS/FAIL (record after run)
+SCRIPT: bin/ev424_pages_preflight_gate_*.sh --include index.html
+
+PREVIEW_URL: TBD
+MAIN_URL: TBD
+
+REMOTE_SHA256_PREVIEW: TBD
+REMOTE_SHA256_MAIN: TBD
+CLOSURE: PASS/FAIL (remote==local)</code></pre>
+            <p class="hint">FACT-only: fill values only after you close via terminal (no remote fetch on page load).</p>
+          </div>
+        </section>
+
+        <section class="right">
+          <div class="stage" aria-label="EV424 3D hero (CSS cube)">
+            <div class="cubeWrap">
+              <div class="cube" aria-hidden="true">
+                <div class="face front pass">
+                  <div class="seal"></div>
+                  <div class="mark">PASS · VERIFIED</div>
+                </div>
+
+                <div class="face back fail">
+                  <div class="seal"></div>
+                  <div class="mark">FAIL · PRESERVED</div>
+                </div>
+
+                <div class="face rightF fail">
+                  <div class="seal"></div>
+                  <div class="mark">FAIL · PRESERVED</div>
+                </div>
+
+                <div class="face leftF pass">
+                  <div class="seal"></div>
+                  <div class="mark">PASS · VERIFIED</div>
+                </div>
+
+                <div class="face topF pass">
+                  <div class="seal"></div>
+                  <div class="mark">PASS · VERIFIED</div>
+                </div>
+
+                <div class="face bottomF fail">
+                  <div class="seal"></div>
+                  <div class="mark">FAIL · PRESERVED</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="sections">
+        <div class="grid" id="how">
+          <div class="card">
+            <strong>1) Preflight Gate</strong>
+            Gate confirms: external assets = 0, exposure-min, deploy-eligible structure.
+            <div class="pill">preflight → PASS/FAIL</div>
+          </div>
+          <div class="card">
+            <strong>2) Direct Deploy</strong>
+            Manual deployment only (wrangler). A deploy is an event recorded by you.
+            <div class="pill">wrangler deploy → event</div>
+          </div>
+          <div class="card">
+            <strong>3) Hash Closure</strong>
+            Closure is proven only when remote bytes match local bytes via SHA-256.
+            <div class="pill">sha256(remote) == sha256(local)</div>
+          </div>
+        </div>
+
+        <div class="grid" id="scope">
+          <div class="card">
+            <strong>Domain-Agnostic Rail (FACT)</strong>
+            EV424 does not judge meaning. It verifies integrity at the byte level (SHA-256).
+            <div class="pill">bytes → hash → re-verify</div>
+          </div>
+          <div class="card">
+            <strong>Cross-Domain Fit (FACT)</strong>
+            Works wherever outputs exist as files/logs/records (numbers or structured text).
+            <div class="pill">logs/files/records</div>
+          </div>
+          <div class="card">
+            <strong>Evidence Location (FACT)</strong>
+            Verifiable examples are published as <span class="mono">/public_data</span> + <span class="mono">.sha256</span> proofs.
+            <div class="pill">public_data + sha256</div>
+          </div>
+        </div>
+
+        <div class="grid" id="threat">
+          <div class="card">
+            <strong>Threat: External Asset Drift</strong>
+            Missing assets can still return <em>200 text/html</em> and fake success. EV424 avoids this by assets=0.
+            <div class="pill">assets=0</div>
+          </div>
+          <div class="card">
+            <strong>Threat: Content-Type Mismatch</strong>
+            If expected types are returned as html, the gate should record FAIL to prevent silent drift.
+            <div class="pill">mismatch → FAIL</div>
+          </div>
+          <div class="card">
+            <strong>Preserve FAIL Evidence</strong>
+            FAIL is not discarded; it should be quarantined/preserved to avoid repeating the same class of mistakes.
+            <div class="pill">FAIL preserved</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>EV424 verifies integrity (byte-level), not truth of contents.</span>
+        <span>Accuracy(4)=Truth(2)=Life(4)</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

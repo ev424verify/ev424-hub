@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>EV424 — Public Docs</title>
+  <meta name="description" content="EV424 public documents viewer." />
+  <style>
+    :root{--bg:#070b0e;--panel:#0f1720;--stroke:#22313f;--text:#e7edf6;--muted:#a6b3c3;--blue:#57a6ff;}
+    html,body{height:100%;margin:0;padding:0;overflow:hidden;overscroll-behavior:none;}
+    *{box-sizing:border-box}
+    body{background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
+    ::-webkit-scrollbar{width:0;height:0} *{scrollbar-width:none}
+    .wrap{max-width:980px;margin:32px auto;padding:0 16px;}
+    .h{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;}
+    .h h1{font-size:22px;margin:0;}
+    .h .m{color:var(--muted);font-size:13px;}
+    .cards{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0 18px;}
+    .card{background:var(--panel);border:1px solid var(--stroke);border-radius:14px;padding:12px;}
+    .btn{display:inline-block;padding:8px 12px;border-radius:12px;border:1px solid var(--stroke);color:var(--blue);text-decoration:none;user-select:none;}
+    .btn:active{transform:translateY(1px);}
+    .viewer{width:100%;height:78vh;border:1px solid var(--stroke);border-radius:14px;background:#0b1116;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="h">
+      <h1>Public Docs</h1>
+      <div class="m">EV424 — viewer</div>
+    </div>
+
+    <div class="cards">
+      <div class="card"><a class="btn" id="openPage1" href="#">Open Page1</a></div>
+      <div class="card"><a class="btn" id="openPage2" href="#">Open Page2</a></div>
+      <div class="card"><a class="btn" id="openPage3" href="#">Open Page3</a></div>
+      <div class="card"><a class="btn" id="openPage4" href="#">Open Page4</a></div>
+    </div>
+
+
+    <!-- Inline preview: custom viewer (mobile-safe) -->
+    <iframe id="docFrame" class="viewer"
+      src="/public_docs/pdfviewer/viewer.html?file=%2Fpublic_docs%2Fidentity%2FEV424_Identity_SSOT_EN.pdf"
+      title="EV424 Public Doc"></iframe>
+    </div>
+
+  <script>
+  (function(){
+    var frame = document.getElementById("docFrame");
+    var a = document.getElementById("openPage1");
+    var b = document.getElementById("openPage2");
+    var c = document.getElementById("openPage3");
+    var d = document.getElementById("openPage4");
+      // Page mapping (full-view targets)
+    var P1 = "/public_docs/identity/EV424_Identity_SSOT_EN.pdf";
+    var P2 = "/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";
+    var P3 = "/public_docs/page3/EV424_Page3.pdf?v=6b73d1d3469721e4bf32b89e086b3aedd861fd954058004a7624051c93c00113";
+    var P4 = "/public_docs/usecase-qa/";
+      // Inline preview uses pdf.js viewer
+    var VIEWER = "/public_docs/pdfviewer/viewer.html?file=";
+    function v(p){ return VIEWER + encodeURIComponent(p); }
+    function setInline(p){ if(frame) frame.src = v(p); }
+
+    // Buttons: full view in new tab (keep current behavior)
+    if(a){ a.addEventListener("click", function(e){ e.preventDefault(); window.open(P1, "_blank", "noopener"); }); }
+    if(b){ b.addEventListener("click", function(e){ e.preventDefault(); window.open(P2, "_blank", "noopener"); }); }
+    if(c){ c.addEventListener("click", function(e){ e.preventDefault(); window.open(P3, "_blank", "noopener"); }); }
+    if(d){ d.addEventListener("click", function(e){ e.preventDefault(); window.open(P4, "_blank", "noopener"); }); }
+      // Default inline preview
+    setInline(P1);
+  })();
+  </script>
+</body>
+</html>

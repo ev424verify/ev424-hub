@@ -1,0 +1,220 @@
+<!-- TOP CTA (toggle) -->
+<button id="toggleVerifyPanel" class="cta-toggle">
+  Verify Public Evidence
+</button>
+
+<!-- TOGGLE PANEL -->
+<section id="verifyPanel" class="panel is-collapsed" aria-hidden="true">
+  <div class="panel-head">
+    <div class="panel-title">Verify by Hash / ID</div>
+    <div class="panel-sub">Enter SHA-256 or Evidence ID</div>
+  </div>
+
+  <div class="verify-row">
+    <input id="verifyQuery" class="verify-input" type="text"
+      placeholder="e.g., 774b82b1... or evidence-id" />
+    <button id="btnCheckEvidence" class="btn-check">
+      Check Evidence
+    </button>
+  </div>
+
+  <!-- RESULT BOX (starts hidden) -->
+  <pre id="verifyResult" class="verify-result is-hidden"></pre>
+
+  <div class="verify-help">
+    How it works: We load a public index (toc.json) and match your SHA/ID against it.
+    If found, we show the referenced artifact and metadata.
+  </div>
+</section>
+
+<!-- BOTTOM CTA (restore original neon mid size) -->
+<button id="btnVerifyNow" class="cta-bottom">
+  Verify Now
+</button>
+<script>
+(() => {
+  const $toggle = document.getElementById("toggleVerifyPanel");
+  const $panel  = document.getElementById("verifyPanel");
+  const $query  = document.getElementById("verifyQuery");
+  const $btn    = document.getElementById("btnCheckEvidence");
+  const $out    = document.getElementById("verifyResult");
+
+  function openPanel() {
+    $panel.classList.remove("is-collapsed");
+    $panel.classList.add("is-open");
+    $panel.setAttribute("aria-hidden", "false");
+  }
+
+  function resetPanel() {
+    // fold + clear everything
+    $panel.classList.remove("is-open");
+    $panel.classList.add("is-collapsed");
+    $panel.setAttribute("aria-hidden", "true");
+
+    $query.value = "";
+    $out.textContent = "";
+    $out.classList.add("is-hidden");
+  }
+
+  function isOpen() {
+    return $panel.classList.contains("is-open");
+  }
+
+  // Toggle behavior: 1st click open, 2nd click reset+collapse
+  $toggle.addEventListener("click", () => {
+    if (isOpen()) resetPanel();
+    else openPanel();
+  });
+
+  // Optional: bottom button scrolls + opens panel
+  const $bottom = document.getElementById("btnVerifyNow");
+  if ($bottom) {
+    $bottom.addEventListener("click", () => {
+      openPanel();
+      $panel.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  async function fetchToc() {
+    // 너 구조 기준: /public_data/toc.json 배포되어 있어야 함
+    // (네 화면에 NOT FOUND 메시지 힌트가 이 경로를 가리킴)
+    const r = await fetch("/public_data/toc.json", { cache: "no-store" });
+    if (!r.ok) throw new Error("toc.json not found");
+    return await r.json();
+  }
+
+  function normalize(s) {
+    return (s || "").trim();
+  }
+
+  function lookupInToc(toc, q) {
+    // toc 스키마가 뭐든 "sha/id" 를 포함한 엔트리 찾는 방식으로 유연하게 처리
+    // 예: toc.items = [{sha256, id, path, meta...}, ...]
+    const items = toc.items || toc || [];
+    const query = q.toLowerCase();
+
+    for (const it of items) {
+      const sha = (it.sha256 || it.sha || "").toLowerCase();
+      const id  = (it.id || it.evidence_id || "").toLowerCase();
+      if (sha === query || id === query) return it;
+    }
+    return null;
+  }
+
+  $btn.addEventListener("click", async () => {
+    const q = normalize($query.value);
+
+    if (!q) {
+      $out.classList.remove("is-hidden");
+      $out.textContent = JSON.stringify({ message: "Empty query. Enter SHA-256 or Evidence ID." }, null, 2);
+      return;
+    }
+
+    try {
+      const toc = await fetchToc();
+      const hit = lookupInToc(toc, q);
+
+      if (!hit) {
+        $out.classList.remove("is-hidden");
+        $out.textContent = JSON.stringify({
+          status: "NOT_FOUND",
+          query: q,
+          message: "No matching evidence in public index (toc.json).",
+          hint: "Confirm you deployed /public_data/toc.json and that it contains this SHA/ID."
+        }, null, 2);
+        return;
+      }
+
+      // Found → show entry + optional artifact fetch
+      $out.classList.remove("is-hidden");
+      $out.textContent = JSON.stringify({ status: "FOUND", query: q, match: hit }, null, 2);
+
+    } catch (e) {
+      $out.classList.remove("is-hidden");
+      $out.textContent = JSON.stringify({
+        status: "ERROR",
+        query: q,
+        message: String(e.message || e)
+      }, null, 2);
+    }
+  });
+
+  // initial state: collapsed
+  resetPanel();
+})();
+</script>
+<style>
+/* panel toggle states */
+.panel.is-collapsed { display: none; }
+.panel.is-open { display: block; }
+
+/* top CTA (keep your current look, but ensure clickable) */
+.cta-toggle{
+  width: 100%;
+  border: 0;
+  border-radius: 14px;
+  padding: 16px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  background: #2fe87a; /* 지금 톤 유지 (원하면 여기만 조정) */
+  color: #0b1610;
+}
+
+/* verify row */
+.verify-row{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.verify-input{
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(0,0,0,0.25);
+  color: #e9f3ec;
+}
+.btn-check{
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(47,232,122,0.35);
+  background: rgba(47,232,122,0.18);
+  color: #dfffea;
+  cursor: pointer;
+}
+.btn-check:hover{
+  background: rgba(47,232,122,0.25);
+}
+
+/* result box */
+.verify-result{
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.10);
+  max-height: 220px;
+  overflow: auto;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+.verify-result.is-hidden{ display:none; }
+
+/* bottom CTA: restore "original neon mid-size" */
+.cta-bottom{
+  width: 70%;              /* 중간 크기 느낌 */
+  max-width: 520px;
+  margin: 26px auto 0;
+  display: block;
+
+  border: 0;
+  border-radius: 14px;
+  padding: 14px 18px;      /* 중간 높이 */
+  font-weight: 800;
+  cursor: pointer;
+
+  background: #31ff7c;     /* 형광 톤(예전 느낌) */
+  color: #06130c;
+  box-shadow: 0 0 0 1px rgba(49,255,124,0.25), 0 10px 28px rgba(0,0,0,0.35);
+}
+</style>

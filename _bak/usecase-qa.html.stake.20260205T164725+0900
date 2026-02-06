@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EV424 — Use-case Q&A (Integrity-only)</title>
+  <style>
+    :root{
+      --bg0:#0b0f13;--bg1:#0f1620;--panel:#111a24;--stroke:#223244;
+      --text:#e8f0ff;--muted:#a9b9d4;--blue:#73a7ff;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,var(--bg0),var(--bg1));
+      color:var(--text);
+      line-height:1.55;
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:22px;}
+    .h{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 14px;}
+    h1{font-size:22px;margin:0;}
+    .m{color:var(--muted);font-size:13px}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 14px;}
+    .btn{
+      display:inline-block;padding:8px 12px;border-radius:12px;
+      border:1px solid var(--stroke);color:var(--blue);text-decoration:none;user-select:none;
+      background:rgba(17,26,36,.35);
+    }
+    .btn:active{transform:translateY(1px);}
+    .panel{background:var(--panel);border:1px solid var(--stroke);border-radius:14px;padding:14px;}
+    .meta{margin:0 0 10px;color:var(--muted);font-size:13px}
+    pre{
+      margin:0;
+      white-space:pre-wrap;
+      word-break:break-word;
+      background:rgba(0,0,0,.18);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:14px;
+      padding:14px;
+      color:var(--text);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="h">
+      <h1>EV424 — Use-case Q&amp;A (Integrity-only)</h1>
+      <div class="m">Static guide (SSOT v1.0) · Public documents only</div>
+    </div>
+
+    <div class="btnrow">
+      <a class="btn" href="/public_docs/index_v2.html">Back to Viewer</a>
+      <a class="btn" href="mailto:ev424.verify@gmail.com">Contact</a>
+    </div>
+
+    <div class="panel">
+      <p class="meta">Contact: <span style="font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;">ev424.verify@gmail.com</span></p>
+      <pre>0) Non-Negotiable Rails (READ FIRST)
+
+Integrity-only (same-file check): EV424 reports file identity / integrity only (i.e., whether two files are the same bytes, verified via SHA-256).
+EV424 does not judge truth/false, correctness, legality, medical validity, investment merit, safety, intent, or policy compliance.
+
+Integrity ≠ Safety: A hash match proves same file, not that the file is “safe” or “correct.”
+EV424 provides a reproducible method to confirm file identity, nothing more.
+
+Reference = sealed fingerprint (time snapshot): EV424’s reference is the sealed SHA-256 fingerprint recorded at first registration (and its receipt/manifest chain).
+This enables re-verification over time and helps detect changes across snapshots—without relying on “trust” alone.
+
+No PDF mirroring: EV424 does not mirror or redistribute PDFs.
+EV424 publishes only: official URL + SHA-256 fingerprint + re-verify method + reproducible receipt.
+
+Non-affiliation: EV424 is not affiliated with, endorsed by, or sponsored by any issuing organization or listed entity.
+
+1) How to Verify (Two Paths)
+
+Path A (Most people):
+
+Enter ENTRY_ID (e.g., EV424-ENTRY-000009) or PASS hash (64-hex) in Public Verify → view the Final Receipt.
+
+Path B (Power users):
+
+Re-download the PDF from the official URL, compute SHA-256 locally, and compare it to the sealed fingerprint shown in the receipt.
+
+2) Finance (Not investment advice)
+
+Q1. I received a financial report PDF—how can I confirm it’s the same file as the referenced original?
+A. EV424 is not investment advice; it performs an integrity / same-file check only.
+A. Compare SHA-256 against the sealed fingerprint in the Final Receipt (ENTRY_ID / PASS hash).
+
+Q2. Same title/date, but I suspect different versions are circulating.
+A. EV424 does not judge “latest/correct”; it confirms file identity only.
+A. Re-download from the official URL and verify the SHA-256 matches the receipt fingerprint.
+
+Q3. Someone shared a “official” PDF—should I trust it?
+A. EV424 does not assess trustworthiness; it checks same bytes only.
+A. Use the receipt fingerprint as the reference and confirm your file matches.
+
+3) AI (Model outputs / citations)
+
+Q1. An AI cited a PDF—how do I confirm the cited file matches the official source?
+A. EV424 does not validate the AI’s claims; it verifies same-file integrity only.
+A. Download from the official URL and compare SHA-256 to the receipt’s sealed fingerprint.
+
+Q2. The link is the same, but AI answers changed—did the document change?
+A. EV424 cannot explain why; it can confirm whether the file is identical or changed.
+A. Compare the current file’s SHA-256 to the sealed fingerprint stored in the receipt.
+
+Q3. Can EV424 tell if a document is “up to date”?
+A. EV424 doesn’t judge “up to date”; it checks file identity only.
+A. Use official publication metadata for currency, and use SHA-256 to confirm file sameness.
+
+4) Medical (Not medical advice)
+
+Q1. I want to confirm a medical guideline PDF is the same file as the official publication.
+A. EV424 is not medical advice; it performs an integrity / same-file check only.
+A. Verify the SHA-256 matches the sealed fingerprint shown in the Final Receipt.
+
+Q2. I’m worried a circulated PDF was edited or altered.
+A. EV424 doesn’t judge medical correctness; it checks file identity only.
+A. Re-download from the official URL and confirm the SHA-256 matches the receipt fingerprint.
+
+Q3. Can EV424 tell me what to do medically?
+A. No. EV424 provides integrity evidence only—medical decisions require proper professional guidance.
+A. Use EV424 solely to confirm file sameness via SHA-256 and the receipt.
+
+5) Sports
+
+Q1. Is this rulebook PDF exactly the same file as the official one?
+A. EV424 doesn’t interpret rules; it verifies same-file integrity only.
+A. Compare your file’s SHA-256 to the receipt fingerprint (ENTRY_ID / PASS hash).
+
+Q2. Community copies are everywhere—how do I avoid mixed versions?
+A. EV424 doesn’t pick the “right” version; it confirms identical bytes only.
+A. Choose the official URL as your source and verify SHA-256 against the receipt.
+
+Q3. Same name, different contents—what now?
+A. EV424 can’t decide which is “correct”; it can show whether files are the same or different.
+A. Use SHA-256 comparisons to map which copy matches the sealed fingerprint.
+
+6) Weather (Reports)
+
+Q1. I want to confirm a weather/climate report PDF matches the official file.
+A. EV424 doesn’t forecast or interpret; it verifies file identity only.
+A. Re-verify using the Final Receipt fingerprint as the sealed reference.
+
+Q2. The URL stayed the same, but the report might have been updated.
+A. EV424 can’t explain updates; it can detect changes across snapshots via SHA-256.
+A. Compare the current SHA-256 to the sealed fingerprint recorded at first registration.
+
+Q3. Can EV424 tell me tomorrow’s weather?
+A. No. EV424 is integrity-only, not a prediction tool.
+A. Use EV424 only to confirm document sameness via receipt/sha256.
+
+7) Space (Research / technical PDFs)
+
+Q1. How do I confirm a technical PDF is exactly the same file as the official repository version?
+A. EV424 doesn’t evaluate research quality; it verifies same-file integrity only.
+A. Compare SHA-256 to the sealed fingerprint shown in the Final Receipt.
+
+Q2. Multiple mirrors exist—how do I avoid confusion?
+A. EV424 won’t rank sources; it verifies identical bytes only.
+A. Use the official URL, then match SHA-256 to the receipt fingerprint.
+
+Q3. Does EV424 prove the research is “true”?
+A. No. EV424 proves file identity only (integrity), not truth/validity.
+A. Use the receipt for reproducible integrity checks and evaluate claims separately.
+
+8) Companies (Policies / filings)
+
+Q1. How can I confirm a corporate policy/filing PDF matches the official publication?
+A. EV424 doesn’t assess corporate risk; it performs a same-file check only.
+A. Verify SHA-256 against the sealed fingerprint in the Final Receipt.
+
+Q2. Someone sent me a “company official PDF”—what should I do?
+A. EV424 doesn’t judge intent; it verifies file identity only.
+A. Re-download from the official URL and confirm SHA-256 matches the receipt.
+
+Q3. Is EV424 affiliated with any issuer?
+A. No. EV424 is not affiliated/endorsed/sponsored by any issuing organization.
+A. EV424 references publicly available documents only and reports integrity evidence.
+
+9) Correction / Removal
+
+To request correction or removal, email: ev424.verify@gmail.com
+
+Please include the ENTRY_ID or PASS hash (64-hex) and your reason.
+
+Accuracy(4)=Truth(2)=Life(4)</pre>
+    </div>
+  </div>
+</body>
+</html>

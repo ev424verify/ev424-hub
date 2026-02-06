@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000010",
+  "type": "doc_passport",
+  "source": "NIST.SP.800-171r3.pdf",
+  "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r3.pdf",
+  "issued_date": "2026-02-03T18:28:25+0900",
+  "fingerprint_sha256": "3e4631df8b5d61f40a6e542b52779ef30ddbbfff31e09214fa94ad6e6f5e6d08",
+  "result_rep_sha256": "b6bea8502a024995919c6445b02a01efb4a9e07fc4395bfcc8cb592ca6b75929",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIST.SP.800-171r3.pdf\nISSUED_DATE  2026-02-03T18:28:25+0900\nFINGERPRINT  3e4631df8b5d61f40a6e542b52779ef30ddbbfff31e09214fa94ad6e6f5e6d08\nURL          https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r3.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=b6bea8502a024995919c6445b02a01efb4a9e07fc4395bfcc8cb592ca6b75929\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

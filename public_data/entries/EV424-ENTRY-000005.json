@@ -1,0 +1,15 @@
+{
+  "entry_id": "EV424-ENTRY-000005",
+  "type": "doc_passport",
+  "source": "NIST.CSWP.29.pdf",
+  "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+  "issued_date": "2026-01-31T22:19:17+0900",
+  "fingerprint_sha256": "3c31f46fee98cac0c4323453e5109291a213b4de7fef8c058af9bf67f717433c",
+  "result_rep_sha256": "84ef22f97b3b623025eb2778ee9cb3dfc0b644b1d0fc00781e6ae25415076726",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  }
+}

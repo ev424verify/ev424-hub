@@ -1,0 +1,15 @@
+{
+  "entry_id": "EV424-ENTRY-000004",
+  "type": "doc_passport",
+  "source": "rfc9595.pdf",
+  "url": "https://www.ietf.org/rfc/rfc9595.pdf",
+  "issued_date": "2026-01-31T11:07:00+0900",
+  "fingerprint_sha256": "ae4136844a3e7456c052a68505c82e2899fa9fca3104b9090a5ea3f38b6bc6ae",
+  "result_rep_sha256": "02f198c8910507a6809df592bdceff68730e00d3fddd8c1456781d74ff732e19",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  }
+}

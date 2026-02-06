@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000012",
+  "type": "doc_passport",
+  "source": "guideline-disinfection-h.pdf",
+  "url": "https://www.cdc.gov/infection-control/media/pdfs/guideline-disinfection-h.pdf",
+  "issued_date": "2026-02-05T11:12:43+0900",
+  "fingerprint_sha256": "e31bb65ee0100f2dfc0811e2b72bd1cae4844a8fb736a944b843036ddfcd03b3",
+  "result_rep_sha256": "6aff60f12fbbdb71992abcd49d6c4e266ec66fabc3df86ab8a9bf08ae4a86f0b",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       guideline-disinfection-h.pdf\nISSUED_DATE  2026-02-05T11:12:43+0900\nFINGERPRINT  e31bb65ee0100f2dfc0811e2b72bd1cae4844a8fb736a944b843036ddfcd03b3\nURL          https://www.cdc.gov/infection-control/media/pdfs/guideline-disinfection-h.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=6aff60f12fbbdb71992abcd49d6c4e266ec66fabc3df86ab8a9bf08ae4a86f0b\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

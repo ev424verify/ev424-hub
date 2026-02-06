@@ -1,0 +1,27 @@
+{
+  "correction": {
+    "is_superseded": true,
+    "superseded_by_entry_sha256": "2b397279d2e83bb4e9e60056a3abf41fac109742295c809fcb6f0fa164467e98",
+    "supersedes_prev_entry_sha256": null
+  },
+  "created_at": "2026-01-30T00:00:00+0900",
+  "entry_id": "EV424-ENTRY-000001",
+  "entry_type": "EVIDENCE",
+  "evidence": {
+    "receipt_public_url": null,
+    "receipt_rep_sha256": "164a766d4f0992b623efa7d63fa0205d94dd2a8180db6a7a7d7c3b1fac3c1cbf",
+    "reverify_policy": "+7d -> CONSISTENCY+REDOWNLOAD"
+  },
+  "identity": {
+    "fingerprint_sha256": "e5593d6bb85daecec7e8d9549400c7b3473bcc3f06e469c82218073afa7fba2d",
+    "issued_date": "2026-01-29",
+    "source_name": "NIST.SP.800-61r3.pdf",
+    "source_url": "https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-61r3.pdf"
+  },
+  "notes_fact_only": [
+    "skeleton only",
+    "do not mark PASS without reproducible evidence"
+  ],
+  "schema_version": "EV424_PUBLIC_ENTRY_V1",
+  "status": "UNKNOWN"
+}
