@@ -20,4 +20,11 @@ EV424는 하지 않습니다: 진실/안전/적법성 판정, 내용 분석, 원
 - 엔트리 ID로 검증:
   - https://ev424verify.com/?q=EV424-ENTRY-000015
 
+## Security / Tests (baseline)
+
+EN) This repo follows a minimal security baseline (CI build checks + dependency alerts).
+KR) 이 저장소는 최소 보안 기준(CI 빌드 체크 + 의존성 알림)을 적용합니다.
+EN) Report security issues privately: ev424.verify@gmail.com
+KR) 보안 이슈는 비공개로 제보 부탁드립니다: ev424.verify@gmail.com
+
 Accuracy(4)=Truth(2)=Life(4)
