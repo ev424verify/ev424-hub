@@ -1,68 +1,23 @@
-# ev424-hub
+# EV424 — Reproducible Integrity Receipts (Same Bytes → Same SHA-256)
 
-EV424 verifies public documents and datasets with reproducible SHA-256 chains.
+EV424 issues a reproducible integrity receipt so anyone can re-verify that an official document is still byte-identical (Same Bytes → Same SHA-256).
 
-Paste a PDF or URL → Get a PASS/FAIL receipt with re-download proof.
+EV424 does NOT: judge truth/safety/legality, analyze content, or host/mirror the original file.
 
-▶ Try now (10s demo): https://ev424verify.com/?q=EV424-ENTRY-000013  
-▶ Live verifier: https://ev424verify.com
-
----
-
-## What does EV424 do?
-
-Many public PDFs and datasets change, disappear, or get re-hosted without notice.
-
-EV424 provides:
-- Original source tracking
-- SHA-256 integrity proof
-- Re-download verification
-- Reproducible receipt output
-
-So you can prove:
-
-> "This document was verified at this time, from this source, with this hash."
+## 30-second demo
+- Verify by Entry ID:
+  - https://ev424verify.com/?q=EV424-ENTRY-000015
 
 ---
 
-## Use cases
+# EV424 — 재검증 가능한 무결성 영수증 (Same Bytes → Same SHA-256)
 
-- Regulatory and policy submissions  
-- Audit and compliance evidence  
-- Research reproducibility  
-- Due diligence archives  
-- Public document verification  
+EV424는 누구나 제3자로서 “공식 문서가 지금도 바이트 단위로 동일한지”를 재검증할 수 있도록, 무결성 영수증(Integrity Receipt)을 발행합니다.
 
----
+EV424는 하지 않습니다: 진실/안전/적법성 판정, 내용 분석, 원문 파일 보관/미러링/재배포.
 
-## Free pilot (48h)
+## 30초 데모
+- 엔트리 ID로 검증:
+  - https://ev424verify.com/?q=EV424-ENTRY-000015
 
-Send one public PDF or URL.
-
-You will receive a verified receipt within 48 hours.
-
-Contact: ev424.verify@gmail.com  
-Subject: Free EV424 Pilot
-
----
-
-## Technical scope
-
-Policy: No PDF mirroring  
-Method: Official URL + SHA-256 + re-download check + chain  
-Scope: Integrity verification only (not truth/false judgment)
-
----
-
-## Why EV424?
-
-- No file custody  
-- No vendor lock-in  
-- No black-box scoring  
-- Fully reproducible outputs  
-
-Everything can be independently re-verified.
-
----
-
-Root: https://ev424verify.com
+Accuracy(4)=Truth(2)=Life(4)
