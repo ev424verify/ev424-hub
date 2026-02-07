@@ -702,7 +702,7 @@ a.btn.ghost[href="/public_docs/index_v2.html"]{
       // fallback: deterministic debug info if receipt_text missing
       showResult("FOUND", hit.entry_id || hit.sha256 || hit.href || "", {
         query,
-        message: "receipt_text missing in entry JSON. (Need to store 문서역권5 raw into entry.receipt_text at publish time.)",
+        message: "receipt_text missing in entry JSON. (Need to store the full FINAL RECEIPT raw into entry.receipt_text at publish time.)",
         open_url: entryUrl,
         matched: {
           month: hit.month,

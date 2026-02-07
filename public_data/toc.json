@@ -28,8 +28,8 @@
       "tamper-proof",
       "guarantee",
       "cannot be modified",
-      "수정 불가능",
-      "보장"
+      "immutable",
+      "guaranteed"
     ],
     "default_status": "UNKNOWN",
     "public_exposure_blocklist": [
