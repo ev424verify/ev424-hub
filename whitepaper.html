@@ -27,9 +27,9 @@
     <!-- Same interaction shape as public_docs/index_v2.html: preview first, then Open Page => full view -->
     <div class="grid">
       <div class="card"><a class="btn notranslate" id="openPage1" href="#" translate="no" lang="en">Open Page1</a></div>
-      <div class="card"><a class="btn notranslate" id="openPage2" href="#" translate="no" lang="en" style="opacity:.45;pointer-events:none">Open Page2</a></div>
-      <div class="card"><a class="btn notranslate" id="openPage3" href="#" translate="no" lang="en" style="opacity:.45;pointer-events:none">Open Page3</a></div>
-      <div class="card"><a class="btn notranslate" id="openPage4" href="#" translate="no" lang="en" style="opacity:.45;pointer-events:none">Open Page4</a></div>
+      <div class="card"><a class="btn notranslate" id="openPage2" href="#" translate="no" lang="en">Open Page2</a></div>
+      <div class="card"><a class="btn notranslate" id="openPage3" href="#" translate="no" lang="en">Open Page3</a></div>
+      <div class="card"><a class="btn notranslate" id="openPage4" href="#" translate="no" lang="en">Open Page4</a></div>
     </div>
 
     <!-- Preview (inline) -->
@@ -39,11 +39,22 @@
   </div>
 
   <script>
-    var P1 = "/public_docs/whitepaper/EV424_Integrity_Receipt_Whitepaper_v0.1r1+++.md";
-    document.getElementById("openPage1").addEventListener("click", function(e){
+  var P1 = "/public_docs/whitepaper/EV424_Integrity_Receipt_Whitepaper_v0.1r1+++.md";
+  var P4 = "/public_docs/whitepaper/EV424_Integrity_Receipt_Whitepaper_Page4_Governance_v0.1.md";
+
+  function enableAndBind(id, url){
+    var el = document.getElementById(id);
+    if(!el) return;
+    el.style.opacity = "1";
+    el.style.pointerEvents = "auto";
+    el.addEventListener("click", function(e){
       e.preventDefault();
-      window.open(P1, "_blank", "noopener");
+      window.open(url, "_blank", "noopener");
     });
-  </script>
+  }
+
+  enableAndBind("openPage1", P1);
+  enableAndBind("openPage4", P4);
+</script>
 </body>
 </html>
