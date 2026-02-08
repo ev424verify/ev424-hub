@@ -28,3 +28,24 @@ EN) Report security issues privately: ev424.verify@gmail.com
 KR) 보안 이슈는 비공개로 제보 부탁드립니다: ev424.verify@gmail.com
 
 Accuracy(4)=Truth(2)=Life(4)
+
+---
+
+## Skipped Entry IDs (Transparency Note)
+
+Some entry IDs may appear missing due to the deterministic generation process.
+
+- **EV424-ENTRY-000014**: Slot reserved but not materialized (no entry artifact generated)
+- **EV424-ENTRY-000015**: Demo reference only (no actual entry file existed)
+
+Entry ID continuity is not a validity requirement.
+Integrity is guaranteed solely by SHA-256 verification and reproducible receipts.
+
+일부 엔트리 번호는 생성 과정 중 중단으로 인해 실제 파일이 만들어지지 않을 수 있습니다.
+
+- **EV424-ENTRY-000014**: 슬롯은 생성되었으나 엔트리 파일이 생성되지 않음
+- **EV424-ENTRY-000015**: 데모용 참조로만 사용됨 (실제 엔트리 없음)
+
+엔트리 번호의 연속성은 무결성 조건이 아닙니다.
+무결성은 SHA-256과 재현 가능한 영수증으로만 보장됩니다.
+
