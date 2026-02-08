@@ -10,11 +10,24 @@
     .wrap{max-width:1080px;margin:0 auto;padding:22px}
     .top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
     .brand{font-weight:700;letter-spacing:.2px}
-    .btn{display:inline-block;border:1px solid rgba(120,255,170,.55);color:#cfeede;background:transparent;padding:10px 14px;border-radius:10px;text-decoration:none}
+    .btn{display:inline-block;border:1px solid rgba(120,255,170,.55);color:#cfeede;background:transparent;padding:10px 14px;border-radius:10px;text-decoration:none;cursor:pointer}
     .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:10px 0 14px}
     .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px}
     .viewer{width:100%;height:74vh;border:1px solid rgba(255,255,255,.08);border-radius:14px;background:#070a0f}
-    @media (max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.viewer{height:68vh}}
+
+    /* 1/2/3 box + 4 raw */
+    .whitepaper-viewer{grid-column:1 / -1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:12px}
+    .wp-box,.wp-raw{border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;background:#070a0f;white-space:pre-wrap;word-break:break-word;line-height:1.55}
+    .wp-raw{overflow:auto;max-height:48vh}
+    .wp-h{margin:0 0 10px 0;font-weight:700}
+    .wp-sub{margin:0 0 10px 0;opacity:.85;font-size:13px}
+    .wp-tab.is-active .btn{border-color:#ffffff;color:#ffffff}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .viewer{height:68vh}
+      .wp-raw{max-height:52vh}
+    }
   </style>
 </head>
 <body class="">
@@ -24,13 +37,19 @@
       <a class="btn" href="/index.html">Back</a>
     </div>
 
-    <!-- Same interaction shape as public_docs/index_v2.html: preview first, then Open Page => full view -->
-    <div class="grid">
-      <div class="card"><a class="btn notranslate" id="openPage1" href="#" translate="no" lang="en">Open Page1</a></div>
-      <div class="card"><a class="btn notranslate" id="openPage2" href="#" translate="no" lang="en">Open Page2</a></div>
-      <div class="card"><a class="btn notranslate" id="openPage3" href="#" translate="no" lang="en">Open Page3</a></div>
-      <div class="card"><a class="btn notranslate" id="openPage4" href="#" translate="no" lang="en">Open Page4</a></div>
-      <div id="whitepaper_viewer" class="whitepaper-viewer"></div>
+    <!-- 1/2/3: boxed content per number | 4: raw(1+2+3) -->
+    <div class="grid" id="wpTabs">
+      <div class="card wp-tab is-active"><button class="btn notranslate" id="openPage1" type="button" translate="no" lang="en">1</button></div>
+      <div class="card wp-tab"><button class="btn notranslate" id="openPage2" type="button" translate="no" lang="en">2</button></div>
+      <div class="card wp-tab"><button class="btn notranslate" id="openPage3" type="button" translate="no" lang="en">3</button></div>
+      <div class="card wp-tab"><button class="btn notranslate" id="openPage4" type="button" translate="no" lang="en">4</button></div>
+
+      <div id="whitepaper_viewer" class="whitepaper-viewer">
+        <div class="wp-h notranslate" translate="no" lang="en">Whitepaper Viewer</div>
+        <p class="wp-sub">1/2/3 shows boxed content. 4 shows raw(1+2+3) combined.</p>
+        <div id="wpBox" class="wp-box"></div>
+        <pre id="wpRawAll" class="wp-raw" style="display:none"></pre>
+      </div>
     </div>
 
     <!-- Preview (inline) -->
@@ -40,48 +59,110 @@
   </div>
 
   <script>
-  var P1 = "/public_docs/whitepaper/EV424_Whitepaper_Page1_EN.md";
+  (function(){
+    var P1 = "/public_docs/whitepaper/EV424_Whitepaper_Page1_EN.md";
     var P2 = "/public_docs/whitepaper/EV424_Whitepaper_Page2_EN.md";
     var P3 = "/public_docs/whitepaper/EV424_Whitepaper_Page3_EN.md";
-  var P4 = "/public_docs/whitepaper/EV424_Whitepaper_Page4_EN.md";
+    var P4 = "/public_docs/whitepaper/EV424_Whitepaper_Page4_EN.md"; // reserved but NOT used as raw source
 
-  function enableAndBind(id, url){
-    var el = document.getElementById(id);
-    if(!el) return;
-    el.style.opacity = "1";
-    el.style.pointerEvents = "auto";
-    el.addEventListener("click", function(e){
-      e.preventDefault();
-      window.open(url, "_blank", "noopener");
-    });
-  }
-function enableAndBind(id, url) {
-  const a = document.getElementById(id);
-  if (!a) return;
+    var tabs = document.getElementById("wpTabs");
+    var v = document.getElementById("whitepaper_viewer");
+    var box = document.getElementById("wpBox");
+    var raw = document.getElementById("wpRawAll");
 
-  a.addEventListener("click", function (e) {
-    e.preventDefault();
-    fetch(url)
-      .then(r => {
-        if (!r.ok) throw new Error("fetch failed");
+    function setActive(btnId){
+      var nodes = tabs ? tabs.querySelectorAll(".wp-tab") : [];
+      for(var i=0;i<nodes.length;i++) nodes[i].classList.remove("is-active");
+      var btn = document.getElementById(btnId);
+      if(btn){
+        var card = btn.closest(".wp-tab");
+        if(card) card.classList.add("is-active");
+      }
+    }
+
+    function fetchText(url){
+      return fetch(url, {cache:"no-store"}).then(function(r){
+        if(!r.ok) throw new Error("fetch failed: "+url+" status="+r.status);
         return r.text();
-      })
-    .then(md => {
-      const v = document.getElementById("whitepaper_viewer");
-      if (!v) return;
-      v.textContent = md;
-    })
-      .catch(_ => {
-        if (v) v.textContent = "ERROR: unable to load page.";
       });
-  });
-}
+    }
 
+    function escHtml(x){return x.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
-enableAndBind("openPage1", P1);
-    enableAndBind("openPage2", P2);
-    enableAndBind("openPage3", P3);
-  enableAndBind("openPage4", P4);
-</script>
+      function showBox(text){
+      if(raw) raw.style.display = "none";
+      if(box){
+        box.style.display = "block";
+          box.style.whiteSpace = "normal";
+          box.innerHTML = escHtml(text).replace(/\n/g,"<br>");
+      }
+    }
+
+    function showRaw(text){
+      if(box) box.style.display = "none";
+      if(raw){
+        raw.style.display = "block";
+        raw.textContent = text; // raw only
+      }
+    }
+
+    function bind(btnId, mode){
+      var el = document.getElementById(btnId);
+      if(!el) return;
+      el.addEventListener("click", function(e){
+        e.preventDefault();
+
+        if(mode === "1"){
+          setActive("openPage1");
+          fetchText(P1).then(showBox).catch(function(err){
+            setActive("openPage4");
+            showRaw("[ERROR]\\n"+String(err && err.stack ? err.stack : err));
+          });
+          return;
+        }
+        if(mode === "2"){
+          setActive("openPage2");
+          fetchText(P2).then(showBox).catch(function(err){
+            setActive("openPage4");
+            showRaw("[ERROR]\\n"+String(err && err.stack ? err.stack : err));
+          });
+          return;
+        }
+        if(mode === "3"){
+          setActive("openPage3");
+          fetchText(P3).then(showBox).catch(function(err){
+            setActive("openPage4");
+            showRaw("[ERROR]\\n"+String(err && err.stack ? err.stack : err));
+          });
+          return;
+        }
+        if(mode === "4"){
+          setActive("openPage4");
+          Promise.all([fetchText(P1), fetchText(P2), fetchText(P3)]).then(function(arr){
+            var t1 = (arr[0]||"").replace(/\\s+$/,"");
+            var t2 = (arr[1]||"").replace(/\\s+$/,"");
+            var t3 = (arr[2]||"").replace(/\\s+$/,"");
+            var joined =
+              "=== [1] ===\\n" + t1 + "\\n\\n" +
+              "=== [2] ===\\n" + t2 + "\\n\\n" +
+              "=== [3] ===\\n" + t3 + "\\n";
+            showRaw(joined);
+          }).catch(function(err){
+            showRaw("[ERROR]\\n"+String(err && err.stack ? err.stack : err));
+          });
+          return;
+        }
+      });
+    }
+
+    bind("openPage1","1");
+    bind("openPage2","2");
+    bind("openPage3","3");
+    bind("openPage4","4");
+
+    // default: 1
+    fetchText(P1).then(function(t){ setActive("openPage1"); showBox(t); }).catch(function(){});
+  })();
+  </script>
 </body>
 </html>
