@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000016",
+  "type": "doc_passport",
+  "source": "international-ai-safety-report-2026.pdf",
+  "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026.pdf",
+  "issued_date": "2026-02-08T10:07:12+0900",
+  "fingerprint_sha256": "971d6902bec818eed38f69fffcea96287040ce1ee60e4338dc31520fb0f5d8a4",
+  "result_rep_sha256": "665182b905688dac7c3696d150a4151028e2ee3527a29a067ec4eddb2bd7f73e",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       international-ai-safety-report-2026.pdf\nISSUED_DATE  2026-02-08T10:07:12+0900\nFINGERPRINT  971d6902bec818eed38f69fffcea96287040ce1ee60e4338dc31520fb0f5d8a4\nURL          https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=665182b905688dac7c3696d150a4151028e2ee3527a29a067ec4eddb2bd7f73e\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
