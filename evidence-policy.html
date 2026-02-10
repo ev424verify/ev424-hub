@@ -190,6 +190,13 @@
   text-align:center;
   width:100%;
 }
+
+    /* Mobile-safe inline code: prevent 64-hex overflow */
+    code{overflow-wrap:anywhere; word-break:break-word;}
+
+    /* Command line: keep one line, allow horizontal scroll */
+    code.cmd{display:inline-block; max-width:100%; overflow-x:auto; white-space:pre; -webkit-overflow-scrolling:touch;}
+
 </style>
 </head>
 
@@ -324,7 +331,7 @@
 
         <ul class="bul">
           <li>Safe-Rail (EN) SHA256: <code>60cb80ce25907289cffc629f2c7a5cdf6bea5c61e29ecc5bcf6c16076f00fc01</code></li>
-          <li>Re-verify: <code>sha256sum -c &lt;file&gt;.sha256</code></li>
+          <li>Re-verify: <code class="cmd">sha256sum -c &lt;file&gt;.sha256</code></li>
         </ul>
       </section>
 
