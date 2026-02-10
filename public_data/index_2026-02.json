@@ -2,6 +2,18 @@
   "generated_at": "2026-02-01T12:16:03+0900",
   "entries": [
     {
+      "entry_id": "EV424-ENTRY-000018",
+      "href": "entries/EV424-ENTRY-000018.json",
+      "sha256": "79360e53263b96f217c3530bb9091cdb2e41dfcd43fe74d70369b2f4b2ba714d",
+      "sha256_file": "entries/EV424-ENTRY-000018.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000017",
+      "href": "entries/EV424-ENTRY-000017.json",
+      "sha256": "d93091cc6f8e85a04dc2341cef415511fcdcf2da83476c8220002e82ef98f419",
+      "sha256_file": "entries/EV424-ENTRY-000017.json.sha256"
+    },
+    {
       "entry_id": "EV424-ENTRY-000016",
       "href": "entries/EV424-ENTRY-000016.json",
       "sha256": "665182b905688dac7c3696d150a4151028e2ee3527a29a067ec4eddb2bd7f73e",
@@ -57,6 +69,6 @@
     }
   ],
   "counts": {
-    "EVIDENCE": 9
+    "EVIDENCE": 11
   }
 }

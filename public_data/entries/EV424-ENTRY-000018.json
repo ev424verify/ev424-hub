@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000018",
+  "type": "doc_passport",
+  "source": "d6920477-en.pdf",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/enhancing-the-resilience-of-communication-networks_a47d78a1/d6920477-en.pdf",
+  "issued_date": "2026-02-10T09:12:03+0900",
+  "fingerprint_sha256": "49d4d31cc295bd77b702301fd4bf8543a5dfc3aa36bf1300f4fab2eca399d912",
+  "result_rep_sha256": "79360e53263b96f217c3530bb9091cdb2e41dfcd43fe74d70369b2f4b2ba714d",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       d6920477-en.pdf\nISSUED_DATE  2026-02-10T09:12:03+0900\nFINGERPRINT  49d4d31cc295bd77b702301fd4bf8543a5dfc3aa36bf1300f4fab2eca399d912\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/enhancing-the-resilience-of-communication-networks_a47d78a1/d6920477-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=79360e53263b96f217c3530bb9091cdb2e41dfcd43fe74d70369b2f4b2ba714d\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
