@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000017",
+  "type": "doc_passport",
+  "source": "joint-fact-sheet-reducing-the-attack-surface-of-end-of-support-edge-devices-508c.pdf",
+  "url": "https://www.cisa.gov/sites/default/files/2026-02/joint-fact-sheet-reducing-the-attack-surface-of-end-of-support-edge-devices-508c.pdf",
+  "issued_date": "2026-02-09T09:11:01+0900",
+  "fingerprint_sha256": "80f49c0b9069767e5f44f89785646220ce0e243530ccd5a66127effeed14b832",
+  "result_rep_sha256": "d93091cc6f8e85a04dc2341cef415511fcdcf2da83476c8220002e82ef98f419",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       joint-fact-sheet-reducing-the-attack-surface-of-end-of-support-edge-devices-508c.pdf\nISSUED_DATE  2026-02-09T09:11:01+0900\nFINGERPRINT  80f49c0b9069767e5f44f89785646220ce0e243530ccd5a66127effeed14b832\nURL          https://www.cisa.gov/sites/default/files/2026-02/joint-fact-sheet-reducing-the-attack-surface-of-end-of-support-edge-devices-508c.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=d93091cc6f8e85a04dc2341cef415511fcdcf2da83476c8220002e82ef98f419\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

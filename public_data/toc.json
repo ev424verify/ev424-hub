@@ -15,10 +15,10 @@
     {
       "month": "2026-02",
       "href": "index_2026-02.json",
-      "sha256": "9a1993026beabf0e750aa161b543e07b045861601e7f297d8e8b7eb4f5e209fd",
+      "sha256": "51294fbbc5b11834618dc0647a852127c29399ec4af75e2c9c0a6c2a33d56337",
       "sha256_file": "index_2026-02.json.sha256",
       "counts": {
-        "EVIDENCE": 11
+        "EVIDENCE": 12
       }
     }
   ],
@@ -44,7 +44,7 @@
   "schema_version": "EV424_PUBLIC_TOC_V1",
   "counts": {
     "CHANGELOG": 0,
-    "EVIDENCE": 11,
+    "EVIDENCE": 12,
     "SPEC": 0
   }
 }

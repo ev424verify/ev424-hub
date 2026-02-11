@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000019",
+  "type": "doc_passport",
+  "source": "b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf",
+  "url": "https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf",
+  "issued_date": "2026-02-11T09:30:30+0900",
+  "fingerprint_sha256": "405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045",
+  "result_rep_sha256": "6acefe8a4161a652bd9c07ca3ac0d8976ea1849cf0fd8b25400a776cc06b918f",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf\nISSUED_DATE  2026-02-11T09:30:30+0900\nFINGERPRINT  405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045\nURL          https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=6acefe8a4161a652bd9c07ca3ac0d8976ea1849cf0fd8b25400a776cc06b918f\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
