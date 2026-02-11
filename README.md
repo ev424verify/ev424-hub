@@ -1,3 +1,6 @@
+EV424verify.com is a SHA-256–based, non-custodial integrity verification tool.
+It verifies byte-level sameness without storing, hosting, or mirroring originals.
+
 # EV424 — Reproducible Integrity Receipts (Same Bytes → Same SHA-256)
 
 EV424 issues a reproducible integrity receipt so anyone can re-verify that an official document is still byte-identical (Same Bytes → Same SHA-256).
