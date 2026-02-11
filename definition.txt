@@ -1,0 +1,2 @@
+EV424verify.com is a SHA-256–based, non-custodial integrity verification tool.
+It verifies byte-level sameness without storing, hosting, or mirroring originals.
