@@ -9,7 +9,7 @@ EV424 does NOT: judge truth/safety/legality, analyze content, or host/mirror the
 
 ## 30-second demo
 - Verify by Entry ID:
-  - https://ev424verify.com/?q=EV424-ENTRY-000016
+  - https://ev424verify.com/?q=EV424-ENTRY-000019
 
 ---
 
@@ -21,7 +21,7 @@ EV424는 하지 않습니다: 진실/안전/적법성 판정, 내용 분석, 원
 
 ## 30초 데모
 - 엔트리 ID로 검증:
-  - https://ev424verify.com/?q=EV424-ENTRY-000016
+  - https://ev424verify.com/?q=EV424-ENTRY-000019
 
 ## Security / Tests (baseline)
 
