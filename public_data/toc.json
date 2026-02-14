@@ -1,4 +1,9 @@
 {
+  "counts": {
+    "CHANGELOG": 0,
+    "EVIDENCE": 12,
+    "SPEC": 0
+  },
   "generated_at": "2026-02-01T12:17:15+0900",
   "months": [
     {
@@ -13,13 +18,13 @@
       "sha256_file": "index_2026-01.json.sha256"
     },
     {
-      "month": "2026-02",
-      "href": "index_2026-02.json",
-      "sha256": "51294fbbc5b11834618dc0647a852127c29399ec4af75e2c9c0a6c2a33d56337",
-      "sha256_file": "index_2026-02.json.sha256",
       "counts": {
         "EVIDENCE": 12
-      }
+      },
+      "href": "index_2026-02.json",
+      "month": "2026-02",
+      "sha256": "4d329455ae19ea69f452a56dbe9e478796cf6e015da67d711cef02ee108f93f6",
+      "sha256_file": "index_2026-02.json.sha256"
     }
   ],
   "rails": {
@@ -41,10 +46,5 @@
       "ssh-rsa"
     ]
   },
-  "schema_version": "EV424_PUBLIC_TOC_V1",
-  "counts": {
-    "CHANGELOG": 0,
-    "EVIDENCE": 12,
-    "SPEC": 0
-  }
+  "schema_version": "EV424_PUBLIC_TOC_V1"
 }

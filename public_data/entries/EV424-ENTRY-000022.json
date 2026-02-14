@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000022",
+  "type": "doc_passport",
+  "source": "1680afae3c",
+  "url": "https://rm.coe.int/1680afae3c",
+  "issued_date": "2026-02-14T11:21:50+0900",
+  "fingerprint_sha256": "1ac6c8a85f55446cdb53697b57c6be3ce8757068043992955eda571e7fe52f23",
+  "result_rep_sha256": "97c13a54de8ff64b346657b35f891dd8c7941ad46cf04b04d0803ca0491e2bab",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       1680afae3c\nISSUED_DATE  2026-02-14T11:21:50+0900\nFINGERPRINT  1ac6c8a85f55446cdb53697b57c6be3ce8757068043992955eda571e7fe52f23\nURL          https://rm.coe.int/1680afae3c\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=97c13a54de8ff64b346657b35f891dd8c7941ad46cf04b04d0803ca0491e2bab\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

@@ -1,80 +1,128 @@
 {
-  "generated_at": "2026-02-01T12:16:03+0900",
+  "counts": {
+    "EVIDENCE": 15
+  },
   "entries": [
     {
+      "entry_id": "EV424-ENTRY-000022",
+      "fingerprint": null,
+      "href": "entries/EV424-ENTRY-000022.json",
+      "issued_date": "2026-02-14T11:21:50+0900",
+      "sha256": "895b9880d0722971e4af1ea3b221c347a8a3cc736ae88928bf713ae6dd839532",
+      "sha256_file": "entries/EV424-ENTRY-000022.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000021",
+      "fingerprint": null,
+      "href": "entries/EV424-ENTRY-000021.json",
+      "issued_date": "2026-02-13T09:17:56+0900",
+      "sha256": "0b81c8f62017e661979faf453347e7a50217ee9a61247e1239d422565884395d",
+      "sha256_file": "entries/EV424-ENTRY-000021.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000020",
+      "fingerprint": null,
+      "href": "entries/EV424-ENTRY-000020.json",
+      "issued_date": "2026-02-12T13:29:53+0900",
+      "sha256": "52afce0d4898580cefcfe48fe4178856d693ea80005e2b43268de1a1e0e5f3ec",
+      "sha256_file": "entries/EV424-ENTRY-000020.json.sha256"
+    },
+    {
       "entry_id": "EV424-ENTRY-000019",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000019.json",
-      "sha256": "6acefe8a4161a652bd9c07ca3ac0d8976ea1849cf0fd8b25400a776cc06b918f",
+      "issued_date": "2026-02-11T09:30:30+0900",
+      "sha256": "70009adb61bd05a7d7d88c8fe88707089b2d9ae2b9ef9063f118b982ae1b2aa8",
       "sha256_file": "entries/EV424-ENTRY-000019.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000018",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000018.json",
-      "sha256": "79360e53263b96f217c3530bb9091cdb2e41dfcd43fe74d70369b2f4b2ba714d",
+      "issued_date": "2026-02-10T09:12:03+0900",
+      "sha256": "75aedfad68518f1ef63d04dc6a6a9d689a444a4e200748fe98964f8edef54479",
       "sha256_file": "entries/EV424-ENTRY-000018.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000017",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000017.json",
-      "sha256": "d93091cc6f8e85a04dc2341cef415511fcdcf2da83476c8220002e82ef98f419",
+      "issued_date": "2026-02-09T09:11:01+0900",
+      "sha256": "6505539ae19b6e1b0c846934c78212817d7f92016327d12adfdccbc9490246a6",
       "sha256_file": "entries/EV424-ENTRY-000017.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000016",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000016.json",
-      "sha256": "665182b905688dac7c3696d150a4151028e2ee3527a29a067ec4eddb2bd7f73e",
+      "issued_date": "2026-02-08T10:07:12+0900",
+      "sha256": "c10310c754a790f24ee347bd5ada79d18a1e30cd6ebf191c9132eb899fe05ed0",
       "sha256_file": "entries/EV424-ENTRY-000016.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000013",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000013.json",
-      "sha256": "ca3b0167286a577b934ee266c0c7647bb5723020b75e333e47db3425a30ce1e9",
+      "issued_date": "2026-02-06T09:45:41+0900",
+      "sha256": "d80238aa5177bd0d3ab50a108c135dd145ba1d1823109e60681dd3b2e515bc82",
       "sha256_file": "entries/EV424-ENTRY-000013.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000012",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000012.json",
-      "sha256": "6aff60f12fbbdb71992abcd49d6c4e266ec66fabc3df86ab8a9bf08ae4a86f0b",
+      "issued_date": "2026-02-05T11:12:43+0900",
+      "sha256": "b147ddfd38d576603de699edfdcfa0ce6e664d52161a6c1829fa720569c64071",
       "sha256_file": "entries/EV424-ENTRY-000012.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000011",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000011.json",
-      "sha256": "8501bff950b370cf341e69bb3e494f6a1db5e71c133293e6dff3b101c268d1db",
+      "issued_date": "2026-02-04T12:57:26+0900",
+      "sha256": "57675a56b5c854c107612788d19baff63ed5900db35ddd8fd5410f49bbb4d8e4",
       "sha256_file": "entries/EV424-ENTRY-000011.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000010",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000010.json",
-      "sha256": "b6bea8502a024995919c6445b02a01efb4a9e07fc4395bfcc8cb592ca6b75929",
+      "issued_date": "2026-02-03T18:28:25+0900",
+      "sha256": "71298a8a95dcd8843706aac00c481fa2c5a24ddc81cf27c7e37ae19257f34008",
       "sha256_file": "entries/EV424-ENTRY-000010.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000009",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000009.json",
-      "sha256": "a29fb011a5934a06e458691ca3004d44cc1275fd572e60726f0bba5da3f82362",
+      "issued_date": "2026-02-02T09:57:50+0900",
+      "sha256": "1c2dadcfaf5cf4f278ea99d8fc72ec4fb0444e5f60b1d0ec2bda93ff7bd7e444",
       "sha256_file": "entries/EV424-ENTRY-000009.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000008",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000008.json",
+      "issued_date": "2026-02-01T21:17:53+0900",
       "sha256": "d14870355ab20a4d764bbac7cf0b4549dfa2a845f80028f7b7ac07bfae7fd783",
       "sha256_file": "entries/EV424-ENTRY-000008.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000007",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000007.json",
-      "sha256": "46736c7afce25681e7e5efd75947ec53364dc61e1e3f9ef6aea818d43722960d",
+      "issued_date": "2026-02-01T13:42:40+0900",
+      "sha256": "6cbe01e74e16bcdc3d840573c9695d5e5514d3fae6a91d9c328e0254e1924c3c",
       "sha256_file": "entries/EV424-ENTRY-000007.json.sha256"
     },
     {
       "entry_id": "EV424-ENTRY-000006",
+      "fingerprint": null,
       "href": "entries/EV424-ENTRY-000006.json",
+      "issued_date": "2026-02-01T12:09:49+0900",
       "sha256": "bc04bbf841c3c8bd2809a2f580a8ee546cd4361f6cb3ff1692741062f92e1e6c",
       "sha256_file": "entries/EV424-ENTRY-000006.json.sha256"
     }
   ],
-  "counts": {
-    "EVIDENCE": 12
-  }
+  "generated_at": "2026-02-01T12:16:03+0900"
 }

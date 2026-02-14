@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000020",
+  "type": "doc_passport",
+  "source": "4046-the_fundamental_principles_of_the_international_red_cross_and_red_crescent_movement.pdf",
+  "url": "https://www.icrc.org/sites/default/files/topic/file_plus_list/4046-the_fundamental_principles_of_the_international_red_cross_and_red_crescent_movement.pdf",
+  "issued_date": "2026-02-12T13:29:53+0900",
+  "fingerprint_sha256": "e0065a27a406553d9382e7c73944a0a1cb1c0dcc807f1eec123a37a08a9d782d",
+  "result_rep_sha256": "b099e76d2c8052e6b3eee983defe54bbe7b7e3a0d8b3add1524196c231e1f624",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       4046-the_fundamental_principles_of_the_international_red_cross_and_red_crescent_movement.pdf\nISSUED_DATE  2026-02-12T13:29:53+0900\nFINGERPRINT  e0065a27a406553d9382e7c73944a0a1cb1c0dcc807f1eec123a37a08a9d782d\nURL          https://www.icrc.org/sites/default/files/topic/file_plus_list/4046-the_fundamental_principles_of_the_international_red_cross_and_red_crescent_movement.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=b099e76d2c8052e6b3eee983defe54bbe7b7e3a0d8b3add1524196c231e1f624\n\nAccuracy(4)=Truth(2)=Life(4)",
+  "fingerprint": null
+}
