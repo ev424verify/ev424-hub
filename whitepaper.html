@@ -52,7 +52,7 @@
     var b = document.getElementById(id);
     if(b) b.classList.add("active");
   }
-  function fetchText(url){
+    function fetchText(url){
     return fetch(url,{cache:"no-store"}).then(function(r){
       if(!r.ok) throw new Error("fetch failed: "+url+" status="+r.status);
       return r.text();
