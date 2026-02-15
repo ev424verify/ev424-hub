@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000023",
+  "type": "doc_passport",
+  "source": "?uri=CELEX:32024R1689",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024R1689",
+  "issued_date": "2026-02-15T12:26:34+0900",
+  "fingerprint_sha256": "bba630444b3278e881066774002a1d7824308934f49ccfa203e65be43692f55e",
+  "result_rep_sha256": "b49898178a7e18b3d8460571bc4d2532fccc5a860bf481ce113009ca8267938e",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ?uri=CELEX:32024R1689\nISSUED_DATE  2026-02-15T12:26:34+0900\nFINGERPRINT  bba630444b3278e881066774002a1d7824308934f49ccfa203e65be43692f55e\nURL          https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024R1689\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=b49898178a7e18b3d8460571bc4d2532fccc5a860bf481ce113009ca8267938e\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
