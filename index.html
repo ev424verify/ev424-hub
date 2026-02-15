@@ -586,9 +586,10 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
     for (const e of allEntries) {
       const entry_id = norm(e.entry_id);
       const sha256 = norm(e.sha256);
+      const rsha = norm(e.result_rep_sha256 || e.result_sha || "");
 
       if (isEntryId && entry_id && entry_id === q) return e;
-      if (isSha64   && sha256   && sha256   === q) return e;
+      if (isSha64 && ((sha256 && sha256===q) || (rsha && rsha===q))) return e;
     }
     return null;
   }
@@ -620,7 +621,8 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
           const entry_id = it?.entry_id ?? it?.id ?? "";
           const href = it?.href ?? it?.file ?? it?.path ?? "";
           const sha256 = it?.sha256 ?? "";
-          const sha256_file = it?.sha256_file ?? "";
+            const rsha = it?.result_rep_sha256 ?? it?.result_sha ?? "";
+            const sha256_file = it?.sha256_file ?? "";
           const open_url = href ? ("/public_data/" + String(href).replace(/^\/+/, "")) : null;
 
           out.push({
@@ -630,7 +632,8 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
             href,
             sha256,
             sha256_file,
-            open_url
+              result_rep_sha256: rsha,
+              open_url
           });
         }
       }
