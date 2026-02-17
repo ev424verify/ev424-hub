@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000025",
+  "type": "doc_passport",
+  "source": "EPRS_BRI(2026)782651_EN.pdf",
+  "url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI(2026)782651_EN.pdf",
+  "issued_date": "2026-02-17T19:35:34+0900",
+  "fingerprint_sha256": "55fde3822a3492aecf1930aaabbb95574186878991525d4d4dce912c8cbfcb7b",
+  "result_rep_sha256": "4ad0d5b48fc81425614793e79031e041d1b37bb03b7161c015b9e240f7560ef9",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EPRS_BRI(2026)782651_EN.pdf\nISSUED_DATE  2026-02-17T19:35:34+0900\nFINGERPRINT  55fde3822a3492aecf1930aaabbb95574186878991525d4d4dce912c8cbfcb7b\nURL          https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI(2026)782651_EN.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=4ad0d5b48fc81425614793e79031e041d1b37bb03b7161c015b9e240f7560ef9\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
