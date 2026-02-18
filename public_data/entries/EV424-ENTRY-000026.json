@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000026",
+  "type": "doc_passport",
+  "source": "guideline-computerised-systems-and-electronic-data-clinical-trials_en.pdf",
+  "url": "https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/guideline-computerised-systems-and-electronic-data-clinical-trials_en.pdf",
+  "issued_date": "2026-02-18T10:21:59+0900",
+  "fingerprint_sha256": "43a7673c4125519160c159b9c117a7a2437e93a51af39da47a8fe3f9c34b85b2",
+  "result_rep_sha256": "2a37d50071d5db90bdfce22101c9de6356c2b1d2b6acc3900a7fa291ba7ad996",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       guideline-computerised-systems-and-electronic-data-clinical-trials_en.pdf\nISSUED_DATE  2026-02-18T10:21:59+0900\nFINGERPRINT  43a7673c4125519160c159b9c117a7a2437e93a51af39da47a8fe3f9c34b85b2\nURL          https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/guideline-computerised-systems-and-electronic-data-clinical-trials_en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=2a37d50071d5db90bdfce22101c9de6356c2b1d2b6acc3900a7fa291ba7ad996\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
