@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000027",
+  "type": "doc_passport",
+  "source": "cb6d9eca-en.pdf",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/oecd-framework-for-the-classification-of-ai-systems_336a8b57/cb6d9eca-en.pdf",
+  "issued_date": "2026-02-19T14:34:06+0900",
+  "fingerprint_sha256": "6195881430cb53f4050bfa9fbb825f724c6778c0e1218986ca2a15b177a9bc9f",
+  "result_rep_sha256": "aaab718083a35894f855d147d3c90b68de7dafa8f6f87db0a339adedc545c777",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       cb6d9eca-en.pdf\nISSUED_DATE  2026-02-19T14:34:06+0900\nFINGERPRINT  6195881430cb53f4050bfa9fbb825f724c6778c0e1218986ca2a15b177a9bc9f\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/02/oecd-framework-for-the-classification-of-ai-systems_336a8b57/cb6d9eca-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=aaab718083a35894f855d147d3c90b68de7dafa8f6f87db0a339adedc545c777\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
