@@ -406,7 +406,7 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
               <div class="v" style="font-weight:600;color:var(--muted);margin-top:6px">It does not judge truth/safety/meaning and does not host, mirror, or redistribute official documents.</div>
               <div class="v" style="font-weight:600;color:var(--muted);margin-top:6px">Enter an ENTRY_ID or SHA-256 to view the deterministic FINAL RECEIPT and re-verify independently.</div>
               <div class="k" style="margin-top:12px">3-step</div>
-              <div class="v" style="font-weight:600">1) Input: <span style="color:var(--blue)">EV424-ENTRY-000028</span> (example)</div>
+              <div class="v" style="font-weight:600">1) Input: <a href="/?q=EV424-ENTRY-000028" style="color:var(--blue);text-decoration:underline;font-weight:700">EV424-ENTRY-000028</a> (example)</div>
               <div class="v" style="font-weight:600">2) Output: FINAL RECEIPT (G1–G5 PASS/FAIL)</div>
               <div class="v" style="font-weight:600">3) Re-verify: follow the receipt’s SHA-256 method (same bytes → same hash)</div>
             </div>
@@ -535,6 +535,7 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
 
   function showResult(tag, title, obj) {
     resultWrap.hidden = false;
+    try{ resultWrap.scrollIntoView({block:"start"}); }catch(e){}
     resultTag.textContent = tag;
     resultTitle.textContent = title || "";
 
@@ -654,9 +655,9 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
 
     return allEntriesPromise;
   }
-  async function onCheck() {
+  async function onCheck(opts){
     // fold/reset UX
-    if (!resultWrap.hidden) {
+    if (!resultWrap.hidden && !(opts && opts.autorun)) {
       resetUI();
       qEl.value = "";
       qEl.focus();
@@ -747,10 +748,16 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
   // Auto-run: /?q=...
   (function(){ try{
     const p=new URLSearchParams(location.search);
-    const q=p.get("q");
+    let q=p.get("q");
+    if(!q && location.hash.startsWith("#q=")){
+      q=location.hash.slice(3);
+    }
+    if(!q && location.pathname.startsWith("/r/")){
+      q=decodeURIComponent(location.pathname.slice(3));
+    }
     if(!q) return;
     qEl.value = q;
-    setTimeout(()=>checkBtn.click(), 50);
+    setTimeout(() => { try { onCheck({autorun:true}); } catch (e) { try { checkBtn.click(); } catch (_) {} } }, 50);
   }catch(e){} })();
 })();
   </script>
