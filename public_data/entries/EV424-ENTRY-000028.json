@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000028",
+  "type": "doc_passport",
+  "source": "ENISA%20Threat%20Landscape%202025.pdf",
+  "url": "https://www.enisa.europa.eu/sites/default/files/2025-11/ENISA%20Threat%20Landscape%202025.pdf",
+  "issued_date": "2026-02-20T12:11:28+0900",
+  "fingerprint_sha256": "7159159084473e903f1bf05be56f88d2f666e847beae00a9a70253c51f3dfef0",
+  "result_rep_sha256": "38a4ed70b3b5b1098e7f74d06f97496b16131d15dd439d07a308e1f644f0e5ea",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ENISA%20Threat%20Landscape%202025.pdf\nISSUED_DATE  2026-02-20T12:11:28+0900\nFINGERPRINT  7159159084473e903f1bf05be56f88d2f666e847beae00a9a70253c51f3dfef0\nURL          https://www.enisa.europa.eu/sites/default/files/2025-11/ENISA%20Threat%20Landscape%202025.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=38a4ed70b3b5b1098e7f74d06f97496b16131d15dd439d07a308e1f644f0e5ea\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
