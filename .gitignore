@@ -19,3 +19,7 @@ _quarantine*/
 
 pages_baton_log.jsonl
 pages_baton_log.jsonl.sha256
+
+# local backups (do not commit)
+_stake_index_*.html
+_roll_index_*.html
