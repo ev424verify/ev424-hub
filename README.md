@@ -14,6 +14,7 @@ EV424 does NOT:
 - host, mirror, or redistribute original files
 
 Local reproducibility (Preflight Spec)  
+Note: This document defines the contract; implementation may be added in later commits.
 Don’t trust me. Trust the exit code, SHA-256, and the normalized JSON.  
 See: docs/local_repro_preflight_spec_v2026-02-21_en.md
 
