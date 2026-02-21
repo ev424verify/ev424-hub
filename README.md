@@ -4,6 +4,8 @@ EV424 Evidence Definition
 • Not a single byte changes.  
 • If it cannot be reproduced, it is not evidence.
 
+What to do (30s): Open the stable reference and verify the receipt SHA-256 over time.
+
 README
 
 EV424verify.com is a SHA-256–based, non-custodial integrity verification tool.  
