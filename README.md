@@ -1,3 +1,9 @@
+EV424 Evidence Definition
+
+• Don’t Trust, Verify  
+• Not a single byte changes.  
+• If it cannot be reproduced, it is not evidence.
+
 README
 
 EV424verify.com is a SHA-256–based, non-custodial integrity verification tool.  
