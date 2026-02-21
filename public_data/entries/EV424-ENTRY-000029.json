@@ -1,0 +1,16 @@
+{
+  "entry_id": "EV424-ENTRY-000029",
+  "type": "doc_passport",
+  "source": "ncsc-annual-review-2025.pdf",
+  "url": "https://www.ncsc.gov.uk/files/ncsc-annual-review-2025.pdf",
+  "issued_date": "2026-02-21T14:29:02+0900",
+  "fingerprint_sha256": "95c17767c4776e7dce06d50902f14479c972c0510f478c3c654cc78d8ae254ec",
+  "result_rep_sha256": "24d4cefe5afbf968e6c09d1d45a30d47758cd20560b7cfe4cece6d2ee2a9f3e9",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ncsc-annual-review-2025.pdf\nISSUED_DATE  2026-02-21T14:29:02+0900\nFINGERPRINT  95c17767c4776e7dce06d50902f14479c972c0510f478c3c654cc78d8ae254ec\nURL          https://www.ncsc.gov.uk/files/ncsc-annual-review-2025.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=24d4cefe5afbf968e6c09d1d45a30d47758cd20560b7cfe4cece6d2ee2a9f3e9\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
