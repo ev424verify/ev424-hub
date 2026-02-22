@@ -1,0 +1,21 @@
+{
+  "entry_id": "EV424-ENTRY-000030",
+  "type": "doc_passport",
+  "source": "secure-by-design-alert-eliminating-buffer-overflow-vulnerabilities-508c.pdf",
+  "url": "https://www.cisa.gov/sites/default/files/2025-02/secure-by-design-alert-eliminating-buffer-overflow-vulnerabilities-508c.pdf",
+  "issued_date": "2026-02-22T13:34:24+0900",
+  "fingerprint_sha256": "7d8f8598cb678e2fe9b164cd96d2eeba829ae466747876e8e31fdbf8b05e5744",
+  "result_rep_sha256": "8aa21d0d556e4efb9e1dbf0dc8897a6019b50421bfb2e8362797f3a2b868963c",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "ots_rep_file": "bundle.sha256",
+  "ots_rep_sha256": "53c756cdbb3faaa1a6bef2505be04d92227a80a2de85e500caf54ab5c52da915",
+  "ots_file": "bundle.sha256.ots",
+  "ots_sha256": "6730eeda4f63828dc3114f767975b36c621a52717ef5fa3cd301caa7aa411d2a",
+  "ots_status": "REQUESTED",
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       secure-by-design-alert-eliminating-buffer-overflow-vulnerabilities-508c.pdf\nISSUED_DATE  2026-02-22T13:34:24+0900\nFINGERPRINT  7d8f8598cb678e2fe9b164cd96d2eeba829ae466747876e8e31fdbf8b05e5744\nURL          https://www.cisa.gov/sites/default/files/2025-02/secure-by-design-alert-eliminating-buffer-overflow-vulnerabilities-508c.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=8aa21d0d556e4efb9e1dbf0dc8897a6019b50421bfb2e8362797f3a2b868963c\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
