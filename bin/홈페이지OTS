@@ -1,0 +1,141 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# === FIXED PATHS (SSOT-aligned) ===
+ENV_FILE="/home/ec2-user/.ev424_web_last.env"
+PAGES_ROOT="/home/ec2-user/ev424_pages_site/public_data"
+ENTRIES_DIR="${PAGES_ROOT}/entries"
+OBS_SEAL_GLOB="/home/ec2-user/ev424_v2/seal/obs/*_daily_obs_v2_bundle"
+OTS_BIN="/home/ec2-user/.local/bin/ots"
+
+fail() { echo "FAIL: $*" >&2; exit 1; }
+
+# === ENV ===
+test -f "$ENV_FILE" || fail "ENV missing: ${ENV_FILE} (run 홈페이지2 first)"
+# shellcheck disable=SC1090
+source "$ENV_FILE"
+: "${LAST_ENTRY_ID:?FAIL: LAST_ENTRY_ID missing in ENV (run 홈페이지2 first)}"
+
+ENTRY_JSON="${ENTRIES_DIR}/${LAST_ENTRY_ID}.json"
+test -f "$ENTRY_JSON" || fail "entry json missing: ${ENTRY_JSON}"
+
+# === Pick latest sealed bundle dir (low-load) ===
+BDIR="$(ls -1dt ${OBS_SEAL_GLOB} 2>/dev/null | head -n 1 || true)"
+test -n "$BDIR" || fail "no sealed obs bundle dir found under: ${OBS_SEAL_GLOB}"
+test -d "$BDIR" || fail "bundle dir not found: ${BDIR}"
+
+REP_FILE="bundle.sha256"
+OTS_FILE="bundle.sha256.ots"
+
+cd "$BDIR"
+test -f "$REP_FILE" || fail "missing ${REP_FILE} in ${BDIR}"
+
+# === OTS stamp (immutable) ===
+if [ ! -f "$OTS_FILE" ]; then
+  if [ -x "$OTS_BIN" ]; then
+    "$OTS_BIN" stamp "$REP_FILE"
+  else
+    command -v ots >/dev/null 2>&1 || fail "ots not found in PATH and ${OTS_BIN} not executable"
+    ots stamp "$REP_FILE"
+  fi
+fi
+test -f "$OTS_FILE" || fail "ots file not created: ${BDIR}/${OTS_FILE}"
+
+# === Hashes (FACT) ===
+REP_SHA256="$(sha256sum "$REP_FILE" | awk '{print $1}')"
+OTS_SHA256="$(sha256sum "$OTS_FILE" | awk '{print $1}')"
+
+# === ots info parse (CR-safe) ===
+INFO_OUT="$(
+  if [ -x "$OTS_BIN" ]; then
+    "$OTS_BIN" info "$OTS_FILE"
+  else
+    ots info "$OTS_FILE"
+  fi
+)"
+INFO_OUT="$(printf '%s' "$INFO_OUT" | tr -d '\r')"
+
+PENDING_SRC="$(printf '%s\n' "$INFO_OUT" \
+  | sed -n "s/.*PendingAttestation('\\\\([^']*\\\\)').*/\\\\1/p" \
+  | head -n 1 || true)"
+
+OTS_STATUS="REQUESTED"
+if [ -n "$PENDING_SRC" ]; then
+  OTS_STATUS="REQUESTED"
+fi
+
+# NOTE: CONFIRMED parsing is intentionally NOT inferred here.
+# We only record REQUESTED + pending_src (if any). A future explicit "commit/verify" step may upgrade to CONFIRMED.
+
+# === Idempotent gate (entry json) ===
+get_json() { jq -r "$1 // empty" "$ENTRY_JSON"; }
+
+ck_eq_or_empty() {
+  local key="$1" expect="$2" cur
+  cur="$(get_json ".$key")"
+  if [ -n "$cur" ] && [ "$cur" != "$expect" ]; then
+    fail "idempotent mismatch: entry.$key=${cur} != ${expect}"
+  fi
+}
+
+ck_eq_or_empty "ots_rep_file"   "$REP_FILE"
+ck_eq_or_empty "ots_rep_sha256" "$REP_SHA256"
+ck_eq_or_empty "ots_file"       "$OTS_FILE"
+ck_eq_or_empty "ots_sha256"     "$OTS_SHA256"
+ck_eq_or_empty "ots_status"     "$OTS_STATUS"
+if [ -n "$PENDING_SRC" ]; then
+  ck_eq_or_empty "ots_pending_src" "$PENDING_SRC"
+fi
+
+# If everything already present and equal -> no rewrite (strict idempotent)
+ALL_PRESENT=1
+for k in ots_rep_file ots_rep_sha256 ots_file ots_sha256 ots_status; do
+  v="$(get_json ".$k")"
+  if [ -z "$v" ]; then ALL_PRESENT=0; fi
+done
+if [ -n "$PENDING_SRC" ]; then
+  v="$(get_json ".ots_pending_src")"
+  if [ -z "$v" ]; then ALL_PRESENT=0; fi
+fi
+
+if [ "$ALL_PRESENT" -eq 1 ]; then
+  echo "OK: 홈페이지OTS IDEMPOTENT (no change)"
+  echo "OTS_IMMUTABILITY=OK | REP_SHA256=${REP_SHA256} | OTS_SHA256=${OTS_SHA256}"
+  if [ -n "$PENDING_SRC" ]; then
+    echo "OTS_STATUS=${OTS_STATUS} | OTS_PENDING_SRC=${PENDING_SRC}"
+  else
+    echo "OTS_STATUS=${OTS_STATUS}"
+  fi
+  exit 0
+fi
+
+# === Update entry json (separate meta; receipt_text untouched) ===
+TMP="$(mktemp)"
+jq \
+  --arg rep_file "$REP_FILE" \
+  --arg rep_sha  "$REP_SHA256" \
+  --arg ots_file "$OTS_FILE" \
+  --arg ots_sha  "$OTS_SHA256" \
+  --arg status   "$OTS_STATUS" \
+  --arg pending  "$PENDING_SRC" \
+  '
+  .ots_rep_file   = $rep_file
+  | .ots_rep_sha256 = $rep_sha
+  | .ots_file      = $ots_file
+  | .ots_sha256    = $ots_sha
+  | .ots_status    = $status
+  | (if $pending != "" then .ots_pending_src = $pending else . end)
+  ' "$ENTRY_JSON" > "$TMP"
+
+# Atomic replace (홈페이지7/홈페이지3도 동일 방식으로 업데이트하므로 허용)
+mv "$TMP" "$ENTRY_JSON"
+
+echo "OK: 홈페이지OTS UPDATED entry meta"
+echo "ENTRY_ID=${LAST_ENTRY_ID}"
+echo "BUNDLE_DIR=${BDIR}"
+echo "OTS_IMMUTABILITY=OK | REP_SHA256=${REP_SHA256} | OTS_SHA256=${OTS_SHA256}"
+if [ -n "$PENDING_SRC" ]; then
+  echo "OTS_STATUS=${OTS_STATUS} | OTS_PENDING_SRC=${PENDING_SRC}"
+else
+  echo "OTS_STATUS=${OTS_STATUS}"
+fi
