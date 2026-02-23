@@ -32,7 +32,7 @@ Stable reference (always available):
 https://ev424verify.com/?q=EV424-ENTRY-000019
 
 Latest verified entry (updated):  
-https://ev424verify.com/?q=EV424-ENTRY-000024
+https://ev424verify.com/?q=EV424-ENTRY-000031
 
 Security / Tests (baseline)
 
