@@ -1,0 +1,21 @@
+{
+  "entry_id": "EV424-ENTRY-000031",
+  "type": "doc_passport",
+  "source": "bitcoin.pdf",
+  "url": "https://bitcoin.org/bitcoin.pdf",
+  "issued_date": "2026-02-23T08:52:11+0900",
+  "fingerprint_sha256": "b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553",
+  "result_rep_sha256": "3c89fbfa13e3ad31befb96d0e0ab02f46c7e54d4a09d9b40a0bff4289cdfbe27",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "ots_rep_file": "bundle.sha256",
+  "ots_rep_sha256": "0caf372c9d6b56058ab0cdb0ede2c4bc951103fd62686d0d98fd7b98eb82828e",
+  "ots_file": "bundle.sha256.ots",
+  "ots_sha256": "935881aa7ceaa4a8a0cf4051a50c9b623e779efef5db2c3d219fab996393db15",
+  "ots_status": "REQUESTED",
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       bitcoin.pdf\nISSUED_DATE  2026-02-23T08:52:11+0900\nFINGERPRINT  b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553\nURL          https://bitcoin.org/bitcoin.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=3c89fbfa13e3ad31befb96d0e0ab02f46c7e54d4a09d9b40a0bff4289cdfbe27\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
