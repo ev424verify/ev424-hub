@@ -1,0 +1,21 @@
+{
+  "entry_id": "EV424-ENTRY-000033",
+  "type": "doc_passport",
+  "source": "?uri=OJ:L_202401689",
+  "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689",
+  "issued_date": "2026-02-25T11:21:19+0900",
+  "fingerprint_sha256": "bba630444b3278e881066774002a1d7824308934f49ccfa203e65be43692f55e",
+  "result_rep_sha256": "1ac51ecbea9193f2f0cf7c369c039aa7671f794be0c248889d5a03f108045c1a",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "ots_rep_file": "bundle.sha256",
+  "ots_rep_sha256": "0caf372c9d6b56058ab0cdb0ede2c4bc951103fd62686d0d98fd7b98eb82828e",
+  "ots_file": "bundle.sha256.ots",
+  "ots_sha256": "935881aa7ceaa4a8a0cf4051a50c9b623e779efef5db2c3d219fab996393db15",
+  "ots_status": "REQUESTED",
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ?uri=OJ:L_202401689\nISSUED_DATE  2026-02-25T11:21:19+0900\nFINGERPRINT  bba630444b3278e881066774002a1d7824308934f49ccfa203e65be43692f55e\nURL          https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401689\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=1ac51ecbea9193f2f0cf7c369c039aa7671f794be0c248889d5a03f108045c1a\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
