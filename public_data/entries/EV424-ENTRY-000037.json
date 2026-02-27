@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000037",
+  "type": "doc_passport",
+  "source": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+  "source_label": "ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+  "url": "https://www.enisa.europa.eu/sites/default/files/2025-06/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf",
+  "issued_date": "2026-02-27T09:18:09+0900",
+  "fingerprint_sha256": "f03186edb047ece269ab9de0bee3f0ec6172582ccc577617f0eb79e9bf96a7021b",
+  "result_rep_sha256": "8e5682536eaa3b7a20be23336cbd7269f2d30406cc6f9a096bcc2f0dbaa52826",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf\nISSUED_DATE  2026-02-27T09:18:09+0900\nFINGERPRINT  f03186edb047ece269ab9deeb3f0ec6172582ccc577617f0eb79e9bf96a7021b\nURL          https://www.enisa.europa.eu/sites/default/files/2025-06/ENISA_Technical_implementation_guidance_on_cybersecurity_risk_management_measures_version_1.0.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=8e5682536eaa3b7a20be23336cbd7269f2d30406cc6f9a096bcc2f0dbaa52826\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000035",
+  "type": "doc_passport",
+  "source": "bash.pdf",
+  "source_label": "GNU_Bash_Manual.pdf",
+  "url": "https://www.gnu.org/software/bash/manual/bash.pdf",
+  "issued_date": "2026-02-27T00:09:28+0900",
+  "fingerprint_sha256": "6652f0353ee8027f5069afd3adabeeeaa9a50347a212361736f18ad4efbe69de7",
+  "result_rep_sha256": "1796ec42b1e671f382ac04471441b711e713ad1afeaf80cf52926734995ca5b6",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       bash.pdf\nISSUED_DATE  2026-02-27T00:09:28+0900\nFINGERPRINT  6652f0353ee8027f5069afd3adabeeaa9a50347a212361736f18ad4efbe69de7\nURL          https://www.gnu.org/software/bash/manual/bash.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=1796ec42b1e671f382ac04471441b711e713ad1afeaf80cf52926734995ca5b6\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
