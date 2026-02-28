@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000039",
+  "type": "doc_passport",
+  "source": "SecureByDemandGuide_080624_508c.pdf",
+  "source_label": "SecureByDemandGuide_080624_508c.pdf",
+  "url": "https://www.cisa.gov/sites/default/files/2024-08/SecureByDemandGuide_080624_508c.pdf",
+  "issued_date": "2026-02-28T23:45:45+0900",
+  "fingerprint_sha256": "4efa7d2e082dcb7f6d53f2812c9eeb4bb420b3e8d811df6df664021b13d9edca",
+  "result_rep_sha256": "bd47522fadcd5c93a116e160e88b7dd854d8dd8f4479aa5bf06ab9d91d70d049",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       SecureByDemandGuide_080624_508c.pdf\nISSUED_DATE  2026-02-28T23:45:45+0900\nFINGERPRINT  4efa7d2e082dcb7f6d53f2812c9eeb4bb420b3e8d811df6df664021b13d9edca\nURL          https://www.cisa.gov/sites/default/files/2024-08/SecureByDemandGuide_080624_508c.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=bd47522fadcd5c93a116e160e88b7dd854d8dd8f4479aa5bf06ab9d91d70d049\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
