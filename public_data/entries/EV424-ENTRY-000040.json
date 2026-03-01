@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000040",
+  "type": "doc_passport",
+  "source": "paper.pdf",
+  "source_label": "GW250114_P2500461_paper.pdf",
+  "url": "https://dcc.ligo.org/public/0201/P2500461/007/paper.pdf",
+  "issued_date": "2026-03-01T16:17:19+0900",
+  "fingerprint_sha256": "dc5b7765287d90beadfaa5bbb4fe9b633d019221d836bdc4fe500d43f1191e7c",
+  "result_rep_sha256": "d00d9d570c6c633ae306331fd821dda68d0ca02605df4169746ecade5642ccff",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       paper.pdf\nISSUED_DATE  2026-03-01T16:17:19+0900\nFINGERPRINT  dc5b7765287d90beadfaa5bbb4fe9b633d019221d836bdc4fe500d43f1191e7c\nURL          https://dcc.ligo.org/public/0201/P2500461/007/paper.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=d00d9d570c6c633ae306331fd821dda68d0ca02605df4169746ecade5642ccff\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
