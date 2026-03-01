@@ -11,6 +11,8 @@ README
 EV424verify.com is a SHA-256–based, non-custodial integrity verification tool.  
 It verifies byte-level sameness without storing, hosting, or mirroring original files.
 
+Not affiliated. Link-only. No mirroring/hosting of original documents — only integrity receipts and reproducibility artifacts.
+
 EV424 — Reproducible Integrity Receipts  
 (Same Bytes → Same SHA-256)
 
@@ -20,6 +22,9 @@ EV424 does NOT:
 - judge truth, safety, or legality
 - analyze content
 - host, mirror, or redistribute original files
+
+Milestone (2026-03-01 KST)
+- EV424-ENTRY-000040 (GW250114): first E2E case closed with link-only verification + reproducible receipt + locally reproduced artifacts sealed by SHA-256.
 
 Local reproducibility (Preflight Spec)  
 Note: This document defines the contract; implementation may be added in later commits.
@@ -32,7 +37,7 @@ Stable reference (always available):
 https://ev424verify.com/?q=EV424-ENTRY-000019
 
 Latest verified entry (updated):  
-https://ev424verify.com/?q=EV424-ENTRY-000031
+https://ev424verify.com/?q=EV424-ENTRY-000040
 
 Security / Tests (baseline)
 
