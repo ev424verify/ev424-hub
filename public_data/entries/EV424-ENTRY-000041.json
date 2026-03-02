@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000041",
+  "type": "doc_passport",
+  "source": "guiding-principles-good-ai-practice-drug-development_en.pdf",
+  "source_label": "guiding-principles-good-ai-practice-drug-development_en.pdf",
+  "url": "https://www.ema.europa.eu/en/documents/other/guiding-principles-good-ai-practice-drug-development_en.pdf",
+  "issued_date": "2026-03-02T11:23:34+0900",
+  "fingerprint_sha256": "08880e6fe51a0f17ba40168ea21953e5a4b600d97d66e2193000cbc87ab75f99",
+  "result_rep_sha256": "4b43c47b29cf81979bd209125350b81b46281ec9cec355d14f14971b28311b55",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       guiding-principles-good-ai-practice-drug-development_en.pdf\nISSUED_DATE  2026-03-02T11:23:34+0900\nFINGERPRINT  08880e6fe51a0f17ba40168ea21953e5a4b600d97d66e2193000cbc87ab75f99\nURL          https://www.ema.europa.eu/en/documents/other/guiding-principles-good-ai-practice-drug-development_en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=4b43c47b29cf81979bd209125350b81b46281ec9cec355d14f14971b28311b55\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
