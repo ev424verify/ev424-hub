@@ -148,7 +148,12 @@
       td{display:block}
       tr td:first-child, tr td:last-child{border-radius:14px}
     }
-  </style>
+  
+/* EV424_DESKTOP_RELOAD_TUNE */
+@media (min-width: 821px){
+  #reloadBtn{ height: 44px; padding: 0 16px; }
+}
+</style>
 </head>
 <body>
   <div class="bg"></div>
@@ -171,11 +176,21 @@
 
       <div class="row">
         <input id="q" class="inp" placeholder="Filter by id / sha256 / title / filename" autocomplete="off" spellcheck="false" />
+<!-- QUICK_SEARCH_HELP -->
+<div id="quickSearchHelp" style="margin:10px 0 14px; padding:10px 12px; border:1px solid rgba(255,255,255,0.10); border-radius:12px; background:rgba(255,255,255,0.03); font-size:13px; line-height:1.5; opacity:0.95;">
+  <div style="font-weight:700; margin-bottom:6px;">Quick Search</div>
+  <div>• Type <b>2+ chars</b> (e.g., <code>nist</code>, <code>cisa</code>, <code>docs</code>) to list matching entries below.</div>
+  <div>• Type an <b>ENTRY_ID</b> (<code>EV424-ENTRY-000006</code>) or a <b>64-hex SHA-256</b> to jump directly to the <b>FINAL RECEIPT</b> (verification rail).</div>
+  <div>• In results: <b>Open</b> = receipt view (<code>/?q=...</code>), <b>source</b> = official PDF (view-only, new tab).</div>
+</div>      </div>
+
+<!-- EV424_BUTTON_ROW_MOVED -->
+<div class="row" style="margin-top:10px;">
+
         <button id="reloadBtn" class="btn solid" type="button">Reload</button>
           <a class="btn" href="weekly/index.json" target="_blank" rel="noopener">WEEK</a>
         <a class="btn" href="../index.html">Back</a>
-      </div>
-
+</div>
       <div class="meta">
         <div class="pill">generated_at: <span id="genAt" class="mono">-</span></div>
         <div class="pill">months: <span id="monthsN" class="mono">-</span></div>
@@ -197,7 +212,15 @@
             <th style="width:120px;">OPEN</th>
           </tr>
         </thead>
-        <tbody id="rows"></tbody>
+        
+<section id="searchPanel" style="display:none; margin:12px 0; padding:12px; border:1px solid rgba(255,255,255,0.08); border-radius:12px;">
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px;">
+    <div style="font-weight:700;">Search Results</div>
+    <div id="searchMeta" style="opacity:0.8; font-size:12px;"></div>
+  </div>
+  <div id="searchRows"></div>
+</section>
+<tbody id="rows"></tbody>
       </table>
       <div id="empty" class="note" hidden>No items matched.</div>
     </section>
@@ -344,8 +367,8 @@
         setStatus("ok","READY");
         render(flat);
 
-        qEl.addEventListener("input", () => render(flat));
-        reloadBtn.addEventListener("click", () => main());
+        /* DISABLED: month-filter input handler (replaced by catalog search install()) */
+        reloadBtn.addEventListener("click", () => { try { handleQuery((document.getElementById("q")||{}).value); } catch(e) {} main(); });
       } catch(e){
         setStatus("err","ERROR");
         rowsEl.innerHTML = "";
@@ -357,5 +380,116 @@
     main();
   })();
   </script>
+
+<script>
+(function () {
+  var CATALOG_URL = "/public_data/catalog.json";
+  var _catalog = null;
+
+  function isEntryId(q){ return /^EV424-ENTRY-\d{6}$/.test(q); }
+  function isHex64(q){ return /^[0-9a-fA-F]{64}$/.test(q); }
+
+  function esc(x){
+    return String(x).replace(/[&<>"']/g, function(m){
+      return ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"})[m];
+    });
+  }
+
+  function renderSearch(items, q){
+    var panel = document.getElementById("searchPanel");
+    var meta  = document.getElementById("searchMeta");
+    var rows  = document.getElementById("searchRows");
+    if (!panel || !meta || !rows) return;
+
+    if (!q || q.length < 2){
+      panel.style.display = "none";
+      rows.innerHTML = "";
+      meta.textContent = "";
+      return;
+    }
+
+    panel.style.display = "block";
+    meta.textContent = 'q="' + q + '"  hits=' + items.length;
+
+    var html = items.map(function(it){
+      var entryId = it.entry_id || "";
+      var title   = it.title || it.subject || "(untitled)";
+      var issued  = it.issued_kst || it.issued_date || "";
+      var url     = it.url || "";
+      var openHref = "/?q=" + encodeURIComponent(entryId);
+      return ""
+        + '<div style="padding:10px 0; border-top:1px solid rgba(255,255,255,0.08);">'
+        +   '<div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">'
+        +     '<a class="btn ghost" href="' + esc(openHref) + '">Open</a>'
+        +     '<span style="font-weight:700;">' + esc(entryId) + '</span>'
+        +     '<span style="opacity:0.85;">' + esc(title) + '</span>'
+        +   '</div>'
+        +   '<div style="margin-top:6px; opacity:0.8; font-size:12px; line-height:1.35;">'
+        +     '<div style="word-break:break-word; overflow-wrap:anywhere;">issued: ' + esc(issued) + '</div>'
+        +     '<div style="word-break:break-word; overflow-wrap:anywhere;">source: <a style="word-break:break-word; overflow-wrap:anywhere;" href="' + esc(url) + '" target="_blank" rel="noreferrer">' + esc(url) + '</a></div>'
+        +   '</div>'
+        + '</div>';
+    }).join("");
+
+    rows.innerHTML = html || '<div style="opacity:0.8; padding:10px 0;">no hits</div>';
+  }
+
+  function loadCatalog(){
+    if (_catalog) return Promise.resolve(_catalog);
+    return fetch(CATALOG_URL, {cache:"no-store"}).then(function(r){
+      if (!r.ok) throw new Error("catalog_fetch_fail status=" + r.status);
+      return r.json();
+    }).then(function(j){
+      _catalog = j;
+      return j;
+    });
+  }
+
+  function handleQuery(raw){
+    var q = (raw || "").trim();
+    if (isEntryId(q) || isHex64(q)){
+      window.location.href = "/?q=" + encodeURIComponent(q);
+      return;
+    }
+    if (q.length < 2){
+      renderSearch([], "");
+      return;
+    }
+    loadCatalog().then(function(cat){
+      var items = (cat && Array.isArray(cat.items)) ? cat.items : [];
+      var ql = q.toLowerCase();
+      var hits = items.filter(function(it){
+        try { return JSON.stringify(it).toLowerCase().indexOf(ql) !== -1; }
+        catch(e){ return false; }
+      }).slice(0, 50);
+      renderSearch(hits, q);
+    }).catch(function(err){
+      var panel = document.getElementById("searchPanel");
+      var meta  = document.getElementById("searchMeta");
+      if (panel && meta){
+        panel.style.display = "block";
+        meta.textContent = "ERROR: " + (err && err.message ? err.message : String(err));
+      }
+    });
+  }
+
+  function install(){
+    var qEl = document.getElementById("q");
+    if (!qEl) return;
+
+    // remove existing listeners by clone-replace (keeps month tables intact)
+    var v = qEl.value;
+    var qClone = qEl.cloneNode(true);
+    qClone.value = v;
+    qEl.parentNode.replaceChild(qClone, qEl);
+
+    qClone.addEventListener("input", function(e){ handleQuery(e.target.value); });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", install);
+  else install();
+})();
+</script>
+
 </body>
 </html>

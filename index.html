@@ -495,6 +495,7 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
 
   <script>
 (() => {
+// EV424_LOADING_PATCH_APPLIED
   const TOC_URL = "/public_data/toc.json";
 
   const qEl = document.getElementById("q");
@@ -575,12 +576,29 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
     resultBody.textContent = "";
     setTagStyle("nf");
   }
+    async function fetchJSON(url) {
+      const isCacheable =
+        (url === "/public_data/toc.json") ||
+        url.startsWith("/public_data/index_");
 
-  async function fetchJSON(url) {
-    const r = await fetch(url, { cache: "no-store" });
-    if (!r.ok) throw new Error(`fetch failed: ${url} :: ${r.status} ${r.statusText}`);
-    return await r.json();
-  }
+      const cacheKey = "EV424:JSONCACHE:v2:" + url;
+
+      if (isCacheable) {
+        try {
+          const hit = sessionStorage.getItem(cacheKey);
+          if (hit) return JSON.parse(hit);
+        } catch (e) {}
+      }
+
+      const r = await fetch(url, { cache: "no-store" });
+      if (!r.ok) throw new Error("fetch failed: " + url + " :: " + r.status + " " + r.statusText);
+      const data = await r.json();
+
+      if (isCacheable) {
+        try { sessionStorage.setItem(cacheKey, JSON.stringify(data)); } catch (e) {}
+      }
+      return data;
+    }
 
   function norm(s){ return String(s || "").trim().toLowerCase(); }
 
@@ -607,6 +625,31 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
   }
 
   let allEntriesPromise = null;
+// EV424_LOADING_HELPERS
+let __ev424_loading_seq = 0;
+  let __ev424_loading_timer = null;
+function beginLoading(query){
+  __ev424_loading_seq += 1;
+  const seq = __ev424_loading_seq;
+  try{ checkBtn.disabled = true; }catch(e){}
+  try{ setTagStyle('nf'); }catch(e){}
+  try{ showResult('LOADING', (query||''), 'Loading FINAL RECEIPT…'); }catch(e){}
+  try{ if (__ev424_loading_timer) clearTimeout(__ev424_loading_timer); }catch(e){}
+  __ev424_loading_timer = setTimeout(() => {
+  try{
+  if (__ev424_loading_seq !== seq) return;
+  resultTitle.textContent = query || '';
+  resultBody.textContent = 'Still loading… (network/cache).';
+  } catch(e){}
+  }, 2000);
+  return seq;
+}
+function endLoading(seq){
+  try{ if (__ev424_loading_timer) clearTimeout(__ev424_loading_timer); __ev424_loading_timer=null; }catch(e){}
+  try{ if (__ev424_loading_seq === seq) __ev424_loading_seq = 0; }catch(e){}
+  try{ checkBtn.disabled = false; }catch(e){}
+}
+
 
   async function loadAllEntriesOnce() {
     if (allEntriesPromise) return allEntriesPromise;
@@ -616,18 +659,19 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
       const months = Array.isArray(toc?.months) ? toc.months : [];
 
       // fetch month indexes
-      const monthIdxList = [];
-      for (const m of months) {
-        const href = String(m?.href || "").trim();
-        if (!href) continue;
-        const idxUrl = "/public_data/" + href.replace(/^\/+/, "");
-        const idx = await fetchJSON(idxUrl);
-        monthIdxList.push({ month: m?.month || null, href, idxUrl, idx });
-      }
+
+        const monthIdxList = await Promise.all(months.map(async (m) => {
+          const href = String(m?.href || "").trim();
+          if (!href) return null;
+          const idxUrl = "/public_data/" + href.replace(/^\/+/, "");
+          const idx = await fetchJSON(idxUrl);
+          return { month: m?.month || null, href, idxUrl, idx };
+        }));
+        const monthIdxList2 = monthIdxList.filter(Boolean);
 
       // flatten entries
       const out = [];
-      for (const pack of monthIdxList) {
+      for (const pack of monthIdxList2) {
         const entries = Array.isArray(pack?.idx?.entries) ? pack.idx.entries : [];
         for (const it of entries) {
           const entry_id = it?.entry_id ?? it?.id ?? "";
@@ -681,12 +725,57 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
       showResult("ERROR", "", { message: "Invalid query format. Use EV424-ENTRY-000001 or 64-hex SHA-256 (PASS hash)." });
       return;
     }
+      const __seq = beginLoading(query);
+
 
     try {
       const pack = await loadAllEntriesOnce();
       const hit = matchInEntries(pack.entries, query);
 
       if (!hit) {
+
+          // EV424_NOTFOUND_RETRY_PATCH
+          // one-shot retry bypassing sessionStorage cache (toc/index only)
+          try {
+            sessionStorage.removeItem("EV424:JSONCACHE:v2:/public_data/toc.json");
+          } catch (e) {}
+          try {
+            const months2 = Array.isArray(pack?.toc?.months) ? pack.toc.months : [];
+            const monthIdxListR = await Promise.all(months2.map(async (mm) => {
+              const href2 = String(mm?.href || "").trim();
+              if (!href2) return null;
+              const idxUrl2 = "/public_data/" + href2.replace(/^\/+/, "");
+              try { sessionStorage.removeItem("EV424:JSONCACHE:v2:" + idxUrl2); } catch (e) {}
+              const idx2 = await fetchJSON(idxUrl2);
+              return { month: mm?.month || null, href: href2, idxUrl: idxUrl2, idx: idx2 };
+            }));
+            const monthIdxListR2 = monthIdxListR.filter(Boolean);
+
+            const outR = [];
+            for (const packR of monthIdxListR2) {
+              const entriesR = Array.isArray(packR?.idx?.entries) ? packR.idx.entries : [];
+              for (const itR of entriesR) {
+                const entry_idR = itR?.entry_id ?? itR?.id ?? "";
+                const hrefR = itR?.href ?? itR?.file ?? itR?.path ?? "";
+                const sha256R = itR?.sha256 ?? "";
+                const rshaR = itR?.result_rep_sha256 ?? itR?.result_sha ?? "";
+                const sha256_fileR = itR?.sha256_file ?? "";
+                const open_urlR = hrefR ? ("/public_data/" + String(hrefR).replace(/^\/+/, "")) : null;
+                outR.push({ month: packR.month, source_index: packR.idxUrl, entry_id: entry_idR, href: hrefR, sha256: sha256R, sha256_file: sha256_fileR, result_rep_sha256: rshaR, open_url: open_urlR });
+              }
+            }
+
+            const hitR = matchInEntries(outR, query);
+            if (hitR) {
+              setTagStyle("ok");
+              const entryUrlR = hitR.open_url;
+              const entryR = await fetchJSON(entryUrlR);
+              if (entryR && typeof entryR.receipt_text === "string" && entryR.receipt_text.trim()) {
+                showResult("PASS", hitR.entry_id || hitR.sha256 || "", entryR.receipt_text);
+                return;
+              }
+            }
+          } catch (e) {}
         setTagStyle("nf");
         showResult("NOT FOUND", "", {
           query,
@@ -736,8 +825,10 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
         message: "Failed to load toc.json and/or monthly index files.",
         error: String(e && e.message ? e.message : e)
       });
+    } finally {
+        try{ endLoading(__seq); }catch(_){}
+      }
     }
-  }
 
   // Click / Enter
   checkBtn.addEventListener("click", onCheck);
