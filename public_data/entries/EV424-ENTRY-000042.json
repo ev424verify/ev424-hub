@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000042",
+  "type": "doc_passport",
+  "source": "joint-guide-foundations-for-OT-cybersecurity-asset-inventory-guidance_508c.pdf",
+  "source_label": "CISA_OT_Cybersecurity_Asset_Inventory_Guidance.pdf",
+  "url": "https://www.cisa.gov/sites/default/files/2025-08/joint-guide-foundations-for-OT-cybersecurity-asset-inventory-guidance_508c.pdf",
+  "issued_date": "2026-03-03T21:22:11+0900",
+  "fingerprint_sha256": "a40779754d1ca789cc6cb6f4a035175541986157528b4112e2d099cae1d90749",
+  "result_rep_sha256": "3a1bcf51431d1c9ca1df9e147c2d9d592c45dcfdd363daf1af0322dc832199da",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       joint-guide-foundations-for-OT-cybersecurity-asset-inventory-guidance_508c.pdf\nISSUED_DATE  2026-03-03T21:22:11+0900\nFINGERPRINT  a40779754d1ca789cc6cb6f4a035175541986157528b4112e2d099cae1d90749\nURL          https://www.cisa.gov/sites/default/files/2025-08/joint-guide-foundations-for-OT-cybersecurity-asset-inventory-guidance_508c.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=3a1bcf51431d1c9ca1df9e147c2d9d592c45dcfdd363daf1af0322dc832199da\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
