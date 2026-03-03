@@ -1,5 +1,2 @@
-/upload /404.html 404
-/upload/ /404.html 404
-/upload/* /404.html 404
-/upload.php /404.html 404
-/public_docs/usecase-qa /public_docs/usecase-qa/ 301
+/public_data/* /public_data/:splat 200
+/* /index.html 200
