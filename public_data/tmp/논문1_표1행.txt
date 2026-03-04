@@ -1,0 +1,5 @@
+연도(저자): The Effect of Dynamic Capabilities and IT Capability on Firm Performance Perspective
+연구대상: 기업 성과와 디지털 트랜스포메이션
+핵심 변수 및 방법론: 동적역량, IT 역량, 디지털 트랜스포메이션, 회귀분석
+주요 내용: 동적역량이 기업 성과에 미치는 긍정적 영향, 디지털 트랜스포메이션이 조절 역할
+Gap: 동적역량의 효과와 디지털 트랜스포메이션의 관계 부족
