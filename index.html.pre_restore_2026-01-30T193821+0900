@@ -1,0 +1,249 @@
+cd /home/ec2-user/ev424_pages_site && \
+cp -a index.html "index.html.bak_$(date +%Y-%m-%dT%H%M%S%z)" && \
+cat > index.html <<'EOF'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EV424 Verify</title>
+  <style>
+    :root{
+      --bg:#0a0f0c;
+      --fg:#e9f3ec;
+      --muted:rgba(233,243,236,0.72);
+      --card:rgba(255,255,255,0.06);
+      --line:rgba(255,255,255,0.10);
+      --neon:#31ff7c;
+      --neon2:rgba(47,232,122,0.18);
+    }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, rgba(49,255,124,0.14), transparent 55%), var(--bg);
+      color:var(--fg);
+      padding:24px 14px 36px;
+    }
+    .wrap{max-width:920px;margin:0 auto;}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px 16px;
+      box-shadow:0 10px 28px rgba(0,0,0,0.35);
+    }
+    .h1{font-size:22px;font-weight:850;margin:0 0 10px;}
+    .p{margin:0 0 18px;color:var(--muted);line-height:1.5;}
+
+    /* TOP CTA (toggle) */
+    .cta-toggle{
+      width:100%;
+      border:0;
+      border-radius:14px;
+      padding:14px 18px;
+      font-weight:850;
+      cursor:pointer;
+      background:rgba(47,232,122,0.10);
+      color:var(--fg);
+      box-shadow:0 0 0 1px rgba(49,255,124,0.18);
+    }
+    .cta-toggle:hover{background:rgba(47,232,122,0.16);}
+
+    /* panel */
+    .panel{margin-top:14px;border-radius:18px;border:1px solid var(--line);background:rgba(0,0,0,0.18);overflow:hidden;}
+    .panel-head{padding:14px 14px 10px;border-bottom:1px solid rgba(255,255,255,0.08);}
+    .panel-title{font-weight:850;}
+    .panel-sub{font-size:12.5px;color:var(--muted);margin-top:4px;}
+    .panel.is-collapsed{display:none;}
+    .panel.is-open{display:block;}
+
+    /* verify row */
+    .verify-row{display:flex;gap:12px;align-items:center;padding:14px;}
+    .verify-input{
+      flex:1;
+      padding:12px 14px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.12);
+      background:rgba(0,0,0,0.25);
+      color:var(--fg);
+      outline:none;
+    }
+    .btn-check{
+      padding:12px 16px;
+      border-radius:12px;
+      border:1px solid rgba(47,232,122,0.35);
+      background:var(--neon2);
+      color:#dfffea;
+      cursor:pointer;
+      font-weight:800;
+    }
+    .btn-check:hover{background:rgba(47,232,122,0.25);}
+
+    /* result box */
+    .verify-result{
+      margin:0 14px 14px;
+      padding:12px 14px;
+      border-radius:12px;
+      background:rgba(0,0,0,0.35);
+      border:1px solid rgba(255,255,255,0.10);
+      max-height:220px;
+      overflow:auto;
+      font-size:12.5px;
+      line-height:1.4;
+      white-space:pre-wrap;
+      word-break:break-word;
+    }
+    .verify-result.is-hidden{display:none;}
+
+    .verify-help{padding:0 14px 14px;color:var(--muted);font-size:12.5px;line-height:1.45;}
+
+    /* bottom CTA: original neon mid-size */
+    .cta-bottom{
+      width:70%;
+      max-width:520px;
+      margin:26px auto 0;
+      display:block;
+      border:0;
+      border-radius:14px;
+      padding:14px 18px;
+      font-weight:900;
+      cursor:pointer;
+      background:var(--neon);
+      color:#06130c;
+      box-shadow:0 0 0 1px rgba(49,255,124,0.25), 0 10px 28px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="h1">EV424 Public Evidence Verify</div>
+      <p class="p">Hash / Evidence ID → toc.json match → show metadata (read-only).</p>
+
+      <button id="toggleVerifyPanel" class="cta-toggle">Verify Public Evidence</button>
+
+      <section id="verifyPanel" class="panel is-collapsed" aria-hidden="true">
+        <div class="panel-head">
+          <div class="panel-title">Verify by Hash / ID</div>
+          <div class="panel-sub">Enter SHA-256 or Evidence ID</div>
+        </div>
+
+        <div class="verify-row">
+          <input id="verifyQuery" class="verify-input" type="text" placeholder="e.g., 774b82b1... or evidence-id" />
+          <button id="btnCheckEvidence" class="btn-check">Check Evidence</button>
+        </div>
+
+        <pre id="verifyResult" class="verify-result is-hidden"></pre>
+
+        <div class="verify-help">
+          We load <code>/public_data/toc.json</code> and match your SHA/ID against it.
+        </div>
+      </section>
+
+      <button id="btnVerifyNow" class="cta-bottom">Verify Now</button>
+    </div>
+  </div>
+
+  <script>
+  (() => {
+    const $toggle = document.getElementById("toggleVerifyPanel");
+    const $panel  = document.getElementById("verifyPanel");
+    const $query  = document.getElementById("verifyQuery");
+    const $btn    = document.getElementById("btnCheckEvidence");
+    const $out    = document.getElementById("verifyResult");
+    const $bottom = document.getElementById("btnVerifyNow");
+
+    let lastQuery = "";
+    let lastShown = false;
+
+    function openPanel(){
+      $panel.classList.remove("is-collapsed");
+      $panel.classList.add("is-open");
+      $panel.setAttribute("aria-hidden","false");
+    }
+    function resetPanel(){
+      $panel.classList.remove("is-open");
+      $panel.classList.add("is-collapsed");
+      $panel.setAttribute("aria-hidden","true");
+      $query.value = "";
+      $out.textContent = "";
+      $out.classList.add("is-hidden");
+      lastQuery = "";
+      lastShown = false;
+    }
+    function isOpen(){ return $panel.classList.contains("is-open"); }
+
+    // 1st click open, 2nd click reset+collapse
+    $toggle.addEventListener("click", () => { if (isOpen()) resetPanel(); else openPanel(); });
+
+    // bottom button: open + scroll
+    if ($bottom){
+      $bottom.addEventListener("click", () => {
+        openPanel();
+        $panel.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    }
+
+    async function fetchToc(){
+      const r = await fetch("/public_data/toc.json", { cache:"no-store" });
+      if (!r.ok) throw new Error("toc.json not found");
+      return await r.json();
+    }
+    function norm(s){ return (s||"").trim(); }
+    function lookupInToc(toc, q){
+      const items = toc.items || toc || [];
+      const query = q.toLowerCase();
+      for (const it of items){
+        const sha = (it.sha256 || it.sha || "").toLowerCase();
+        const id  = (it.id || it.evidence_id || "").toLowerCase();
+        if (sha === query || id === query) return it;
+      }
+      return null;
+    }
+    function showJson(obj){
+      $out.textContent = JSON.stringify(obj, null, 2);
+      $out.classList.remove("is-hidden");
+      lastShown = true;
+    }
+    function hideResult(){
+      $out.textContent = "";
+      $out.classList.add("is-hidden");
+      lastShown = false;
+    }
+
+    // GREEN BUTTON TOGGLE: 1st click show, 2nd click hide (same query)
+    $btn.addEventListener("click", async () => {
+      const q = norm($query.value);
+
+      if (!q){
+        showJson({ message:"Empty query. Enter SHA-256 or Evidence ID." });
+        lastQuery = "";
+        return;
+      }
+
+      if (lastShown && lastQuery === q){
+        hideResult();
+        return;
+      }
+
+      try{
+        const toc = await fetchToc();
+        const hit = lookupInToc(toc, q);
+
+        if (!hit){
+          showJson({ status:"NOT_FOUND", query:q, hint:"Check /public_data/toc.json deployment." });
+          lastQuery = q;
+          return;
+        }
+
+        showJson({ status:"FOUND", query:q, hit });
+        lastQuery = q;
+      } catch(e){
+        showJson({ status:"ERROR", query:q, error:String(e && e.message ? e.message : e) });
+        lastQuery = q;
+      }
+    });
+  })();
+  </script>
+</body>
+</html>

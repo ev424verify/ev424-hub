@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EV424 — SHA-256 Digital Fingerprint</title>
+  <style>
+    :root{
+      --bg:#05070a;
+      --fg:#e9f1ff;
+      --mut:rgba(224,234,246,.70);
+      --stroke:rgba(255,255,255,.12);
+      --stroke2:rgba(255,255,255,.18);
+      --panel:rgba(9,14,18,.60);
+      --nohash:rgba(210,140,60,.75);
+      --sha:rgba(70,175,118,.75);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--fg);
+    }
+    .wrap{max-width:980px;margin:0 auto;padding:18px 14px 40px}
+    a{color:inherit;text-decoration:none}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 12px;border:1px solid rgba(255,255,255,.14);
+      border-radius:12px;background:rgba(9,14,18,.42);
+      color:var(--fg);font-weight:700;letter-spacing:.2px;user-select:none
+    }
+    .btn:hover{border-color:rgba(255,255,255,.22)}
+    h1{margin:14px 0 8px;font-size:44px;line-height:1.08;letter-spacing:.2px}
+    .sub{margin:0 0 16px;color:var(--mut);max-width:72ch;line-height:1.45;font-size:15px}
+    .panel{
+      margin-top:16px;padding:16px;border:1px solid var(--stroke);
+      border-radius:18px;background:var(--panel);
+      box-shadow:0 0 0 1px rgba(255,255,255,.06) inset, 0 18px 50px rgba(0,0,0,.35)
+    }
+    .panel h2{margin:0 0 10px;font-size:24px;letter-spacing:.2px}
+    .svgBox{
+      border:1px solid var(--stroke2);
+      border-radius:16px;overflow:hidden;
+      background:rgba(10,14,22,.70);
+      margin-top:10px
+    }
+    .cap{padding:12px 12px 14px;color:var(--mut);line-height:1.45;font-size:14px}
+    .cap b{color:rgba(233,241,255,.92)}
+    .cap .down{color:rgba(70,175,118,.95);font-weight:800}
+    .cap .up{color:rgba(210,140,60,.95);font-weight:800}
+    .warn{
+      margin-top:16px;padding:12px 14px;
+      border-left:3px solid rgba(255,255,255,.20);
+      background:rgba(255,255,255,.05);
+      border-radius:14px;color:var(--mut);line-height:1.45
+    }
+    footer{margin-top:18px;font-size:12px;color:rgba(224,234,246,.55);text-align:center;letter-spacing:.2px}
+    @media (max-width:720px){h1{font-size:40px}.panel{padding:14px}.cap{font-size:13px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <a class="btn" href="/" aria-label="Back"><span aria-hidden="true">←</span><span>Back</span></a>
+
+    <h1>SHA-256 Digital<br/>Fingerprint</h1>
+    <p class="sub">
+      This page explains how EV424 uses SHA-256 as a re-verifiable fingerprint.
+      It checks <b>same / different</b> only.
+    </p>
+
+    <div class="panel">
+      <h2>Before / After</h2>
+
+      <div class="svgBox">
+        <svg viewBox="0 0 900 1320" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NO HASH vs SHA-256 (mobile stacked)">
+          <defs>
+            <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+              <feColorMatrix in="blur" type="matrix"
+                values="0 0 0 0 0
+                        0 0 0 0 0
+                        0 0 0 0 0
+                        0 0 0 .35 0" result="shadow"/>
+              <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+
+            <linearGradient id="bgGrad" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0" stop-color="#0b1320"/>
+              <stop offset="1" stop-color="#070c12"/>
+            </linearGradient>
+
+            <marker id="arrowW" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="rgba(255,255,255,.78)"/>
+            </marker>
+            <marker id="arrowWSoft" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+              <path d="M0,0 L10,5 L0,10 z" fill="rgba(255,255,255,.62)"/>
+            </marker>
+
+            <style>
+              .t{font:800 34px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;fill:rgba(233,241,255,.92);letter-spacing:.4px}
+              .mut{font:600 13px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;fill:rgba(224,234,246,.70)}
+              .mut2{font:600 12px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;fill:rgba(224,234,246,.60)}
+              .lab{font:800 14px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;fill:rgba(233,241,255,.88)}
+              .box{fill:rgba(14,18,26,.65);stroke:rgba(255,255,255,.10);stroke-width:1.2}
+              .box2{fill:rgba(14,18,26,.55);stroke:rgba(255,255,255,.10);stroke-width:1.2}
+              .inner{fill:rgba(12,16,24,.80);stroke:rgba(255,255,255,.10);stroke-width:1.2}
+              .frameNo{fill:rgba(10,12,16,.25);stroke:rgba(210,140,60,.55);stroke-width:2}
+              .frameSha{fill:rgba(10,12,16,.25);stroke:rgba(70,175,118,.55);stroke-width:2}
+              .pillSha{fill:rgba(70,175,118,.10);stroke:rgba(70,175,118,.55);stroke-width:1.8}
+              .small{font:700 12px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;fill:rgba(224,234,246,.70)}
+              .micro{font:700 11px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;fill:rgba(224,234,246,.55)}
+              .ok{fill:rgba(233,241,255,.90)}
+              .green{fill:rgba(70,175,118,.95);font:900 13px system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+              .whiteLine{stroke:rgba(255,255,255,.70);stroke-width:2.2;fill:none}
+              .whiteLineSoft{stroke:rgba(255,255,255,.55);stroke-width:2.2;fill:none}
+            </style>
+          </defs>
+
+          <rect x="34" y="34" width="832" height="1240" rx="18" fill="url(#bgGrad)" stroke="rgba(255,255,255,.12)" stroke-width="1.4"/>
+          <text x="450" y="92" text-anchor="middle" class="t">NO HASH vs SHA-256</text>
+          <text x="450" y="122" text-anchor="middle" class="mut">Mobile view: stacked for readability</text>
+          <text x="450" y="148" text-anchor="middle" class="mut">Process difference that reduces re-check loops (time &amp; cost)</text>
+
+          <!-- [1] NO HASH -->
+          <g filter="url(#soft)">
+            <rect x="68" y="196" width="764" height="468" rx="16" class="frameNo"/>
+            <rect x="68" y="196" width="764" height="54" rx="16" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.10)" stroke-width="1.2"/>
+            <text x="92" y="231" class="lab">NO HASH</text>
+            <text x="804" y="231" class="mut2" text-anchor="end">manual / repeated</text>
+
+            <text x="92" y="286" class="micro">PROCESS</text>
+
+            <rect x="210" y="330" width="180" height="76" rx="14" class="box"/>
+            <text x="300" y="375" text-anchor="middle" class="lab">FILE A</text>
+
+            <rect x="412" y="330" width="180" height="76" rx="14" class="box"/>
+            <text x="502" y="375" text-anchor="middle" class="lab">CHECK</text>
+
+            <rect x="614" y="330" width="150" height="76" rx="14" class="box"/>
+            <text x="689" y="375" text-anchor="middle" class="lab">?</text>
+
+            <path d="M390 368 L412 368" class="whiteLineSoft" marker-end="url(#arrowWSoft)"/>
+            <path d="M592 368 L614 368" class="whiteLineSoft" marker-end="url(#arrowWSoft)"/>
+
+            <!-- re-check loop (label never covered) -->
+            <path d="M470 410 C490 452, 560 452, 590 410" class="whiteLine"/>
+            <text x="530" y="474" text-anchor="middle" class="mut2">re-check loop</text>
+
+            <!-- FILE B (slightly down) -->
+            <rect x="628" y="512" width="156" height="76" rx="14" class="box2"/>
+            <text x="706" y="556" text-anchor="middle" class="lab">FILE B</text>
+
+            <!-- short arrow from FILE B toward loop, stops above label -->
+            <path d="M650 514 L608 446" class="whiteLineSoft" marker-end="url(#arrowWSoft)"/>
+
+            <!-- TIME/COST -->
+            <g>
+              <circle cx="104" cy="574" r="16" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+              <text x="104" y="579" text-anchor="middle" class="micro">TIME</text>
+              <text x="164" y="579" class="small">LONG</text>
+              <text x="236" y="579" class="mut2">repeated checks</text>
+
+              <circle cx="104" cy="616" r="16" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+              <text x="104" y="621" text-anchor="middle" class="micro">COST</text>
+              <text x="164" y="621" class="small">HIGH</text>
+              <text x="236" y="621" class="mut2">manual effort</text>
+            </g>
+          </g>
+
+          <!-- [2] WITH SHA-256 -->
+          <g filter="url(#soft)">
+            <rect x="68" y="708" width="764" height="510" rx="16" class="frameSha"/>
+            <rect x="68" y="708" width="764" height="54" rx="16" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.10)" stroke-width="1.2"/>
+            <text x="92" y="743" class="lab">WITH SHA-256</text>
+            <text x="804" y="743" class="mut2" text-anchor="end">deterministic / one-pass</text>
+
+            <text x="92" y="798" class="micro">PROCESS</text>
+
+            <rect x="210" y="840" width="180" height="76" rx="14" class="box"/>
+            <text x="300" y="885" text-anchor="middle" class="lab">FILE A</text>
+
+            <rect x="412" y="840" width="180" height="76" rx="14" class="box"/>
+            <text x="502" y="885" text-anchor="middle" class="lab">SHA-256</text>
+
+            <rect x="210" y="940" width="180" height="76" rx="14" class="box"/>
+            <text x="300" y="985" text-anchor="middle" class="lab">FILE B</text>
+
+            <rect x="412" y="940" width="180" height="76" rx="14" class="box"/>
+            <text x="502" y="985" text-anchor="middle" class="lab">SHA-256</text>
+
+            <rect x="614" y="840" width="170" height="76" rx="14" class="box"/>
+            <text x="699" y="885" text-anchor="middle" class="lab">COMPARE</text>
+
+            <path d="M592 878 L614 878" class="whiteLineSoft" marker-end="url(#arrowWSoft)"/>
+            <path d="M592 978 L614 978" class="whiteLineSoft" marker-end="url(#arrowWSoft)"/>
+
+            <!-- RESULT group moved a bit LEFT (clean) -->
+            <rect x="570" y="934" width="210" height="126" rx="14" class="inner"/>
+            <text x="675" y="972" text-anchor="middle" class="lab">RESULT</text>
+            <text x="614" y="1016" text-anchor="middle" class="ok">✓ SAME</text>
+            <text x="736" y="1016" text-anchor="middle" class="ok">✗ DIFF</text>
+
+            <rect x="584" y="1082" width="182" height="60" rx="12" class="pillSha"/>
+            <text x="675" y="1119" text-anchor="middle" class="green">VERIFIED (re-checkable)</text>
+
+            <!-- connector lands on RESULT right-face center -->
+            <!-- RESULT right edge = 570+210=780 ; centerY = 934+63=997 -->
+            <path d="M784 878 L840 878 L840 997 L780 997" class="whiteLine" marker-end="url(#arrowW)"/>
+
+            <!-- TIME/COST -->
+            <g>
+              <circle cx="104" cy="1128" r="16" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+              <text x="104" y="1133" text-anchor="middle" class="micro">TIME</text>
+              <text x="164" y="1133" class="small">SHORT</text>
+              <text x="246" y="1133" class="mut2">one-pass compare</text>
+
+              <circle cx="104" cy="1170" r="16" fill="rgba(255,255,255,.06)" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+              <text x="104" y="1175" text-anchor="middle" class="micro">COST</text>
+              <text x="164" y="1175" class="small">LOW</text>
+              <text x="232" y="1175" class="mut2">automated proof</text>
+            </g>
+
+            <text x="450" y="1210" text-anchor="middle" class="mut2">
+              SHA-256 does not prevent tampering. It makes changes detectable and re-verifiable.
+            </text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="cap">
+        <b>Before:</b> repeated manual checks → ambiguity → re-check loops (time &amp; cost <span class="up">↑</span>).<br/>
+        <b>After:</b> hash → compare → same/different result → re-verifiable proof (time &amp; cost <span class="down">↓</span>).
+      </div>
+
+      <div class="warn">
+        <b>SHA-256 does not prove “truth.”</b> It only proves whether bytes are identical (match) or not (mismatch), and enables re-verification.
+      </div>
+    </div>
+
+    <footer>Accuracy(4)=Truth(2)=Life(4)</footer>
+  </div>
+</body>
+</html>

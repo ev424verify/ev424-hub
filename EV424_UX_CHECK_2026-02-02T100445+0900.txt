@@ -1,0 +1,50 @@
+==[EV424 UX CHECK @ 2026-02-02T100445+0900]==
+--- PWD ---
+/home/ec2-user/ev424_pages_site
+
+--- CHECK#1: 기록실 Open 링크 라우팅 (public_data/index.html) ---
+181:      <div class="note">Tip: This page is static. To add evidence, you update <span class="mono">toc.json</span> / monthly index and redeploy. Note (EV424-specific): for entries <div class="note">Tip: This page is static. To add evidence, you update <span class="mono">toc.json</span> / monthly index and redeploy.</div>gt;=000006, "Open" may render the EV424 Passport/Final Receipt view. EV424 references publicly available documents only and is not affiliated with, endorsed by, or sponsored by any issuing organization or listed entity. To request correction/removal, contact <span class="mono">ev424.verify@gmail.com</span>.</div>
+
+--- CHECK#2: 메인 q 자동주입 + 자동검증 autorun (index.html) ---
+373:        <label class="lbl" for="q">Enter SHA-256 or Evidence ID</label>
+375:          <input id="q" class="inp" placeholder="e.g., a401342c... or EV424-ENTRY-000001" autocomplete="off" spellcheck="false" />
+376:          <button id="checkBtn" class="btn blueBtn" type="button">Check Evidence</button>
+379:          const p=new URLSearchParams(location.search);
+380:          const q=p.get("q");
+381:          if(!q) return;
+382:          const qEl=document.getElementById("q");
+383:          const btn=document.getElementById("checkBtn");
+384:          if(qEl) qEl.value=q;
+385:          if(btn) setTimeout(()=>btn.click(), 50);
+441:  const qEl = document.getElementById("q");
+442:  const checkBtn = document.getElementById("checkBtn");
+528:      const q = norm(query);
+529:      if (!q) return null;
+534:      const isEntryId = /^ev424-entry-\d+$/.test(q);
+535:      const isSha64   = /^[0-9a-f]{64}$/.test(q);
+542:        if (isEntryId && entry_id && entry_id === q) return e;
+543:        if (isSha64   && sha256   && sha256   === q) return e;
+600:      qEl.value = "";
+685:  checkBtn.addEventListener("click", onCheck);
+
+--- CHECK#3: 결과가 JSON이 아니라 FINAL RECEIPT 렌더인지 단서 (index.html) ---
+246:.pre{
+252:  white-space:pre-wrap;
+396:      <div id="result" class="result" hidden>
+401:        <pre id="resultBody" class="pre"></pre>
+463:      h = h.replace(/^==\[EV424 FINAL RECEIPT\]==$/m, '<span class="rx-blue">==[EV424 FINAL RECEIPT]==</span>');
+479:      resultTag.textContent = tag;
+480:      resultTitle.textContent = title || "";
+488:      // If obj has receipt_text: render it as-is (colorized)
+489:      if (obj && typeof obj === "object" && typeof obj.receipt_text === "string") {
+490:        resultBody.innerHTML = formatReceipt(obj.receipt_text);
+495:      resultBody.textContent = JSON.stringify(obj, null, 2);
+514:    resultTitle.textContent = "";
+515:    resultBody.textContent = "";
+648:        // Load entry JSON and render receipt_text (EV424 FINAL RECEIPT raw)
+656:        if (entry && typeof entry.receipt_text === "string" && entry.receipt_text.trim()) {
+657:          showResult("PASS", hit.entry_id || hit.sha256 || "", entry.receipt_text);
+661:        // fallback: deterministic debug info if receipt_text missing
+664:          message: "receipt_text missing in entry JSON. (Need to store 문서역권5 raw into entry.receipt_text at publish time.)",
+
+--- DONE ---
