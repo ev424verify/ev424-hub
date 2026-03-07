@@ -1,1 +1,0 @@
-AUTO_DEPLOY=OFF (manual only): preflight PASS -> wrangler deploy -> remote sha256 OK
