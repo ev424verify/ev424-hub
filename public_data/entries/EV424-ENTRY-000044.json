@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000044",
+  "type": "doc_passport",
+  "source": "The%20ENISA%20Cybersecurity%20Exercise%20Methodology.pdf",
+  "source_label": "The%20ENISA%20Cybersecurity%20Exercise%20Methodology.pdf",
+  "url": "https://www.enisa.europa.eu/sites/default/files/2026-02/The%20ENISA%20Cybersecurity%20Exercise%20Methodology.pdf",
+  "issued_date": "2026-03-07T19:16:15+0900",
+  "fingerprint_sha256": "57bd5551c30674733b340e3543bb57ff1f8d059b19c03dda78dc55c5c58326ff",
+  "result_rep_sha256": "069426649e74a748b62c357de4b04abd1625e4a1a7518ab247868fbe70dbba79",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       The%20ENISA%20Cybersecurity%20Exercise%20Methodology.pdf\nISSUED_DATE  2026-03-07T19:16:15+0900\nFINGERPRINT  57bd5551c30674733b340e3543bb57ff1f8d059b19c03dda78dc55c5c58326ff\nURL          https://www.enisa.europa.eu/sites/default/files/2026-02/The%20ENISA%20Cybersecurity%20Exercise%20Methodology.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=069426649e74a748b62c357de4b04abd1625e4a1a7518ab247868fbe70dbba79\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
