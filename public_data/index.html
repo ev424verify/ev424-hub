@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>EV424 — Evidence Index</title>
+  <meta name="description" content="Public evidence index (toc.json → monthly index → entries)." />
+  <style>
+    :root{
+      --bg0:#070b0e; --bg1:#0b1116;
+      --panel:rgba(15,23,32,.80);
+      --stroke:#22313f;
+      --text:#e7edf6;
+      --muted:#a6b3c3;
+      --blue:#57a6ff;
+      --blue2:#2f86ff;
+      --good:#36d37a;
+      --bad:#ff5a5a;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      color:var(--text);
+      background:linear-gradient(180deg,var(--bg0),var(--bg1));
+    }
+    .bg{
+      position:fixed; inset:0;
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(87,166,255,.12), transparent 60%),
+        radial-gradient(900px 600px at 70% 80%, rgba(54,211,122,.08), transparent 60%);
+      pointer-events:none;
+    }
+    .wrap{width:min(1000px,92vw); margin:22px auto 40px}
+    .top{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      padding:14px 16px;
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      background:rgba(12,18,24,.55);
+      backdrop-filter: blur(8px);
+    }
+    .brand{display:flex; align-items:center; gap:10px; font-weight:900}
+    .dot{width:10px;height:10px;border-radius:999px;background:var(--good);box-shadow:0 0 18px rgba(54,211,122,.35)}
+    .badge{
+      font-size:12px; font-weight:800; letter-spacing:.4px;
+      padding:7px 12px; border-radius:999px;
+      border:1px solid rgba(87,166,255,.35);
+      background:rgba(10,18,26,.55);
+      color:var(--blue);
+    }
+    .panel{
+      margin-top:14px;
+      padding:16px 16px;
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      background:var(--panel);
+      backdrop-filter: blur(8px);
+    }
+    h1{margin:0 0 6px; font-size:18px}
+    .sub{margin:0; color:var(--muted); font-size:12px}
+    .row{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(10,16,22,.35);
+      color:var(--text);
+      font-weight:800;
+      text-decoration:none;
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn.solid{
+      background:linear-gradient(180deg,var(--blue),var(--blue2));
+      border-color:rgba(87,166,255,.35);
+      color:#071019;
+      box-shadow:0 10px 24px rgba(87,166,255,.14);
+    }
+    .btn:hover{filter:brightness(1.03)}
+    .inp{
+      flex:1;
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(8,12,16,.55);
+      color:var(--text);
+      outline:none;
+      min-width:240px;
+    }
+    .inp:focus{border-color:rgba(87,166,255,.35)}
+    .meta{
+      margin-top:10px;
+      display:flex; flex-wrap:wrap; gap:10px;
+      color:var(--muted); font-size:12px;
+    }
+    .pill{
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+    }
+    table{width:100%; border-collapse:separate; border-spacing:0 10px; margin-top:10px}
+    th{
+      text-align:left; font-size:12px; color:var(--muted);
+      font-weight:800; padding:0 10px;
+    }
+    td{
+      padding:12px 10px;
+      background:rgba(7,10,13,.45);
+      border-top:1px solid rgba(255,255,255,.08);
+      border-bottom:1px solid rgba(255,255,255,.08);
+      font-size:12px;
+      vertical-align:top;
+    }
+    tr td:first-child{
+      border-left:1px solid rgba(255,255,255,.08);
+      border-top-left-radius:14px;
+      border-bottom-left-radius:14px;
+    }
+    tr td:last-child{
+      border-right:1px solid rgba(255,255,255,.08);
+      border-top-right-radius:14px;
+      border-bottom-right-radius:14px;
+    }
+    .link{color:var(--blue); text-decoration:none; font-weight:800}
+    .link:hover{text-decoration:underline}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+    .small{font-size:11px; color:var(--muted)}
+    .status{
+      display:inline-flex; align-items:center; gap:6px;
+      font-weight:900;
+      padding:5px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.04);
+    }
+    .ok{color:#c8ffe0; border-color:rgba(54,211,122,.35); background:rgba(54,211,122,.10)}
+    .nf{color:#e7edf6}
+    .err{color:#ffd2d2; border-color:rgba(255,90,90,.30); background:rgba(255,90,90,.10)}
+    .note{margin-top:10px; color:var(--muted); font-size:12px}
+    @media (max-width:820px){
+      th{display:none}
+      table{border-spacing:0 12px}
+      td{display:block}
+      tr td:first-child, tr td:last-child{border-radius:14px}
+    }
+  
+/* EV424_DESKTOP_RELOAD_TUNE */
+@media (min-width: 821px){
+  #reloadBtn{ height: 44px; padding: 0 16px; }
+}
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <main class="wrap">
+    <header class="top">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <span>EV424</span>
+      </div>
+      <div class="badge" title="Index view (not a verdict)">EVIDENCE INDEX</div>
+    </header>
+
+    <section class="panel">
+      <h1>Public Evidence Index</h1>
+      <p class="sub">Data source: <span class="mono">/public_data/toc.json</span> → monthly index → <span class="mono">/public_data/entries/</span></p>
+        <div class="note" style="margin-top:10px">
+          EV424 publishes <b>integrity-only</b> evidence: official URL + SHA-256 fingerprint + reproducible re-verification method + FINAL RECEIPT text.
+          It does <b>not</b> mirror/host original documents and does <b>not</b> judge truth, safety, legality, or meaning. Not affiliated. Link-only.
+        </div>
+
+      <div class="row">
+        <input id="q" class="inp" placeholder="Filter by id / sha256 / title / filename" autocomplete="off" spellcheck="false" />
+<!-- QUICK_SEARCH_HELP -->
+<div id="quickSearchHelp" style="margin:10px 0 14px; padding:10px 12px; border:1px solid rgba(255,255,255,0.10); border-radius:12px; background:rgba(255,255,255,0.03); font-size:13px; line-height:1.5; opacity:0.95;">
+  <div style="font-weight:700; margin-bottom:6px;">Quick Search</div>
+  <div>• Type <b>2+ chars</b> (e.g., <code>nist</code>, <code>cisa</code>, <code>docs</code>) to list matching entries below.</div>
+  <div>• Type an <b>ENTRY_ID</b> (<code>EV424-ENTRY-000006</code>) or a <b>64-hex SHA-256</b> to jump directly to the <b>FINAL RECEIPT</b> (verification rail).</div>
+  <div>• In results: <b>Open</b> = receipt view (<code>/?q=...</code>), <b>source</b> = official PDF (view-only, new tab).</div>
+</div>      </div>
+
+<!-- EV424_BUTTON_ROW_MOVED -->
+<div class="row" style="margin-top:10px;">
+
+        <button id="reloadBtn" class="btn solid" type="button">Reload</button>
+          <a class="btn" href="weekly/index.json" target="_blank" rel="noopener">WEEK</a>
+        <a class="btn" href="../index.html">Back</a>
+</div>
+      <div class="meta">
+        <div class="pill">generated_at: <span id="genAt" class="mono">-</span></div>
+        <div class="pill">months: <span id="monthsN" class="mono">-</span></div>
+        <div class="pill">evidence_count: <span id="evN" class="mono">-</span></div>
+        <div class="pill">status: <span id="status" class="status nf">LOADING</span></div>
+      </div>
+
+      <div class="note">Tip: This page is static. To add evidence, you update <span class="mono">toc.json</span> / monthly index and redeploy. Note (EV424-specific): for entries &gt;=000006, "Open" may render the EV424 Passport/Final Receipt view. EV424 references publicly available documents only and is not affiliated with, endorsed by, or sponsored by any issuing organization or listed entity. To request correction/removal, contact <span class="mono">ev424.verify@gmail.com</span>.</div>
+      <div class="note"><b>Skipped Entry IDs (Transparency Note)</b><br><br>Some entry IDs may appear missing due to the deterministic generation process.<br><br>- <b>EV424-ENTRY-000014</b>: Slot reserved but not materialized (no entry artifact generated)<br>- <b>EV424-ENTRY-000015</b>: Demo reference only (no actual entry file existed)<br><br>Entry ID continuity is not a validity requirement. Integrity is guaranteed solely by SHA-256 verification and reproducible receipts.</div>
+    </section>
+
+    <section class="panel">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:120px;">MONTH</th>
+            <th>ITEM</th>
+
+            <th style="width:120px;">OPEN</th>
+          </tr>
+        </thead>
+        
+<section id="searchPanel" style="display:none; margin:12px 0; padding:12px; border:1px solid rgba(255,255,255,0.08); border-radius:12px;">
+  <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px;">
+    <div style="font-weight:700;">Search Results</div>
+    <div id="searchMeta" style="opacity:0.8; font-size:12px;"></div>
+  </div>
+  <div id="searchRows"></div>
+</section>
+<tbody id="rows"></tbody>
+      </table>
+      <div id="empty" class="note" hidden>No items matched.</div>
+    </section>
+  </main>
+
+  <script>
+  (() => {
+    const TOC_URL = "/public_data/toc.json";
+
+    const qEl = document.getElementById("q");
+    const reloadBtn = document.getElementById("reloadBtn");
+    const rowsEl = document.getElementById("rows");
+    const emptyEl = document.getElementById("empty");
+
+    const genAtEl = document.getElementById("genAt");
+    const monthsNEl = document.getElementById("monthsN");
+    const evNEl = document.getElementById("evN");
+    const statusEl = document.getElementById("status");
+
+    function setStatus(kind, text){
+      statusEl.className = "status " + (kind || "nf");
+      statusEl.textContent = text || "";
+    }
+
+    async function loadJSON(url){
+      const r = await fetch(url, { cache: "no-store" });
+      if(!r.ok) throw new Error(`${url} fetch failed: ${r.status} ${r.statusText}`);
+      return await r.json();
+    }
+
+    function escapeHtml(s){
+      return String(s ?? "")
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
+
+    function shortSha(s){
+      const x = String(s || "");
+      if(x.length <= 14) return x;
+      return x.slice(0,8) + "…" + x.slice(-6);
+    }
+
+    function normalize(s){ return String(s ?? "").trim().toLowerCase(); }
+
+    function toFlatItems(toc, monthIdxMap){
+      // Expect:
+      // toc.months: [{ month, href, sha256, sha256_file, counts:{EVIDENCE...}}]
+      // month index file: expected to contain items (either "items" or "entries")
+      const out = [];
+      for(const m of (toc?.months || [])){
+        const month = m?.month || "";
+        const href = m?.href || "";
+        const idx = monthIdxMap.get(href);
+        const items = Array.isArray(idx?.items) ? idx.items : Array.isArray(idx?.entries) ? idx.entries : [];
+        for(const it of items){
+          const id = it?.entry_id ?? it?.id ?? it?.evidence_id ?? it?.eid ?? "";
+          const sha256 = it?.sha256 ?? "";
+          const title = it?.title ?? it?.name ?? it?.subject ?? "";
+          const file = it?.file ?? it?.path ?? it?.href ?? it?.url ?? "";
+          // file is expected relative to public_data root in your build (e.g., "entries/xxx.pdf")
+          const openUrl = id ? ("/?q=" + encodeURIComponent(String(id))) : "";
+          out.push({ month, id, sha256, title, file, openUrl });
+        }
+      }
+      return out;
+    }
+
+    function render(items){
+      rowsEl.innerHTML = "";
+      const q = normalize(qEl.value);
+      let filtered = !q ? items : items.filter(it => {
+        const blob = normalize([it.month,it.id,it.sha256,it.title,it.file].join(" | "));
+        return blob.includes(q);
+      });
+
+        // order: entry_id ascending (EV424-ENTRY-000001 -> ...)
+        filtered = filtered.slice().sort((a,b) => String(a.id||"").localeCompare(String(b.id||""), undefined, { numeric:true }));
+
+      emptyEl.hidden = filtered.length !== 0;
+
+      for(const it of filtered){
+        const month = escapeHtml(it.month);
+        const id = escapeHtml(it.id || "-");
+        const title = escapeHtml(it.title || "");
+        const file = escapeHtml(it.file || "-");
+        const openUrl = it.openUrl || "";
+
+
+          const jsonUrl = it.file && String(it.file) !== "-" ? ("/public_data/" + String(it.file).replace(/^\/+/, "")) : "";
+          const openCell = openUrl
+            ? `<a class="link" href="${escapeHtml(openUrl)}" target="_blank" rel="noopener">Open</a>`
+            : ``;
+
+          const jsonCell = jsonUrl
+            ? `<a class="link" href="${escapeHtml(jsonUrl)}" target="_blank" rel="noopener">JSON</a>`
+            : ``;
+
+          const actionCell = (openCell || jsonCell)
+            ? [openCell, jsonCell].filter(Boolean).join(` <span class="small">|</span> `)
+            : `<span class="small">-</span>`;
+        rowsEl.insertAdjacentHTML("beforeend", `
+          <tr>
+            <td class="mono">${month || "-"}</td>
+            <td>
+              <div><span class="mono">${id}</span></div>
+              ${title ? `<div class="small">${title}</div>` : ""}
+              <div class="small mono">${file}</div>
+            </td>
+              <td>${actionCell}</td>
+          </tr>
+        `);
+      }
+    }
+
+    async function main(){
+      try{
+        setStatus("nf","LOADING");
+        const toc = await loadJSON(TOC_URL);
+
+        genAtEl.textContent = toc?.generated_at || "-";
+        monthsNEl.textContent = String((toc?.months || []).length);
+
+        // load all month indexes
+        const monthIdxMap = new Map();
+        let evCount = 0;
+
+        for(const m of (toc?.months || [])){
+          const href = m?.href || "";
+          if(!href) continue;
+          const idx = await loadJSON("/public_data/" + href.replace(/^\/+/,""));
+          monthIdxMap.set(href, idx);
+
+          // count evidence-like entries
+          const items = Array.isArray(idx?.items) ? idx.items : Array.isArray(idx?.entries) ? idx.entries : [];
+          evCount += items.length;
+        }
+
+        evNEl.textContent = String(evCount);
+
+        const flat = toFlatItems(toc, monthIdxMap);
+        setStatus("ok","READY");
+        render(flat);
+
+        /* DISABLED: month-filter input handler (replaced by catalog search install()) */
+        reloadBtn.addEventListener("click", () => { try { handleQuery((document.getElementById("q")||{}).value); } catch(e) {} main(); });
+      } catch(e){
+        setStatus("err","ERROR");
+        rowsEl.innerHTML = "";
+        emptyEl.hidden = false;
+        emptyEl.textContent = "Failed to load toc/index: " + String(e && e.message ? e.message : e);
+      }
+    }
+
+    main();
+  })();
+  </script>
+
+<script>
+(function () {
+  var CATALOG_URL = "/public_data/catalog.json";
+  var _catalog = null;
+
+  function isEntryId(q){ return /^EV424-ENTRY-\d{6}$/.test(q); }
+  function isHex64(q){ return /^[0-9a-fA-F]{64}$/.test(q); }
+
+  function esc(x){
+    return String(x).replace(/[&<>"']/g, function(m){
+      return ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"})[m];
+    });
+  }
+
+  function renderSearch(items, q){
+    var panel = document.getElementById("searchPanel");
+    var meta  = document.getElementById("searchMeta");
+    var rows  = document.getElementById("searchRows");
+    if (!panel || !meta || !rows) return;
+
+    if (!q || q.length < 2){
+      panel.style.display = "none";
+      rows.innerHTML = "";
+      meta.textContent = "";
+      return;
+    }
+
+    panel.style.display = "block";
+    meta.textContent = 'q="' + q + '"  hits=' + items.length;
+
+    var html = items.map(function(it){
+      var entryId = it.entry_id || "";
+      var title   = it.title || it.subject || "(untitled)";
+      var issued  = it.issued_kst || it.issued_date || "";
+      var url     = it.url || "";
+      var openHref = "/?q=" + encodeURIComponent(entryId);
+      return ""
+        + '<div style="padding:10px 0; border-top:1px solid rgba(255,255,255,0.08);">'
+        +   '<div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">'
+        +     '<a class="btn ghost" href="' + esc(openHref) + '">Open</a>'
+        +     '<span style="font-weight:700;">' + esc(entryId) + '</span>'
+        +     '<span style="opacity:0.85;">' + esc(title) + '</span>'
+        +   '</div>'
+        +   '<div style="margin-top:6px; opacity:0.8; font-size:12px; line-height:1.35;">'
+        +     '<div style="word-break:break-word; overflow-wrap:anywhere;">issued: ' + esc(issued) + '</div>'
+        +     '<div style="word-break:break-word; overflow-wrap:anywhere;">source: <a style="word-break:break-word; overflow-wrap:anywhere;" href="' + esc(url) + '" target="_blank" rel="noreferrer">' + esc(url) + '</a></div>'
+        +   '</div>'
+        + '</div>';
+    }).join("");
+
+    rows.innerHTML = html || '<div style="opacity:0.8; padding:10px 0;">no hits</div>';
+  }
+
+  function loadCatalog(){
+    if (_catalog) return Promise.resolve(_catalog);
+    return fetch(CATALOG_URL, {cache:"no-store"}).then(function(r){
+      if (!r.ok) throw new Error("catalog_fetch_fail status=" + r.status);
+      return r.json();
+    }).then(function(j){
+      _catalog = j;
+      return j;
+    });
+  }
+
+  function handleQuery(raw){
+    var q = (raw || "").trim();
+    if (isEntryId(q) || isHex64(q)){
+      window.location.href = "/?q=" + encodeURIComponent(q);
+      return;
+    }
+    if (q.length < 2){
+      renderSearch([], "");
+      return;
+    }
+    loadCatalog().then(function(cat){
+      var items = (cat && Array.isArray(cat.items)) ? cat.items : [];
+      var ql = q.toLowerCase();
+      var hits = items.filter(function(it){
+        try { return JSON.stringify(it).toLowerCase().indexOf(ql) !== -1; }
+        catch(e){ return false; }
+      }).slice(0, 50);
+      renderSearch(hits, q);
+    }).catch(function(err){
+      var panel = document.getElementById("searchPanel");
+      var meta  = document.getElementById("searchMeta");
+      if (panel && meta){
+        panel.style.display = "block";
+        meta.textContent = "ERROR: " + (err && err.message ? err.message : String(err));
+      }
+    });
+  }
+
+  function install(){
+    var qEl = document.getElementById("q");
+    if (!qEl) return;
+
+    // remove existing listeners by clone-replace (keeps month tables intact)
+    var v = qEl.value;
+    var qClone = qEl.cloneNode(true);
+    qClone.value = v;
+    qEl.parentNode.replaceChild(qClone, qEl);
+
+    qClone.addEventListener("input", function(e){ handleQuery(e.target.value); });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", install);
+  else install();
+})();
+</script>
+
+</body>
+</html>
