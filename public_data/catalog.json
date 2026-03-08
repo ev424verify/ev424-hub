@@ -461,6 +461,18 @@
       "result_rep_sha256": "069426649e74a748b62c357de4b04abd1625e4a1a7518ab247868fbe70dbba79",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000045",
+      "issued_kst": "2026-03-08T17:15:48+0900",
+      "month_id": "2026-03",
+      "url": "https://commission.europa.eu/document/download/e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf",
+      "source_domain": "commission.europa.eu",
+      "filename": "e6d5db69-e0ab-4bec-9dc0-3867b4373019_en",
+      "display_title": "White paper for European defence – Readiness 2030",
+      "result_rep_sha256": "56b62724722fcf216dd9c0d309b044b9610de5055f648f973baf6291f9d03ed0",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

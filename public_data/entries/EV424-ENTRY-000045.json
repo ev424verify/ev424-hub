@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000045",
+  "type": "doc_passport",
+  "source": "e6d5db69-e0ab-4bec-9dc0-3867b4373019_en",
+  "source_label": "e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf",
+  "url": "https://commission.europa.eu/document/download/e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf",
+  "issued_date": "2026-03-08T17:15:48+0900",
+  "fingerprint_sha256": "26264213edd1c6a509b3ac00b6cba8c414a46393c67f5b556e320cb4623daf9f",
+  "result_rep_sha256": "56b62724722fcf216dd9c0d309b044b9610de5055f648f973baf6291f9d03ed0",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf\nISSUED_DATE  2026-03-08T17:15:48+0900\nFINGERPRINT  26264213edd1c6a509b3ac00b6cba8c414a46393c67f5b556e320cb4623daf9f\nURL          https://commission.europa.eu/document/download/e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=56b62724722fcf216dd9c0d309b044b9610de5055f648f973baf6291f9d03ed0\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
