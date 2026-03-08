@@ -26,6 +26,8 @@ EV424 does NOT:
 Milestone (2026-03-01 KST)
 - EV424-ENTRY-000040 (GW250114): first E2E case closed with link-only verification + reproducible receipt + locally reproduced artifacts sealed by SHA-256.
 
+EV424-ENTRY-000045 (European Commission, “White paper for European defence – Readiness 2030”): demonstrated that the unchanged EV424 5-step receipt rail also closed on a query-based official PDF download URL, without adding a special-case path.
+
 Local reproducibility (Preflight Spec)  
 Note: This document defines the contract; implementation may be added in later commits.
 Don’t trust me. Trust the exit code, SHA-256, and the normalized JSON.  
