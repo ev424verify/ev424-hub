@@ -412,11 +412,11 @@
     meta.textContent = 'q="' + q + '"  hits=' + items.length;
 
     var html = items.map(function(it){
-      var entryId = it.entry_id || "";
-      var title   = it.title || it.subject || "(untitled)";
-      var issued  = it.issued_kst || it.issued_date || "";
-      var url     = it.url || "";
-      var openHref = "/?q=" + encodeURIComponent(entryId);
+    var entryId = it.entry_id || "";
+    var title   = it.display_title || it.title || it.subject || it.filename || "(untitled)";
+    var issued  = it.issued_kst || it.issued_date || "";
+    var url     = it.url || "";
+    var openHref = "/?q=" + encodeURIComponent(entryId);
       return ""
         + '<div style="padding:10px 0; border-top:1px solid rgba(255,255,255,0.08);">'
         +   '<div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center;">'
