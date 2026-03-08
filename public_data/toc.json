@@ -4,7 +4,7 @@
     "EVIDENCE": 6,
     "SPEC": 0
   },
-  "generated_at": "2026-02-01T12:17:15+0900",
+  "generated_at": "2026-03-09T08:52:48+09:00",
   "months": [
     {
       "counts": {
@@ -55,5 +55,31 @@
       "ssh-rsa"
     ]
   },
-  "schema_version": "EV424_PUBLIC_TOC_V1"
+  "schema_version": "EV424_PUBLIC_TOC_V1",
+  "weeks": [
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-06.json",
+      "issued_kst": "2026-02-02T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-06.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-06"
+    },
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-08.json",
+      "issued_kst": "2026-02-16T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-08.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-08"
+    },
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-09.json",
+      "issued_kst": "2026-02-23T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-09.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-09"
+    },
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-10.json",
+      "issued_kst": "2026-03-02T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-10.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-10"
+    }
+  ]
 }
