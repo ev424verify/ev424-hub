@@ -510,6 +510,18 @@
       "result_rep_sha256": "56b62724722fcf216dd9c0d309b044b9610de5055f648f973baf6291f9d03ed0",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000046",
+      "issued_kst": "2026-03-10T17:42:53+0900",
+      "month_id": "2026-03",
+      "url": "https://www.irs.gov/pub/irs-pdf/fw4p.pdf",
+      "source_domain": "www.irs.gov",
+      "filename": "fw4p.pdf",
+      "display_title": "fw4p",
+      "result_rep_sha256": "3594a5fdf42a288bdbac783aa9a3d96998021a623480bd73c47b8f19b05fd077",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

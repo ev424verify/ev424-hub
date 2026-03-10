@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000046",
+  "type": "doc_passport",
+  "source": "fw4p.pdf",
+  "source_label": "fw4p.pdf",
+  "url": "https://www.irs.gov/pub/irs-pdf/fw4p.pdf",
+  "issued_date": "2026-03-10T17:42:53+0900",
+  "fingerprint_sha256": "48f3f39792561252fa7665e0f9751cd0fccf3bd46f1331a33c4f589e8491d441",
+  "result_rep_sha256": "3594a5fdf42a288bdbac783aa9a3d96998021a623480bd73c47b8f19b05fd077",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       fw4p.pdf\nISSUED_DATE  2026-03-10T17:42:53+0900\nFINGERPRINT  48f3f39792561252fa7665e0f9751cd0fccf3bd46f1331a33c4f589e8491d441\nURL          https://www.irs.gov/pub/irs-pdf/fw4p.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=3594a5fdf42a288bdbac783aa9a3d96998021a623480bd73c47b8f19b05fd077\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
