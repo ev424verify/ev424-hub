@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000048",
+  "type": "doc_passport",
+  "source": "f326d4ac-en.pdf",
+  "source_label": "OECD AI Incident Reporting Framework",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/towards-a-common-reporting-framework-for-ai-incidents_8c488fdb/f326d4ac-en.pdf",
+  "issued_date": "2026-03-11T22:46:17+0900",
+  "fingerprint_sha256": "e8c1a12dd0f69b56641a83c96a728e378732966b517cc48672b3f424de67f3d1",
+  "result_rep_sha256": "0ee6cd9e7432adcc6ffc389a6a708e271132cefa69781c1965a801c95eb7c8e3",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       f326d4ac-en.pdf\nISSUED_DATE  2026-03-11T22:46:17+0900\nFINGERPRINT  e8c1a12dd0f69b56641a83c96a728e378732966b517cc48672b3f424de67f3d1\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/towards-a-common-reporting-framework-for-ai-incidents_8c488fdb/f326d4ac-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=0ee6cd9e7432adcc6ffc389a6a708e271132cefa69781c1965a801c95eb7c8e3\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

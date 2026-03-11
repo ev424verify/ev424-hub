@@ -534,6 +534,30 @@
       "result_rep_sha256": "54c0800e67808915e0be8763b5206a1ab1325db4bbbaa7d4c71bc3e363bb738a",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000048",
+      "issued_kst": "2026-03-11T22:46:17+0900",
+      "month_id": "2026-03",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/towards-a-common-reporting-framework-for-ai-incidents_8c488fdb/f326d4ac-en.pdf",
+      "source_domain": "www.oecd.org",
+      "filename": "OECD AI Incident Reporting Framework",
+      "display_title": "OECD AI Incident Reporting Framework",
+      "result_rep_sha256": "0ee6cd9e7432adcc6ffc389a6a708e271132cefa69781c1965a801c95eb7c8e3",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000049",
+      "issued_kst": "2026-03-11T23:13:34+0900",
+      "month_id": "2026-03",
+      "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%202023.pdf",
+      "source_domain": "www.enisa.europa.eu",
+      "filename": "ENISA%20Threat%20Landscape%202023.pdf",
+      "display_title": "ENISA Threat Landscape 2023",
+      "result_rep_sha256": "42cc6ad09ca9d1a77acb7cbe58c1102ef1825ef0f12cb92f1585abeedd1ee398",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
