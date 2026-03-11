@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000047",
+  "type": "doc_passport",
+  "source": "ENISA%20Technical%20Advisory%20-%20Package_Managers_Final.pdf",
+  "source_label": "ENISA%20Technical%20Advisory%20-%20Package_Managers_Final.pdf",
+  "url": "https://www.enisa.europa.eu/sites/default/files/2026-03/ENISA%20Technical%20Advisory%20-%20Package_Managers_Final.pdf",
+  "issued_date": "2026-03-11T11:47:50+0900",
+  "fingerprint_sha256": "be50dab618a9c87ce91cec4dc808043047d89d0f6514687888a64cb6d12e416f",
+  "result_rep_sha256": "54c0800e67808915e0be8763b5206a1ab1325db4bbbaa7d4c71bc3e363bb738a",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ENISA%20Technical%20Advisory%20-%20Package_Managers_Final.pdf\nISSUED_DATE  2026-03-11T11:47:50+0900\nFINGERPRINT  be50dab618a9c87ce91cec4dc808043047d89d0f6514687888a64cb6d12e416f\nURL          https://www.enisa.europa.eu/sites/default/files/2026-03/ENISA%20Technical%20Advisory%20-%20Package_Managers_Final.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=54c0800e67808915e0be8763b5206a1ab1325db4bbbaa7d4c71bc3e363bb738a\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
