@@ -558,6 +558,18 @@
       "result_rep_sha256": "42cc6ad09ca9d1a77acb7cbe58c1102ef1825ef0f12cb92f1585abeedd1ee398",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000050",
+      "issued_kst": "2026-03-12T08:53:10+0900",
+      "month_id": "2026-03",
+      "url": "https://www.linuxfoundation.org/hubfs/Publications/2025%20Linux%20Foundation%20Annual%20Report_121825a_lr.pdf",
+      "source_domain": "www.linuxfoundation.org",
+      "filename": "2025%20Linux%20Foundation%20Annual%20Report_121825a_lr.pdf",
+      "display_title": "2025 Linux Foundation Annual Report_121825a_lr",
+      "result_rep_sha256": "11932467c2ba56a65da46f040783a6f4442fba5a8e21265f803ca3c583ad3293",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

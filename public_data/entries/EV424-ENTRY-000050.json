@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000050",
+  "type": "doc_passport",
+  "source": "2025%20Linux%20Foundation%20Annual%20Report_121825a_lr.pdf",
+  "source_label": "2025%20Linux%20Foundation%20Annual%20Report_121825a_lr.pdf",
+  "url": "https://www.linuxfoundation.org/hubfs/Publications/2025%20Linux%20Foundation%20Annual%20Report_121825a_lr.pdf",
+  "issued_date": "2026-03-12T08:53:10+0900",
+  "fingerprint_sha256": "119bade3f50ca2bea338c0c97ede5267e8c55c85799ffa038e9e05d3f740c024",
+  "result_rep_sha256": "11932467c2ba56a65da46f040783a6f4442fba5a8e21265f803ca3c583ad3293",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       2025%20Linux%20Foundation%20Annual%20Report_121825a_lr.pdf\nISSUED_DATE  2026-03-12T08:53:10+0900\nFINGERPRINT  119bade3f50ca2bea338c0c97ede5267e8c55c85799ffa038e9e05d3f740c024\nURL          https://www.linuxfoundation.org/hubfs/Publications/2025%20Linux%20Foundation%20Annual%20Report_121825a_lr.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=11932467c2ba56a65da46f040783a6f4442fba5a8e21265f803ca3c583ad3293\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
