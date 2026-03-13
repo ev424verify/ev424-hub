@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000052",
+  "type": "doc_passport",
+  "source": "41671712-en.pdf",
+  "source_label": "41671712-en.pdf",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf",
+  "issued_date": "2026-03-12T21:17:00+0900",
+  "fingerprint_sha256": "71c73d00906c931b0633ec55346b88e0fbaa6c274fd32f2608341caa891c68f9",
+  "result_rep_sha256": "cbaad246a401036c7d53b7cb30e78763a59b19867d965d4fd6f178d2fb02bca6",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       41671712-en.pdf\nISSUED_DATE  2026-03-12T21:17:00+0900\nFINGERPRINT  71c73d00906c931b0633ec55346b88e0fbaa6c274fd32f2608341caa891c68f9\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=cbaad246a401036c7d53b7cb30e78763a59b19867d965d4fd6f178d2fb02bca6\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

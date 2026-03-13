@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000054",
+  "type": "doc_passport",
+  "source": "02f73362-en.pdf",
+  "source_label": "02f73362-en.pdf",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/08/ai-openness_958d292b/02f73362-en.pdf",
+  "issued_date": "2026-03-13T09:38:22+0900",
+  "fingerprint_sha256": "0a468d43d30cabfe1560da5f21e46ab3ccefd244650f2b8991b018cc42dd230f",
+  "result_rep_sha256": "5188878e040c12fac7985a2f04455d2b0d462809a010d3610ac2a9f132a86b74",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       02f73362-en.pdf\nISSUED_DATE  2026-03-13T09:38:22+0900\nFINGERPRINT  0a468d43d30cabfe1560da5f21e46ab3ccefd244650f2b8991b018cc42dd230f\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/08/ai-openness_958d292b/02f73362-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=5188878e040c12fac7985a2f04455d2b0d462809a010d3610ac2a9f132a86b74\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

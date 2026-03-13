@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000051",
+  "type": "doc_passport",
+  "source": "SecureByDesign_1025_508c.pdf",
+  "source_label": "SecureByDesign_1025_508c.pdf",
+  "url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf",
+  "issued_date": "2026-03-12T17:56:56+0900",
+  "fingerprint_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",
+  "result_rep_sha256": "fabeb4f48f4fcfa9328f781e67b702006d83abae3c5d7de99517aa03e88e1545",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       SecureByDesign_1025_508c.pdf\nISSUED_DATE  2026-03-12T17:56:56+0900\nFINGERPRINT  774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6\nURL          https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=fabeb4f48f4fcfa9328f781e67b702006d83abae3c5d7de99517aa03e88e1545\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

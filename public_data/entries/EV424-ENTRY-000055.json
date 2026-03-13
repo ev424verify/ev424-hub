@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000055",
+  "type": "doc_passport",
+  "source": "JCDC%20AI%20Playbook.pdf",
+  "source_label": "JCDC%20AI%20Playbook.pdf",
+  "url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook.pdf",
+  "issued_date": "2026-03-13T11:10:40+0900",
+  "fingerprint_sha256": "facac39ddd4e020f7a3d743f3d14f69c2611ce756b4e6b0c28750f939b4fb671",
+  "result_rep_sha256": "88e1d78a40e3cf777e5ce15e28f4e06f8b977048a21a8f4f91196fec1710f1ac",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       JCDC%20AI%20Playbook.pdf\nISSUED_DATE  2026-03-13T11:10:40+0900\nFINGERPRINT  facac39ddd4e020f7a3d743f3d14f69c2611ce756b4e6b0c28750f939b4fb671\nURL          https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=88e1d78a40e3cf777e5ce15e28f4e06f8b977048a21a8f4f91196fec1710f1ac\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

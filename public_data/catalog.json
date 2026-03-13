@@ -570,6 +570,66 @@
       "result_rep_sha256": "11932467c2ba56a65da46f040783a6f4442fba5a8e21265f803ca3c583ad3293",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000051",
+      "issued_kst": "2026-03-12T17:56:56+0900",
+      "month_id": "2026-03",
+      "url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "SecureByDesign_1025_508c.pdf",
+      "display_title": "SecureByDesign_1025_508c",
+      "result_rep_sha256": "fabeb4f48f4fcfa9328f781e67b702006d83abae3c5d7de99517aa03e88e1545",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000052",
+      "issued_kst": "2026-03-12T21:17:00+0900",
+      "month_id": "2026-03",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf",
+      "source_domain": "www.oecd.org",
+      "filename": "41671712-en.pdf",
+      "display_title": "41671712-en",
+      "result_rep_sha256": "cbaad246a401036c7d53b7cb30e78763a59b19867d965d4fd6f178d2fb02bca6",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000053",
+      "issued_kst": "2026-03-12T21:41:59+0900",
+      "month_id": "2026-03",
+      "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1.PDF",
+      "source_domain": "ai-act-service-desk.ec.europa.eu",
+      "filename": "guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1.PDF",
+      "display_title": "guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1",
+      "result_rep_sha256": "5080b343bf56adf260dc5072b498ec6e2fe2c95f7491757d8e5868a013aab49d",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000054",
+      "issued_kst": "2026-03-13T09:38:22+0900",
+      "month_id": "2026-03",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/08/ai-openness_958d292b/02f73362-en.pdf",
+      "source_domain": "www.oecd.org",
+      "filename": "02f73362-en.pdf",
+      "display_title": "02f73362-en",
+      "result_rep_sha256": "5188878e040c12fac7985a2f04455d2b0d462809a010d3610ac2a9f132a86b74",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000055",
+      "issued_kst": "2026-03-13T11:10:40+0900",
+      "month_id": "2026-03",
+      "url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "JCDC%20AI%20Playbook.pdf",
+      "display_title": "JCDC AI Playbook",
+      "result_rep_sha256": "88e1d78a40e3cf777e5ce15e28f4e06f8b977048a21a8f4f91196fec1710f1ac",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
