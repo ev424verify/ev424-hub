@@ -65,3 +65,12 @@ Entry ID continuity is not a validity requirement.
 Validity is established by SHA-256 verification and reproducible receipts.
 
 **Accuracy(4)=Truth(2)=Life(4)**
+
+
+## License and Project Boundary
+
+Repository-owned code and repository-owned content are licensed under the Apache License 2.0 unless otherwise noted. See `LICENSE`.
+
+Additional repository notices are provided in `NOTICE`.
+
+EV424-specific operational, legal, and third-party document boundaries are described in `LEGAL_NOTICE.md`.
