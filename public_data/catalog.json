@@ -630,6 +630,30 @@
       "result_rep_sha256": "88e1d78a40e3cf777e5ce15e28f4e06f8b977048a21a8f4f91196fec1710f1ac",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000056",
+      "issued_kst": "2026-03-14T15:18:13+0900",
+      "month_id": "2026-03",
+      "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/commission_guidelines_on_the_definition_of_an_artificial_intelligence_system_established_by_regulation_eu_20241689_ai_actenglish_nf2skcqfrtjdfggjavcodopcwz4_112455.PDF",
+      "source_domain": "ai-act-service-desk.ec.europa.eu",
+      "filename": "EU",
+      "display_title": "EU",
+      "result_rep_sha256": "04be18f31ee48d88bbf56d786bc1842304fcc9818a3f95cf09f8550aca657fc2",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000057",
+      "issued_kst": "2026-03-15T00:30:16+0900",
+      "month_id": "2026-03",
+      "url": "https://www.cisa.gov/sites/default/files/2025-04/ARCHIVE_20232024CISARoadmapAI508.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "e544ac1c057b63ba1d845affbf123f17d0e8a41e98cc599d12b13fbe1556ad1f",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
