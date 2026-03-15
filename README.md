@@ -2,8 +2,7 @@
 
 Licensed under the Apache License 2.0. See `LICENSE`.
 
-EV424 includes an implemented API-facing and agent-assisted operational layer.
-Internal implementation details remain private.
+EV424 includes an implemented API-facing and agent-assisted operational layer. Internal implementation details remain private.
 
 **Don't Trust, Verify.**
 
@@ -49,7 +48,7 @@ EV424 issues a reproducible integrity receipt so that anyone can independently r
 
 ## Local reproducibility (Preflight Spec)
 
-> Note: This document defines the contract; implementation may be added in later commits.
+This repository includes an implemented API-facing and agent-assisted operational layer, and this document defines the local reproducibility and preflight contract for verifying that flow.
 
 Don't trust claims. Trust the exit code, SHA-256, and the normalized JSON.
 
