@@ -2,6 +2,9 @@
 
 Licensed under the Apache License 2.0. See `LICENSE`.
 
+EV424 includes an implemented API-facing and agent-assisted operational layer.
+Internal implementation details remain private.
+
 **Don't Trust, Verify.**
 
 EV424 is a SHA-256-based, non-custodial integrity receipt framework.
