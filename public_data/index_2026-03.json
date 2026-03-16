@@ -1,8 +1,32 @@
 {
   "counts": {
-    "EVIDENCE": 18
+    "EVIDENCE": 22
   },
   "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000061",
+      "href": "entries/EV424-ENTRY-000061.json",
+      "sha256": "0cad9f032d1019ffe72a6cab660fd152894898a4233a77ba817ff42b8ea53710",
+      "sha256_file": "entries/EV424-ENTRY-000061.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000060",
+      "href": "entries/EV424-ENTRY-000060.json",
+      "sha256": "ecac35247af3ac542437e9b5e088c2cbad0c4e1896a07e353132dbab4104fffc",
+      "sha256_file": "entries/EV424-ENTRY-000060.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000059",
+      "href": "entries/EV424-ENTRY-000059.json",
+      "sha256": "3b296f59030d7d4905c74bb562f56fe99127336fd914d7f1716547226db7d454",
+      "sha256_file": "entries/EV424-ENTRY-000059.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000058",
+      "href": "entries/EV424-ENTRY-000058.json",
+      "sha256": "c5848eb94deabeed347a23c7a860cfbb2d2f509cf61336fca94dd77f25f606a6",
+      "sha256_file": "entries/EV424-ENTRY-000058.json.sha256"
+    },
     {
       "entry_id": "EV424-ENTRY-000057",
       "href": "entries/EV424-ENTRY-000057.json",

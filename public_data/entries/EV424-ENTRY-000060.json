@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000060",
+  "type": "doc_passport",
+  "source": "ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf",
+  "source_label": "ENISA",
+  "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf",
+  "issued_date": "2026-03-16T19:02:09+0900",
+  "fingerprint_sha256": "4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe",
+  "result_rep_sha256": "ecac35247af3ac542437e9b5e088c2cbad0c4e1896a07e353132dbab4104fffc",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf\nISSUED_DATE  2026-03-16T19:02:09+0900\nFINGERPRINT  4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe\nURL          https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=ecac35247af3ac542437e9b5e088c2cbad0c4e1896a07e353132dbab4104fffc\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

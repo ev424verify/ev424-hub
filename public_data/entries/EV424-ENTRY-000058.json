@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000058",
+  "type": "doc_passport",
+  "source": "cisa_insight_post_quantum_cryptography_508.pdf",
+  "source_label": "CISA",
+  "url": "https://www.cisa.gov/sites/default/files/2022-09/cisa_insight_post_quantum_cryptography_508.pdf",
+  "issued_date": "2026-03-16T16:56:15+0900",
+  "fingerprint_sha256": "5d91f0a8c65f01737c5deb23fb9f66cb850109dd6dfa22b3c20435095ac20034",
+  "result_rep_sha256": "c5848eb94deabeed347a23c7a860cfbb2d2f509cf61336fca94dd77f25f606a6",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       cisa_insight_post_quantum_cryptography_508.pdf\nISSUED_DATE  2026-03-16T16:56:15+0900\nFINGERPRINT  5d91f0a8c65f01737c5deb23fb9f66cb850109dd6dfa22b3c20435095ac20034\nURL          https://www.cisa.gov/sites/default/files/2022-09/cisa_insight_post_quantum_cryptography_508.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=c5848eb94deabeed347a23c7a860cfbb2d2f509cf61336fca94dd77f25f606a6\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

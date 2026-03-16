@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000059",
+  "type": "doc_passport",
+  "source": "Report%20on%20CSIRT-LE%20Cooperation_Updated_Nov_2022.pdf",
+  "source_label": "ENISA",
+  "url": "https://www.enisa.europa.eu/sites/default/files/publications/Report%20on%20CSIRT-LE%20Cooperation_Updated_Nov_2022.pdf",
+  "issued_date": "2026-03-16T18:52:30+0900",
+  "fingerprint_sha256": "e12401951977d1207deaa4374d477bc60c7abee30675c286257d6eff41fc2449",
+  "result_rep_sha256": "3b296f59030d7d4905c74bb562f56fe99127336fd914d7f1716547226db7d454",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Report%20on%20CSIRT-LE%20Cooperation_Updated_Nov_2022.pdf\nISSUED_DATE  2026-03-16T18:52:30+0900\nFINGERPRINT  e12401951977d1207deaa4374d477bc60c7abee30675c286257d6eff41fc2449\nURL          https://www.enisa.europa.eu/sites/default/files/publications/Report%20on%20CSIRT-LE%20Cooperation_Updated_Nov_2022.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=3b296f59030d7d4905c74bb562f56fe99127336fd914d7f1716547226db7d454\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

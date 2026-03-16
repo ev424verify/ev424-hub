@@ -654,6 +654,54 @@
       "result_rep_sha256": "e544ac1c057b63ba1d845affbf123f17d0e8a41e98cc599d12b13fbe1556ad1f",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000058",
+      "issued_kst": "2026-03-16T16:56:15+0900",
+      "month_id": "2026-03",
+      "url": "https://www.cisa.gov/sites/default/files/2022-09/cisa_insight_post_quantum_cryptography_508.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "c5848eb94deabeed347a23c7a860cfbb2d2f509cf61336fca94dd77f25f606a6",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000059",
+      "issued_kst": "2026-03-16T18:52:30+0900",
+      "month_id": "2026-03",
+      "url": "https://www.enisa.europa.eu/sites/default/files/publications/Report%20on%20CSIRT-LE%20Cooperation_Updated_Nov_2022.pdf",
+      "source_domain": "www.enisa.europa.eu",
+      "filename": "ENISA",
+      "display_title": "ENISA",
+      "result_rep_sha256": "3b296f59030d7d4905c74bb562f56fe99127336fd914d7f1716547226db7d454",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000060",
+      "issued_kst": "2026-03-16T19:02:09+0900",
+      "month_id": "2026-03",
+      "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf",
+      "source_domain": "www.enisa.europa.eu",
+      "filename": "ENISA",
+      "display_title": "ENISA",
+      "result_rep_sha256": "ecac35247af3ac542437e9b5e088c2cbad0c4e1896a07e353132dbab4104fffc",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000061",
+      "issued_kst": "2026-03-16T19:29:27+0900",
+      "month_id": "2026-03",
+      "url": "https://www.rfc-editor.org/rfc/rfc8789.pdf",
+      "source_domain": "www.rfc-editor.org",
+      "filename": "RFC",
+      "display_title": "RFC",
+      "result_rep_sha256": "0cad9f032d1019ffe72a6cab660fd152894898a4233a77ba817ff42b8ea53710",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
