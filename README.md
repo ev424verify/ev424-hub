@@ -22,7 +22,7 @@ Stable reference (always available):
 
 Example verified entry:
 
-- https://ev424verify.com/?q=EV424-ENTRY-000057
+- https://ev424verify.com/?q=EV424-ENTRY-000061
 
 ## Core boundary
 
@@ -53,17 +53,6 @@ This repository includes an implemented API-facing and agent-assisted operationa
 Don't trust claims. Trust the exit code, SHA-256, and the normalized JSON.
 
 See:
-
-What to do in 30 seconds
-Open the stable reference and check whether the receipt SHA-256 remains the same over time.
-
-Stable reference (always available):
-
-https://ev424verify.com/?q=EV424-ENTRY-000019
-Example verified entry:
-
-https://ev424verify.com/?q=EV424-ENTRY-000061
-
 
 ## Security / Tests (baseline)
 
