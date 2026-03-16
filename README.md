@@ -54,7 +54,16 @@ Don't trust claims. Trust the exit code, SHA-256, and the normalized JSON.
 
 See:
 
-- `docs/local_repro_preflight_spec_v2026-02-21_en.md`
+What to do in 30 seconds
+Open the stable reference and check whether the receipt SHA-256 remains the same over time.
+
+Stable reference (always available):
+
+https://ev424verify.com/?q=EV424-ENTRY-000019
+Example verified entry:
+
+https://ev424verify.com/?q=EV424-ENTRY-000061
+
 
 ## Security / Tests (baseline)
 
