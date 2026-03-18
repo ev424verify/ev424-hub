@@ -4,7 +4,7 @@
   "source": "nhsr207.pdf",
   "url": "https://www.cdc.gov/nchs/data/nhsr/nhsr207.pdf",
   "issued_date": "2026-02-26T22:50:52+0900",
-  "fingerprint_sha256": "52152c595a78e9a7ea511192716f3cbcea58c6eebad563663bc7ec69ff3fc1eb",
+  "fingerprint_sha256": "52152c595a78e9a7ea511192716f3bcbea58c6eebad563663bc7ec69ff3fc1eb",
   "result_rep_sha256": "6e9aae11086255fb039fa9f06919e7e6b140dba5226724588ad6083320ab7128",
   "verify": {
     "local_sha": "OK",
