@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000063",
+  "type": "doc_passport",
+  "source": "NIST.AI.800-4.pdf",
+  "source_label": "NIST",
+  "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf",
+  "issued_date": "2026-03-18T09:31:47+0900",
+  "fingerprint_sha256": "b96e4085f39ee326162af0453266117b7526e06802e5f909db6b1a05077be896",
+  "result_rep_sha256": "cad64cdccf91b470a1c4b22a33db869c1c9add3bd28154e2f1999424d6759e05",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIST.AI.800-4.pdf\nISSUED_DATE  2026-03-18T09:31:47+0900\nFINGERPRINT  b96e4085f39ee326162af0453266117b7526e06802e5f909db6b1a05077be896\nURL          https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=cad64cdccf91b470a1c4b22a33db869c1c9add3bd28154e2f1999424d6759e05\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

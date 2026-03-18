@@ -702,6 +702,42 @@
       "result_rep_sha256": "0cad9f032d1019ffe72a6cab660fd152894898a4233a77ba817ff42b8ea53710",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000062",
+      "issued_kst": "2026-03-17T12:24:21+0900",
+      "month_id": "2026-03",
+      "url": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100430.pdf",
+      "source_domain": "www.iso.org",
+      "filename": "ISO",
+      "display_title": "ISO",
+      "result_rep_sha256": "4390f6e4d53df87b2d9dd09b75e7562aa95ae645c96bc088009862d334671150",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000063",
+      "issued_kst": "2026-03-18T09:31:47+0900",
+      "month_id": "2026-03",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf",
+      "source_domain": "nvlpubs.nist.gov",
+      "filename": "NIST",
+      "display_title": "NIST",
+      "result_rep_sha256": "cad64cdccf91b470a1c4b22a33db869c1c9add3bd28154e2f1999424d6759e05",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000064",
+      "issued_kst": "2026-03-18T10:29:28+0900",
+      "month_id": "2026-03",
+      "url": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100459.pdf",
+      "source_domain": "www.iso.org",
+      "filename": "ISO",
+      "display_title": "ISO",
+      "result_rep_sha256": "82d945d7dc8035ae820d371ff79262fe8aa3eb54ee3b48cbffecfb20e55a1b91",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
