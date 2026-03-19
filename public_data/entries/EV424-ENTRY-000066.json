@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000066",
+  "type": "doc_passport",
+  "source": "NIST.AI.600-1.pdf",
+  "source_label": "NIST",
+  "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+  "issued_date": "2026-03-19T13:24:58+0900",
+  "fingerprint_sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+  "result_rep_sha256": "fb92666ae5b961579fda35a727b93d93fbc5b36f57608d8fae02eb83947f5505",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIST.AI.600-1.pdf\nISSUED_DATE  2026-03-19T13:24:58+0900\nFINGERPRINT  6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a\nURL          https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=fb92666ae5b961579fda35a727b93d93fbc5b36f57608d8fae02eb83947f5505\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

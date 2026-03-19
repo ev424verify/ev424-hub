@@ -738,6 +738,30 @@
       "result_rep_sha256": "82d945d7dc8035ae820d371ff79262fe8aa3eb54ee3b48cbffecfb20e55a1b91",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000065",
+      "issued_kst": "2026-03-19T10:16:22+0900",
+      "month_id": "2026-03",
+      "url": "https://unevoc.unesco.org/pub/wysd_survey_report_2025.pdf",
+      "source_domain": "unevoc.unesco.org",
+      "filename": "UNESCO",
+      "display_title": "UNESCO",
+      "result_rep_sha256": "afa508e7b5193f80408f311a1de6aac79646f96aeae63dec85672c4b40c81f21",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000066",
+      "issued_kst": "2026-03-19T13:24:58+0900",
+      "month_id": "2026-03",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "source_domain": "nvlpubs.nist.gov",
+      "filename": "NIST",
+      "display_title": "NIST",
+      "result_rep_sha256": "fb92666ae5b961579fda35a727b93d93fbc5b36f57608d8fae02eb83947f5505",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
