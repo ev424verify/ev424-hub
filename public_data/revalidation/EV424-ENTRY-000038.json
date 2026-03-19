@@ -1,0 +1,31 @@
+{
+  "entry_id": "EV424-ENTRY-000038",
+  "issued_date": "2026-02-26T22:50:52+0900",
+  "source_url": "https://www.cdc.gov/nchs/data/nhsr/nhsr207.pdf",
+  "fingerprint_sha256": "52152c595a78e9a7ea511192716f3cbcea58c6eebad563663bc7ec69ff3fc1eb",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-03-05T22:50:52+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-12T22:50:52+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}

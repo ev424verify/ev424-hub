@@ -1,0 +1,31 @@
+{
+  "entry_id": "EV424-ENTRY-000042",
+  "issued_date": "2026-03-03T21:22:11+0900",
+  "source_url": "https://www.cisa.gov/sites/default/files/2025-08/joint-guide-foundations-for-OT-cybersecurity-asset-inventory-guidance_508c.pdf",
+  "fingerprint_sha256": "a40779754d1ca789cc6cb6f4a035175541986157528b4112e2d099cae1d90749",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-03-10T21:22:11+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-17T21:22:11+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}

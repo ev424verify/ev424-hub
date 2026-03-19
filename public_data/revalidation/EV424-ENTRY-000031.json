@@ -1,0 +1,42 @@
+{
+  "entry_id": "EV424-ENTRY-000031",
+  "issued_date": "2026-02-23T08:52:11+0900",
+  "source_url": "https://bitcoin.org/bitcoin.pdf",
+  "fingerprint_sha256": "b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-03-02T08:52:11+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-09T08:52:11+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-16T08:52:11+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}

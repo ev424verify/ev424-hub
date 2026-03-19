@@ -1,0 +1,31 @@
+{
+  "entry_id": "EV424-ENTRY-000036",
+  "issued_date": "2026-02-27T09:08:13+0900",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc9110.pdf",
+  "fingerprint_sha256": "60b30efa1048900833d1758440247fe8ac85a3134f2327388dcb24e07d814c89",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-03-06T09:08:13+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-13T09:08:13+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}

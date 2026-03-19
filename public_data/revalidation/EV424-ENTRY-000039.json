@@ -1,0 +1,31 @@
+{
+  "entry_id": "EV424-ENTRY-000039",
+  "issued_date": "2026-02-28T23:45:45+0900",
+  "source_url": "https://www.cisa.gov/sites/default/files/2024-08/SecureByDemandGuide_080624_508c.pdf",
+  "fingerprint_sha256": "4efa7d2e082dcb7f6d53f2812c9eeb4bb420b3e8d811df6df664021b13d9edca",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-03-07T23:45:45+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-14T23:45:45+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}

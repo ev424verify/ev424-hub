@@ -1,0 +1,42 @@
+{
+  "entry_id": "EV424-ENTRY-000029",
+  "issued_date": "2026-02-21T14:29:02+0900",
+  "source_url": "https://www.ncsc.gov.uk/files/ncsc-annual-review-2025.pdf",
+  "fingerprint_sha256": "95c17767c4776e7dce06d50902f14479c972c0510f478c3c654cc78d8ae254ec",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-02-28T14:29:02+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-07T14:29:02+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-14T14:29:02+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}

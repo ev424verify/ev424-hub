@@ -1,0 +1,42 @@
+{
+  "entry_id": "EV424-ENTRY-000032",
+  "issued_date": "2026-02-24T21:50:18+0900",
+  "source_url": "https://www.nccoe.nist.gov/sites/default/files/2025-03/trusted-iot-onboarding-fact-sheet.pdf",
+  "fingerprint_sha256": "0961ddb6f543b177a612e4084b778a6fb57b2de9acbb037a96d027824fd571cd",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-03-03T21:50:18+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-10T21:50:18+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-17T21:50:18+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}

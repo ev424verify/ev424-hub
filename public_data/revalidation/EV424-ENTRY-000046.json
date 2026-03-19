@@ -1,0 +1,20 @@
+{
+  "entry_id": "EV424-ENTRY-000046",
+  "issued_date": "2026-03-10T17:42:53+0900",
+  "source_url": "https://www.irs.gov/pub/irs-pdf/fw4p.pdf",
+  "fingerprint_sha256": "48f3f39792561252fa7665e0f9751cd0fccf3bd46f1331a33c4f589e8491d441",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-03-17T17:42:53+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}

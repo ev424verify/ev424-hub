@@ -528,6 +528,16 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
   const resultTag = document.getElementById("resultTag");
   const resultTitle = document.getElementById("resultTitle");
   const resultBody = document.getElementById("resultBody");
+  let resultExtra = document.getElementById("resultExtra");
+  if (!resultExtra && resultBody && resultBody.parentNode) {
+    resultExtra = document.createElement("div");
+    resultExtra.id = "resultExtra";
+    resultExtra.style.display = "none";
+    resultExtra.style.padding = "12px";
+    resultExtra.style.borderTop = "1px solid rgba(255,255,255,.08)";
+    resultExtra.style.background = "rgba(255,255,255,.02)";
+    resultBody.parentNode.insertBefore(resultExtra, resultBody.nextSibling);
+  }
 
   function escapeHtml(x){
     return String(x ?? "")
@@ -557,11 +567,47 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
     return h;
   }
 
+  function escapePanelText(x){
+    return escapeHtml(String(x ?? ""));
+  }
+
+    function renderRevalidationPanel(entry, reval){
+      if (!resultExtra) return;
+      if (!entry || typeof entry !== "object") {
+        resultExtra.innerHTML = "";
+        resultExtra.style.display = "none";
+        return;
+      }
+      const events = (reval && Array.isArray(reval.events)) ? reval.events : [];
+      const historyN = events.length;
+      const last = historyN ? events[historyN - 1] : null;
+      const timeline = last && last.observed_at_kst ? last.observed_at_kst : "NONE";
+      const lastStatus = last && last.final_status ? last.final_status : "NONE";
+      resultExtra.innerHTML = `
+  <div style="font-size:12px;line-height:1.6;color:#d7e2ef;">
+    <div style="font-weight:900;margin-bottom:8px;">Revalidation</div>
+    <div><span style="color:#7db4ff;font-weight:700;">HISTORY_N</span>   ${historyN}</div>
+    <div><span style="color:#7db4ff;font-weight:700;">TIMELINE</span>    ${escapePanelText(timeline)}</div>
+    <div><span style="color:#7db4ff;font-weight:700;">LAST_STATUS</span> ${escapePanelText(lastStatus)}</div>
+  </div>`;
+      resultExtra.style.display = "";
+    }
+
+  async function loadRevalidation(entryId){
+    if (!entryId) return null;
+    const url = "/public_data/revalidation/" + String(entryId).trim() + ".json";
+    try { return await fetchJSON(url); } catch (e) { return null; }
+  }
+
   function showResult(tag, title, obj) {
     resultWrap.hidden = false;
     try{ resultWrap.scrollIntoView({block:"start"}); }catch(e){}
     resultTag.textContent = tag;
     resultTitle.textContent = title || "";
+    if (resultExtra) {
+      resultExtra.innerHTML = "";
+      resultExtra.style.display = "none";
+    }
 
     // If obj is a string: treat as receipt/body text (colorized)
     if (typeof obj === "string") {
@@ -572,6 +618,7 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
     // If obj has receipt_text: render it as-is (colorized)
     if (obj && typeof obj === "object" && typeof obj.receipt_text === "string") {
       resultBody.innerHTML = formatReceipt(obj.receipt_text);
+      renderRevalidationPanel(obj, obj._revalidation || null);
       return;
     }
 
@@ -597,6 +644,10 @@ a.btn.ghost[href="/public_docs/index_v2.html"],
     resultWrap.hidden = true;
     resultTitle.textContent = "";
     resultBody.textContent = "";
+    if (resultExtra) {
+      resultExtra.innerHTML = "";
+      resultExtra.style.display = "none";
+    }
     setTagStyle("nf");
   }
     async function fetchJSON(url) {
@@ -794,7 +845,8 @@ function endLoading(seq){
               const entryUrlR = hitR.open_url;
               const entryR = await fetchJSON(entryUrlR);
               if (entryR && typeof entryR.receipt_text === "string" && entryR.receipt_text.trim()) {
-                showResult("PASS", hitR.entry_id || hitR.sha256 || "", entryR.receipt_text);
+                entryR._revalidation = await loadRevalidation(hitR.entry_id || "");
+                showResult("PASS", hitR.entry_id || hitR.sha256 || "", entryR);
                 return;
               }
             }
@@ -823,7 +875,8 @@ function endLoading(seq){
 
       const entry = await fetchJSON(entryUrl);
       if (entry && typeof entry.receipt_text === "string" && entry.receipt_text.trim()) {
-        showResult("PASS", hit.entry_id || hit.sha256 || "", entry.receipt_text);
+        entry._revalidation = await loadRevalidation(hit.entry_id || "");
+        showResult("PASS", hit.entry_id || hit.sha256 || "", entry);
         return;
       }
 

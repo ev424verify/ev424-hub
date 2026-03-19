@@ -1,0 +1,31 @@
+{
+  "entry_id": "EV424-ENTRY-000035",
+  "issued_date": "2026-02-27T00:09:28+0900",
+  "source_url": "https://www.gnu.org/software/bash/manual/bash.pdf",
+  "fingerprint_sha256": "6652f0353ee8027f5069afd3adabeeeaa9a50347a212361736f18ad4efbe69de7",
+  "revalidation_policy": "NONE",
+  "events": [
+    {
+      "observed_at_kst": "2026-03-06T00:09:28+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-03-13T00:09:28+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
+}
