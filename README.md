@@ -25,7 +25,7 @@ Direct, publicly checkable, independently re-verifiable, and already operating a
 https://ev424verify.com/?q=EV424-ENTRY-000019
 
 **Recent public entry**  
-https://ev424verify.com/?q=EV424-ENTRY-000061
+https://ev424verify.com/?q=EV424-ENTRY-000068
 
 A claim is not evidence.  
 **Evidence is a reproducible verification result.**
