@@ -762,6 +762,30 @@
       "result_rep_sha256": "fb92666ae5b961579fda35a727b93d93fbc5b36f57608d8fae02eb83947f5505",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000067",
+      "issued_kst": "2026-03-20T13:06:57+0900",
+      "month_id": "2026-03",
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf",
+      "source_domain": "s206.q4cdn.com",
+      "filename": "ALPHABET",
+      "display_title": "ALPHABET",
+      "result_rep_sha256": "9f1950c2e06a19de747b3334705b87fbaf6e257e924cd068f412a1720cf47139",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000068",
+      "issued_kst": "2026-03-20T13:09:40+0900",
+      "month_id": "2026-03",
+      "url": "https://www.linuxfoundation.org/hubfs/Research%20Reports/lfr_sovereign_ai25_082525a.pdf?hsLang=en",
+      "source_domain": "www.linuxfoundation.org",
+      "filename": "LINUX",
+      "display_title": "LINUX",
+      "result_rep_sha256": "0d4644fd49882205738ce0f3992f0fb60927c233e8be90431d3219a36c460f43",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

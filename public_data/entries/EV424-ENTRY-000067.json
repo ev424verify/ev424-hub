@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000067",
+  "type": "doc_passport",
+  "source": "GOOG-10-K-2025.pdf",
+  "source_label": "ALPHABET",
+  "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf",
+  "issued_date": "2026-03-20T13:06:57+0900",
+  "fingerprint_sha256": "9953e8d2e70b18c5bf0af3b2b2a1e96de0555f51cbb39a625497b434e19fb43a",
+  "result_rep_sha256": "9f1950c2e06a19de747b3334705b87fbaf6e257e924cd068f412a1720cf47139",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       GOOG-10-K-2025.pdf\nISSUED_DATE  2026-03-20T13:06:57+0900\nFINGERPRINT  9953e8d2e70b18c5bf0af3b2b2a1e96de0555f51cbb39a625497b434e19fb43a\nURL          https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=9f1950c2e06a19de747b3334705b87fbaf6e257e924cd068f412a1720cf47139\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

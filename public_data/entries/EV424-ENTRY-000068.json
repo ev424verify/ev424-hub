@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000068",
+  "type": "doc_passport",
+  "source": "lfr_sovereign_ai25_082525a.pdf",
+  "source_label": "LINUX",
+  "url": "https://www.linuxfoundation.org/hubfs/Research%20Reports/lfr_sovereign_ai25_082525a.pdf?hsLang=en",
+  "issued_date": "2026-03-20T13:09:40+0900",
+  "fingerprint_sha256": "bef6d1eba85bd56c2464d7870223e0b6d9411dc74a6ecc2bcadb5b8c30360e2d",
+  "result_rep_sha256": "0d4644fd49882205738ce0f3992f0fb60927c233e8be90431d3219a36c460f43",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       lfr_sovereign_ai25_082525a.pdf?hsLang=en\nISSUED_DATE  2026-03-20T13:09:40+0900\nFINGERPRINT  bef6d1eba85bd56c2464d7870223e0b6d9411dc74a6ecc2bcadb5b8c30360e2d\nURL          https://www.linuxfoundation.org/hubfs/Research%20Reports/lfr_sovereign_ai25_082525a.pdf?hsLang=en\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=0d4644fd49882205738ce0f3992f0fb60927c233e8be90431d3219a36c460f43\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
