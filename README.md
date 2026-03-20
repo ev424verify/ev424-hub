@@ -10,7 +10,7 @@ Only the official public source, the receipt, and reproducible byte identity.
 
 EV424 is a **SHA-256-based, non-custodial integrity receipt structure** for official public-source byte identity.
 
-More direct, easier to re-verify, safer without original-file custody, and independently verifiable by third parties.
+Direct, publicly checkable, independently re-verifiable, and already operating as a live verification surface.
 
 ---
 
@@ -21,10 +21,10 @@ More direct, easier to re-verify, safer without original-file custody, and indep
 3. Re-verify the official public source.
 4. Check whether the SHA-256 matches again.
 
-**Stable reference**  
+**Stable reference entry**  
 https://ev424verify.com/?q=EV424-ENTRY-000019
 
-**Example verified entry**  
+**Recent public entry**  
 https://ev424verify.com/?q=EV424-ENTRY-000061
 
 A claim is not evidence.  
@@ -79,7 +79,7 @@ If it cannot be reproduced, it is not evidence.
 | Signature-centered model | Signer / certificate | Signature validity |
 | Chain-anchored model | Chain record | Inclusion / anchoring |
 
-EV424 centers on the **official public source itself**.
+EV424 centers on the **official public source itself**, not on upload, storage, or mirrored custody.
 
 It asks one direct question:
 
@@ -98,7 +98,7 @@ Many systems are strong at proving:
 - what storage or archive retained
 - what chain or platform recorded it
 
-EV424 closes a different question directly:
+EV424 closes a different and immediately practical question:
 
 **Can the official public source itself be retrieved again and verified again as the same bytes?**
 
@@ -111,7 +111,7 @@ That matters when people need to know:
 
 ---
 
-## Direct advantages
+## Direct advantages in practice
 
 - **Faster to access** — check directly by public URL, ENTRY_ID, or SHA-256
 - **Simpler to understand** — one direct verification question
@@ -126,7 +126,7 @@ That matters when people need to know:
 - **EV424-ENTRY-000040 (GW250114)** — first complete end-to-end link-only reproducible verification case
 - **EV424-ENTRY-000045** — the same 5-step verification flow was successfully reproduced and verified on a dynamic query-based official PDF URL
 - **EV424-ENTRY-000057** — public entry, deployment, and verification continuity were established without mirroring the original document
-- **EV424-ENTRY-000066** — latest public baseline continuity reference point
+- **EV424-ENTRY-000068** — latest public baseline continuity reference point
 
 ---
 
@@ -135,10 +135,10 @@ That matters when people need to know:
 - Public verification surface: **Live**
 - Stable reference entries: **Publicly inspectable**
 - Reproducible receipt flow: **Publicly checkable**
-- Public continuity: **Extends through EV424-ENTRY-000066**
+- Public continuity: **Extends through EV424-ENTRY-000068**
 
-EV424 is not just an idea.  
-It already has a public verification surface that can be checked directly.
+EV424 is not just a concept.  
+It already operates as a live public verification surface that can be checked directly.
 
 ---
 
@@ -184,7 +184,7 @@ Additional notices are provided in `NOTICE`.
 
 EV424-specific operational, legal, and third-party document boundaries are described in `LEGAL_NOTICE.md`.
 
-EV424 includes a private API-facing and agent-assisted operational layer. Internal implementation details remain private.
+EV424 already includes a private API-facing and agent-assisted operational layer for non-public operation and expansion. Internal implementation details remain private.
 
 ---
 
