@@ -786,6 +786,30 @@
       "result_rep_sha256": "0d4644fd49882205738ce0f3992f0fb60927c233e8be90431d3219a36c460f43",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000069",
+      "issued_kst": "2026-03-21T11:22:49+0900",
+      "month_id": "2026-03",
+      "url": "https://www.linuxfoundation.org/hubfs/LF%20Research/lfr_genai24_111924.pdf",
+      "source_domain": "www.linuxfoundation.org",
+      "filename": "LINUX",
+      "display_title": "LINUX",
+      "result_rep_sha256": "47f015c0ae5b3f2f1f89dc188c308ee02c8b917f76c9f0bee7011566f2c7daae",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000070",
+      "issued_kst": "2026-03-21T11:51:35+0900",
+      "month_id": "2026-03",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Responsible-AI-Transparency-Report-2025-vertical.pdf",
+      "source_domain": "cdn-dynmedia-1.microsoft.com",
+      "filename": "MICROSOFT",
+      "display_title": "MICROSOFT",
+      "result_rep_sha256": "125c04637628edfe9fbe66a17a16eb36c3036d63c96863d736ca8ca1684d104f",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

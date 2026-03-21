@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000069",
+  "type": "doc_passport",
+  "source": "lfr_genai24_111924.pdf",
+  "source_label": "LINUX",
+  "url": "https://www.linuxfoundation.org/hubfs/LF%20Research/lfr_genai24_111924.pdf",
+  "issued_date": "2026-03-21T11:22:49+0900",
+  "fingerprint_sha256": "ec1bfd3d435c2ceee06cf5a96877952df1f4c8efd964ceb56c3998081660cd19",
+  "result_rep_sha256": "47f015c0ae5b3f2f1f89dc188c308ee02c8b917f76c9f0bee7011566f2c7daae",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       lfr_genai24_111924.pdf\nISSUED_DATE  2026-03-21T11:22:49+0900\nFINGERPRINT  ec1bfd3d435c2ceee06cf5a96877952df1f4c8efd964ceb56c3998081660cd19\nURL          https://www.linuxfoundation.org/hubfs/LF%20Research/lfr_genai24_111924.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=47f015c0ae5b3f2f1f89dc188c308ee02c8b917f76c9f0bee7011566f2c7daae\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

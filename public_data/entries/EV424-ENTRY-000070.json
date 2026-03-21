@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000070",
+  "type": "doc_passport",
+  "source": "Responsible-AI-Transparency-Report-2025-vertical.pdf",
+  "source_label": "MICROSOFT",
+  "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Responsible-AI-Transparency-Report-2025-vertical.pdf",
+  "issued_date": "2026-03-21T11:51:35+0900",
+  "fingerprint_sha256": "86c75fe503f3ee1225fc3eea0c770bbbdc795490a7a6402a5d9348b80bb540f8",
+  "result_rep_sha256": "125c04637628edfe9fbe66a17a16eb36c3036d63c96863d736ca8ca1684d104f",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Responsible-AI-Transparency-Report-2025-vertical.pdf\nISSUED_DATE  2026-03-21T11:51:35+0900\nFINGERPRINT  86c75fe503f3ee1225fc3eea0c770bbbdc795490a7a6402a5d9348b80bb540f8\nURL          https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Responsible-AI-Transparency-Report-2025-vertical.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=125c04637628edfe9fbe66a17a16eb36c3036d63c96863d736ca8ca1684d104f\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
