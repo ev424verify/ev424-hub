@@ -1,8 +1,20 @@
 {
   "counts": {
-    "EVIDENCE": 31
+    "EVIDENCE": 33
   },
   "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000072",
+      "href": "entries/EV424-ENTRY-000072.json",
+      "sha256": "4400f65e085c62efab886e7097aa9c54194dc1ad4017f79143e862d0066bb45d",
+      "sha256_file": "entries/EV424-ENTRY-000072.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000071",
+      "href": "entries/EV424-ENTRY-000071.json",
+      "sha256": "51fb79e017a5a1f9eb3700665781cc5a6633eaa779b4f654a9bf449e412d319a",
+      "sha256_file": "entries/EV424-ENTRY-000071.json.sha256"
+    },
     {
       "entry_id": "EV424-ENTRY-000070",
       "href": "entries/EV424-ENTRY-000070.json",

@@ -810,6 +810,30 @@
       "result_rep_sha256": "125c04637628edfe9fbe66a17a16eb36c3036d63c96863d736ca8ca1684d104f",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000071",
+      "issued_kst": "2026-03-22T12:57:52+0900",
+      "month_id": "2026-03",
+      "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf",
+      "source_domain": "ir.tesla.com",
+      "filename": "TESLA",
+      "display_title": "TESLA",
+      "result_rep_sha256": "51fb79e017a5a1f9eb3700665781cc5a6633eaa779b4f654a9bf449e412d319a",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000072",
+      "issued_kst": "2026-03-22T13:09:10+0900",
+      "month_id": "2026-03",
+      "url": "https://cdn.openai.com/gpt-5-system-card.pdf",
+      "source_domain": "cdn.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "4400f65e085c62efab886e7097aa9c54194dc1ad4017f79143e862d0066bb45d",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

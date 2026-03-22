@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000072",
+  "type": "doc_passport",
+  "source": "gpt-5-system-card.pdf",
+  "source_label": "OPENAI",
+  "url": "https://cdn.openai.com/gpt-5-system-card.pdf",
+  "issued_date": "2026-03-22T13:09:10+0900",
+  "fingerprint_sha256": "f9f9c72d08cba81dcbb189129119357c8c32eca4e0b16c813aca386aed6b0459",
+  "result_rep_sha256": "4400f65e085c62efab886e7097aa9c54194dc1ad4017f79143e862d0066bb45d",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       gpt-5-system-card.pdf\nISSUED_DATE  2026-03-22T13:09:10+0900\nFINGERPRINT  f9f9c72d08cba81dcbb189129119357c8c32eca4e0b16c813aca386aed6b0459\nURL          https://cdn.openai.com/gpt-5-system-card.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=4400f65e085c62efab886e7097aa9c54194dc1ad4017f79143e862d0066bb45d\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
