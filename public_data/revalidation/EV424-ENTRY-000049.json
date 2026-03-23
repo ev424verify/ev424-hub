@@ -4,5 +4,17 @@
   "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%202023.pdf",
   "fingerprint_sha256": "ac6a1718ab44ce2eb2959fbea77804b6662df7c3a3e81f71e8fb2690572cf51c",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-03-18T23:13:34+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

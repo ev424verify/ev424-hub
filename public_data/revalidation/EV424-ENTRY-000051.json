@@ -4,5 +4,17 @@
   "source_url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf",
   "fingerprint_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-03-19T17:56:56+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }
