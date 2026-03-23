@@ -834,6 +834,30 @@
       "result_rep_sha256": "4400f65e085c62efab886e7097aa9c54194dc1ad4017f79143e862d0066bb45d",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000073",
+      "issued_kst": "2026-03-23T10:05:01+0900",
+      "month_id": "2026-03",
+      "url": "https://investor.nvidia.com/files/doc_financials/2026/q4/10K-NVDA.pdf",
+      "source_domain": "investor.nvidia.com",
+      "filename": "NVIDIA",
+      "display_title": "NVIDIA",
+      "result_rep_sha256": "d442a3d473a87b104f1de8c6ec9550b7b9a94e1ab4b2f35940d7d56b9501883b",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000074",
+      "issued_kst": "2026-03-23T11:36:09+0900",
+      "month_id": "2026-03",
+      "url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook_1.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "a81ed94586e4ef84f1619e5f676b237484e24dbbf8e128e2c0d311f2dbfdfb43",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

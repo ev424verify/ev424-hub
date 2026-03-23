@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000073",
+  "type": "doc_passport",
+  "source": "10K-NVDA.pdf",
+  "source_label": "NVIDIA",
+  "url": "https://investor.nvidia.com/files/doc_financials/2026/q4/10K-NVDA.pdf",
+  "issued_date": "2026-03-23T10:05:01+0900",
+  "fingerprint_sha256": "a056b59e4170c0123217a8e861a39af4a4a48d2df0d27b641017a618a280a396",
+  "result_rep_sha256": "d442a3d473a87b104f1de8c6ec9550b7b9a94e1ab4b2f35940d7d56b9501883b",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       10K-NVDA.pdf\nISSUED_DATE  2026-03-23T10:05:01+0900\nFINGERPRINT  a056b59e4170c0123217a8e861a39af4a4a48d2df0d27b641017a618a280a396\nURL          https://s201.q4cdn.com/141608511/files/doc_financials/2026/q4/10K-NVDA.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=d442a3d473a87b104f1de8c6ec9550b7b9a94e1ab4b2f35940d7d56b9501883b\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
