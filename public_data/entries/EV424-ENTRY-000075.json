@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000075",
+  "type": "doc_passport",
+  "source": "Artificial%20Intelligence%20and%20Cybersecurity%20Research.pdf",
+  "source_label": "ENISA",
+  "url": "https://www.enisa.europa.eu/sites/default/files/publications/Artificial%20Intelligence%20and%20Cybersecurity%20Research.pdf",
+  "issued_date": "2026-03-24T09:42:58+0900",
+  "fingerprint_sha256": "dc02e8c56f2071c6604e5cc81d3625fda5ad1e78018bf1993d2157d8e9b5d606",
+  "result_rep_sha256": "4ba2fa74cc1e1cefa55075e6291a473f6bbf0fda9c9a9f7b0e9e601c50be4bad",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Artificial%20Intelligence%20and%20Cybersecurity%20Research.pdf\nISSUED_DATE  2026-03-24T09:42:58+0900\nFINGERPRINT  dc02e8c56f2071c6604e5cc81d3625fda5ad1e78018bf1993d2157d8e9b5d606\nURL          https://www.enisa.europa.eu/sites/default/files/publications/Artificial%20Intelligence%20and%20Cybersecurity%20Research.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=4ba2fa74cc1e1cefa55075e6291a473f6bbf0fda9c9a9f7b0e9e601c50be4bad\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

@@ -858,6 +858,18 @@
       "result_rep_sha256": "a81ed94586e4ef84f1619e5f676b237484e24dbbf8e128e2c0d311f2dbfdfb43",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000075",
+      "issued_kst": "2026-03-24T09:42:58+0900",
+      "month_id": "2026-03",
+      "url": "https://www.enisa.europa.eu/sites/default/files/publications/Artificial%20Intelligence%20and%20Cybersecurity%20Research.pdf",
+      "source_domain": "www.enisa.europa.eu",
+      "filename": "ENISA",
+      "display_title": "ENISA",
+      "result_rep_sha256": "4ba2fa74cc1e1cefa55075e6291a473f6bbf0fda9c9a9f7b0e9e601c50be4bad",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
