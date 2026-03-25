@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000076",
+  "type": "doc_passport",
+  "source": "guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf",
+  "source_label": "EU",
+  "url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf",
+  "issued_date": "2026-03-25T10:15:48+0900",
+  "fingerprint_sha256": "6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517",
+  "result_rep_sha256": "8f5bc2d355da4ad8d1cdd8634c4ba17b2c41bb42fd15904820673cfe91245b88",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf\nISSUED_DATE  2026-03-25T10:15:48+0900\nFINGERPRINT  6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517\nURL          https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=8f5bc2d355da4ad8d1cdd8634c4ba17b2c41bb42fd15904820673cfe91245b88\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
