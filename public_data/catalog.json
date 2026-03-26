@@ -882,6 +882,18 @@
       "result_rep_sha256": "8f5bc2d355da4ad8d1cdd8634c4ba17b2c41bb42fd15904820673cfe91245b88",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000077",
+      "issued_kst": "2026-03-26T09:39:11+0900",
+      "month_id": "2026-03",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf",
+      "source_domain": "www.oecd.org",
+      "filename": "OECD",
+      "display_title": "OECD",
+      "result_rep_sha256": "6339dee21b7c437485f6d92e554457548d94660fa23a6b77b4278ea73a5906ff",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

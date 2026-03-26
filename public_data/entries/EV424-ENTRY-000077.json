@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000077",
+  "type": "doc_passport",
+  "source": "396cf758-en.pdf",
+  "source_label": "OECD",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf",
+  "issued_date": "2026-03-26T09:39:11+0900",
+  "fingerprint_sha256": "157d1689c6069d9b2dfd297288b358edfbc0722bf317909ce2baeaba7a6ea148",
+  "result_rep_sha256": "6339dee21b7c437485f6d92e554457548d94660fa23a6b77b4278ea73a5906ff",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       396cf758-en.pdf\nISSUED_DATE  2026-03-26T09:39:11+0900\nFINGERPRINT  157d1689c6069d9b2dfd297288b358edfbc0722bf317909ce2baeaba7a6ea148\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=6339dee21b7c437485f6d92e554457548d94660fa23a6b77b4278ea73a5906ff\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
