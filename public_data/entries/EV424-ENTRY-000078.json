@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000078",
+  "type": "doc_passport",
+  "source": "2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+  "source_label": "MICROSOFT",
+  "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+  "issued_date": "2026-03-27T09:34:59+0900",
+  "fingerprint_sha256": "a341279839a160bda4d081dd6a25b8daca67b090f88f8e783ac9d4d93b4f8844",
+  "result_rep_sha256": "1dbb7ab4f8ea352a0b5e0717b5b02c4bd47445f4f738a3938a38b5788535cb82",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf\nISSUED_DATE  2026-03-27T09:34:59+0900\nFINGERPRINT  a341279839a160bda4d081dd6a25b8daca67b090f88f8e783ac9d4d93b4f8844\nURL          https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=1dbb7ab4f8ea352a0b5e0717b5b02c4bd47445f4f738a3938a38b5788535cb82\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

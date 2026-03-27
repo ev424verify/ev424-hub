@@ -894,6 +894,18 @@
       "result_rep_sha256": "6339dee21b7c437485f6d92e554457548d94660fa23a6b77b4278ea73a5906ff",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000078",
+      "issued_kst": "2026-03-27T09:34:59+0900",
+      "month_id": "2026-03",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+      "source_domain": "cdn-dynmedia-1.microsoft.com",
+      "filename": "MICROSOFT",
+      "display_title": "MICROSOFT",
+      "result_rep_sha256": "1dbb7ab4f8ea352a0b5e0717b5b02c4bd47445f4f738a3938a38b5788535cb82",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

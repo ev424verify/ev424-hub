@@ -1,8 +1,14 @@
 {
   "counts": {
-    "EVIDENCE": 38
+    "EVIDENCE": 39
   },
   "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000078",
+      "href": "entries/EV424-ENTRY-000078.json",
+      "sha256": "1dbb7ab4f8ea352a0b5e0717b5b02c4bd47445f4f738a3938a38b5788535cb82",
+      "sha256_file": "entries/EV424-ENTRY-000078.json.sha256"
+    },
     {
       "entry_id": "EV424-ENTRY-000077",
       "href": "entries/EV424-ENTRY-000077.json",
