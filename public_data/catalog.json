@@ -906,6 +906,18 @@
       "result_rep_sha256": "1dbb7ab4f8ea352a0b5e0717b5b02c4bd47445f4f738a3938a38b5788535cb82",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000079",
+      "issued_kst": "2026-03-28T10:21:09+0900",
+      "month_id": "2026-03",
+      "url": "https://www.rfc-editor.org/rfc/rfc9700.pdf",
+      "source_domain": "www.rfc-editor.org",
+      "filename": "RFC",
+      "display_title": "RFC",
+      "result_rep_sha256": "d9bcf63ae27cc28be11991ac6ed92b4fff01dac763ee7974750bb2f05fdb11ac",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

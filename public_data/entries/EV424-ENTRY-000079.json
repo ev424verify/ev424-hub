@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000079",
+  "type": "doc_passport",
+  "source": "rfc9700.pdf",
+  "source_label": "RFC",
+  "url": "https://www.rfc-editor.org/rfc/rfc9700.pdf",
+  "issued_date": "2026-03-28T10:21:09+0900",
+  "fingerprint_sha256": "2a9d43a83bc39c2f033046ff685f94651ddac94e57ee261d7303790af6cbf648",
+  "result_rep_sha256": "d9bcf63ae27cc28be11991ac6ed92b4fff01dac763ee7974750bb2f05fdb11ac",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       rfc9700.pdf\nISSUED_DATE  2026-03-28T10:21:09+0900\nFINGERPRINT  2a9d43a83bc39c2f033046ff685f94651ddac94e57ee261d7303790af6cbf648\nURL          https://www.rfc-editor.org/rfc/rfc9700.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=d9bcf63ae27cc28be11991ac6ed92b4fff01dac763ee7974750bb2f05fdb11ac\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
