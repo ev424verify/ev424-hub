@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000080",
+  "type": "doc_passport",
+  "source": "WYSD_Survey_Results_2025.pdf",
+  "source_label": "UNESCO",
+  "url": "https://unevoc.unesco.org/up/WYSD_Survey_Results_2025.pdf",
+  "issued_date": "2026-03-28T10:35:16+0900",
+  "fingerprint_sha256": "710d83b6b276e3f42c7d1b23b51a6ac6d0b3aa8520f4e871fca03caad015eb76",
+  "result_rep_sha256": "00bd139780c2ff435d10b07cdf4197133b0802931e507d68908020a4b1195f23",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       WYSD_Survey_Results_2025.pdf\nISSUED_DATE  2026-03-28T10:35:16+0900\nFINGERPRINT  710d83b6b276e3f42c7d1b23b51a6ac6d0b3aa8520f4e871fca03caad015eb76\nURL          https://unevoc.unesco.org/up/WYSD_Survey_Results_2025.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=00bd139780c2ff435d10b07cdf4197133b0802931e507d68908020a4b1195f23\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

@@ -918,6 +918,18 @@
       "result_rep_sha256": "d9bcf63ae27cc28be11991ac6ed92b4fff01dac763ee7974750bb2f05fdb11ac",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000080",
+      "issued_kst": "2026-03-28T10:35:16+0900",
+      "month_id": "2026-03",
+      "url": "https://unevoc.unesco.org/up/WYSD_Survey_Results_2025.pdf",
+      "source_domain": "unevoc.unesco.org",
+      "filename": "UNESCO",
+      "display_title": "UNESCO",
+      "result_rep_sha256": "00bd139780c2ff435d10b07cdf4197133b0802931e507d68908020a4b1195f23",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
