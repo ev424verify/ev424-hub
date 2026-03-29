@@ -930,6 +930,30 @@
       "result_rep_sha256": "00bd139780c2ff435d10b07cdf4197133b0802931e507d68908020a4b1195f23",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000081",
+      "issued_kst": "2026-03-29T11:48:31+0900",
+      "month_id": "2026-03",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd2.pdf",
+      "source_domain": "nvlpubs.nist.gov",
+      "filename": "NIST",
+      "display_title": "NIST",
+      "result_rep_sha256": "37472557bc5dbd77f0ab3130c7e78bfefdfaed0a3a451f192934334d7886dcf3",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000082",
+      "issued_kst": "2026-03-29T11:58:13+0900",
+      "month_id": "2026-03",
+      "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q4-2025-Update.pdf",
+      "source_domain": "assets-ir.tesla.com",
+      "filename": "TESLA",
+      "display_title": "TESLA",
+      "result_rep_sha256": "4458ce0b3acafc2dcf5ef7ce8f04bbe4456191b634952ec57c5d7f583835cefc",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
