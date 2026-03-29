@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000081",
+  "type": "doc_passport",
+  "source": "NIST.AI.800-1.ipd2.pdf",
+  "source_label": "NIST",
+  "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd2.pdf",
+  "issued_date": "2026-03-29T11:48:31+0900",
+  "fingerprint_sha256": "362c24f9cfc1e3ba4e0756a49654eaacf3837e963fbd6ff20fe5fcefe06d3b82",
+  "result_rep_sha256": "37472557bc5dbd77f0ab3130c7e78bfefdfaed0a3a451f192934334d7886dcf3",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIST.AI.800-1.ipd2.pdf\nISSUED_DATE  2026-03-29T11:48:31+0900\nFINGERPRINT  362c24f9cfc1e3ba4e0756a49654eaacf3837e963fbd6ff20fe5fcefe06d3b82\nURL          https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-1.ipd2.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=37472557bc5dbd77f0ab3130c7e78bfefdfaed0a3a451f192934334d7886dcf3\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
