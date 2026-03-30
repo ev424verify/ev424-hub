@@ -954,6 +954,18 @@
       "result_rep_sha256": "4458ce0b3acafc2dcf5ef7ce8f04bbe4456191b634952ec57c5d7f583835cefc",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000083",
+      "issued_kst": "2026-03-30T15:58:59+0900",
+      "month_id": "2026-03",
+      "url": "https://cdn.openai.com/pdf/23eca107-a9b1-4d2c-b156-7deb4fbc697c/GPT-5-3-Codex-System-Card-02.pdf",
+      "source_domain": "cdn.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "ffef2ff8bd2144c66368621522219702bf1ae5c493a1a7722ba2e351362012a7",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

@@ -4,5 +4,17 @@
   "source_url": "https://www.linuxfoundation.org/hubfs/LF%20Research/lfr_genai24_111924.pdf",
   "fingerprint_sha256": "ec1bfd3d435c2ceee06cf5a96877952df1f4c8efd964ceb56c3998081660cd19",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-03-28T11:22:49+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

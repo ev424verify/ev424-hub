@@ -4,5 +4,17 @@
   "source_url": "https://www.linuxfoundation.org/hubfs/Research%20Reports/lfr_sovereign_ai25_082525a.pdf?hsLang=en",
   "fingerprint_sha256": "bef6d1eba85bd56c2464d7870223e0b6d9411dc74a6ecc2bcadb5b8c30360e2d",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-03-27T13:09:40+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

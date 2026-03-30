@@ -4,5 +4,17 @@
   "source_url": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100430.pdf",
   "fingerprint_sha256": "c59921313325c0d90d2a22def5fa6f96bfb0637cb4e736918cefe6bdda28b3a6",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-03-24T12:24:21+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

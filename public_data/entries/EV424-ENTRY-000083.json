@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000083",
+  "type": "doc_passport",
+  "source": "GPT-5-3-Codex-System-Card-02.pdf",
+  "source_label": "OPENAI",
+  "url": "https://cdn.openai.com/pdf/23eca107-a9b1-4d2c-b156-7deb4fbc697c/GPT-5-3-Codex-System-Card-02.pdf",
+  "issued_date": "2026-03-30T15:58:59+0900",
+  "fingerprint_sha256": "aff555bf6845d4011ccd390d4730c9583233948fdfc75842fc2e7f4b7c7a8b5b",
+  "result_rep_sha256": "ffef2ff8bd2144c66368621522219702bf1ae5c493a1a7722ba2e351362012a7",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       GPT-5-3-Codex-System-Card-02.pdf\nISSUED_DATE  2026-03-30T15:58:59+0900\nFINGERPRINT  aff555bf6845d4011ccd390d4730c9583233948fdfc75842fc2e7f4b7c7a8b5b\nURL          https://cdn.openai.com/pdf/23eca107-a9b1-4d2c-b156-7deb4fbc697c/GPT-5-3-Codex-System-Card-02.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=ffef2ff8bd2144c66368621522219702bf1ae5c493a1a7722ba2e351362012a7\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

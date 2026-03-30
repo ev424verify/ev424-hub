@@ -4,5 +4,17 @@
   "source_url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook_1.pdf",
   "fingerprint_sha256": "b0d195b7bd6da444f128443c4767f1a2d2d02711f7a168e7356d3e6cbe3f25fa",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-03-30T11:36:09+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

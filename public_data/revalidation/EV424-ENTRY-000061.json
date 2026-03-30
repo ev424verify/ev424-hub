@@ -4,5 +4,17 @@
   "source_url": "https://www.rfc-editor.org/rfc/rfc8789.pdf",
   "fingerprint_sha256": "2fa1af651680831812bd2838d12efffb7809bdb80f12aa923213f823bd099992",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-03-23T19:29:27+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

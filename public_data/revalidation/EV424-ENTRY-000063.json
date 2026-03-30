@@ -4,5 +4,17 @@
   "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf",
   "fingerprint_sha256": "b96e4085f39ee326162af0453266117b7526e06802e5f909db6b1a05077be896",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-03-25T09:31:47+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }
