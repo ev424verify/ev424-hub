@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000084",
+  "type": "doc_passport",
+  "source": "a436e12d-en.pdf",
+  "source_label": "OECD",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/scaling-artificial-intelligence-in-health_77610b12/a436e12d-en.pdf",
+  "issued_date": "2026-03-30T17:07:58+0900",
+  "fingerprint_sha256": "1e71a3daef00912f438ce62e83f7c6a7669bc02fe4635d4fcc2c0838dc020f15",
+  "result_rep_sha256": "acf9d09bb42e1c0d2de87f862cacbe02902d7f940bdeaa70a113a377938f49b7",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       a436e12d-en.pdf\nISSUED_DATE  2026-03-30T17:07:58+0900\nFINGERPRINT  1e71a3daef00912f438ce62e83f7c6a7669bc02fe4635d4fcc2c0838dc020f15\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/scaling-artificial-intelligence-in-health_77610b12/a436e12d-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=acf9d09bb42e1c0d2de87f862cacbe02902d7f940bdeaa70a113a377938f49b7\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

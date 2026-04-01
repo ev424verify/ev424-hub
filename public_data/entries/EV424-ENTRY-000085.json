@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000085",
+  "type": "doc_passport",
+  "source": "openai-signals-global-report.pdf",
+  "source_label": "OPENAI",
+  "url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf",
+  "issued_date": "2026-03-31T12:46:44+0900",
+  "fingerprint_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",
+  "result_rep_sha256": "54493342578e0f7d2cafde9352402b61feacafde071877f8897c9aadd430454e",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       openai-signals-global-report.pdf\nISSUED_DATE  2026-03-31T12:46:44+0900\nFINGERPRINT  aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0\nURL          https://cdn.openai.com/signals/openai-signals-global-report.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=54493342578e0f7d2cafde9352402b61feacafde071877f8897c9aadd430454e\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

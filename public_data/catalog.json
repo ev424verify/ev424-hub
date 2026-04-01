@@ -966,6 +966,42 @@
       "result_rep_sha256": "ffef2ff8bd2144c66368621522219702bf1ae5c493a1a7722ba2e351362012a7",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000084",
+      "issued_kst": "2026-03-30T17:07:58+0900",
+      "month_id": "2026-03",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/scaling-artificial-intelligence-in-health_77610b12/a436e12d-en.pdf",
+      "source_domain": "www.oecd.org",
+      "filename": "OECD",
+      "display_title": "OECD",
+      "result_rep_sha256": "acf9d09bb42e1c0d2de87f862cacbe02902d7f940bdeaa70a113a377938f49b7",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000085",
+      "issued_kst": "2026-03-31T12:46:44+0900",
+      "month_id": "2026-03",
+      "url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf",
+      "source_domain": "cdn.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "54493342578e0f7d2cafde9352402b61feacafde071877f8897c9aadd430454e",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000086",
+      "issued_kst": "2026-04-01T14:55:04+0900",
+      "month_id": "2026-04",
+      "url": "https://investor.nvidia.com/files/doc_financials/2023/ar/2023-annual-report-insert-web-IR-update.pdf",
+      "source_domain": "investor.nvidia.com",
+      "filename": "NVIDIA",
+      "display_title": "NVIDIA",
+      "result_rep_sha256": "a08abe9dd1495c77946683883d813e8cca90c38d0e7ce90e14b014198617b98e",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "EVIDENCE": 1
+  },
+  "derived_month": "2026-04",
+  "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000086",
+      "href": "entries/EV424-ENTRY-000086.json",
+      "sha256": "a0a6a19e704cc9a4885a052610eb0b7946be58ac5c75ceb75dad5844b11e8f86",
+      "sha256_file": "entries/EV424-ENTRY-000086.json.sha256"
+    }
+  ],
+  "generated_at": "2026-04-01T14:55:04+0900",
+  "issued_kst": "2026-04-01T14:55:04+0900",
+  "month": "2026-04",
+  "ym": "2026-04"
+}
