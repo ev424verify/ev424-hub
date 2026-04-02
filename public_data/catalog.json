@@ -1002,6 +1002,18 @@
       "result_rep_sha256": "a08abe9dd1495c77946683883d813e8cca90c38d0e7ce90e14b014198617b98e",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000087",
+      "issued_kst": "2026-04-02T10:12:15+0900",
+      "month_id": "2026-04",
+      "url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook_FACT%20SHEET.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "588f0b5256591dccb67f8a3fd899bf31fed3bddcf302f48b948a145722beda19",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
