@@ -1014,6 +1014,18 @@
       "result_rep_sha256": "588f0b5256591dccb67f8a3fd899bf31fed3bddcf302f48b948a145722beda19",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000088",
+      "issued_kst": "2026-04-03T10:18:00+0900",
+      "month_id": "2026-04",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Microsoft-Digital-Defense-Report-2025.pdf",
+      "source_domain": "cdn-dynmedia-1.microsoft.com",
+      "filename": "MICROSOFT",
+      "display_title": "MICROSOFT",
+      "result_rep_sha256": "64611461e092ab69d90f30fec1914b4e3e70b70651c8dbcf5a73167c7d550a39",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

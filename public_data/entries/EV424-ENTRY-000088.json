@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000088",
+  "type": "doc_passport",
+  "source": "Microsoft-Digital-Defense-Report-2025.pdf",
+  "source_label": "MICROSOFT",
+  "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Microsoft-Digital-Defense-Report-2025.pdf",
+  "issued_date": "2026-04-03T10:18:00+0900",
+  "fingerprint_sha256": "a818b36a2c42296a13861a22ca27a04b67288bcc96a36398e6a21a04d7a23e18",
+  "result_rep_sha256": "64611461e092ab69d90f30fec1914b4e3e70b70651c8dbcf5a73167c7d550a39",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Microsoft-Digital-Defense-Report-2025.pdf\nISSUED_DATE  2026-04-03T10:18:00+0900\nFINGERPRINT  a818b36a2c42296a13861a22ca27a04b67288bcc96a36398e6a21a04d7a23e18\nURL          https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/Microsoft-Digital-Defense-Report-2025.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=64611461e092ab69d90f30fec1914b4e3e70b70651c8dbcf5a73167c7d550a39\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

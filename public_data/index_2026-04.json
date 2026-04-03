@@ -1,9 +1,15 @@
 {
   "counts": {
-    "EVIDENCE": 2
+    "EVIDENCE": 3
   },
   "derived_month": "2026-04",
   "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000088",
+      "href": "entries/EV424-ENTRY-000088.json",
+      "sha256": "9005a670fc9afab8d98482de4d0082cb9b192b8bc77358461960f73a48c56b12",
+      "sha256_file": "entries/EV424-ENTRY-000088.json.sha256"
+    },
     {
       "entry_id": "EV424-ENTRY-000087",
       "href": "entries/EV424-ENTRY-000087.json",
