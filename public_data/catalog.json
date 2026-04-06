@@ -1038,6 +1038,42 @@
       "result_rep_sha256": "f3aedc62e9777f267ff59a3f832f0bf4942705bf0b93335efe815fe0e2cf7a7d",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000090",
+      "issued_kst": "2026-04-05T17:38:09+0900",
+      "month_id": "2026-04",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.ara.pdf",
+      "source_domain": "nvlpubs.nist.gov",
+      "filename": "NIST",
+      "display_title": "NIST",
+      "result_rep_sha256": "35580e2d07515919ac3462ab5640dca93944d1cd50f6fc1ac86bcb085fc83279",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000091",
+      "issued_kst": "2026-04-05T17:56:36+0900",
+      "month_id": "2026-04",
+      "url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+      "source_domain": "s206.q4cdn.com",
+      "filename": "ALPHABET",
+      "display_title": "ALPHABET",
+      "result_rep_sha256": "73eea92ac5fc8ae9c413d6f4188ab8ea844c7d0ff95b347e1d4e3f21f9569bb4",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000092",
+      "issued_kst": "2026-04-06T10:13:12+0900",
+      "month_id": "2026-04",
+      "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/NVDA-F4Q26-Quarterly-Presentation.pdf",
+      "source_domain": "s201.q4cdn.com",
+      "filename": "NVIDIA",
+      "display_title": "NVIDIA",
+      "result_rep_sha256": "97f14b9ff420bd8c4ca2a1a0cdce0c17f2ac4cb67e0e9bacc52fda23238bff8c",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

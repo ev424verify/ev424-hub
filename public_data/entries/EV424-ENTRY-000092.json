@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000092",
+  "type": "doc_passport",
+  "source": "NVDA-F4Q26-Quarterly-Presentation.pdf",
+  "source_label": "NVIDIA",
+  "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/NVDA-F4Q26-Quarterly-Presentation.pdf",
+  "issued_date": "2026-04-06T10:13:12+0900",
+  "fingerprint_sha256": "65a04e9c3325e9ff03619e3cfd5e2873e4f7cd297555a0eabf0628c35af0d585",
+  "result_rep_sha256": "97f14b9ff420bd8c4ca2a1a0cdce0c17f2ac4cb67e0e9bacc52fda23238bff8c",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NVDA-F4Q26-Quarterly-Presentation.pdf\nISSUED_DATE  2026-04-06T10:13:12+0900\nFINGERPRINT  65a04e9c3325e9ff03619e3cfd5e2873e4f7cd297555a0eabf0628c35af0d585\nURL          https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/NVDA-F4Q26-Quarterly-Presentation.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=97f14b9ff420bd8c4ca2a1a0cdce0c17f2ac4cb67e0e9bacc52fda23238bff8c\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
