@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000094",
+  "type": "doc_passport",
+  "source": "UNESCO-UNEVOC-Knowledge.pdf",
+  "source_label": "UNESCO",
+  "url": "https://unevoc.unesco.org/up/UNESCO-UNEVOC-Knowledge.pdf",
+  "issued_date": "2026-04-08T09:53:21+0900",
+  "fingerprint_sha256": "2414db709ee459d002186b7134416d23ec8e0f51153389df016a3277e7eb21ec",
+  "result_rep_sha256": "6a0631769e1a5d1ddd500cf69e90448bc78b66d2befe46835966c9847a18b38f",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       UNESCO-UNEVOC-Knowledge.pdf\nISSUED_DATE  2026-04-08T09:53:21+0900\nFINGERPRINT  2414db709ee459d002186b7134416d23ec8e0f51153389df016a3277e7eb21ec\nURL          https://unevoc.unesco.org/up/UNESCO-UNEVOC-Knowledge.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=6a0631769e1a5d1ddd500cf69e90448bc78b66d2befe46835966c9847a18b38f\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

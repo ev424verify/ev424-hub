@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000093",
+  "type": "doc_passport",
+  "source": "ENISA%20-%205G%20Standards.pdf",
+  "source_label": "ENISA",
+  "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf",
+  "issued_date": "2026-04-07T14:38:58+0900",
+  "fingerprint_sha256": "08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe",
+  "result_rep_sha256": "cdaa7e842b989156ebc69d7e2a929047dd46bfd7d55faa0847b2149077cc00e6",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ENISA%20-%205G%20Standards.pdf\nISSUED_DATE  2026-04-07T14:38:58+0900\nFINGERPRINT  08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe\nURL          https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=cdaa7e842b989156ebc69d7e2a929047dd46bfd7d55faa0847b2149077cc00e6\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

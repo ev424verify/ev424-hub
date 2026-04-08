@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000097",
+  "type": "doc_passport",
+  "source": "0254ae07-en.pdf",
+  "source_label": "OECD",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/the-oecd-going-digital-integrated-policy-framework-2026_f24b6963/0254ae07-en.pdf",
+  "issued_date": "2026-04-08T13:32:14+0900",
+  "fingerprint_sha256": "31b55bc09b54959f69f0c98d4e9ce4dc4b3b3624dd5f94a56b89543fd15556d1",
+  "result_rep_sha256": "88d747cc440d8ab741c904ca8e7ffc9cbc9e8e96fca0ea27010d025d8676fe31",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       0254ae07-en.pdf\nISSUED_DATE  2026-04-08T13:32:14+0900\nFINGERPRINT  31b55bc09b54959f69f0c98d4e9ce4dc4b3b3624dd5f94a56b89543fd15556d1\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/the-oecd-going-digital-integrated-policy-framework-2026_f24b6963/0254ae07-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=88d747cc440d8ab741c904ca8e7ffc9cbc9e8e96fca0ea27010d025d8676fe31\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

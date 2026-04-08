@@ -1074,6 +1074,78 @@
       "result_rep_sha256": "97f14b9ff420bd8c4ca2a1a0cdce0c17f2ac4cb67e0e9bacc52fda23238bff8c",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000093",
+      "issued_kst": "2026-04-07T14:38:58+0900",
+      "month_id": "2026-04",
+      "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf",
+      "source_domain": "www.enisa.europa.eu",
+      "filename": "ENISA",
+      "display_title": "ENISA",
+      "result_rep_sha256": "cdaa7e842b989156ebc69d7e2a929047dd46bfd7d55faa0847b2149077cc00e6",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000094",
+      "issued_kst": "2026-04-08T09:53:21+0900",
+      "month_id": "2026-04",
+      "url": "https://unevoc.unesco.org/up/UNESCO-UNEVOC-Knowledge.pdf",
+      "source_domain": "unevoc.unesco.org",
+      "filename": "UNESCO",
+      "display_title": "UNESCO",
+      "result_rep_sha256": "6a0631769e1a5d1ddd500cf69e90448bc78b66d2befe46835966c9847a18b38f",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000095",
+      "issued_kst": "2026-04-08T09:56:50+0900",
+      "month_id": "2026-04",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/oecd-economic-outlook-interim-report-march-2026_254a8d56/d4623013-en.pdf",
+      "source_domain": "www.oecd.org",
+      "filename": "OECD",
+      "display_title": "OECD",
+      "result_rep_sha256": "714fd477e6fcf0eeefa8dde579ec685843ee446bd38f5cbd6c3563d9c6861cdc",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000096",
+      "issued_kst": "2026-04-08T12:53:34+0900",
+      "month_id": "2026-04",
+      "url": "https://unevoc.unesco.org/up/Global_TVET_Forum_2025_concept_note_event_outline.pdf",
+      "source_domain": "unevoc.unesco.org",
+      "filename": "UNESCO",
+      "display_title": "UNESCO",
+      "result_rep_sha256": "226b1e49e86ef6fee864987ebb34eb661240e618467936a847886b96fc44d939",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000097",
+      "issued_kst": "2026-04-08T13:32:14+0900",
+      "month_id": "2026-04",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/the-oecd-going-digital-integrated-policy-framework-2026_f24b6963/0254ae07-en.pdf",
+      "source_domain": "www.oecd.org",
+      "filename": "OECD",
+      "display_title": "OECD",
+      "result_rep_sha256": "88d747cc440d8ab741c904ca8e7ffc9cbc9e8e96fca0ea27010d025d8676fe31",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000098",
+      "issued_kst": "2026-04-09T06:41:34+0900",
+      "month_id": "2026-04",
+      "url": "https://www.rfc-editor.org/rfc/rfc9282.pdf",
+      "source_domain": "www.rfc-editor.org",
+      "filename": "RFC",
+      "display_title": "RFC",
+      "result_rep_sha256": "9a48f795cdf046cdb5e2c1e481fdfd3bde14ae18c349c2687c1b5ce1538b3048",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

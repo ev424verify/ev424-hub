@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000095",
+  "type": "doc_passport",
+  "source": "d4623013-en.pdf",
+  "source_label": "OECD",
+  "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/oecd-economic-outlook-interim-report-march-2026_254a8d56/d4623013-en.pdf",
+  "issued_date": "2026-04-08T09:56:50+0900",
+  "fingerprint_sha256": "120d19d7919bb367971c2375e63e94d874730518b7e1334fa25a41a46aaf0f62",
+  "result_rep_sha256": "714fd477e6fcf0eeefa8dde579ec685843ee446bd38f5cbd6c3563d9c6861cdc",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       d4623013-en.pdf\nISSUED_DATE  2026-04-08T09:56:50+0900\nFINGERPRINT  120d19d7919bb367971c2375e63e94d874730518b7e1334fa25a41a46aaf0f62\nURL          https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/oecd-economic-outlook-interim-report-march-2026_254a8d56/d4623013-en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=714fd477e6fcf0eeefa8dde579ec685843ee446bd38f5cbd6c3563d9c6861cdc\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

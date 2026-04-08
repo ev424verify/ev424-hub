@@ -1,9 +1,45 @@
 {
   "counts": {
-    "EVIDENCE": 7
+    "EVIDENCE": 13
   },
   "derived_month": "2026-04",
   "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000098",
+      "href": "entries/EV424-ENTRY-000098.json",
+      "sha256": "3da8e504b53c0ca76977a8d74f167c679a1b2f990271b90ac1aa04889e367a63",
+      "sha256_file": "entries/EV424-ENTRY-000098.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000097",
+      "href": "entries/EV424-ENTRY-000097.json",
+      "sha256": "e7a0ebe36e49e2256f4db75eac87b5279ecbfcd4bc39a14b54d11e1ded969b05",
+      "sha256_file": "entries/EV424-ENTRY-000097.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000096",
+      "href": "entries/EV424-ENTRY-000096.json",
+      "sha256": "98bd312b0dd636d77a5944e44f13bd4d3b8b1172155fc2682a33d04c8d2251ac",
+      "sha256_file": "entries/EV424-ENTRY-000096.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000095",
+      "href": "entries/EV424-ENTRY-000095.json",
+      "sha256": "094bd7f74225cb782505ebbaeccb07c965f5c3cc6afb5ad8183286f5eba468d0",
+      "sha256_file": "entries/EV424-ENTRY-000095.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000094",
+      "href": "entries/EV424-ENTRY-000094.json",
+      "sha256": "9de6745db7f96db5afaf4b86af94fe54782cea91d22fb3fe0806c872e2dc1d77",
+      "sha256_file": "entries/EV424-ENTRY-000094.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000093",
+      "href": "entries/EV424-ENTRY-000093.json",
+      "sha256": "87e1332725cd5bcb9af5f21acb857f3b0df3d95527d6746ece5a3da315c01ce2",
+      "sha256_file": "entries/EV424-ENTRY-000093.json.sha256"
+    },
     {
       "entry_id": "EV424-ENTRY-000092",
       "href": "entries/EV424-ENTRY-000092.json",

@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000096",
+  "type": "doc_passport",
+  "source": "Global_TVET_Forum_2025_concept_note_event_outline.pdf",
+  "source_label": "UNESCO",
+  "url": "https://unevoc.unesco.org/up/Global_TVET_Forum_2025_concept_note_event_outline.pdf",
+  "issued_date": "2026-04-08T12:53:34+0900",
+  "fingerprint_sha256": "b78a50a97e0d8b0a542b069e6ce47ced318588f04351ebd86d4748a9e9683e97",
+  "result_rep_sha256": "226b1e49e86ef6fee864987ebb34eb661240e618467936a847886b96fc44d939",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Global_TVET_Forum_2025_concept_note_event_outline.pdf\nISSUED_DATE  2026-04-08T12:53:34+0900\nFINGERPRINT  b78a50a97e0d8b0a542b069e6ce47ced318588f04351ebd86d4748a9e9683e97\nURL          https://unevoc.unesco.org/up/Global_TVET_Forum_2025_concept_note_event_outline.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=226b1e49e86ef6fee864987ebb34eb661240e618467936a847886b96fc44d939\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
