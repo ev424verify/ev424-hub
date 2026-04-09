@@ -1146,6 +1146,30 @@
       "result_rep_sha256": "9a48f795cdf046cdb5e2c1e481fdfd3bde14ae18c349c2687c1b5ce1538b3048",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000099",
+      "issued_kst": "2026-04-09T18:12:34+0900",
+      "month_id": "2026-04",
+      "url": "https://www.cisa.gov/sites/default/files/publications/dhs-risk-lexicon-2010_0.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "9f57df6924a39c2f4dbbf4957be5a1a64ec624030151a8d673e0d25bb3e56e6e",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000100",
+      "issued_kst": "2026-04-09T18:50:39+0900",
+      "month_id": "2026-04",
+      "url": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100440.pdf",
+      "source_domain": "www.iso.org",
+      "filename": "ISO",
+      "display_title": "ISO",
+      "result_rep_sha256": "d96b296fd3482411205f5d2c6cc3e6ef24822da9dac27a1e26953e7b21d3fe2b",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

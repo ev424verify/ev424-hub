@@ -1,9 +1,21 @@
 {
   "counts": {
-    "EVIDENCE": 13
+    "EVIDENCE": 15
   },
   "derived_month": "2026-04",
   "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000100",
+      "href": "entries/EV424-ENTRY-000100.json",
+      "sha256": "4aded4fce036cb757358a35f52445790d1377e2dcbef3424e1cf36f4666471d0",
+      "sha256_file": "entries/EV424-ENTRY-000100.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000099",
+      "href": "entries/EV424-ENTRY-000099.json",
+      "sha256": "0dbc2764650ca7835d4aeab31bc68aa7bf8fb0af12825aa5e5e876d6179d1342",
+      "sha256_file": "entries/EV424-ENTRY-000099.json.sha256"
+    },
     {
       "entry_id": "EV424-ENTRY-000098",
       "href": "entries/EV424-ENTRY-000098.json",
