@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000101",
+  "type": "doc_passport",
+  "source": "Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+  "source_label": "META",
+  "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q4/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+  "issued_date": "2026-04-10T13:20:59+0900",
+  "fingerprint_sha256": "e19213a8a56cba263fd9628bf27dd986c5b9ad66082b069fdc255a1c11b4a261",
+  "result_rep_sha256": "85a0451a11c5cf2792aeeac2c9f9e8d4eccf749babcec164640b30b9708be46b",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Meta-12-31-2025-Exhibit-99-1-FINAL.pdf\nISSUED_DATE  2026-04-10T13:20:59+0900\nFINGERPRINT  e19213a8a56cba263fd9628bf27dd986c5b9ad66082b069fdc255a1c11b4a261\nURL          https://s21.q4cdn.com/399680738/files/doc_financials/2025/q4/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=85a0451a11c5cf2792aeeac2c9f9e8d4eccf749babcec164640b30b9708be46b\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

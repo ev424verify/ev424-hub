@@ -1170,6 +1170,42 @@
       "result_rep_sha256": "d96b296fd3482411205f5d2c6cc3e6ef24822da9dac27a1e26953e7b21d3fe2b",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000101",
+      "issued_kst": "2026-04-10T13:20:59+0900",
+      "month_id": "2026-04",
+      "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q4/Meta-12-31-2025-Exhibit-99-1-FINAL.pdf",
+      "source_domain": "s21.q4cdn.com",
+      "filename": "META",
+      "display_title": "META",
+      "result_rep_sha256": "85a0451a11c5cf2792aeeac2c9f9e8d4eccf749babcec164640b30b9708be46b",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000102",
+      "issued_kst": "2026-04-11T12:43:31+0900",
+      "month_id": "2026-04",
+      "url": "https://www.ftc.gov/system/files/ftc_gov/pdf/FTC-AI-Use-Policy.pdf",
+      "source_domain": "www.ftc.gov",
+      "filename": "FTC",
+      "display_title": "FTC",
+      "result_rep_sha256": "67a6ae7461a8d81a4de789626f06473c5bfa4e67ffc97e307c5ff9bdd57498c5",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000103",
+      "issued_kst": "2026-04-12T11:02:29+0900",
+      "month_id": "2026-04",
+      "url": "https://www.fsb.org/uploads/P14112024.pdf",
+      "source_domain": "www.fsb.org",
+      "filename": "FSB",
+      "display_title": "FSB",
+      "result_rep_sha256": "b4137854f669e1c9fae6038cd04180adecd99011a0521b86ac9e95f351c5bc90",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

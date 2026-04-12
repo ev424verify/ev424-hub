@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000103",
+  "type": "doc_passport",
+  "source": "P14112024.pdf",
+  "source_label": "FSB",
+  "url": "https://www.fsb.org/uploads/P14112024.pdf",
+  "issued_date": "2026-04-12T11:02:29+0900",
+  "fingerprint_sha256": "4b81544ecb28b50fb2fa5dab530a0f32c9351506a875d1de841b946d18e7ecef",
+  "result_rep_sha256": "b4137854f669e1c9fae6038cd04180adecd99011a0521b86ac9e95f351c5bc90",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       P14112024.pdf\nISSUED_DATE  2026-04-12T11:02:29+0900\nFINGERPRINT  4b81544ecb28b50fb2fa5dab530a0f32c9351506a875d1de841b946d18e7ecef\nURL          https://www.fsb.org/uploads/P14112024.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=b4137854f669e1c9fae6038cd04180adecd99011a0521b86ac9e95f351c5bc90\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
