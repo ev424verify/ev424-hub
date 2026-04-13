@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000111",
+  "type": "doc_passport",
+  "source": "P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf",
+  "source_label": "WORLDBANK",
+  "url": "https://documents1.worldbank.org/curated/en/099122225162037208/pdf/P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf",
+  "issued_date": "2026-04-13T14:22:24+0900",
+  "fingerprint_sha256": "2d53df4bed14b1c9b29039f263eb76878b03d5902b8e8c46b23898d7123b5873",
+  "result_rep_sha256": "21f6d488291db7e8eb929f9457e79b0b1fde3a4bdddb7efb13f14b910f858956",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf\nISSUED_DATE  2026-04-13T14:22:24+0900\nFINGERPRINT  2d53df4bed14b1c9b29039f263eb76878b03d5902b8e8c46b23898d7123b5873\nURL          https://documents1.worldbank.org/curated/en/099122225162037208/pdf/P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=21f6d488291db7e8eb929f9457e79b0b1fde3a4bdddb7efb13f14b910f858956\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

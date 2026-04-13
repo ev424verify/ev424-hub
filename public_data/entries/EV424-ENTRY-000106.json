@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000106",
+  "type": "doc_passport",
+  "source": "esr-workshop-121021.pdf",
+  "source_label": "IMF",
+  "url": "https://www.imf.org/-/media/files/conferences/2021/esr-workshop/esr-workshop-121021.pdf",
+  "issued_date": "2026-04-13T13:19:18+0900",
+  "fingerprint_sha256": "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec",
+  "result_rep_sha256": "202140f0b25ae98335c3e9ddfada1873b3463315199d65f0994afedbe8ce49cc",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       esr-workshop-121021.pdf\nISSUED_DATE  2026-04-13T13:19:18+0900\nFINGERPRINT  bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec\nURL          https://www.imf.org/-/media/files/conferences/2021/esr-workshop/esr-workshop-121021.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=202140f0b25ae98335c3e9ddfada1873b3463315199d65f0994afedbe8ce49cc\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

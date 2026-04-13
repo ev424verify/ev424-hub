@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000105",
+  "type": "doc_passport",
+  "source": "NAIRR-Sept-4th-webinar.pdf",
+  "source_label": "NSF",
+  "url": "https://nsf-gov-resources.nsf.gov/files/NAIRR-Sept-4th-webinar.pdf?VersionId=A8cZDQf8K53NHbJBvZjxw1X5qPfZHWFH",
+  "issued_date": "2026-04-13T10:44:01+0900",
+  "fingerprint_sha256": "d4d6ae8a3879b231ab5001636c156d60d52e1531255ab42b81cf47a370b4e589",
+  "result_rep_sha256": "5a0efcbffff19835891a34148b7757f932ba2e634eae9fc1e6dc3a6d886d0e68",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NAIRR-Sept-4th-webinar.pdf?VersionId=A8cZDQf8K53NHbJBvZjxw1X5qPfZHWFH\nISSUED_DATE  2026-04-13T10:44:01+0900\nFINGERPRINT  d4d6ae8a3879b231ab5001636c156d60d52e1531255ab42b81cf47a370b4e589\nURL          https://nsf-gov-resources.nsf.gov/files/NAIRR-Sept-4th-webinar.pdf?VersionId=A8cZDQf8K53NHbJBvZjxw1X5qPfZHWFH\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=5a0efcbffff19835891a34148b7757f932ba2e634eae9fc1e6dc3a6d886d0e68\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

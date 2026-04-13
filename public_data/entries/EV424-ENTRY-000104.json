@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000104",
+  "type": "doc_passport",
+  "source": "sec-ai-compliance-plan.pdf",
+  "source_label": "SEC",
+  "url": "https://www.sec.gov/files/sec-ai-compliance-plan.pdf",
+  "issued_date": "2026-04-13T09:46:47+0900",
+  "fingerprint_sha256": "3d23acf7833ac8ed3141ee8fadc5f9b6e2ddd25cfaac6a45552ce3119aeda3a1",
+  "result_rep_sha256": "085812963f9340eac18c7412e22ca465b9b66c6cb95bb00c4057d2a36936cfca",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       sec-ai-compliance-plan.pdf\nISSUED_DATE  2026-04-13T09:46:47+0900\nFINGERPRINT  3d23acf7833ac8ed3141ee8fadc5f9b6e2ddd25cfaac6a45552ce3119aeda3a1\nURL          https://www.sec.gov/files/sec-ai-compliance-plan.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=085812963f9340eac18c7412e22ca465b9b66c6cb95bb00c4057d2a36936cfca\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

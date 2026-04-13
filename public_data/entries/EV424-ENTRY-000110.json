@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000110",
+  "type": "doc_passport",
+  "source": "bispap167.pdf",
+  "source_label": "BIS",
+  "url": "https://www.bis.org/publ/bppdf/bispap167.pdf",
+  "issued_date": "2026-04-13T14:15:51+0900",
+  "fingerprint_sha256": "b1332ab93f68d09ace8401ad6899f3834f3040a6e0eaeb7bad7defb492f37157",
+  "result_rep_sha256": "f739a9bb8b4105f91b6fd3a51e9f3b93b3fd6fb16bf396e6ed685761d472b788",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       bispap167.pdf\nISSUED_DATE  2026-04-13T14:15:51+0900\nFINGERPRINT  b1332ab93f68d09ace8401ad6899f3834f3040a6e0eaeb7bad7defb492f37157\nURL          https://www.bis.org/publ/bppdf/bispap167.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=f739a9bb8b4105f91b6fd3a51e9f3b93b3fd6fb16bf396e6ed685761d472b788\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

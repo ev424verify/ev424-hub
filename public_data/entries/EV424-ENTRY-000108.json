@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000108",
+  "type": "doc_passport",
+  "source": "report_who-contribution-in-namibia-evaluation_web.pdf",
+  "source_label": "WHO",
+  "url": "https://cdn.who.int/media/docs/default-source/evaluation-office/report_who-contribution-in-namibia-evaluation_web.pdf",
+  "issued_date": "2026-04-13T13:54:25+0900",
+  "fingerprint_sha256": "632f00e2828a0136e86b3bfb1073dbb9fc95fd5e6fdd95e49a637cf85df5e55d",
+  "result_rep_sha256": "194dca95b26473f446b7c838a82acaaf65142b0d5ec7a65e1c4dc0606ff3feef",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       report_who-contribution-in-namibia-evaluation_web.pdf\nISSUED_DATE  2026-04-13T13:54:25+0900\nFINGERPRINT  632f00e2828a0136e86b3bfb1073dbb9fc95fd5e6fdd95e49a637cf85df5e55d\nURL          https://cdn.who.int/media/docs/default-source/evaluation-office/report_who-contribution-in-namibia-evaluation_web.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=194dca95b26473f446b7c838a82acaaf65142b0d5ec7a65e1c4dc0606ff3feef\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000113",
+  "type": "doc_passport",
+  "source": "2024-annual-report-european-medicines-agency_en.pdf",
+  "source_label": "EMA",
+  "url": "https://www.ema.europa.eu/en/documents/annual-report/2024-annual-report-european-medicines-agency_en.pdf",
+  "issued_date": "2026-04-13T14:33:21+0900",
+  "fingerprint_sha256": "acf5566ff771faf4a79a4ccf52dde4ae91f45f3b14a120d6d4e84cd721605734",
+  "result_rep_sha256": "6faac167ae01dfdf4ee80a7dd2b412e1d8caeb204a3a95a53d59169c177d86c8",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       2024-annual-report-european-medicines-agency_en.pdf\nISSUED_DATE  2026-04-13T14:33:21+0900\nFINGERPRINT  acf5566ff771faf4a79a4ccf52dde4ae91f45f3b14a120d6d4e84cd721605734\nURL          https://www.ema.europa.eu/en/documents/annual-report/2024-annual-report-european-medicines-agency_en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=6faac167ae01dfdf4ee80a7dd2b412e1d8caeb204a3a95a53d59169c177d86c8\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

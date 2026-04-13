@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000107",
+  "type": "doc_passport",
+  "source": "Anthropic-Responsible-Scaling-Policy-2024-10-15.pdf",
+  "source_label": "ANTHROPIC",
+  "url": "https://assets.anthropic.com/m/24a47b00f10301cd/original/Anthropic-Responsible-Scaling-Policy-2024-10-15.pdf",
+  "issued_date": "2026-04-13T13:42:26+0900",
+  "fingerprint_sha256": "22b37ecf913ea432e4c48a050a1b7fade32e155c96d7b6a9f85c2977501902f3",
+  "result_rep_sha256": "cc86d550195192f2aff68695f661f6f6f8077e9bcbc48b7e84bd1396fe1b2c1f",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Anthropic-Responsible-Scaling-Policy-2024-10-15.pdf\nISSUED_DATE  2026-04-13T13:42:26+0900\nFINGERPRINT  22b37ecf913ea432e4c48a050a1b7fade32e155c96d7b6a9f85c2977501902f3\nURL          https://assets.anthropic.com/m/24a47b00f10301cd/original/Anthropic-Responsible-Scaling-Policy-2024-10-15.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=cc86d550195192f2aff68695f661f6f6f8077e9bcbc48b7e84bd1396fe1b2c1f\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

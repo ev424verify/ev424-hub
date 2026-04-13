@@ -1206,6 +1206,126 @@
       "result_rep_sha256": "b4137854f669e1c9fae6038cd04180adecd99011a0521b86ac9e95f351c5bc90",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000104",
+      "issued_kst": "2026-04-13T09:46:47+0900",
+      "month_id": "2026-04",
+      "url": "https://www.sec.gov/files/sec-ai-compliance-plan.pdf",
+      "source_domain": "www.sec.gov",
+      "filename": "SEC",
+      "display_title": "SEC",
+      "result_rep_sha256": "085812963f9340eac18c7412e22ca465b9b66c6cb95bb00c4057d2a36936cfca",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000105",
+      "issued_kst": "2026-04-13T10:44:01+0900",
+      "month_id": "2026-04",
+      "url": "https://nsf-gov-resources.nsf.gov/files/NAIRR-Sept-4th-webinar.pdf?VersionId=A8cZDQf8K53NHbJBvZjxw1X5qPfZHWFH",
+      "source_domain": "nsf-gov-resources.nsf.gov",
+      "filename": "NSF",
+      "display_title": "NSF",
+      "result_rep_sha256": "5a0efcbffff19835891a34148b7757f932ba2e634eae9fc1e6dc3a6d886d0e68",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000106",
+      "issued_kst": "2026-04-13T13:19:18+0900",
+      "month_id": "2026-04",
+      "url": "https://www.imf.org/-/media/files/conferences/2021/esr-workshop/esr-workshop-121021.pdf",
+      "source_domain": "www.imf.org",
+      "filename": "IMF",
+      "display_title": "IMF",
+      "result_rep_sha256": "202140f0b25ae98335c3e9ddfada1873b3463315199d65f0994afedbe8ce49cc",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000107",
+      "issued_kst": "2026-04-13T13:42:26+0900",
+      "month_id": "2026-04",
+      "url": "https://assets.anthropic.com/m/24a47b00f10301cd/original/Anthropic-Responsible-Scaling-Policy-2024-10-15.pdf",
+      "source_domain": "assets.anthropic.com",
+      "filename": "ANTHROPIC",
+      "display_title": "ANTHROPIC",
+      "result_rep_sha256": "cc86d550195192f2aff68695f661f6f6f8077e9bcbc48b7e84bd1396fe1b2c1f",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000108",
+      "issued_kst": "2026-04-13T13:54:25+0900",
+      "month_id": "2026-04",
+      "url": "https://cdn.who.int/media/docs/default-source/evaluation-office/report_who-contribution-in-namibia-evaluation_web.pdf",
+      "source_domain": "cdn.who.int",
+      "filename": "WHO",
+      "display_title": "WHO",
+      "result_rep_sha256": "194dca95b26473f446b7c838a82acaaf65142b0d5ec7a65e1c4dc0606ff3feef",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000109",
+      "issued_kst": "2026-04-13T14:08:22+0900",
+      "month_id": "2026-04",
+      "url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf",
+      "source_domain": "www.un.org",
+      "filename": "UN",
+      "display_title": "UN",
+      "result_rep_sha256": "63fc7daf5042b008a23da88b69c715a98cf5647278e2b2932a1b856effe13392",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000110",
+      "issued_kst": "2026-04-13T14:15:51+0900",
+      "month_id": "2026-04",
+      "url": "https://www.bis.org/publ/bppdf/bispap167.pdf",
+      "source_domain": "www.bis.org",
+      "filename": "BIS",
+      "display_title": "BIS",
+      "result_rep_sha256": "f739a9bb8b4105f91b6fd3a51e9f3b93b3fd6fb16bf396e6ed685761d472b788",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000111",
+      "issued_kst": "2026-04-13T14:22:24+0900",
+      "month_id": "2026-04",
+      "url": "https://documents1.worldbank.org/curated/en/099122225162037208/pdf/P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf",
+      "source_domain": "documents1.worldbank.org",
+      "filename": "WORLDBANK",
+      "display_title": "WORLDBANK",
+      "result_rep_sha256": "21f6d488291db7e8eb929f9457e79b0b1fde3a4bdddb7efb13f14b910f858956",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000112",
+      "issued_kst": "2026-04-13T14:28:50+0900",
+      "month_id": "2026-04",
+      "url": "https://www.fda.gov/media/189581/download",
+      "source_domain": "www.fda.gov",
+      "filename": "FDA",
+      "display_title": "FDA",
+      "result_rep_sha256": "25606445c347841d8388428f8921d42d9a5aaf7d9e4beed788259996cd536b7c",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000113",
+      "issued_kst": "2026-04-13T14:33:21+0900",
+      "month_id": "2026-04",
+      "url": "https://www.ema.europa.eu/en/documents/annual-report/2024-annual-report-european-medicines-agency_en.pdf",
+      "source_domain": "www.ema.europa.eu",
+      "filename": "EMA",
+      "display_title": "EMA",
+      "result_rep_sha256": "6faac167ae01dfdf4ee80a7dd2b412e1d8caeb204a3a95a53d59169c177d86c8",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

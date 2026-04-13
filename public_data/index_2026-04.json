@@ -1,9 +1,69 @@
 {
   "counts": {
-    "EVIDENCE": 18
+    "EVIDENCE": 28
   },
   "derived_month": "2026-04",
   "entries": [
+    {
+      "entry_id": "EV424-ENTRY-000113",
+      "href": "entries/EV424-ENTRY-000113.json",
+      "sha256": "5e62d3dff41bf7d6a640c3488bdad65f161d795a0e12447923a17cffcc28989c",
+      "sha256_file": "entries/EV424-ENTRY-000113.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000112",
+      "href": "entries/EV424-ENTRY-000112.json",
+      "sha256": "76595acaf7d8280a95cf5fe16b11d1d86177b7afca52ca64d86f0e0cf916577c",
+      "sha256_file": "entries/EV424-ENTRY-000112.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000111",
+      "href": "entries/EV424-ENTRY-000111.json",
+      "sha256": "c8394f04205c832d194bc20ce500e13d59f2c1594548684747b8263f58ac49dc",
+      "sha256_file": "entries/EV424-ENTRY-000111.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000110",
+      "href": "entries/EV424-ENTRY-000110.json",
+      "sha256": "be9415deb5e0e4233cc7ed45c6a5dcb27ee40b839c1abe66afa1d9629174310d",
+      "sha256_file": "entries/EV424-ENTRY-000110.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000109",
+      "href": "entries/EV424-ENTRY-000109.json",
+      "sha256": "d8915f83345f2631626df8553e441898194a15b90b13c97a58246dc663146e0f",
+      "sha256_file": "entries/EV424-ENTRY-000109.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000108",
+      "href": "entries/EV424-ENTRY-000108.json",
+      "sha256": "9debe83b7058241a3a78088727b9161c327dcfa610e33e8bafb27e4cbf58b11a",
+      "sha256_file": "entries/EV424-ENTRY-000108.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000107",
+      "href": "entries/EV424-ENTRY-000107.json",
+      "sha256": "80a240366b78536465c719adf01af2ce3e8fe6addcdb8a6a3fb6992a75c88c53",
+      "sha256_file": "entries/EV424-ENTRY-000107.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000106",
+      "href": "entries/EV424-ENTRY-000106.json",
+      "sha256": "e27773ce7e53cbbb3ab7d67dab9d27f5901971007f77fad27e0bf30002440b0f",
+      "sha256_file": "entries/EV424-ENTRY-000106.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000105",
+      "href": "entries/EV424-ENTRY-000105.json",
+      "sha256": "743db7218e69e918036621f085382a61d2d73d3a3427a543f4bb52ce07df84ec",
+      "sha256_file": "entries/EV424-ENTRY-000105.json.sha256"
+    },
+    {
+      "entry_id": "EV424-ENTRY-000104",
+      "href": "entries/EV424-ENTRY-000104.json",
+      "sha256": "aae66d1681d526a79f1d2e1751cae4f1ff5e853a4348f88b60b821e741265083",
+      "sha256_file": "entries/EV424-ENTRY-000104.json.sha256"
+    },
     {
       "entry_id": "EV424-ENTRY-000103",
       "href": "entries/EV424-ENTRY-000103.json",

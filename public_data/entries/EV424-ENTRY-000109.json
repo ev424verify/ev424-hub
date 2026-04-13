@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000109",
+  "type": "doc_passport",
+  "source": "sg_annual_report_2025_en.pdf",
+  "source_label": "UN",
+  "url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf",
+  "issued_date": "2026-04-13T14:08:22+0900",
+  "fingerprint_sha256": "06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd",
+  "result_rep_sha256": "63fc7daf5042b008a23da88b69c715a98cf5647278e2b2932a1b856effe13392",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       sg_annual_report_2025_en.pdf\nISSUED_DATE  2026-04-13T14:08:22+0900\nFINGERPRINT  06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd\nURL          https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=63fc7daf5042b008a23da88b69c715a98cf5647278e2b2932a1b856effe13392\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
