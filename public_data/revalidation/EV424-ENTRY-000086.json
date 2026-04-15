@@ -4,5 +4,17 @@
   "source_url": "https://investor.nvidia.com/files/doc_financials/2023/ar/2023-annual-report-insert-web-IR-update.pdf",
   "fingerprint_sha256": "ffac862ed5ae71aa6095b7a0d98f93249a7f648e4c4939499e849d49800dbfb2",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-08T14:55:04+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

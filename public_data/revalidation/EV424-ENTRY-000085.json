@@ -4,5 +4,17 @@
   "source_url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf",
   "fingerprint_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-07T12:46:44+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

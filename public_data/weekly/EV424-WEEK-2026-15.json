@@ -1,0 +1,24 @@
+{
+  "entries_n": 12,
+  "entry_ids": [
+    "EV424-ENTRY-000092",
+    "EV424-ENTRY-000093",
+    "EV424-ENTRY-000094",
+    "EV424-ENTRY-000095",
+    "EV424-ENTRY-000096",
+    "EV424-ENTRY-000097",
+    "EV424-ENTRY-000098",
+    "EV424-ENTRY-000099",
+    "EV424-ENTRY-000100",
+    "EV424-ENTRY-000101",
+    "EV424-ENTRY-000102",
+    "EV424-ENTRY-000103"
+  ],
+  "range_kst": {
+    "end": "2026-04-12T23:50:00+09:00",
+    "start": "2026-04-06T00:10:00+09:00"
+  },
+  "rule_str": "KST:[Mon 00:10, Sun 23:50] | include:verify.chain=OK | sort:lexicographic uniq",
+  "type": "weekly_pack",
+  "week_id": "EV424-WEEK-2026-15"
+}

@@ -1,0 +1,16 @@
+==[EV424 FINAL RECEIPT]==
+01 LEGEND
+- weekly ssot v1 (PICK->LOCAL_SHA->MANIFEST->INDEX->RECEIPT)
+
+02 IDENTITY
+- WEEK_ID=EV424-WEEK-2026-15
+- WEEKLY_DIR=/home/ec2-user/ev424_pages_site/public_data/weekly
+
+03 VERIFY
+- REVERIFY_BY=sha256sum -c <week_id>.manifest.sha256 && sha256sum -c index.json.sha256
+- CHAIN=4c06021bb23dc5881b22ae57e4833bb2a2b52d78e63c41fa7d0e397998f3bc99
+- ISSUED_KST=2026-04-13T09:22:46+09:00
+
+04 RESULT
+PASS | sha256=4c06021bb23dc5881b22ae57e4833bb2a2b52d78e63c41fa7d0e397998f3bc99
+Accuracy(4)=Truth(2)=Life(4)

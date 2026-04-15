@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000115",
+  "type": "doc_passport",
+  "source": "p0ppt4a5mrbb0zmvbl1g-pdf.pdf",
+  "source_label": "FIFA",
+  "url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf",
+  "issued_date": "2026-04-15T21:08:27+0900",
+  "fingerprint_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",
+  "result_rep_sha256": "09e48c9e5f123a8338e2deb6f6ceb22181a280e55d14ebae96ecfd5122fe97db",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       p0ppt4a5mrbb0zmvbl1g-pdf.pdf\nISSUED_DATE  2026-04-15T21:08:27+0900\nFINGERPRINT  453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34\nURL          https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=09e48c9e5f123a8338e2deb6f6ceb22181a280e55d14ebae96ecfd5122fe97db\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

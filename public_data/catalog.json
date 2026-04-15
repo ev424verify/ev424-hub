@@ -1326,6 +1326,30 @@
       "result_rep_sha256": "6faac167ae01dfdf4ee80a7dd2b412e1d8caeb204a3a95a53d59169c177d86c8",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000114",
+      "issued_kst": "2026-04-14T13:47:55+0900",
+      "month_id": "2026-04",
+      "url": "https://www.iaea.org/interactive/annual-report/2024/documents/AR24_Book_EN.pdf",
+      "source_domain": "www.iaea.org",
+      "filename": "IAEA",
+      "display_title": "IAEA",
+      "result_rep_sha256": "a3111a49dc24687a874c6bcd1d293b8c2f3e28af8cdc4643cb1d2b1b142a2ae6",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000115",
+      "issued_kst": "2026-04-15T21:08:27+0900",
+      "month_id": "2026-04",
+      "url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf",
+      "source_domain": "digitalhub.fifa.com",
+      "filename": "FIFA",
+      "display_title": "FIFA",
+      "result_rep_sha256": "09e48c9e5f123a8338e2deb6f6ceb22181a280e55d14ebae96ecfd5122fe97db",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

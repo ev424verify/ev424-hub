@@ -4,5 +4,17 @@
   "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/scaling-artificial-intelligence-in-health_77610b12/a436e12d-en.pdf",
   "fingerprint_sha256": "1e71a3daef00912f438ce62e83f7c6a7669bc02fe4635d4fcc2c0838dc020f15",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-06T17:07:58+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

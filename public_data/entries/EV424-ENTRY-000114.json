@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000114",
+  "type": "doc_passport",
+  "source": "AR24_Book_EN.pdf",
+  "source_label": "IAEA",
+  "url": "https://www.iaea.org/interactive/annual-report/2024/documents/AR24_Book_EN.pdf",
+  "issued_date": "2026-04-14T13:47:55+0900",
+  "fingerprint_sha256": "6fef0df52776ccb646db02710e8cbb04ff2c879141e809c07694abab326511b1",
+  "result_rep_sha256": "a3111a49dc24687a874c6bcd1d293b8c2f3e28af8cdc4643cb1d2b1b142a2ae6",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       AR24_Book_EN.pdf\nISSUED_DATE  2026-04-14T13:47:55+0900\nFINGERPRINT  6fef0df52776ccb646db02710e8cbb04ff2c879141e809c07694abab326511b1\nURL          https://www.iaea.org/interactive/annual-report/2024/documents/AR24_Book_EN.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=a3111a49dc24687a874c6bcd1d293b8c2f3e28af8cdc4643cb1d2b1b142a2ae6\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

@@ -4,5 +4,17 @@
   "source_url": "https://www.rfc-editor.org/rfc/rfc9720.pdf",
   "fingerprint_sha256": "81d549e9d22e950400b71160da77d1adf0135d53d29fe7e3ab9b45f3408d5cfe",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-11T10:15:56+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }
