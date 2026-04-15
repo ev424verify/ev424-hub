@@ -22,10 +22,12 @@ Direct, publicly checkable, independently re-verifiable, and already operating a
 4. Check whether the SHA-256 matches again.
 
 **Stable reference entry**  
-https://ev424verify.com/?q=EV424-ENTRY-000115
+
+https://ev424verify.com/?q=EV424-ENTRY-000019
 
 **Recent public entry**  
-https://ev424verify.com/?q=EV424-ENTRY-000103
+
+https://ev424verify.com/?q=EV424-ENTRY-000115
 
 A claim is not evidence.  
 **Evidence is a reproducible verification result.**
