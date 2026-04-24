@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000134",
+  "type": "doc_passport",
+  "source": "mm6702a3-H.pdf",
+  "source_label": "CDC",
+  "url": "https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf",
+  "issued_date": "2026-04-24T23:41:11+0900",
+  "fingerprint_sha256": "aa218de66add991e1871a2e523aa6d3f32a38abb8561493bdba3f5a84985df20",
+  "result_rep_sha256": "07d10e3f2edc975f681f6bb403b945f9c754608ab107467b8ada2d7792a16159",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       mm6702a3-H.pdf\nISSUED_DATE  2026-04-24T23:41:11+0900\nFINGERPRINT  aa218de66add991e1871a2e523aa6d3f32a38abb8561493bdba3f5a84985df20\nURL          https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=07d10e3f2edc975f681f6bb403b945f9c754608ab107467b8ada2d7792a16159\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

@@ -1542,6 +1542,18 @@
       "result_rep_sha256": "eb2f1b2748e7eba4711503bcae02b7d3625a5e8040419ceb3fceae8eb54628da",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000134",
+      "issued_kst": "2026-04-24T23:41:11+0900",
+      "month_id": "2026-04",
+      "url": "https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf",
+      "source_domain": "www.cdc.gov",
+      "filename": "CDC",
+      "display_title": "CDC",
+      "result_rep_sha256": "07d10e3f2edc975f681f6bb403b945f9c754608ab107467b8ada2d7792a16159",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
