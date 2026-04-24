@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000120",
+  "type": "doc_passport",
+  "source": "Earnings-Presentation-Q4-2025-FINAL.pdf",
+  "source_label": "META",
+  "url": "https://s21.q4cdn.com/399680738/files/doc_financials/2025/q4/Earnings-Presentation-Q4-2025-FINAL.pdf",
+  "issued_date": "2026-04-20T07:58:00+0900",
+  "fingerprint_sha256": "3688ca1b1d1b333ac9c002bac5bdade56a1f3b8393768666ba46e18c0d629c2f",
+  "result_rep_sha256": "12ea7980bde997ea6e0faa4aecce12636cafd9a41e8718b82e052baea98bc6cf",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Earnings-Presentation-Q4-2025-FINAL.pdf\nISSUED_DATE  2026-04-20T07:58:00+0900\nFINGERPRINT  3688ca1b1d1b333ac9c002bac5bdade56a1f3b8393768666ba46e18c0d629c2f\nURL          https://s21.q4cdn.com/399680738/files/doc_financials/2025/q4/Earnings-Presentation-Q4-2025-FINAL.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=12ea7980bde997ea6e0faa4aecce12636cafd9a41e8718b82e052baea98bc6cf\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

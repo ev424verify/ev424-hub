@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000127",
+  "type": "doc_passport",
+  "source": "rfc8713.pdf",
+  "source_label": "RFC",
+  "url": "https://www.rfc-editor.org/rfc/rfc8713.pdf",
+  "issued_date": "2026-04-23T12:04:04+0900",
+  "fingerprint_sha256": "2fb081b60a61ffa9560b4e98e50872d5a64b5548fe2cda9dee349d1affdf6806",
+  "result_rep_sha256": "1bfa8c03e20cbb481d6588a88e04f1af51a8a2f0d8e12f4edbd45eb1ba8568c7",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       rfc8713.pdf\nISSUED_DATE  2026-04-23T12:04:04+0900\nFINGERPRINT  2fb081b60a61ffa9560b4e98e50872d5a64b5548fe2cda9dee349d1affdf6806\nURL          https://www.rfc-editor.org/rfc/rfc8713.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=1bfa8c03e20cbb481d6588a88e04f1af51a8a2f0d8e12f4edbd45eb1ba8568c7\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

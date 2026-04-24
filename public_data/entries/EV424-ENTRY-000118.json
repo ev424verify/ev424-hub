@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000118",
+  "type": "doc_passport",
+  "source": "ERIC_Selection_2022.pdf",
+  "source_label": "ERIC",
+  "url": "https://eric.ed.gov/pdf/ERIC_Selection_2022.pdf",
+  "issued_date": "2026-04-18T09:44:52+0900",
+  "fingerprint_sha256": "680c043c5aab657a432ab91d724bbcfd562df6bf67ede809c45abf5a9c9f820e",
+  "result_rep_sha256": "d8dae6bee593f2240789d27156a4d6076da34a8338d9109a81786966e99b1b7b",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ERIC_Selection_2022.pdf\nISSUED_DATE  2026-04-18T09:44:52+0900\nFINGERPRINT  680c043c5aab657a432ab91d724bbcfd562df6bf67ede809c45abf5a9c9f820e\nURL          https://eric.ed.gov/pdf/ERIC_Selection_2022.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=d8dae6bee593f2240789d27156a4d6076da34a8338d9109a81786966e99b1b7b\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

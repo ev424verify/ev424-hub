@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000119",
+  "type": "doc_passport",
+  "source": "NIH%20Strategic%20Plan%20for%20Data%20Science%202025-2030.pdf",
+  "source_label": "NIH",
+  "url": "https://datascience.nih.gov/sites/default/files/2025-05/NIH%20Strategic%20Plan%20for%20Data%20Science%202025-2030.pdf",
+  "issued_date": "2026-04-19T09:45:51+0900",
+  "fingerprint_sha256": "98584a025f7fcd4a9b783ab880d5e02d99c9e04a3eef3b22cdb6e5b9aa6798e6",
+  "result_rep_sha256": "4c774ec0649ddbe319c5c1f4947c102b83e462f5ab74af3bc8caea28d2bf4ed8",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIH%20Strategic%20Plan%20for%20Data%20Science%202025-2030.pdf\nISSUED_DATE  2026-04-19T09:45:51+0900\nFINGERPRINT  98584a025f7fcd4a9b783ab880d5e02d99c9e04a3eef3b22cdb6e5b9aa6798e6\nURL          https://datascience.nih.gov/sites/g/files/mnhszr336/files/2025-05/NIH%20Strategic%20Plan%20for%20Data%20Science%202025-2030.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=4c774ec0649ddbe319c5c1f4947c102b83e462f5ab74af3bc8caea28d2bf4ed8\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

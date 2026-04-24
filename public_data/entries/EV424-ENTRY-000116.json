@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000116",
+  "type": "doc_passport",
+  "source": "2026list_en_final_clean_september_2025.pdf",
+  "source_label": "WADA",
+  "url": "https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf",
+  "issued_date": "2026-04-16T09:22:56+0900",
+  "fingerprint_sha256": "f0b3fcb0dc48477868983eaddac08c132b5c079d941eaa8d40aa6ff9064ece5a",
+  "result_rep_sha256": "f387a3a8ca9a1e9ed764896d71743f875b396377df214fbebe51de7bf0dde571",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       2026list_en_final_clean_september_2025.pdf\nISSUED_DATE  2026-04-16T09:22:56+0900\nFINGERPRINT  f0b3fcb0dc48477868983eaddac08c132b5c079d941eaa8d40aa6ff9064ece5a\nURL          https://www.wada-ama.org/sites/default/files/2025-09/2026list_en_final_clean_september_2025.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=f387a3a8ca9a1e9ed764896d71743f875b396377df214fbebe51de7bf0dde571\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

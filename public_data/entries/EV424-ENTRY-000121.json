@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000121",
+  "type": "doc_passport",
+  "source": "PUB100463.pdf",
+  "source_label": "ISO",
+  "url": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100463.pdf",
+  "issued_date": "2026-04-21T07:51:23+0900",
+  "fingerprint_sha256": "f01eab907b7a8043a0bd5e0bcce84cfa9d3a3453b2af6d13c581fb89cda937e7",
+  "result_rep_sha256": "a4327bb1f59dfdeda945959762e13e4b77e95a7a1117272bc10cc0c2d9997cae",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       PUB100463.pdf\nISSUED_DATE  2026-04-21T07:51:23+0900\nFINGERPRINT  f01eab907b7a8043a0bd5e0bcce84cfa9d3a3453b2af6d13c581fb89cda937e7\nURL          https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100463.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=a4327bb1f59dfdeda945959762e13e4b77e95a7a1117272bc10cc0c2d9997cae\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

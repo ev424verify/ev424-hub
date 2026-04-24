@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000123",
+  "type": "doc_passport",
+  "source": "Claude-Sonnet-4-5-System-Card.pdf",
+  "source_label": "ANTHROPIC",
+  "url": "https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf",
+  "issued_date": "2026-04-22T08:55:38+0900",
+  "fingerprint_sha256": "d5d1ce28fea101ae3b201a5d4da100090a5d6b73246f7da820cafd7dbb11100e",
+  "result_rep_sha256": "6fcef6c6edcd0578b5a3e7d99ba7283672bbd25449b57173fe56b0749245afd8",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Claude-Sonnet-4-5-System-Card.pdf\nISSUED_DATE  2026-04-22T08:55:38+0900\nFINGERPRINT  d5d1ce28fea101ae3b201a5d4da100090a5d6b73246f7da820cafd7dbb11100e\nURL          https://assets.anthropic.com/m/12f214efcc2f457a/original/Claude-Sonnet-4-5-System-Card.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=6fcef6c6edcd0578b5a3e7d99ba7283672bbd25449b57173fe56b0749245afd8\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

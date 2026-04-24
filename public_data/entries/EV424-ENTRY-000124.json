@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000124",
+  "type": "doc_passport",
+  "source": "dwact-2016.pdf",
+  "source_label": "CDC",
+  "url": "https://www.cdc.gov/water-emergency/media/pdfs/2024/08/dwact-2016.pdf",
+  "issued_date": "2026-04-22T14:03:19+0900",
+  "fingerprint_sha256": "6c524a033200250bd3a11c07424878b6e476dd0e2db8682b06e15725dade1647",
+  "result_rep_sha256": "9c36d245a0f83c27df1ae94cb1c0fd7bdfa239d831c405e05e020a146b820b74",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       dwact-2016.pdf\nISSUED_DATE  2026-04-22T14:03:19+0900\nFINGERPRINT  6c524a033200250bd3a11c07424878b6e476dd0e2db8682b06e15725dade1647\nURL          https://www.cdc.gov/water-emergency/media/pdfs/2024/08/dwact-2016.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=9c36d245a0f83c27df1ae94cb1c0fd7bdfa239d831c405e05e020a146b820b74\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

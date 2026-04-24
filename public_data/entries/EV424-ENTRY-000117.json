@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000117",
+  "type": "doc_passport",
+  "source": "atcjzj9j7wrgvsm8wnjq.pdf",
+  "source_label": "MLB",
+  "url": "https://img.mlbstatic.com/mlb-images/image/upload/mlb/atcjzj9j7wrgvsm8wnjq.pdf",
+  "issued_date": "2026-04-17T13:36:07+0900",
+  "fingerprint_sha256": "11e6e69c78d8029a652b566a7d2cba8d6138e22d016ba3992dcde6014c0e3de4",
+  "result_rep_sha256": "a612b815c6a3e097b1517302f0229f98fabf84f650d1fd8e7bc3d1b7144eafee",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       atcjzj9j7wrgvsm8wnjq.pdf\nISSUED_DATE  2026-04-17T13:36:07+0900\nFINGERPRINT  11e6e69c78d8029a652b566a7d2cba8d6138e22d016ba3992dcde6014c0e3de4\nURL          https://img.mlbstatic.com/mlb-images/image/upload/mlb/atcjzj9j7wrgvsm8wnjq.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=a612b815c6a3e097b1517302f0229f98fabf84f650d1fd8e7bc3d1b7144eafee\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

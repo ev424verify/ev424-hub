@@ -1,7 +1,7 @@
 {
   "counts": {
     "CHANGELOG": 0,
-    "EVIDENCE": 30,
+    "EVIDENCE": 44,
     "SPEC": 0
   },
   "generated_at": "2026-03-09T08:52:48+09:00",
@@ -37,12 +37,13 @@
     },
     {
       "counts": {
-        "EVIDENCE": 30
+        "EVIDENCE": 44
       },
       "href": "index_2026-04.json",
       "month": "2026-04",
-      "sha256": "e3b3c7c0a51f6fb25b49bf3ca27672e30f34a32829adc4f4b15b5ab3d3cdb170",
-      "sha256_file": "index_2026-04.json.sha256"
+      "sha256": "01938d2aa9cddd3dc1a3429f680f03b9a60d1af3113a66b837c8779b95ac6628",
+      "sha256_file": "index_2026-04.json.sha256",
+      "count": 42
     }
   ],
   "rails": {
