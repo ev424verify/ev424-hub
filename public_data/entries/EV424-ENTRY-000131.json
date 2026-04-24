@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000131",
+  "type": "doc_passport",
+  "source": "white-paper.pdf",
+  "source_label": "NVIDIA",
+  "url": "https://docs.nvidia.com/enterprise-reference-architectures/white-paper.pdf",
+  "issued_date": "2026-04-24T18:58:24+0900",
+  "fingerprint_sha256": "14b8a91157adcccdd220c39952580e0f4602bd86246dfbfcc1b9da257e1b1f12",
+  "result_rep_sha256": "9e1915fe2b71d881f6d3a86c48af3f09fd45be507802f02371f7d15b623d5bb5",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       white-paper.pdf\nISSUED_DATE  2026-04-24T18:58:24+0900\nFINGERPRINT  14b8a91157adcccdd220c39952580e0f4602bd86246dfbfcc1b9da257e1b1f12\nURL          https://docs.nvidia.com/enterprise-reference-architectures/white-paper.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=9e1915fe2b71d881f6d3a86c48af3f09fd45be507802f02371f7d15b623d5bb5\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

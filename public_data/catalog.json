@@ -1506,6 +1506,18 @@
       "result_rep_sha256": "ce054145b155b63b692b069b5371df2810357cf94025719cf4fbae71c9cdda3d",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000131",
+      "issued_kst": "2026-04-24T18:58:24+0900",
+      "month_id": "2026-04",
+      "url": "https://docs.nvidia.com/enterprise-reference-architectures/white-paper.pdf",
+      "source_domain": "docs.nvidia.com",
+      "filename": "NVIDIA",
+      "display_title": "NVIDIA",
+      "result_rep_sha256": "9e1915fe2b71d881f6d3a86c48af3f09fd45be507802f02371f7d15b623d5bb5",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
