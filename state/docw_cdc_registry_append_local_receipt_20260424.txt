@@ -1,0 +1,10 @@
+DOCW_CDC_REGISTRY_APPEND_LOCAL_RECEIPT
+HEAD=4eb175356199ddfc4f36fd4cf39fdd4b43d8f92a
+SOURCE_REGISTRY_TRACKED=NO
+SOURCE_REGISTRY_IGNORE_RULE=.git/info/exclude:7:state/source_registry.tsv	state/source_registry.tsv
+SOURCE_REGISTRY_SHA256=5c7433ccfa382a8df30d21c25a7c8c875c62a5b5d47daab1716d9ccc9766ab9d
+GATE_RECEIPT_VERIFY=state/docw_cdc_gate_mm6702a3_H_receipt_20260424.txt: OK 
+URL_LINE=95
+URL_ROW=CDC	MED_HEALTH	https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf	cdc-mmwr-mm6702a3-H.pdf	READY	MANUAL_CDC_OFFICIAL_SOURCE_PROBE_GATE_PASS	2026-04-24T22:39:45+09:00			schema=shadow_queue_v2|actor=manual_cdc_official_source_probe|bit=READY|class9=MED_HEALTH|frame_large=MED_HEALTH|frame_mid=MED_HEALTH|frame_small=CDC|type5=REGISTRY_READY|source_probe_receipt=docw_cdc_official_source_probe_depth2_receipt_20260424.txt|gate_receipt=docw_cdc_gate_mm6702a3_H_receipt_20260424.txt
+URL_HITS=1
+STATUS=PASS
