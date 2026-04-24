@@ -1,0 +1,9 @@
+{
+  "entry_id": "EV424-ENTRY-000128",
+  "type": "doc_passport",
+  "public_status": "QUARANTINED",
+  "status": "QUARANTINED",
+  "is_superseded": true,
+  "superseded_reason": "DOCUMENT_BODY_VALIDATION_FAILED",
+  "receipt_text": "==[EV424 ENTRY NOTICE]==\n\nSTATUS       NOT_VALID_PUBLIC_PASS\nENTRY_ID     EV424-ENTRY-000128\nREASON       DOCUMENT_BODY_VALIDATION_FAILED\n\nThis entry is not a valid EV424 public document passport.\nIt must not be used as a PASS receipt."
+}
