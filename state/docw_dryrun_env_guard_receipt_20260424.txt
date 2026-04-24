@@ -1,0 +1,16 @@
+DOCW_DRY_RUN_ENV_GUARD_RECEIPT
+issued_kst=2026-04-24T20:04:43+0900
+script=/home/ec2-user/bin/새문서여권갱신
+script_sha256=6e2487527f264d9a5c5bdcfe4a7546ccfe811ff0886959e5ce7f17f8ce45e2f5
+
+[ENV_DRY_RUN_MUST_FAIL]
+rc=64
+FAIL_STOP: DRY_RUN_ENV_UNSUPPORTED; use: 새문서여권갱신 --dry-run
+
+[ARG_DRY_RUN_MUST_STILL_WORK]
+selected_family=ANTHROPIC
+candidate_url=https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf
+intake_result=REPLENISH_READY
+consume_result=NOT_RUN
+deploy_result=NOT_RUN
+registry_delta=READY_APPEND=0
