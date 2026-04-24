@@ -1,0 +1,21 @@
+DOCW_QUERY_MAP_DIRECT_WHITELIST
+MODE=WHITELIST_ONLY_NO_SCRIPT_PATCH
+SOURCE_REVIEW=state/docw_query_map_patch_plan_review_20260424.txt
+DIRECT_N=15
+ASSET_REVIEW_REQUIRED_N=8
+CDC	QUERY_MAP_SAFE_CANDIDATE	site:www.cdc.gov filetype:pdf
+ERIC	QUERY_MAP_SAFE_CANDIDATE	site:eric.ed.gov filetype:pdf
+EU	QUERY_MAP_SAFE_CANDIDATE	site:ai-act-service-desk.ec.europa.eu filetype:pdf
+FDA	QUERY_MAP_SAFE_CANDIDATE	site:www.fda.gov filetype:pdf
+FTC	QUERY_MAP_SAFE_CANDIDATE	site:www.ftc.gov filetype:pdf
+IOC	QUERY_MAP_SAFE_CANDIDATE	site:stillmed.olympics.com filetype:pdf
+LINUX	QUERY_MAP_SAFE_CANDIDATE	site:www.linuxfoundation.org filetype:pdf
+NIH	QUERY_MAP_SAFE_CANDIDATE	site:datascience.nih.gov filetype:pdf
+NSF	QUERY_MAP_SAFE_CANDIDATE	site:nsf-gov-resources.nsf.gov filetype:pdf
+NVIDIA	QUERY_MAP_SAFE_CANDIDATE	site:investor.nvidia.com filetype:pdf
+RFC	QUERY_MAP_SAFE_CANDIDATE	site:www.rfc-editor.org filetype:pdf
+SEC	QUERY_MAP_SAFE_CANDIDATE	site:www.sec.gov filetype:pdf
+TESLA	QUERY_MAP_SAFE_CANDIDATE	site:ir.tesla.com filetype:pdf
+W3C	QUERY_MAP_SAFE_CANDIDATE	site:www.w3.org filetype:pdf
+WADA	QUERY_MAP_SAFE_CANDIDATE	site:www.wada-ama.org filetype:pdf
+STATUS=PASS

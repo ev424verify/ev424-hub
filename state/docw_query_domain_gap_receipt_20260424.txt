@@ -1,0 +1,44 @@
+DOCW_QUERY_DOMAIN_GAP_RECEIPT
+MODE=READ_ONLY
+SCRIPT=/home/ec2-user/bin/새문서후보보충
+SCRIPT_SHA256=a54651a1fd48478c9449e1ed9a29587cf1bbdfffa54c2a6252fabcd2e57d4566
+TARGETS_N=35
+HOST_MISMATCH_N=23
+ROOT_MATCH_N=12
+NO_OBS_N=0
+HOST_MISMATCH	ALPHABET	DEFAULT	alphabet.org	s206.q4cdn.com	306	site:alphabet.org filetype:pdf
+ROOT_MATCH	BIS	DEFAULT	bis.org	www.bis.org	36	site:bis.org filetype:pdf
+HOST_MISMATCH	CDC	DEFAULT	cdc.org	www.cdc.gov	9	site:cdc.org filetype:pdf
+ROOT_MATCH	EMA	QUERY_MAP	ema.europa.eu	www.ema.europa.eu	38	site:ema.europa.eu filetype:pdf
+HOST_MISMATCH	ERIC	DEFAULT	eric.org	eric.ed.gov	8	site:eric.org filetype:pdf
+HOST_MISMATCH	EU	DEFAULT	eu.org	ai-act-service-desk.ec.europa.eu	161	site:eu.org filetype:pdf
+HOST_MISMATCH	FDA	DEFAULT	fda.org	www.fda.gov	38	site:fda.org filetype:pdf
+HOST_MISMATCH	FIFA	DEFAULT	fifa.org	digitalhub.fifa.com	41	site:fifa.org filetype:pdf
+ROOT_MATCH	FSB	DEFAULT	fsb.org	www.fsb.org	94	site:fsb.org filetype:pdf
+HOST_MISMATCH	FTC	DEFAULT	ftc.org	www.ftc.gov	35	site:ftc.org filetype:pdf
+ROOT_MATCH	IAEA	DEFAULT	iaea.org	www.iaea.org	39	site:iaea.org filetype:pdf
+ROOT_MATCH	IMF	DEFAULT	imf.org	www.imf.org	39	site:imf.org filetype:pdf
+HOST_MISMATCH	IOC	DEFAULT	ioc.org	stillmed.olympics.com	29	site:ioc.org filetype:pdf
+ROOT_MATCH	ISO	DEFAULT	iso.org	www.iso.org	32	site:iso.org filetype:pdf
+HOST_MISMATCH	LINUX	DEFAULT	linux.org	www.linuxfoundation.org	221	site:linux.org filetype:pdf
+HOST_MISMATCH	META	DEFAULT	meta.org	s21.q4cdn.com	6	site:meta.org filetype:pdf
+HOST_MISMATCH	MICROSOFT	DEFAULT	microsoft.org	cdn-dynmedia-1.microsoft.com	450	site:microsoft.org filetype:pdf
+HOST_MISMATCH	MLB	DEFAULT	mlb.org	img.mlbstatic.com	11	site:mlb.org filetype:pdf
+ROOT_MATCH	NCAA	DEFAULT	ncaa.org	fs.ncaa.org	25	site:ncaa.org filetype:pdf
+HOST_MISMATCH	NIH	DEFAULT	nih.org	datascience.nih.gov	44	site:nih.org filetype:pdf
+HOST_MISMATCH	NSF	DEFAULT	nsf.org	nsf-gov-resources.nsf.gov	36	site:nsf.org filetype:pdf
+HOST_MISMATCH	NVIDIA	DEFAULT	nvidia.org	investor.nvidia.com	144	site:nvidia.org filetype:pdf
+ROOT_MATCH	OECD	QUERY_MAP	oecd.org	www.oecd.org	544	site:oecd.org filetype:pdf
+HOST_MISMATCH	OPENAI	DEFAULT	openai.org	cdn.openai.com	297	site:openai.org filetype:pdf
+HOST_MISMATCH	RFC	DEFAULT	rfc.org	www.rfc-editor.org	187	site:rfc.org filetype:pdf
+HOST_MISMATCH	SEC	DEFAULT	sec.org	www.sec.gov	41	site:sec.org filetype:pdf
+HOST_MISMATCH	TESLA	DEFAULT	tesla.org	ir.tesla.com	89	site:tesla.org filetype:pdf
+ROOT_MATCH	UN	DEFAULT	un.org	www.un.org	34	site:un.org filetype:pdf
+ROOT_MATCH	UNESCO	DEFAULT	unesco.org	unevoc.unesco.org	244	site:unesco.org filetype:pdf
+HOST_MISMATCH	W3C	DEFAULT	w3c.org	www.w3.org	7	site:w3c.org filetype:pdf
+HOST_MISMATCH	WADA	DEFAULT	wada.org	www.wada-ama.org	36	site:wada.org filetype:pdf
+HOST_MISMATCH	WHO	DEFAULT	who.org	cdn.who.int	37	site:who.org filetype:pdf
+ROOT_MATCH	WORLDBANK	DEFAULT	worldbank.org	documents1.worldbank.org	35	site:worldbank.org filetype:pdf
+HOST_MISMATCH	ANTHROPIC	DEFAULT	anthropic.org	assets.anthropic.com	36	site:anthropic.org filetype:pdf
+ROOT_MATCH	NIST	QUERY_MAP	nist.gov	nvlpubs.nist.gov	287	site:nist.gov filetype:pdf
+STATUS=PASS
