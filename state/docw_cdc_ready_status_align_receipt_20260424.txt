@@ -1,0 +1,9 @@
+DOCW_CDC_READY_STATUS_ALIGN_RECEIPT
+URL=https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf
+ACTION=READY_TO_READY_CANDIDATE
+SOURCE_REGISTRY_SHA256=29fb66efb7ce6923ce98a643abeae041ae195a05779d3a349ff0bb83f0f536ad
+URL_LINE=95
+URL_ROW=CDC	MED_HEALTH	https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf	cdc-mmwr-mm6702a3-H.pdf	READY_CANDIDATE	MANUAL_CDC_OFFICIAL_SOURCE_PROBE_GATE_PASS	2026-04-24T22:39:45+09:00			schema=shadow_queue_v2|actor=manual_cdc_official_source_probe|bit=READY|class9=MED_HEALTH|frame_large=MED_HEALTH|frame_mid=MED_HEALTH|frame_small=CDC|type5=REGISTRY_READY|source_probe_receipt=docw_cdc_official_source_probe_depth2_receipt_20260424.txt|gate_receipt=docw_cdc_gate_mm6702a3_H_receipt_20260424.txt
+URL_HITS=1
+READY_CANDIDATE_HITS=1
+STATUS=PASS
