@@ -1518,6 +1518,18 @@
       "result_rep_sha256": "9e1915fe2b71d881f6d3a86c48af3f09fd45be507802f02371f7d15b623d5bb5",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000132",
+      "issued_kst": "2026-04-24T22:41:48+0900",
+      "month_id": "2026-04",
+      "url": "https://www.cisa.gov/sites/default/files/publications/STC%2520Tip%2520Card%2520for%2520Kids%2520-%2520Spanish%2520-Final%2520508%2520compliant%25209.8.16.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "5ac1b3ce2aa7b4e3cd8a1f963bd13e1232e10bc820f5ad6dd78fd69682989ac1",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

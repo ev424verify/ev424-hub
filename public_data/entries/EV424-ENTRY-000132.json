@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000132",
+  "type": "doc_passport",
+  "source": "STC%2520Tip%2520Card%2520for%2520Kids%2520-%2520Spanish%2520-Final%2520508%2520compliant%25209.8.16.pdf",
+  "source_label": "CISA",
+  "url": "https://www.cisa.gov/sites/default/files/publications/STC%2520Tip%2520Card%2520for%2520Kids%2520-%2520Spanish%2520-Final%2520508%2520compliant%25209.8.16.pdf",
+  "issued_date": "2026-04-24T22:41:48+0900",
+  "fingerprint_sha256": "c902306361f3bac55a5873375515042f1fee4e757958a3b1065686ac080cb791",
+  "result_rep_sha256": "5ac1b3ce2aa7b4e3cd8a1f963bd13e1232e10bc820f5ad6dd78fd69682989ac1",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       STC%2520Tip%2520Card%2520for%2520Kids%2520-%2520Spanish%2520-Final%2520508%2520compliant%25209.8.16.pdf\nISSUED_DATE  2026-04-24T22:41:48+0900\nFINGERPRINT  c902306361f3bac55a5873375515042f1fee4e757958a3b1065686ac080cb791\nURL          https://www.cisa.gov/sites/default/files/publications/STC%2520Tip%2520Card%2520for%2520Kids%2520-%2520Spanish%2520-Final%2520508%2520compliant%25209.8.16.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=5ac1b3ce2aa7b4e3cd8a1f963bd13e1232e10bc820f5ad6dd78fd69682989ac1\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
