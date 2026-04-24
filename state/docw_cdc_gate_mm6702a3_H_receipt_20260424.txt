@@ -1,0 +1,17 @@
+=== NEW_DOC_PASSPORT_GATE (FACT) ===
+URL=https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf
+NAME=cdc-mmwr-mm6702a3-H.pdf
+DUPLICATE_URL=NO
+URL=https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf
+URL_CANON=https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf
+=== BODY_MAGIC_GATE (FACT) ===
+BODY_MAGIC=%PDF-
+FILE_TYPE=PDF document, version 1.7 (password protected)
+BODY_SHA256=aa218de66add991e1871a2e523aa6d3f32a38abb8561493bdba3f5a84985df20
+BODY_MAGIC_PASS=YES
+=== GATE_RESULT (FACT) ===
+PASS
+DUPLICATE_URL=NO
+BODY_MAGIC_PASS=YES
+OK_TO_RUN:
+문서역권 "https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf" "cdc-mmwr-mm6702a3-H.pdf"
