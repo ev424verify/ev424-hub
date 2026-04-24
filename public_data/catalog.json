@@ -1530,6 +1530,18 @@
       "result_rep_sha256": "5ac1b3ce2aa7b4e3cd8a1f963bd13e1232e10bc820f5ad6dd78fd69682989ac1",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000133",
+      "issued_kst": "2026-04-24T23:13:35+0900",
+      "month_id": "2026-04",
+      "url": "https://www.cisa.gov/sites/default/files/publications/Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "eb2f1b2748e7eba4711503bcae02b7d3625a5e8040419ceb3fceae8eb54628da",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

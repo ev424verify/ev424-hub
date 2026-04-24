@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000133",
+  "type": "doc_passport",
+  "source": "Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf",
+  "source_label": "CISA",
+  "url": "https://www.cisa.gov/sites/default/files/publications/Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf",
+  "issued_date": "2026-04-24T23:13:35+0900",
+  "fingerprint_sha256": "27abd683ce1f937387160c567f8a8518740ce0cd78dba65487cf8b0a2fb0597a",
+  "result_rep_sha256": "eb2f1b2748e7eba4711503bcae02b7d3625a5e8040419ceb3fceae8eb54628da",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf\nISSUED_DATE  2026-04-24T23:13:35+0900\nFINGERPRINT  27abd683ce1f937387160c567f8a8518740ce0cd78dba65487cf8b0a2fb0597a\nURL          https://www.cisa.gov/sites/default/files/publications/Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=eb2f1b2748e7eba4711503bcae02b7d3625a5e8040419ceb3fceae8eb54628da\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
