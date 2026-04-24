@@ -1,0 +1,14 @@
+DOCW_SUPPLY_INVENTORY_INTEGRATION_RECEIPT
+issued_kst=2026-04-24T19:45:45+09:00
+script=/home/ec2-user/bin/새문서여권갱신
+script_sha256=2044c24469890839df6d7b8813366cf35736e9ae593f7821858c9f983a200aa5
+proof_selected_family=ANTHROPIC
+proof_candidate_url=https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf
+proof_intake_result=REPLENISH_READY
+proof_consume_result=NOT_RUN
+proof_deploy_result=NOT_RUN
+proof_registry_delta=READY_APPEND=0
+rule_1=inventory UNUSED family is tried before general replenish
+rule_2=last USED family is moved behind other inventory families
+rule_3=NIST failure can fall through to ANTHROPIC in same dry-run
+rule_4=DRY_RUN must be invoked with --dry-run, not environment variable
