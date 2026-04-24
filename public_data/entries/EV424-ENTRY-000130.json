@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000130",
+  "type": "doc_passport",
+  "source": "NVIDIA-Sustainability-Report-Fiscal-Year-2025.pdf",
+  "source_label": "NVIDIA",
+  "url": "https://images.nvidia.com/aem-dam/Solutions/documents/NVIDIA-Sustainability-Report-Fiscal-Year-2025.pdf",
+  "issued_date": "2026-04-24T18:15:46+0900",
+  "fingerprint_sha256": "bd9f8693c53068c9d1935e42a8e82af05f70a6d1e537dcfc88e8402cde227019",
+  "result_rep_sha256": "ce054145b155b63b692b069b5371df2810357cf94025719cf4fbae71c9cdda3d",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NVIDIA-Sustainability-Report-Fiscal-Year-2025.pdf\nISSUED_DATE  2026-04-24T18:15:46+0900\nFINGERPRINT  bd9f8693c53068c9d1935e42a8e82af05f70a6d1e537dcfc88e8402cde227019\nURL          https://images.nvidia.com/aem-dam/Solutions/documents/NVIDIA-Sustainability-Report-Fiscal-Year-2025.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=ce054145b155b63b692b069b5371df2810357cf94025719cf4fbae71c9cdda3d\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
