@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000135",
+  "type": "doc_passport",
+  "source": "Mobile%2520Banking%2520and%2520Payments_0.pdf",
+  "source_label": "CISA",
+  "url": "https://www.cisa.gov/sites/default/files/publications/Mobile%2520Banking%2520and%2520Payments_0.pdf",
+  "issued_date": "2026-04-25T11:22:01+0900",
+  "fingerprint_sha256": "9fe4a5dbdb8f3df6df94b710a4ba0adb367033ff7698bae4c49768c09cfcbf6f",
+  "result_rep_sha256": "aa261fac74683d67004ead349c6b1377b0f11110f4f88827654e72fd599095b2",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Mobile%2520Banking%2520and%2520Payments_0.pdf\nISSUED_DATE  2026-04-25T11:22:01+0900\nFINGERPRINT  9fe4a5dbdb8f3df6df94b710a4ba0adb367033ff7698bae4c49768c09cfcbf6f\nURL          https://www.cisa.gov/sites/default/files/publications/Mobile%2520Banking%2520and%2520Payments_0.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=aa261fac74683d67004ead349c6b1377b0f11110f4f88827654e72fd599095b2\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
