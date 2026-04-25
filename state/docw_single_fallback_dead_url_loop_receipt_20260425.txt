@@ -1,0 +1,12 @@
+DOCW_SINGLE_FALLBACK_DEAD_URL_LOOP_RECEIPT
+STATUS=CONFIRMED
+PROBLEM=SINGLE_FALLBACK_DEAD_URL_LOOP
+AFFECTED_FAMILIES=IOC,NCAA
+IOC_URL=https://stillmed.olympics.com/media/Document%20Library/OlympicOrg/General/EN-Olympic-Charter.pdf
+NCAA_URL=https://fs.ncaa.org/Docs/eligibility_center/Student_Resources/CBSA.pdf
+OBSERVED_IOC_REPEAT=HEAD_404_TIMEOUT_SAME_URL
+OBSERVED_NCAA_REPEAT=HEAD_404_SSL_TIMEOUT_SAME_URL
+ROOT_CAUSE=fallback_n_is_1_and_failed_candidate_retried
+REQUIRED_FIX=classify_failure_per_candidate_then_fail_forward_to_next_candidate
+DO_NOT_FIX_BY=removing_family_or_marking_family_failed
+NEXT=design_candidate_fail_forward_gate_with_dead_url_cooldown_and_min_fallback_n_3
