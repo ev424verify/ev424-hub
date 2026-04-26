@@ -1602,6 +1602,18 @@
       "result_rep_sha256": "f433599e5488593cb753ef5666f125a6fb794358e8fb8e2b306da09f702c0cd2",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000139",
+      "issued_kst": "2026-04-26T16:53:52+0900",
+      "month_id": "2026-04",
+      "url": "https://cdn.who.int/media/docs/default-source/medicines/regulatory-updates/rpq/who_rpq_annualreport2025.pdf?download=true&sfvrsn=afe3907_3",
+      "source_domain": "cdn.who.int",
+      "filename": "WHO",
+      "display_title": "WHO",
+      "result_rep_sha256": "42755718d91894507826be1ce3502d90f839830c5f7865cd97208816c1728f80",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

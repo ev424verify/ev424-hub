@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000139",
+  "type": "doc_passport",
+  "source": "who_rpq_annualreport2025.pdf",
+  "source_label": "WHO",
+  "url": "https://cdn.who.int/media/docs/default-source/medicines/regulatory-updates/rpq/who_rpq_annualreport2025.pdf?download=true&sfvrsn=afe3907_3",
+  "issued_date": "2026-04-26T16:53:52+0900",
+  "fingerprint_sha256": "489f48ce81a7d8294ced574a7dad00a821de912b07cdb81437386854708895c3",
+  "result_rep_sha256": "42755718d91894507826be1ce3502d90f839830c5f7865cd97208816c1728f80",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       who_rpq_annualreport2025.pdf?download=true&sfvrsn=afe3907_3\nISSUED_DATE  2026-04-26T16:53:52+0900\nFINGERPRINT  489f48ce81a7d8294ced574a7dad00a821de912b07cdb81437386854708895c3\nURL          https://cdn.who.int/media/docs/default-source/medicines/regulatory-updates/rpq/who_rpq_annualreport2025.pdf?download=true&sfvrsn=afe3907_3\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=42755718d91894507826be1ce3502d90f839830c5f7865cd97208816c1728f80\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
