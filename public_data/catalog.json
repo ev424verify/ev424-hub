@@ -1590,6 +1590,18 @@
       "result_rep_sha256": "26562c389c849f60a8ad17774ffed4461ed15d983295d00d75d9c61a423697ff",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000138",
+      "issued_kst": "2026-04-26T13:27:33+0900",
+      "month_id": "2026-04",
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en.pdf",
+      "source_domain": "www.ema.europa.eu",
+      "filename": "status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en.pdf",
+      "display_title": "status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en",
+      "result_rep_sha256": "f433599e5488593cb753ef5666f125a6fb794358e8fb8e2b306da09f702c0cd2",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

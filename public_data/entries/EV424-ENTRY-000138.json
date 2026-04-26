@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000138",
+  "type": "doc_passport",
+  "source": "status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en.pdf",
+  "source_label": "status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en.pdf",
+  "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en.pdf",
+  "issued_date": "2026-04-26T13:27:33+0900",
+  "fingerprint_sha256": "e88c61312da7090dc94b022f4403863605e9c47b61d62e5c541bb40ed26ae38f",
+  "result_rep_sha256": "f433599e5488593cb753ef5666f125a6fb794358e8fb8e2b306da09f702c0cd2",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en.pdf\nISSUED_DATE  2026-04-26T13:27:33+0900\nFINGERPRINT  e88c61312da7090dc94b022f4403863605e9c47b61d62e5c541bb40ed26ae38f\nURL          https://www.ema.europa.eu/en/documents/scientific-guideline/status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=f433599e5488593cb753ef5666f125a6fb794358e8fb8e2b306da09f702c0cd2\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
