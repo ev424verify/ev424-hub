@@ -1626,6 +1626,18 @@
       "result_rep_sha256": "546656d67bd993f42e325c4795182b723b0375311b8e243eb7add49dddd4dad3",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000141",
+      "issued_kst": "2026-04-27T16:30:27+0900",
+      "month_id": "2026-04",
+      "url": "https://www.imf.org/-/media/files/publications/fandd/article/2026/03/fd-mar26-thedebtreckoning.pdf",
+      "source_domain": "www.imf.org",
+      "filename": "IMF",
+      "display_title": "IMF",
+      "result_rep_sha256": "f638b39ca2c464d194e4817edfc860cf2086f9e6c2c6beb2ccb7d1e964996a41",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

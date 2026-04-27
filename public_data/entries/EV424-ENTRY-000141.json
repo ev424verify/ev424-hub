@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000141",
+  "type": "doc_passport",
+  "source": "fd-mar26-thedebtreckoning.pdf",
+  "source_label": "IMF",
+  "url": "https://www.imf.org/-/media/files/publications/fandd/article/2026/03/fd-mar26-thedebtreckoning.pdf",
+  "issued_date": "2026-04-27T16:30:27+0900",
+  "fingerprint_sha256": "73aa6208142268eec4d1ef62fa49f5df94b15c32254c43ef87690b758d9b0d16",
+  "result_rep_sha256": "f638b39ca2c464d194e4817edfc860cf2086f9e6c2c6beb2ccb7d1e964996a41",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       fd-mar26-thedebtreckoning.pdf\nISSUED_DATE  2026-04-27T16:30:27+0900\nFINGERPRINT  73aa6208142268eec4d1ef62fa49f5df94b15c32254c43ef87690b758d9b0d16\nURL          https://www.imf.org/-/media/files/publications/fandd/article/2026/03/fd-mar26-thedebtreckoning.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=f638b39ca2c464d194e4817edfc860cf2086f9e6c2c6beb2ccb7d1e964996a41\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
