@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000140",
+  "type": "doc_passport",
+  "source": "Jan2026D1AEC_ReportwithAttachment.pdf",
+  "source_label": "NCAA",
+  "url": "https://ncaaorg.s3.amazonaws.com/committees/d1/aec/Jan2026D1AEC_ReportwithAttachment.pdf",
+  "issued_date": "2026-04-27T10:21:32+0900",
+  "fingerprint_sha256": "334e0faff103d7617c21d0426a698a9d21c47fd459355ad25ae5e704d5760519",
+  "result_rep_sha256": "546656d67bd993f42e325c4795182b723b0375311b8e243eb7add49dddd4dad3",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Jan2026D1AEC_ReportwithAttachment.pdf\nISSUED_DATE  2026-04-27T10:21:32+0900\nFINGERPRINT  334e0faff103d7617c21d0426a698a9d21c47fd459355ad25ae5e704d5760519\nURL          https://ncaaorg.s3.amazonaws.com/committees/d1/aec/Jan2026D1AEC_ReportwithAttachment.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=546656d67bd993f42e325c4795182b723b0375311b8e243eb7add49dddd4dad3\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

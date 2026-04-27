@@ -1614,6 +1614,18 @@
       "result_rep_sha256": "42755718d91894507826be1ce3502d90f839830c5f7865cd97208816c1728f80",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000140",
+      "issued_kst": "2026-04-27T10:21:32+0900",
+      "month_id": "2026-04",
+      "url": "https://ncaaorg.s3.amazonaws.com/committees/d1/aec/Jan2026D1AEC_ReportwithAttachment.pdf",
+      "source_domain": "ncaaorg.s3.amazonaws.com",
+      "filename": "NCAA",
+      "display_title": "NCAA",
+      "result_rep_sha256": "546656d67bd993f42e325c4795182b723b0375311b8e243eb7add49dddd4dad3",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

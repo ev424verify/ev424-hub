@@ -1,0 +1,30 @@
+{
+  "entries_n": 18,
+  "entry_ids": [
+    "EV424-ENTRY-000120",
+    "EV424-ENTRY-000121",
+    "EV424-ENTRY-000122",
+    "EV424-ENTRY-000123",
+    "EV424-ENTRY-000124",
+    "EV424-ENTRY-000125",
+    "EV424-ENTRY-000126",
+    "EV424-ENTRY-000127",
+    "EV424-ENTRY-000130",
+    "EV424-ENTRY-000131",
+    "EV424-ENTRY-000132",
+    "EV424-ENTRY-000133",
+    "EV424-ENTRY-000134",
+    "EV424-ENTRY-000135",
+    "EV424-ENTRY-000136",
+    "EV424-ENTRY-000137",
+    "EV424-ENTRY-000138",
+    "EV424-ENTRY-000139"
+  ],
+  "range_kst": {
+    "end": "2026-04-26T23:50:00+09:00",
+    "start": "2026-04-20T00:10:00+09:00"
+  },
+  "rule_str": "KST:[Mon 00:10, Sun 23:50] | include:verify.chain=OK | sort:lexicographic uniq",
+  "type": "weekly_pack",
+  "week_id": "EV424-WEEK-2026-17"
+}
