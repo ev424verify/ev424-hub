@@ -1638,6 +1638,18 @@
       "result_rep_sha256": "f638b39ca2c464d194e4817edfc860cf2086f9e6c2c6beb2ccb7d1e964996a41",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000142",
+      "issued_kst": "2026-04-28T10:40:34+0900",
+      "month_id": "2026-04",
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
+      "source_domain": "www.ema.europa.eu",
+      "filename": "EMA",
+      "display_title": "EMA",
+      "result_rep_sha256": "1fb3a5232846bc397641996dfa8c88eef245b1d530de395e0cb4d419fd06d107",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
