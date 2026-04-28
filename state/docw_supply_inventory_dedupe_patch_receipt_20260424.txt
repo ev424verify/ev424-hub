@@ -1,8 +1,0 @@
-DOCW_SUPPLY_INVENTORY_DEDUPE_PATCH_RECEIPT
-STAKE=/home/ec2-user/bin/새문서후보보충.stake_20260424T205439+0900
-LIVE=/home/ec2-user/bin/새문서후보보충
-STAKE_SHA256=302b2bcdc9a35d6d16d99ec1a3e4bfe388beb87091a0fc070b2b733663f047b4
-LIVE_SHA256=a54651a1fd48478c9449e1ed9a29587cf1bbdfffa54c2a6252fabcd2e57d4566
-PATCH_SHA256=115ffbbdfe96cc6ccfad3e429953e0134397ddbdeffb6a052b6f6f0facabf484
-PATCH_FILE=state/docw_supply_inventory_dedupe_patch_20260424.diff
-STATUS=PASS
