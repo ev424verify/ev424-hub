@@ -1650,6 +1650,18 @@
       "result_rep_sha256": "1fb3a5232846bc397641996dfa8c88eef245b1d530de395e0cb4d419fd06d107",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000143",
+      "issued_kst": "2026-04-29T09:40:36+0900",
+      "month_id": "2026-04",
+      "url": "https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf",
+      "source_domain": "assets.anthropic.com",
+      "filename": "ANTHROPIC",
+      "display_title": "ANTHROPIC",
+      "result_rep_sha256": "56d58f28fc01dc9d9eefa7ee0021b2a37898266de0ed48741bb1bb9dfff9c2a2",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000143",
+  "type": "doc_passport",
+  "source": "Claude-4-1-System-Card.pdf",
+  "source_label": "ANTHROPIC",
+  "url": "https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf",
+  "issued_date": "2026-04-29T09:40:36+0900",
+  "fingerprint_sha256": "b2b5beba3ed386a58de760e664f5c98b90a6ce1275c7ee66da8beb70e106e0f2",
+  "result_rep_sha256": "56d58f28fc01dc9d9eefa7ee0021b2a37898266de0ed48741bb1bb9dfff9c2a2",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Claude-4-1-System-Card.pdf\nISSUED_DATE  2026-04-29T09:40:36+0900\nFINGERPRINT  b2b5beba3ed386a58de760e664f5c98b90a6ce1275c7ee66da8beb70e106e0f2\nURL          https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=56d58f28fc01dc9d9eefa7ee0021b2a37898266de0ed48741bb1bb9dfff9c2a2\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
