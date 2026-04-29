@@ -1662,6 +1662,18 @@
       "result_rep_sha256": "56d58f28fc01dc9d9eefa7ee0021b2a37898266de0ed48741bb1bb9dfff9c2a2",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000144",
+      "issued_kst": "2026-04-29T17:28:52+0900",
+      "month_id": "2026-04",
+      "url": "https://www.ema.europa.eu/en/documents/other/overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
+      "source_domain": "www.ema.europa.eu",
+      "filename": "EMA",
+      "display_title": "EMA",
+      "result_rep_sha256": "0e0b45ec882ab28bd54e64be4378628769a22120802691a5801878c5348f3ee6",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

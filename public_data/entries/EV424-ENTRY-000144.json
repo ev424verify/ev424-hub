@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000144",
+  "type": "doc_passport",
+  "source": "overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
+  "source_label": "EMA",
+  "url": "https://www.ema.europa.eu/en/documents/other/overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
+  "issued_date": "2026-04-29T17:28:52+0900",
+  "fingerprint_sha256": "0f321059a2f330b43193ddc03ea9987aa772c7365a130bbbbc9210b50a3cb19e",
+  "result_rep_sha256": "0e0b45ec882ab28bd54e64be4378628769a22120802691a5801878c5348f3ee6",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf\nISSUED_DATE  2026-04-29T17:28:52+0900\nFINGERPRINT  0f321059a2f330b43193ddc03ea9987aa772c7365a130bbbbc9210b50a3cb19e\nURL          https://www.ema.europa.eu/en/documents/other/overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=0e0b45ec882ab28bd54e64be4378628769a22120802691a5801878c5348f3ee6\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
