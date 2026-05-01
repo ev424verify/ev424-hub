@@ -1686,6 +1686,18 @@
       "result_rep_sha256": "e43f414465128c9fd1c835aa544c6bf13ddbaadacedf490d572821a6dd215842",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000146",
+      "issued_kst": "2026-05-01T09:21:06+0900",
+      "month_id": "2026-05",
+      "url": "https://images.nvidia.com/aem-dam/en-zz/Solutions/data-center/nvidia-ampere-architecture-whitepaper.pdf",
+      "source_domain": "images.nvidia.com",
+      "filename": "NVIDIA",
+      "display_title": "NVIDIA",
+      "result_rep_sha256": "618f000969e8fb254ee159d663558bf283fd83491544e973b69e084289d3fa23",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
