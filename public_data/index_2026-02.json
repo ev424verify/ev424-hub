@@ -7,7 +7,8 @@
       "entry_id": "EV424-ENTRY-000039",
       "href": "entries/EV424-ENTRY-000039.json",
       "sha256": "bd47522fadcd5c93a116e160e88b7dd854d8dd8f4479aa5bf06ab9d91d70d049",
-      "sha256_file": "entries/EV424-ENTRY-000039.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000039.json.sha256",
+      "result_rep_sha256": "bd47522fadcd5c93a116e160e88b7dd854d8dd8f4479aa5bf06ab9d91d70d049"
     },
     {
       "entry_id": "EV424-ENTRY-000038",
@@ -19,19 +20,22 @@
       "entry_id": "EV424-ENTRY-000037",
       "href": "entries/EV424-ENTRY-000037.json",
       "sha256": "8e5682536eaa3b7a20be23336cbd7269f2d30406cc6f9a096bcc2f0dbaa52826",
-      "sha256_file": "entries/EV424-ENTRY-000037.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000037.json.sha256",
+      "result_rep_sha256": "8e5682536eaa3b7a20be23336cbd7269f2d30406cc6f9a096bcc2f0dbaa52826"
     },
     {
       "entry_id": "EV424-ENTRY-000036",
       "href": "entries/EV424-ENTRY-000036.json",
       "sha256": "a4e22aae5366cc0907cebadabf6326bb870002959675f6cbf496460279ac27cc",
-      "sha256_file": "entries/EV424-ENTRY-000036.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000036.json.sha256",
+      "result_rep_sha256": "a4e22aae5366cc0907cebadabf6326bb870002959675f6cbf496460279ac27cc"
     },
     {
       "entry_id": "EV424-ENTRY-000035",
       "href": "entries/EV424-ENTRY-000035.json",
       "sha256": "1796ec42b1e671f382ac04471441b711e713ad1afeaf80cf52926734995ca5b6",
-      "sha256_file": "entries/EV424-ENTRY-000035.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000035.json.sha256",
+      "result_rep_sha256": "1796ec42b1e671f382ac04471441b711e713ad1afeaf80cf52926734995ca5b6"
     },
     {
       "entry_id": "EV424-ENTRY-000034",
@@ -43,67 +47,78 @@
       "entry_id": "EV424-ENTRY-000033",
       "href": "entries/EV424-ENTRY-000033.json",
       "sha256": "1ac51ecbea9193f2f0cf7c369c039aa7671f794be0c248889d5a03f108045c1a",
-      "sha256_file": "entries/EV424-ENTRY-000033.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000033.json.sha256",
+      "result_rep_sha256": "1ac51ecbea9193f2f0cf7c369c039aa7671f794be0c248889d5a03f108045c1a"
     },
     {
       "entry_id": "EV424-ENTRY-000032",
       "href": "entries/EV424-ENTRY-000032.json",
       "sha256": "e2d6a268de9c84854c4e1be7cb1081ec5df78ed529401ab08789ebb3c028bb09",
-      "sha256_file": "entries/EV424-ENTRY-000032.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000032.json.sha256",
+      "result_rep_sha256": "e2d6a268de9c84854c4e1be7cb1081ec5df78ed529401ab08789ebb3c028bb09"
     },
     {
       "entry_id": "EV424-ENTRY-000031",
       "href": "entries/EV424-ENTRY-000031.json",
       "sha256": "3c89fbfa13e3ad31befb96d0e0ab02f46c7e54d4a09d9b40a0bff4289cdfbe27",
-      "sha256_file": "entries/EV424-ENTRY-000031.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000031.json.sha256",
+      "result_rep_sha256": "3c89fbfa13e3ad31befb96d0e0ab02f46c7e54d4a09d9b40a0bff4289cdfbe27"
     },
     {
       "entry_id": "EV424-ENTRY-000030",
       "href": "entries/EV424-ENTRY-000030.json",
       "sha256": "8aa21d0d556e4efb9e1dbf0dc8897a6019b50421bfb2e8362797f3a2b868963c",
-      "sha256_file": "entries/EV424-ENTRY-000030.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000030.json.sha256",
+      "result_rep_sha256": "8aa21d0d556e4efb9e1dbf0dc8897a6019b50421bfb2e8362797f3a2b868963c"
     },
     {
       "entry_id": "EV424-ENTRY-000029",
       "href": "entries/EV424-ENTRY-000029.json",
       "sha256": "24d4cefe5afbf968e6c09d1d45a30d47758cd20560b7cfe4cece6d2ee2a9f3e9",
-      "sha256_file": "entries/EV424-ENTRY-000029.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000029.json.sha256",
+      "result_rep_sha256": "24d4cefe5afbf968e6c09d1d45a30d47758cd20560b7cfe4cece6d2ee2a9f3e9"
     },
     {
       "entry_id": "EV424-ENTRY-000028",
       "href": "entries/EV424-ENTRY-000028.json",
       "sha256": "38a4ed70b3b5b1098e7f74d06f97496b16131d15dd439d07a308e1f644f0e5ea",
-      "sha256_file": "entries/EV424-ENTRY-000028.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000028.json.sha256",
+      "result_rep_sha256": "38a4ed70b3b5b1098e7f74d06f97496b16131d15dd439d07a308e1f644f0e5ea"
     },
     {
       "entry_id": "EV424-ENTRY-000027",
       "href": "entries/EV424-ENTRY-000027.json",
       "sha256": "aaab718083a35894f855d147d3c90b68de7dafa8f6f87db0a339adedc545c777",
-      "sha256_file": "entries/EV424-ENTRY-000027.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000027.json.sha256",
+      "result_rep_sha256": "aaab718083a35894f855d147d3c90b68de7dafa8f6f87db0a339adedc545c777"
     },
     {
       "entry_id": "EV424-ENTRY-000026",
       "href": "entries/EV424-ENTRY-000026.json",
       "sha256": "2a37d50071d5db90bdfce22101c9de6356c2b1d2b6acc3900a7fa291ba7ad996",
-      "sha256_file": "entries/EV424-ENTRY-000026.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000026.json.sha256",
+      "result_rep_sha256": "2a37d50071d5db90bdfce22101c9de6356c2b1d2b6acc3900a7fa291ba7ad996"
     },
     {
       "entry_id": "EV424-ENTRY-000025",
       "href": "entries/EV424-ENTRY-000025.json",
       "sha256": "4ad0d5b48fc81425614793e79031e041d1b37bb03b7161c015b9e240f7560ef9",
-      "sha256_file": "entries/EV424-ENTRY-000025.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000025.json.sha256",
+      "result_rep_sha256": "4ad0d5b48fc81425614793e79031e041d1b37bb03b7161c015b9e240f7560ef9"
     },
     {
       "entry_id": "EV424-ENTRY-000024",
       "href": "entries/EV424-ENTRY-000024.json",
       "sha256": "e822385be5f821aa27e2c908159996bd591d92d0541bfcc2dc560bf6f814c8d9",
-      "sha256_file": "entries/EV424-ENTRY-000024.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000024.json.sha256",
+      "result_rep_sha256": "e822385be5f821aa27e2c908159996bd591d92d0541bfcc2dc560bf6f814c8d9"
     },
     {
       "entry_id": "EV424-ENTRY-000023",
       "href": "entries/EV424-ENTRY-000023.json",
       "sha256": "b49898178a7e18b3d8460571bc4d2532fccc5a860bf481ce113009ca8267938e",
-      "sha256_file": "entries/EV424-ENTRY-000023.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000023.json.sha256",
+      "result_rep_sha256": "b49898178a7e18b3d8460571bc4d2532fccc5a860bf481ce113009ca8267938e"
     },
     {
       "entry_id": "EV424-ENTRY-000022",

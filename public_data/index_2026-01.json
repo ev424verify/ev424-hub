@@ -9,7 +9,8 @@
       "entry_id": "EV424-ENTRY-000005",
       "href": "entries/EV424-ENTRY-000005.json",
       "sha256": "84ef22f97b3b623025eb2778ee9cb3dfc0b644b1d0fc00781e6ae25415076726",
-      "sha256_file": "entries/EV424-ENTRY-000005.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000005.json.sha256",
+      "result_rep_sha256": "84ef22f97b3b623025eb2778ee9cb3dfc0b644b1d0fc00781e6ae25415076726"
     },
     {
       "date": "2026-01-30",
@@ -39,7 +40,8 @@
       "entry_id": "EV424-ENTRY-000004",
       "href": "entries/EV424-ENTRY-000004.json",
       "sha256": "12e435e2c9e49f2cae8bdd13c55efacb0de897b10a2350bfc21c610564135d18",
-      "sha256_file": "entries/EV424-ENTRY-000004.json.sha256"
+      "sha256_file": "entries/EV424-ENTRY-000004.json.sha256",
+      "result_rep_sha256": "02f198c8910507a6809df592bdceff68730e00d3fddd8c1456781d74ff732e19"
     }
   ],
   "generated_at": "2026-01-30T12:34:22+0900",
