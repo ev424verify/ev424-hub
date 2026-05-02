@@ -1698,6 +1698,18 @@
       "result_rep_sha256": "618f000969e8fb254ee159d663558bf283fd83491544e973b69e084289d3fa23",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000147",
+      "issued_kst": "2026-05-02T11:31:55+0900",
+      "month_id": "2026-05",
+      "url": "https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf",
+      "source_domain": "images.nvidia.com",
+      "filename": "NVIDIA",
+      "display_title": "NVIDIA",
+      "result_rep_sha256": "205809ae6a545f04d2c6da6c24256b882223d36bea79b05ec078f5b5aba5c33e",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

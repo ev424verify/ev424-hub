@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000147",
+  "type": "doc_passport",
+  "source": "nvidia-rtx-blackwell-gpu-architecture.pdf",
+  "source_label": "NVIDIA",
+  "url": "https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf",
+  "issued_date": "2026-05-02T11:31:55+0900",
+  "fingerprint_sha256": "906ff2a409d7a7e4cbc56f5d3a179d574120d19aaba99520670e1a0c064595fa",
+  "result_rep_sha256": "205809ae6a545f04d2c6da6c24256b882223d36bea79b05ec078f5b5aba5c33e",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       nvidia-rtx-blackwell-gpu-architecture.pdf\nISSUED_DATE  2026-05-02T11:31:55+0900\nFINGERPRINT  906ff2a409d7a7e4cbc56f5d3a179d574120d19aaba99520670e1a0c064595fa\nURL          https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=205809ae6a545f04d2c6da6c24256b882223d36bea79b05ec078f5b5aba5c33e\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
