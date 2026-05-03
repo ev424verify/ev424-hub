@@ -1722,6 +1722,18 @@
       "result_rep_sha256": "f820a2b5ba4631dd5b55b2c30efbf8cf0d33d97a00504d4bb0d6263fac49508e",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000149",
+      "issued_kst": "2026-05-03T10:06:06+0900",
+      "month_id": "2026-05",
+      "url": "https://www.cisa.gov/sites/default/files/publications/Chatting%2520with%2520Kids%2520Booklet_0.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "4147668dabf83dd5e357b973b317adb94125b5e44fcf5fadfc05074596aadec4",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

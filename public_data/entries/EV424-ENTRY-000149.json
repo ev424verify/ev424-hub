@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000149",
+  "type": "doc_passport",
+  "source": "Chatting%2520with%2520Kids%2520Booklet_0.pdf",
+  "source_label": "CISA",
+  "url": "https://www.cisa.gov/sites/default/files/publications/Chatting%2520with%2520Kids%2520Booklet_0.pdf",
+  "issued_date": "2026-05-03T10:06:06+0900",
+  "fingerprint_sha256": "9a4e122e9a9ba668e1d725df2ae1a105d4b27a191a8578f12213c98e47ec416c",
+  "result_rep_sha256": "4147668dabf83dd5e357b973b317adb94125b5e44fcf5fadfc05074596aadec4",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Chatting%2520with%2520Kids%2520Booklet_0.pdf\nISSUED_DATE  2026-05-03T10:06:06+0900\nFINGERPRINT  9a4e122e9a9ba668e1d725df2ae1a105d4b27a191a8578f12213c98e47ec416c\nURL          https://www.cisa.gov/sites/default/files/publications/Chatting%2520with%2520Kids%2520Booklet_0.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=4147668dabf83dd5e357b973b317adb94125b5e44fcf5fadfc05074596aadec4\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
