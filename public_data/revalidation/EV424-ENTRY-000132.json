@@ -4,5 +4,17 @@
   "source_url": "https://www.cisa.gov/sites/default/files/publications/STC%2520Tip%2520Card%2520for%2520Kids%2520-%2520Spanish%2520-Final%2520508%2520compliant%25209.8.16.pdf",
   "fingerprint_sha256": "c902306361f3bac55a5873375515042f1fee4e757958a3b1065686ac080cb791",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-01T22:41:48+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

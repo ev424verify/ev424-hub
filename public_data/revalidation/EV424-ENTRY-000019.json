@@ -92,6 +92,39 @@
         "CHAIN"
       ],
       "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-15T09:30:30+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-22T09:30:30+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-29T09:30:30+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
     }
   ]
 }

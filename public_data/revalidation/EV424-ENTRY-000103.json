@@ -4,5 +4,39 @@
   "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
   "fingerprint_sha256": "4b81544ecb28b50fb2fa5dab530a0f32c9351506a875d1de841b946d18e7ecef",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-19T11:02:29+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-26T11:02:29+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-05-03T11:02:29+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

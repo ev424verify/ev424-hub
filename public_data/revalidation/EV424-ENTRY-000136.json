@@ -4,5 +4,17 @@
   "source_url": "https://www.cisa.gov/sites/default/files/publications/Online%2520Gaming_0.pdf",
   "fingerprint_sha256": "6c72c53eb58fa08f3d779ade73aeceeae3538768562bbd627dfd850268068841",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-02T21:59:53+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

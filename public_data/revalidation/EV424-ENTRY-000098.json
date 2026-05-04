@@ -4,5 +4,39 @@
   "source_url": "https://www.rfc-editor.org/rfc/rfc9282.pdf",
   "fingerprint_sha256": "abcca427f14b717c54fe7c4d6792af5316246fb2a1667e840afa9eed7fee4733",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-16T06:41:34+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-23T06:41:34+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-30T06:41:34+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

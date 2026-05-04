@@ -4,5 +4,39 @@
   "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/the-oecd-going-digital-integrated-policy-framework-2026_f24b6963/0254ae07-en.pdf",
   "fingerprint_sha256": "31b55bc09b54959f69f0c98d4e9ce4dc4b3b3624dd5f94a56b89543fd15556d1",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-15T13:32:14+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-22T13:32:14+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-29T13:32:14+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

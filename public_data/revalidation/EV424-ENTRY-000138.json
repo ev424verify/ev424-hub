@@ -4,5 +4,17 @@
   "source_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/status-emea-scientific-guidelines-and-european-pharmacopoeia-monographs-and-chapters-regulatory-framework-applicable-medicinal-products_en.pdf",
   "fingerprint_sha256": "e88c61312da7090dc94b022f4403863605e9c47b61d62e5c541bb40ed26ae38f",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-03T13:27:33+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

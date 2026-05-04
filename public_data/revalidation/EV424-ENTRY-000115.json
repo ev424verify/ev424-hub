@@ -4,5 +4,28 @@
   "source_url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf",
   "fingerprint_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-22T21:08:27+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-29T21:08:27+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

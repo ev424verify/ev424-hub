@@ -4,5 +4,17 @@
   "source_url": "https://www.cisa.gov/sites/default/files/publications/Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf",
   "fingerprint_sha256": "27abd683ce1f937387160c567f8a8518740ce0cd78dba65487cf8b0a2fb0597a",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-01T23:13:35+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

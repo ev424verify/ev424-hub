@@ -4,5 +4,17 @@
   "source_url": "https://cdn.who.int/media/docs/default-source/medicines/regulatory-updates/rpq/who_rpq_annualreport2025.pdf?download=true&sfvrsn=afe3907_3",
   "fingerprint_sha256": "489f48ce81a7d8294ced574a7dad00a821de912b07cdb81437386854708895c3",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-03T16:53:52+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

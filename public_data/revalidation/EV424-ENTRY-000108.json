@@ -4,5 +4,28 @@
   "source_url": "https://cdn.who.int/media/docs/default-source/evaluation-office/report_who-contribution-in-namibia-evaluation_web.pdf",
   "fingerprint_sha256": "632f00e2828a0136e86b3bfb1073dbb9fc95fd5e6fdd95e49a637cf85df5e55d",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-20T13:54:25+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-27T13:54:25+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

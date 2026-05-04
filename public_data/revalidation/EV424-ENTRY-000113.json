@@ -4,5 +4,28 @@
   "source_url": "https://www.ema.europa.eu/en/documents/annual-report/2024-annual-report-european-medicines-agency_en.pdf",
   "fingerprint_sha256": "acf5566ff771faf4a79a4ccf52dde4ae91f45f3b14a120d6d4e84cd721605734",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-04-20T14:33:21+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-04-27T14:33:21+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

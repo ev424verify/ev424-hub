@@ -4,5 +4,17 @@
   "source_url": "https://www.cdc.gov/mmwr/volumes/67/wr/pdfs/mm6702a3-H.pdf",
   "fingerprint_sha256": "aa218de66add991e1871a2e523aa6d3f32a38abb8561493bdba3f5a84985df20",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-01T23:41:11+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

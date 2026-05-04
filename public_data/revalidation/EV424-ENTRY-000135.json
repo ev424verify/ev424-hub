@@ -4,5 +4,17 @@
   "source_url": "https://www.cisa.gov/sites/default/files/publications/Mobile%2520Banking%2520and%2520Payments_0.pdf",
   "fingerprint_sha256": "9fe4a5dbdb8f3df6df94b710a4ba0adb367033ff7698bae4c49768c09cfcbf6f",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-02T11:22:01+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }
