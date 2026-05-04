@@ -27,7 +27,7 @@ https://ev424verify.com/?q=EV424-ENTRY-000019
 
 **Recent public entry**  
 
-https://ev424verify.com/?q=EV424-ENTRY-000139
+https://ev424verify.com/?q=EV424-ENTRY-000150
 
 A claim is not evidence.  
 **Evidence is a reproducible verification result.**
@@ -128,7 +128,7 @@ That matters when people need to know:
 - **EV424-ENTRY-000040 (GW250114)** — first complete end-to-end link-only reproducible verification case
 - **EV424-ENTRY-000045** — the same 5-step verification flow was successfully reproduced and verified on a dynamic query-based official PDF URL
 - **EV424-ENTRY-000057** — public entry, deployment, and verification continuity were established without mirroring the original document
-- **EV424-ENTRY-000139** — latest public baseline continuity reference point
+- **EV424-ENTRY-000150** — latest public baseline continuity reference point
 
 ---
 
@@ -137,7 +137,7 @@ That matters when people need to know:
 - Public verification surface: **Live**
 - Stable reference entries: **Publicly inspectable**
 - Reproducible receipt flow: **Publicly checkable**
-- Public continuity: **Extends through EV424-ENTRY-000139**
+- Public continuity: **Extends through EV424-ENTRY-000150**
 
 EV424 is not just a concept.  
 It already operates as a live public verification surface that can be checked directly.
