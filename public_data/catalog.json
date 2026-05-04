@@ -1734,6 +1734,18 @@
       "result_rep_sha256": "4147668dabf83dd5e357b973b317adb94125b5e44fcf5fadfc05074596aadec4",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000150",
+      "issued_kst": "2026-05-04T13:06:17+0900",
+      "month_id": "2026-05",
+      "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf",
+      "source_domain": "ir.tesla.com",
+      "filename": "TESLA",
+      "display_title": "TESLA",
+      "result_rep_sha256": "afc421505f3c767ac72e9a11f8af4f9809aa943d6cb7b2aa4bcba7c3ba6ff4d2",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

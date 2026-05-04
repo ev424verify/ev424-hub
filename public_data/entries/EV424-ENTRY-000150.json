@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000150",
+  "type": "doc_passport",
+  "source": "tsla-20260422-gen.pdf",
+  "source_label": "TESLA",
+  "url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf",
+  "issued_date": "2026-05-04T13:06:17+0900",
+  "fingerprint_sha256": "6d534226b8a6daef2f47588d7215c72500fbc7ac422c00f6ab5563d962fe9ad6",
+  "result_rep_sha256": "afc421505f3c767ac72e9a11f8af4f9809aa943d6cb7b2aa4bcba7c3ba6ff4d2",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       tsla-20260422-gen.pdf\nISSUED_DATE  2026-05-04T13:06:17+0900\nFINGERPRINT  6d534226b8a6daef2f47588d7215c72500fbc7ac422c00f6ab5563d962fe9ad6\nURL          https://ir.tesla.com/_flysystem/s3/sec/000162828026026551/tsla-20260422-gen.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=afc421505f3c767ac72e9a11f8af4f9809aa943d6cb7b2aa4bcba7c3ba6ff4d2\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
