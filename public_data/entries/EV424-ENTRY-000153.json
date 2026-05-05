@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000153",
+  "type": "doc_passport",
+  "source": "rfc9281.pdf",
+  "source_label": "RFC",
+  "url": "https://www.rfc-editor.org/rfc/rfc9281.pdf",
+  "issued_date": "2026-05-05T22:02:03+0900",
+  "fingerprint_sha256": "90c91f35ad84977ecd150f18f4b21375777227d0ba4c95622fb36326def6b371",
+  "result_rep_sha256": "a06135de800a5ce2d4ab199fe755a721d1d0e3d4723432f55516ff3c4ed0f4cf",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       rfc9281.pdf\nISSUED_DATE  2026-05-05T22:02:03+0900\nFINGERPRINT  90c91f35ad84977ecd150f18f4b21375777227d0ba4c95622fb36326def6b371\nURL          https://www.rfc-editor.org/rfc/rfc9281.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=a06135de800a5ce2d4ab199fe755a721d1d0e3d4723432f55516ff3c4ed0f4cf\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

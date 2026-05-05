@@ -1758,6 +1758,30 @@
       "result_rep_sha256": "644c1a932752d38098ffc203eb90b8e1c8d5b820f93d6ba95538a103feed9fba",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000152",
+      "issued_kst": "2026-05-05T21:39:34+0900",
+      "month_id": "2026-05",
+      "url": "https://www.cisa.gov/sites/default/files/publications/Parents%2520and%2520Educators%2520Tip%2520Card_0.pdf",
+      "source_domain": "www.cisa.gov",
+      "filename": "CISA",
+      "display_title": "CISA",
+      "result_rep_sha256": "7daf994ec717bb9ffb0af816f76782254b6aba7cad65515712875b0c2d794daf",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000153",
+      "issued_kst": "2026-05-05T22:02:03+0900",
+      "month_id": "2026-05",
+      "url": "https://www.rfc-editor.org/rfc/rfc9281.pdf",
+      "source_domain": "www.rfc-editor.org",
+      "filename": "RFC",
+      "display_title": "RFC",
+      "result_rep_sha256": "a06135de800a5ce2d4ab199fe755a721d1d0e3d4723432f55516ff3c4ed0f4cf",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
