@@ -1806,6 +1806,18 @@
       "result_rep_sha256": "6529e0e2930ab6d32d27a221962fd603b475bd9a0f59fbc19ecdd75dba082605",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000156",
+      "issued_kst": "2026-05-06T19:01:21+0900",
+      "month_id": "2026-05",
+      "url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf",
+      "source_domain": "ev424verify.com",
+      "filename": "EV424_Public_Overview_v1.0.5_EN.pdf",
+      "display_title": "EV424_Public_Overview_v1.0.5_EN",
+      "result_rep_sha256": "d6e29ce211a23f86314fe93455142c0222cebb010434e5ef162949869ad7bcc4",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

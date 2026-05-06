@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000156",
+  "type": "doc_passport",
+  "source": "EV424_Public_Overview_v1.0.5_EN.pdf",
+  "source_label": "EV424_Public_Overview_v1.0.5_EN.pdf",
+  "url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf",
+  "issued_date": "2026-05-06T19:01:21+0900",
+  "fingerprint_sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6",
+  "result_rep_sha256": "d6e29ce211a23f86314fe93455142c0222cebb010434e5ef162949869ad7bcc4",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_Public_Overview_v1.0.5_EN.pdf\nISSUED_DATE  2026-05-06T19:01:21+0900\nFINGERPRINT  2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6\nURL          https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=d6e29ce211a23f86314fe93455142c0222cebb010434e5ef162949869ad7bcc4\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
