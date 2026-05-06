@@ -1818,6 +1818,18 @@
       "result_rep_sha256": "d6e29ce211a23f86314fe93455142c0222cebb010434e5ef162949869ad7bcc4",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000157",
+      "issued_kst": "2026-05-07T08:36:23+0900",
+      "month_id": "2026-05",
+      "url": "https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf",
+      "source_domain": "cdn.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "c283c6642a54aa44f33bb4ce7eb4440fe061762de24801707872aa3fa7c7a56e",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
