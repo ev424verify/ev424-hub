@@ -1,213 +1,256 @@
-# EV424 — Reproducible Integrity Receipts
+# EV424 — Reproducible Integrity Verification Infrastructure
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue)](LICENSE)
+> A claim is not evidence.
+> Evidence is a reproducible verification result.
 
-**Same bytes → same SHA-256. Reproducible.**  
-**Don’t trust it. Verify it yourself.**
+**Same bytes → same SHA-256. Reproducible.**
+**No upload. No storage. No mirroring.**
 
-No upload. No storage. No mirroring.  
-Only the official public source, the receipt, and reproducible byte identity.
+EV424 is a non-custodial integrity verification infrastructure for official public-source digital artifacts.
 
-EV424 is a **SHA-256-based, non-custodial integrity receipt structure** for official public-source byte identity.
+It records whether an official digital artifact can be re-verified as the same bytes — without storing, mirroring, redistributing, or interpreting the original.
 
-Direct, publicly checkable, independently re-verifiable, and already operating as a live verification surface.
-
----
-
-## Verify in 30 seconds
-
-1. Open a public reference entry.
-2. Inspect the receipt.
-3. Re-verify the official public source.
-4. Check whether the SHA-256 matches again.
-
-**Stable reference entry**  
-
-https://ev424verify.com/?q=EV424-ENTRY-000019
-
-**Recent public entry**  
-
-https://ev424verify.com/?q=EV424-ENTRY-000150
-
-A claim is not evidence.  
-**Evidence is a reproducible verification result.**
+[Live Verify](https://ev424verify.com) · [Public Evidence Index](https://ev424verify.com/public_data/) · [Whitepaper](https://ev424verify.com/whitepaper.html) · [Legal Notice](LEGAL_NOTICE.md) · [Contact](mailto:ev424.verify@gmail.com)
 
 ---
 
-## What EV424 proves
+## What EV424 Is
 
-### 1. Non-custody
+EV424 is an independent integrity-verification infrastructure.
 
-EV424 does not store the original file.  
-It does not host the original file.  
-It does not mirror the original file.
+It records whether an official digital artifact can be re-verified as the same bytes from its official public source.
 
-Therefore, on the EV424 side, the following are structurally zero:
-
-- leakage of uploaded originals
-- hacking of original-file storage
-- leakage of mirrored original copies
-
-This is not a policy preference.  
-It is a structural consequence of non-custody.
-
-### 2. Integrity
-
-EV424 verifies whether bytes retrieved again from an official public source remain byte-for-byte identical.
-
-Objects that pass verification are fixed by SHA-256.
-
-Therefore, passing a changed object off as if it were the originally verified identical object is structurally zero.
-
-### 3. Reproducibility
-
-The same verification result must be reproducible again from the same official public source.
-
-That means the result is not trapped inside operator explanation.  
-It can be checked again by an independent third party.
-
-If it cannot be reproduced, it is not evidence.
+EV424 does **not** store, mirror, redistribute, or interpret the original file.
 
 ---
 
-## Why EV424 is materially different
+## Why EV424 Exists
 
-| Structure | Centers on | Proves directly |
-|---|---|---|
-| EV424 | Official public source | Same-source byte identity |
-| Manual SHA-256 check | Local file | One-off file hash check |
-| Upload-based proof service | Intermediary platform | Proof after upload |
-| Archive / mirror model | Stored copy | Copy retention |
-| Signature-centered model | Signer / certificate | Signature validity |
-| Chain-anchored model | Chain record | Inclusion / anchoring |
+In the AI era, documents can be generated, summarized, cited, copied, and circulated faster than humans can manually inspect them.
 
-EV424 centers on the **official public source itself**, not on upload, storage, or mirrored custody.
+Before asking whether a document is true, safe, legal, or meaningful, the first integrity question is:
 
-It asks one direct question:
+> Is this the same file?
 
-**When the official public source is retrieved again, is it still the same bytes?**
-
-That is the difference.
+EV424 closes that first integrity layer.
 
 ---
 
-## Why this matters in practice
+## What SHA-256 Means Here
 
-Many systems are strong at proving:
+SHA-256 is a cryptographic hash algorithm from the SHA-2 family.
 
-- who built something
-- what was signed
-- what storage or archive retained
-- what chain or platform recorded it
+In EV424, SHA-256 acts as a digital fingerprint:
 
-EV424 closes a different and immediately practical question:
+- the same bytes produce the same SHA-256 hash
+- even a one-bit change produces a different hash
+- the hash does not prove truth
+- the hash makes byte-level change detectable and re-verifiable
 
-**Can the official public source itself be retrieved again and verified again as the same bytes?**
-
-That matters when people need to know:
-
-- whether the public file still resolves
-- whether it is still the same object
-- whether the result can be reproduced independently
-- whether verification depends on trusting an intermediary
+EV424 uses SHA-256 to turn official-source bytes into reproducible integrity receipts.
 
 ---
 
-## Direct advantages in practice
+## Core Principles
 
-- **Faster to access** — check directly by public URL, ENTRY_ID, or SHA-256
-- **Simpler to understand** — one direct verification question
-- **Easier to re-verify** — an independent third party can run the same flow again
-- **Safer as a non-custodial structure** — no original-file upload, no original-file storage, no mirroring
-- **Lower friction** — no keys, no blockchain, no fees, no upload workflow
-
----
-
-## Public milestones
-
-- **EV424-ENTRY-000040 (GW250114)** — first complete end-to-end link-only reproducible verification case
-- **EV424-ENTRY-000045** — the same 5-step verification flow was successfully reproduced and verified on a dynamic query-based official PDF URL
-- **EV424-ENTRY-000057** — public entry, deployment, and verification continuity were established without mirroring the original document
-- **EV424-ENTRY-000150** — latest public baseline continuity reference point
+| Principle | Meaning |
+|---|---|
+| **Non-Custodial** | No upload, no original-file storage, no mirroring. |
+| **Deterministic** | Same official bytes produce the same SHA-256 result. |
+| **Integrity-Only** | EV424 verifies sameness, not truth, safety, legality, or meaning. |
+| **Re-Verifiable** | A third party can independently check the same source and hash. |
+| **No-Overwrite** | Closed evidence artifacts must not be silently mutated. |
 
 ---
 
-## Current public status
+## How Verification Works
 
-- Public verification surface: **Live**
-- Stable reference entries: **Publicly inspectable**
-- Reproducible receipt flow: **Publicly checkable**
-- Public continuity: **Extends through EV424-ENTRY-000150**
+```text
+Official public source
+        ↓
+Retrieved raw bytes
+        ↓
+SHA-256 fingerprint
+        ↓
+G1-G5 integrity gates
+        ↓
+FINAL RECEIPT
+        ↓
+Independent re-verification
+```
 
-EV424 is not just a concept.  
-It already operates as a live public verification surface that can be checked directly.
+| Gate | Meaning |
+|---|---|
+| G1 | Source accessibility |
+| G2 | Byte identity over raw bytes |
+| G3 | Local reproduction |
+| G4 | Official re-download match |
+| G5 | No-overwrite / immutability |
+
+A PASS result requires all required gates to pass. No discretionary override is part of the verification result.
 
 ---
 
-## Core boundary
+## Verify in 30 Seconds
 
-EV424 does **not**:
+1. Open a public EV424 entry.
+2. Inspect the FINAL RECEIPT.
+3. Re-download the official public source.
+4. Compute SHA-256.
+5. Check whether the hash matches.
 
-- judge truth, safety, or legality
-- interpret semantic meaning
-- host original files
-- mirror original files
-- redistribute original files
+Stable reference entry:
 
-EV424 **does** verify:
+- https://ev424verify.com/?q=EV424-ENTRY-000006
 
-- whether the same official public source verifies again as the same bytes
-- whether that byte-identity result is reproducible again
-- SHA-256-based integrity continuity
-- independent third-party re-verification
-- reproducible receipts tied to official public-source retrieval
+Recent public entry:
 
-EV424 is not a semantic judgment engine.  
+- https://ev424verify.com/?q=EV424-ENTRY-000155
+
+---
+
+## What PASS Means
+
+PASS means:
+
+- the defined integrity procedure passed
+- the official source bytes were hashed
+- the recorded fingerprint was reproduced
+- the re-download match was checked
+- the receipt was closed under the EV424 procedure
+
+PASS does **not** mean:
+
+- the content is true
+- the content is safe
+- the content is legal
+- EV424 endorses the issuer
+- EV424 verifies author identity
+- EV424 proves earliest existence time
+- EV424 provides legal, medical, financial, investment, safety, or policy advice
+
+EV424 is not a semantic judgment engine.
 It is an integrity and reproducibility structure.
 
 ---
 
-## Local reproducibility (Preflight Spec)
+## What EV424 Does / Does Not Do
 
-This repository contains EV424’s public verification contract.
-
-Do not trust claims.  
-Trust the exit code, SHA-256, and normalized JSON.
+| EV424 does | EV424 does not |
+|---|---|
+| Verify byte-level sameness | Judge truth or falsehood |
+| Publish SHA-256 fingerprints | Host original PDFs |
+| Publish FINAL RECEIPTS | Mirror or redistribute originals |
+| Enable independent re-verification | Interpret meaning or intent |
+| Maintain public evidence indexes | Provide legal, medical, financial, or policy advice |
 
 ---
 
-## Public project boundary
+## Public Evidence Examples
 
-Licensed under the **Apache License 2.0**. See `LICENSE`.
+| Entry | Source | Meaning |
+|---|---|---|
+| [EV424-ENTRY-000006](https://ev424verify.com/?q=EV424-ENTRY-000006) | NIST.SP.800-228.pdf | Stable reference entry with revalidation continuity |
+| [EV424-ENTRY-000155](https://ev424verify.com/?q=EV424-ENTRY-000155) | 2026-official-baseball-rules.pdf | Recent public document passport example |
+
+---
+
+## Why Re-Verifiable Evidence Matters Now
+
+Digital trust is moving beyond “who said it,” “where it was stored,” or “what platform recorded it.”
+
+In the AI era, documents, summaries, citations, reports, and copies can move faster than people can manually inspect them.
+
+That creates a new baseline question:
+
+> Can the official public source be independently re-verified as the same bytes?
+
+EV424 focuses on this gap.
+
+It does not replace signatures, storage systems, archives, blockchains, or AI provenance layers.
+
+It closes a different layer: official-source byte identity, verified through SHA-256, FINAL RECEIPT, and independent re-verification.
+
+---
+
+## EV424 vs Existing Verification Models
+
+| Verification model | Main trust center | Strong at | Remaining gap in the AI era | EV424 focus |
+|---|---|---|---|---|
+| E-signature | Signer / certificate | Approval, agreement workflow, signer validity | Does not directly answer whether an official public source still re-downloads as the same bytes | Official-source byte identity |
+| Document storage / DMS | Repository / stored copy | Access control, retention, collaboration | Requires custody or platform trust | Non-custodial verification |
+| Archive / mirror | Retained copy | Preservation of a copy | Copy retention is not the same as official-source re-verification | Link-only receipt, no mirroring |
+| Blockchain anchoring | Chain record | Inclusion, anchoring, timestamp-like proof | Chain inclusion does not itself prove current official-source byte sameness | Re-download match from official source |
+| Manual SHA-256 | Local file | Simple one-off fingerprint | No public receipt, index, continuity, or exact-search rail | Reproducible public receipt |
+| AI provenance metadata | Origin / generation metadata | Creator or content-origin signal | Metadata can describe origin but may not close official file sameness | SHA-256 same-file evidence |
+| EV424 | Official public source | Same-source byte identity, receipt, re-verification | Integrity-only by design; not a truth judgment engine | Independent non-custodial evidence rail |
+
+EV424 asks one direct question:
+
+> When the official public source is retrieved again, is it still the same bytes?
+
+That question becomes more important as AI-generated summaries, citations, documents, and automated workflows scale across the digital environment.
+
+---
+
+## Public / Private Boundary
+
+This repository is a public verification surface, not the full internal engine.
+
+| Public surface | Private engine |
+|---|---|
+| Official URLs | Issuance engine |
+| ENTRY_ID | Internal candidate and eligibility logic |
+| SHA-256 fingerprints | Internal scripts and operational logs |
+| FINAL RECEIPTS | Private SSOT |
+| public_data index/catalog/toc | Optional sidecar proof layers |
+| Policy / whitepaper pages | API / agent implementation |
+
+EV424 publishes the minimum evidence needed for independent re-verification.
+
+Internal implementation details remain private to protect the verification engine and prevent operational-surface contamination.
+
+---
+
+## Roadmap
+
+| Stage | Direction |
+|---|---|
+| 2026 Foundation | Document Passport, public receipts, exact-search |
+| 2027 Productization | Video Passport, API/SDK, enterprise verification workflow |
+| 2028 Infrastructure | Multi-type verification, institutional integration, independent engine |
+| Always | Non-custody, no-overwrite, reproducible evidence |
+
+---
+
+## Public Project Boundary
+
+Licensed under the Apache License 2.0. See [LICENSE](LICENSE).
 
 Repository-owned code and content are licensed under the Apache License 2.0 unless otherwise noted.
 
-Additional notices are provided in `NOTICE`.
+Additional notices are provided in [NOTICE](NOTICE).
 
-EV424-specific operational, legal, and third-party document boundaries are described in `LEGAL_NOTICE.md`.
-
-EV424 already includes a private API-facing and agent-assisted operational layer for non-public operation and expansion. Internal implementation details remain private.
+EV424-specific operational, legal, and third-party document boundaries are described in [LEGAL_NOTICE.md](LEGAL_NOTICE.md).
 
 ---
 
-## Security
+## Security / Contact
 
-- CI build checks: **Included**
-- Dependency alerts: **Included**
+For private security reporting or correction/removal requests:
 
-For private security reporting:
+- ev424.verify@gmail.com
 
-**ev424.verify@gmail.com**
+Please include the relevant `ENTRY_ID` or 64-hex PASS hash when requesting correction or removal.
 
 ---
 
-## Skipped Entry IDs (Transparency Note)
+## Skipped Entry IDs
 
-Some Entry IDs may appear missing.  
-That is due to deterministic generation rules.
+Some Entry IDs may appear missing due to deterministic generation rules.
 
-- **EV424-ENTRY-000014** — slot reserved, but no actual entry was materialized
-- **EV424-ENTRY-000015** — demo reference only, with no actual entry artifact
+- EV424-ENTRY-000014 — slot reserved, but no actual entry was materialized
+- EV424-ENTRY-000015 — demo reference only, with no actual entry artifact
 
 Entry ID continuity is not itself a validity requirement.
 
@@ -219,4 +262,4 @@ Validity is established by:
 
 ---
 
-**Accuracy(4)=Truth(2)=Life(4)**
+Accuracy(4)=Truth(2)=Life(4)
