@@ -1782,6 +1782,18 @@
       "result_rep_sha256": "a06135de800a5ce2d4ab199fe755a721d1d0e3d4723432f55516ff3c4ed0f4cf",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000154",
+      "issued_kst": "2026-05-06T10:45:56+0900",
+      "month_id": "2026-05",
+      "url": "https://www.imf.org/-/media/files/publications/weo/2024/october/english/ch2.pdf",
+      "source_domain": "www.imf.org",
+      "filename": "IMF",
+      "display_title": "IMF",
+      "result_rep_sha256": "d9f833d6a55a089826b235301f365cb01c48de719330b4b07011d3e12dc78195",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
