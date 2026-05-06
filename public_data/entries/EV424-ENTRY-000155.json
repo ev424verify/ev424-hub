@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000155",
+  "type": "doc_passport",
+  "source": "2026-official-baseball-rules.pdf",
+  "source_label": "MLB",
+  "url": "https://mktg.mlbstatic.com/mlb/official-information/2026-official-baseball-rules.pdf",
+  "issued_date": "2026-05-06T11:36:14+0900",
+  "fingerprint_sha256": "f85860f3b754dfb5e07269e9d3a86c77c89b856376f6e3ba8345af36db997859",
+  "result_rep_sha256": "6529e0e2930ab6d32d27a221962fd603b475bd9a0f59fbc19ecdd75dba082605",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       2026-official-baseball-rules.pdf\nISSUED_DATE  2026-05-06T11:36:14+0900\nFINGERPRINT  f85860f3b754dfb5e07269e9d3a86c77c89b856376f6e3ba8345af36db997859\nURL          https://mktg.mlbstatic.com/mlb/official-information/2026-official-baseball-rules.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=6529e0e2930ab6d32d27a221962fd603b475bd9a0f59fbc19ecdd75dba082605\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

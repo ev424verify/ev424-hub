@@ -1794,6 +1794,18 @@
       "result_rep_sha256": "d9f833d6a55a089826b235301f365cb01c48de719330b4b07011d3e12dc78195",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000155",
+      "issued_kst": "2026-05-06T11:36:14+0900",
+      "month_id": "2026-05",
+      "url": "https://mktg.mlbstatic.com/mlb/official-information/2026-official-baseball-rules.pdf",
+      "source_domain": "mktg.mlbstatic.com",
+      "filename": "MLB",
+      "display_title": "MLB",
+      "result_rep_sha256": "6529e0e2930ab6d32d27a221962fd603b475bd9a0f59fbc19ecdd75dba082605",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
