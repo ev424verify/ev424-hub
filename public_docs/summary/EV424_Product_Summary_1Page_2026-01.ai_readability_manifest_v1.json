@@ -1,0 +1,36 @@
+{
+  "canonical": {
+    "format": "pdf",
+    "path": "public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf",
+    "role": "CANONICAL_DOCUMENT",
+    "sha256": "a2e42384829b752a63284b0bb756d7f99739d9aa578cdf184b944b2dfc42cc72"
+  },
+  "deterministic": true,
+  "document_id": "EV424_Product_Summary_1Page",
+  "language": "EN",
+  "policy": {
+    "canonical_pdf_remains_authoritative": true,
+    "html_txt_do_not_replace_pdf": true,
+    "integrity_only_not_content_judgment": true,
+    "no_internal_path_exposure": true,
+    "public_data_untouched": true
+  },
+  "projection_source": "CANONICAL_PDF_TEXT_EXTRACTION",
+  "projections": [
+    {
+      "format": "html",
+      "path": "public_docs/summary/EV424_Product_Summary_1Page_2026-01.html",
+      "role": "READABILITY_PROJECTION",
+      "sha256": "4a6bb59307b4e92426e0953bd2ccae33f50dcaca047ef12a650d324a54ff2a67"
+    },
+    {
+      "format": "txt",
+      "path": "public_docs/summary/EV424_Product_Summary_1Page_2026-01.txt",
+      "role": "PLAIN_TEXT_FALLBACK",
+      "sha256": "97d7ac9300c98d8bdca6a6f6387a9e17b1fe7952be19a3d9f48db0f129cd17e5"
+    }
+  ],
+  "schema": "EV424_AI_READABILITY_MANIFEST_V1",
+  "status": "AI_READABILITY_PUBLIC_SURFACE_PASS",
+  "version": "2026-01"
+}

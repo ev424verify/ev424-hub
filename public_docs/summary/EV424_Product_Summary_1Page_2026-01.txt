@@ -1,0 +1,65 @@
+EV424_Product_Summary_1Page 2026-01 EN
+
+This file is a readability projection of the canonical PDF.
+The canonical document remains: EV424_Product_Summary_1Page_2026-01.pdf
+This projection is provided for browser, search, and AI readability.
+It does not replace the canonical PDF.
+EV424 verifies reproducible integrity, not truth, legality, safety, or meaning.
+
+Canonical PDF SHA-256: a2e42384829b752a63284b0bb756d7f99739d9aa578cdf184b944b2dfc42cc72
+
+---
+
+Page 1
+EV424 — Product Summary (1-Page)
+Version / Date (KST): v2026-01-18 / 2026-01-18
+Entity Name: Wonseo Lee (pre-incorporation)
+Purpose (Validation-Only)
+This document is provided solely for validation interest. Legal, ownership, and due-diligence matters are handled
+separately. No commercial obligation is implied.
+
+Definition (FACT)
+EV424 is an Evidence Engine that seals quantitative system outputs into reproducible, integrity-verifiable
+evidence. (Integrity-first · Verifiable · No fabrication)
+
+Problem Context (FACT)
+Many analytics systems cannot be independently verified or reliably reproduced due to contamination between
+working results and missing integrity gates. EV424 enforces evidence sealing and reproducibility as non-optional
+system constraints.
+
+Verified Scope (FACT)
+Within an explicitly referenced sealed evidence bundle (SHA-256 gated), EV424 verifies:
+• sealed evidence bundles • reproducible metrics derived only from sealed grounds • verifiable event-to-log
+matching
+All facts are valid only within the referenced sealed scope.
+
+Core Deliverables (FACT)
+Sealed Evidence Bundle · Reproducible Metrics Extract · Verifiable Event↔Log Match
+
+Validation Method (FACT)
+Time-keyed event matching followed by value-equality checks between sealed outcomes and source logs.
+Results are binary and reproducible under identical input scope.
+
+First Product (Chosen Scope)
+Option B — Verification Layer (API / SDK)
+Customer: data / analytics / validation teams
+Deliverable: evidence sealing · integrity gate · reproducibility layer
+Pricing: usage-based + enterprise license (no pricing disclosed)
+Rationale: minimizes operational dependency while enabling validation without system replacement or
+performance claims.
+
+Why It Matters (FACT)
+EV424 does not claim performance or outcomes. It verifies whether a system can produce sealed, reproducible
+evidence under strict integrity constraints. Working outputs are intentionally separated from sealed grounds to
+reduce contamination and audit risk.
+
+Disclosure / Legal Safety (FACT)
+Implementation details are withheld. Validation may be demonstrated via a same-input→same-output
+reproducible demo under pre-agreed scope. No interpretation, prediction, or guarantees. Not investment advice.
+Any commercial engagement will be conducted via a separately incorporated entity.
+
+Validation CTA (FACT)
+Validation can be conducted through a sealed reproducibility demo with agreed scope, inputs, and hash gates.
+
+Article 0 — Constitution of EV424
+Accuracy (4) = Truth (2) = Life (4)
