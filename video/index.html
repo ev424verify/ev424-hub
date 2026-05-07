@@ -19,9 +19,9 @@ input{width:100%;border:1px solid var(--line);border-radius:14px;background:rgba
 .btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(54,211,122,.9);border-radius:12px;padding:11px 14px;color:var(--text);text-decoration:none;font-weight:800;background:rgba(255,255,255,.03);min-height:44px}
 .btn.blue{border-color:rgba(87,166,255,.8);background:linear-gradient(180deg,#55b7ff,#168cff);color:#06101f}
 .btn.small{min-height:40px;padding:9px 13px}
-.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 2px}
+.btnrow{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:14px 0 18px}.weekBtn{min-width:150px}
 .cards{display:grid;gap:12px;margin-top:14px}
-.vcard{border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.035);padding:14px}
+.vcard{border:1px solid rgba(87,166,255,.45);border-radius:18px;background:rgba(255,255,255,.03);padding:16px}.field{padding:10px 0;border-bottom:1px solid rgba(170,183,212,.16)}.field:first-child{padding-top:0}.field.url{border-bottom:0}.mutedv{color:var(--muted);font-weight:700}
 .k{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px}
 .v{font-weight:800;overflow-wrap:anywhere}
 .url a{color:var(--blue);font-weight:800;overflow-wrap:anywhere}
@@ -52,9 +52,7 @@ input{width:100%;border:1px solid var(--line);border-radius:14px;background:rgba
       <button id="check" class="btn blue" type="button">Check Evidence</button>
     </div>
     <div class="btnrow">
-      <button class="btn small" type="button" onclick="location.reload()">Reload</button>
-      <a class="btn blue small" href="/public_data/video_weekly_index.json" target="_blank" rel="noopener">WEEK</a>
-      <a class="btn small" href="/">Back</a>
+      <a class="btn blue small weekBtn" href="/public_data/video_weekly_index.json" target="_blank" rel="noopener">WEEK</a>
     </div>
     <div id="app">Loading...</div>
   </section>
@@ -105,11 +103,10 @@ function findEntry(entries,q){
 }
 function card(e){
  return `<article class="vcard">
-  <div class="entrygrid">
-    <div><div class="k">DATE</div><div class="v">${esc(e.date)}</div></div>
-    <div><div class="k">VIDEO ENTRY</div><div class="v">${esc(e.video_entry_id)}</div><div class="muted">${esc(e.revalidation?.last_status||"")}</div></div>
-    <div class="url"><div class="k">URL</div><a href="${esc(e.url_href_exact)}" target="_blank" rel="noopener">${esc(e.url_display_label)}</a></div>
-  </div>
+  <div class="field"><div class="k">DATE</div><div class="v">${esc(e.date)}</div></div>
+  <div class="field"><div class="k">VIDEO ENTRY</div><div class="v">${esc(e.video_entry_id)}</div></div>
+  <div class="field"><div class="k">STATUS</div><div class="v mutedv">${esc(e.revalidation?.last_status||"")}</div></div>
+  <div class="field url"><div class="k">URL</div><a href="${esc(e.url_href_exact)}" target="_blank" rel="noopener">${esc(e.url_display_label)}</a></div>
   <div class="actions">
     <a class="btn" href="${esc(e.open_target)}">Open</a>
     <a class="btn" href="${esc(e.json_target)}" target="_blank" rel="noopener">JSON</a>
