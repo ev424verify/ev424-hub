@@ -26,7 +26,7 @@ input{width:100%;border:1px solid var(--line);border-radius:14px;background:rgba
 .v{font-weight:800;overflow-wrap:anywhere}
 .url a{color:var(--blue);font-weight:800;overflow-wrap:anywhere}
 .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
-.receipt{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#07101e;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px;overflow-x:auto;font-size:12px}
+.receipt{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#07101e;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px;overflow-x:hidden;overflow-wrap:anywhere;word-break:break-word;max-width:100%;font-size:12px}
 .notice{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(255,255,255,.025);margin-top:12px}
 @media (min-width:760px){
   .entrygrid{display:grid;grid-template-columns:100px 1.6fr 2.2fr;gap:12px;align-items:start}
@@ -60,6 +60,7 @@ input{width:100%;border:1px solid var(--line);border-radius:14px;background:rgba
 <script>
 const INDEX_URL="/public_data/video_index.json";
 function esc(s){return String(s ?? "").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));}
+function wrap64(s){const x=String(s||"");return x.length===64 ? x.slice(0,32)+"\n"+x.slice(32) : x;}
 function receipt(e){
  const rv=e.revalidation||{};
  return `==[EV424 VIDEO FINAL RECEIPT]==
@@ -87,7 +88,7 @@ BOUNDARY     NO_RAW_HTML_PUBLICATION | NO_MANIFEST_MEDIA_SEGMENT | NO_ORIGINAL_V
 
 04)
 RESULT
-${e.projection_sha256 ? "PASS | projection_sha256=" + e.projection_sha256 : "HOLD | projection_sha256=missing"}
+${e.projection_sha256 ? "PASS | projection_sha256=\n" + wrap64(e.projection_sha256) : "HOLD | projection_sha256=missing"}
 
 Revalidation
 HISTORY_N ${rv.history_n ?? 0}
