@@ -1,0 +1,28 @@
+{
+  "schema": "EV424_VIDEO_PUBLIC_INDEX_V0_1",
+  "status": "VIDEO_INDEX_PUBLIC_ACTIVE",
+  "entry_series": {
+    "prefix": "EV424-VIDEO-ENTRY-",
+    "first_entry": "EV424-VIDEO-ENTRY-000001",
+    "next_entry_policy": "ASCENDING_NO_OVERWRITE"
+  },
+  "source_contract_sha256": "01c6be0a0ec92e315be601eff8d23206f0c301112dd3592a4a3fa49b5f44a5b5",
+  "entries": [
+    {
+      "date": "2026-05-07",
+      "video_entry_id": "EV424-VIDEO-ENTRY-000001",
+      "url_display_label": "plus.nasa.gov › Moon 101 › Apollo Medical Operations",
+      "url_href_exact": "https://plus.nasa.gov/video/moon-101-apollo-medical-operations/",
+      "open_target": "/video/?q=EV424-VIDEO-ENTRY-000001",
+      "json_target": "/public_data/video_projections/nasa_plus_moon_101_apollo_medical_operations_v0.2.json",
+      "projection_sha256": "8752b9c9698635fbba6dee1aa970ea1888193776c7e091cedc2959c4a85c968a",
+      "revalidation": {
+        "reverify": "+7d -> VIDEO_PAGE_CONSISTENCY + PUBLIC_PROJECTION_SHA",
+        "history_n": 0,
+        "timeline": [],
+        "last_status": "BASELINE_NO_REVALIDATION_YET",
+        "baseline_contract_sha256": "5f21414aec05a0fd5b40aa5a530f7f8ffa0d7e19ad504bec1f61d2e3f60cf9f1"
+      }
+    }
+  ]
+}
