@@ -1,0 +1,9 @@
+{
+  "candidate_id": "NASA_PLUS_PLAYLIST_MOON_MARS_AND_BEYOND_PAGE",
+  "selected_video_url": "https://plus.nasa.gov/video/moon-101-apollo-medical-operations/",
+  "page_title": "Moon 101: Apollo Medical Operations | NASA+Moon 101: Apollo Medical Operations - NASA+",
+  "observation_type": "READ_ONLY_HTML_PAGE_OBSERVATION",
+  "close_status": "VIDEO_PRIVATE_REHEARSAL_CLOSE_PRIVATE_PASS",
+  "non_custody_claim": "No raw HTML, manifest/media URL, original video bytes, segment bytes, or public video data are stored or published in this projection.",
+  "source_receipt_sha256": "5546e63660239583adb8e5a572f9f8665814c480e626ceb1bf207b982ff3c695"
+}
