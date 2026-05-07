@@ -1,0 +1,13 @@
+{
+  "type": "video_weekly_index_v1",
+  "updated_kst": "2026-05-07T18:11:23+0900",
+  "weeks": [
+    {
+      "week_id": "EV424-VIDEO-WEEK-2026-19",
+      "issued_kst": "2026-05-07T18:11:23+0900",
+      "href": "/public_data/video_weekly/EV424-VIDEO-WEEK-2026-19.json",
+      "manifest_sha256_file": "EV424-VIDEO-WEEK-2026-19.manifest.sha256"
+    }
+  ],
+  "weeks_n": 1
+}

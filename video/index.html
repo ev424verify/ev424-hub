@@ -6,13 +6,39 @@
 <title>EV424 — Video Passport Index</title>
 <style>
 :root{--bg:#0b1220;--panel:#111a2b;--line:#31415f;--text:#e8eefc;--muted:#aab7d4;--green:#36d37a;--blue:#57a6ff}
-*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 20% 0%,#14213a,#0b1220 45%,#070b13);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
-.wrap{max-width:980px;margin:36px auto;padding:0 18px}.top{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:rgba(17,26,43,.82)}
-.dot{width:10px;height:10px;border-radius:999px;background:var(--green);display:inline-block;margin-right:8px}.btn{display:inline-block;border:1px solid rgba(54,211,122,.9);border-radius:12px;padding:9px 13px;color:var(--text);text-decoration:none;font-weight:700;background:rgba(255,255,255,.03)}
-.panel{margin-top:18px;border:1px solid var(--line);border-radius:18px;padding:18px;background:rgba(17,26,43,.82)} h1,h2{margin:0 0 10px}.muted{color:var(--muted);font-size:13px}
-table{width:100%;border-collapse:separate;border-spacing:0 10px;margin-top:12px} th{text-align:left;color:var(--muted);font-size:12px;padding:0 10px} td{background:rgba(255,255,255,.035);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 10px;vertical-align:top}
-td:first-child{border-left:1px solid var(--line);border-radius:12px 0 0 12px} td:last-child{border-right:1px solid var(--line);border-radius:0 12px 12px 0}
-a{color:var(--blue)} .small{font-size:12px;color:var(--muted)} .receipt{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#07101e;border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:12px}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 20% 0%,#14213a,#0b1220 45%,#070b13);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:980px;margin:22px auto;padding:0 14px}
+.top{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:rgba(17,26,43,.82)}
+.dot{width:10px;height:10px;border-radius:999px;background:var(--green);display:inline-block;margin-right:8px}
+.panel{margin-top:18px;border:1px solid var(--line);border-radius:18px;padding:18px;background:rgba(17,26,43,.82)}
+h1{font-size:clamp(28px,8vw,40px);line-height:1.08;margin:0 0 14px}
+.muted{color:var(--muted);font-size:13px}
+.searchbar{display:grid;grid-template-columns:1fr auto;gap:10px;margin:16px 0 10px}
+input{width:100%;border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.04);color:var(--text);padding:13px 14px;font:inherit}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(54,211,122,.9);border-radius:12px;padding:11px 14px;color:var(--text);text-decoration:none;font-weight:800;background:rgba(255,255,255,.03);min-height:44px}
+.btn.blue{border-color:rgba(87,166,255,.8);background:linear-gradient(180deg,#55b7ff,#168cff);color:#06101f}
+.btn.small{min-height:40px;padding:9px 13px}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 2px}
+.cards{display:grid;gap:12px;margin-top:14px}
+.vcard{border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.035);padding:14px}
+.k{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-bottom:3px}
+.v{font-weight:800;overflow-wrap:anywhere}
+.url a{color:var(--blue);font-weight:800;overflow-wrap:anywhere}
+.actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.receipt{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#07101e;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px;overflow-x:auto;font-size:12px}
+.notice{border:1px solid var(--line);border-radius:14px;padding:12px;background:rgba(255,255,255,.025);margin-top:12px}
+@media (min-width:760px){
+  .entrygrid{display:grid;grid-template-columns:100px 1.6fr 2.2fr;gap:12px;align-items:start}
+  .actions{grid-template-columns:auto auto;justify-content:end}
+}
+@media (max-width:520px){
+  .wrap{padding:0 10px;margin:14px auto}
+  .panel{padding:14px}
+  .top{padding:12px}
+  .searchbar{grid-template-columns:1fr}
+  .btnrow .btn{flex:1 1 auto}
+}
 </style>
 </head>
 <body>
@@ -20,7 +46,16 @@ a{color:var(--blue)} .small{font-size:12px;color:var(--muted)} .receipt{white-sp
   <div class="top"><div><span class="dot"></span><b>EV424 Video Passport</b></div><a class="btn" href="/">Back</a></div>
   <section class="panel">
     <h1>Video Passport Index</h1>
-    <p class="muted">Independent video-passport public index. URL label opens the exact official video page. Open shows the video-specific receipt. JSON opens the public projection JSON.</p>
+    <p class="muted">Independent video-passport public index. Search exact video entry ID or 64-hex projection SHA-256. URL opens the exact official video page. Open shows the video-specific receipt. JSON opens the public projection JSON.</p>
+    <div class="searchbar">
+      <input id="q" placeholder="EV424-VIDEO-ENTRY-000001 or 64-hex projection sha256">
+      <button id="check" class="btn blue" type="button">Check Evidence</button>
+    </div>
+    <div class="btnrow">
+      <button class="btn small" type="button" onclick="location.reload()">Reload</button>
+      <a class="btn blue small" href="/public_data/video_weekly_index.json" target="_blank" rel="noopener">WEEK</a>
+      <a class="btn small" href="/">Back</a>
+    </div>
     <div id="app">Loading...</div>
   </section>
 </main>
@@ -63,22 +98,39 @@ LAST_STATUS ${rv.last_status || "BASELINE_NO_REVALIDATION_YET"}
 
 Accuracy(4)=Truth(2)=Life(4)`;
 }
+function findEntry(entries,q){
+ const x=String(q||"").trim();
+ if(!x)return null;
+ return entries.find(e=>e.video_entry_id===x || e.projection_sha256===x) || null;
+}
+function card(e){
+ return `<article class="vcard">
+  <div class="entrygrid">
+    <div><div class="k">DATE</div><div class="v">${esc(e.date)}</div></div>
+    <div><div class="k">VIDEO ENTRY</div><div class="v">${esc(e.video_entry_id)}</div><div class="muted">${esc(e.revalidation?.last_status||"")}</div></div>
+    <div class="url"><div class="k">URL</div><a href="${esc(e.url_href_exact)}" target="_blank" rel="noopener">${esc(e.url_display_label)}</a></div>
+  </div>
+  <div class="actions">
+    <a class="btn" href="${esc(e.open_target)}">Open</a>
+    <a class="btn" href="${esc(e.json_target)}" target="_blank" rel="noopener">JSON</a>
+  </div>
+ </article>`;
+}
+function renderIndex(entries){
+ document.getElementById("app").innerHTML=`<div class="cards">${entries.map(card).join("")}</div>`;
+}
+function renderReceipt(e){
+ document.getElementById("app").innerHTML=`<p><a class="btn" href="/video/">Back to Video Index</a> <a class="btn" href="${esc(e.json_target)}" target="_blank" rel="noopener">JSON</a></p><div class="receipt">${esc(receipt(e))}</div>`;
+}
 fetch(INDEX_URL,{cache:"no-store"}).then(r=>r.json()).then(data=>{
- const q=new URLSearchParams(location.search).get("q");
  const entries=data.entries||[];
- const found=q?entries.find(e=>e.video_entry_id===q):null;
- if(found){
-   document.getElementById("app").innerHTML=`<p><a class="btn" href="/video/">Back to Video Index</a> <a class="btn" href="${esc(found.json_target)}" target="_blank" rel="noopener">JSON</a></p><div class="receipt">${esc(receipt(found))}</div>`;
-   return;
- }
- const rows=entries.map(e=>`<tr>
-   <td>${esc(e.date)}</td>
-   <td><b>${esc(e.video_entry_id)}</b><div class="small">${esc(e.revalidation?.last_status||"")}</div></td>
-   <td><a href="${esc(e.url_href_exact)}" target="_blank" rel="noopener">${esc(e.url_display_label)}</a></td>
-   <td><a class="btn" href="${esc(e.open_target)}">Open</a></td>
-   <td><a class="btn" href="${esc(e.json_target)}" target="_blank" rel="noopener">JSON</a></td>
- </tr>`).join("");
- document.getElementById("app").innerHTML=`<table><thead><tr><th>DATE</th><th>VIDEO ENTRY</th><th>URL</th><th>OPEN</th><th>JSON</th></tr></thead><tbody>${rows}</tbody></table>`;
+ const params=new URLSearchParams(location.search);
+ const q=params.get("q")||"";
+ document.getElementById("q").value=q;
+ const found=findEntry(entries,q);
+ if(q && found){renderReceipt(found);} else if(q && !found){document.getElementById("app").innerHTML='<div class="notice">NO EXACT MATCH</div>';} else {renderIndex(entries);}
+ document.getElementById("check").onclick=()=>{const v=document.getElementById("q").value.trim(); if(v) location.href="/video/?q="+encodeURIComponent(v);};
+ document.getElementById("q").addEventListener("keydown",e=>{if(e.key==="Enter")document.getElementById("check").click();});
 }).catch(err=>{document.getElementById("app").textContent="LOAD_FAIL: "+err;});
 </script>
 </body>
