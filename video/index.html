@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EV424 — Video Passport Index</title>
+<style>
+:root{--bg:#0b1220;--panel:#111a2b;--line:#31415f;--text:#e8eefc;--muted:#aab7d4;--green:#36d37a;--blue:#57a6ff}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 20% 0%,#14213a,#0b1220 45%,#070b13);color:var(--text);font:15px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:980px;margin:36px auto;padding:0 18px}.top{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:rgba(17,26,43,.82)}
+.dot{width:10px;height:10px;border-radius:999px;background:var(--green);display:inline-block;margin-right:8px}.btn{display:inline-block;border:1px solid rgba(54,211,122,.9);border-radius:12px;padding:9px 13px;color:var(--text);text-decoration:none;font-weight:700;background:rgba(255,255,255,.03)}
+.panel{margin-top:18px;border:1px solid var(--line);border-radius:18px;padding:18px;background:rgba(17,26,43,.82)} h1,h2{margin:0 0 10px}.muted{color:var(--muted);font-size:13px}
+table{width:100%;border-collapse:separate;border-spacing:0 10px;margin-top:12px} th{text-align:left;color:var(--muted);font-size:12px;padding:0 10px} td{background:rgba(255,255,255,.035);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 10px;vertical-align:top}
+td:first-child{border-left:1px solid var(--line);border-radius:12px 0 0 12px} td:last-child{border-right:1px solid var(--line);border-radius:0 12px 12px 0}
+a{color:var(--blue)} .small{font-size:12px;color:var(--muted)} .receipt{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#07101e;border:1px solid var(--line);border-radius:14px;padding:16px;margin-top:12px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="top"><div><span class="dot"></span><b>EV424 Video Passport</b></div><a class="btn" href="/">Back</a></div>
+  <section class="panel">
+    <h1>Video Passport Index</h1>
+    <p class="muted">Independent video-passport public index. URL label opens the exact official video page. Open shows the video-specific receipt. JSON opens the public projection JSON.</p>
+    <div id="app">Loading...</div>
+  </section>
+</main>
+<script>
+const INDEX_URL="/public_data/video_index.json";
+function esc(s){return String(s ?? "").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));}
+function receipt(e){
+ const rv=e.revalidation||{};
+ return `==[EV424 VIDEO FINAL RECEIPT]==
+
+01)
+LEGEND
+PASS/HOLD    Video-passport public projection status
+MODE         VIDEO_READ_ONLY_NON_CUSTODY
+----------------------------------------
+
+02)
+IDENTITY
+VIDEO_ENTRY  ${e.video_entry_id}
+DATE         ${e.date}
+URL          ${e.url_href_exact}
+LABEL        ${e.url_display_label}
+REVERIFY     ${rv.reverify || "+7d -> VIDEO_PAGE_CONSISTENCY + PUBLIC_PROJECTION_SHA"}
+----------------------------------------
+
+03)
+VERIFY
+STATUS       PUBLIC_PROJECTION_SHA | VIDEO_INDEX_SHA | EXACT_URL_LINK
+BOUNDARY     NO_RAW_HTML_PUBLICATION | NO_MANIFEST_MEDIA_SEGMENT | NO_ORIGINAL_VIDEO_BYTES
+----------------------------------------
+
+04)
+RESULT
+${e.projection_sha256 ? "PASS | projection_sha256=" + e.projection_sha256 : "HOLD | projection_sha256=missing"}
+
+Revalidation
+HISTORY_N ${rv.history_n ?? 0}
+TIMELINE ${Array.isArray(rv.timeline)&&rv.timeline.length ? rv.timeline.join("\n") : "[]"}
+LAST_STATUS ${rv.last_status || "BASELINE_NO_REVALIDATION_YET"}
+
+Accuracy(4)=Truth(2)=Life(4)`;
+}
+fetch(INDEX_URL,{cache:"no-store"}).then(r=>r.json()).then(data=>{
+ const q=new URLSearchParams(location.search).get("q");
+ const entries=data.entries||[];
+ const found=q?entries.find(e=>e.video_entry_id===q):null;
+ if(found){
+   document.getElementById("app").innerHTML=`<p><a class="btn" href="/video/">Back to Video Index</a> <a class="btn" href="${esc(found.json_target)}" target="_blank" rel="noopener">JSON</a></p><div class="receipt">${esc(receipt(found))}</div>`;
+   return;
+ }
+ const rows=entries.map(e=>`<tr>
+   <td>${esc(e.date)}</td>
+   <td><b>${esc(e.video_entry_id)}</b><div class="small">${esc(e.revalidation?.last_status||"")}</div></td>
+   <td><a href="${esc(e.url_href_exact)}" target="_blank" rel="noopener">${esc(e.url_display_label)}</a></td>
+   <td><a class="btn" href="${esc(e.open_target)}">Open</a></td>
+   <td><a class="btn" href="${esc(e.json_target)}" target="_blank" rel="noopener">JSON</a></td>
+ </tr>`).join("");
+ document.getElementById("app").innerHTML=`<table><thead><tr><th>DATE</th><th>VIDEO ENTRY</th><th>URL</th><th>OPEN</th><th>JSON</th></tr></thead><tbody>${rows}</tbody></table>`;
+}).catch(err=>{document.getElementById("app").textContent="LOAD_FAIL: "+err;});
+</script>
+</body>
+</html>
