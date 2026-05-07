@@ -60,7 +60,6 @@ input{width:100%;border:1px solid var(--line);border-radius:14px;background:rgba
 <script>
 const INDEX_URL="/public_data/video_index.json";
 function esc(s){return String(s ?? "").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));}
-function wrap64(s){const x=String(s||"");return x.length===64 ? x.slice(0,32)+"\n"+x.slice(32) : x;}
 function receipt(e){
  const rv=e.revalidation||{};
  return `==[EV424 VIDEO FINAL RECEIPT]==
@@ -88,7 +87,7 @@ BOUNDARY     NO_RAW_HTML_PUBLICATION | NO_MANIFEST_MEDIA_SEGMENT | NO_ORIGINAL_V
 
 04)
 RESULT
-${e.projection_sha256 ? "PASS | projection_sha256=\n" + wrap64(e.projection_sha256) : "HOLD | projection_sha256=missing"}
+${e.projection_sha256 ? "PASS | projection_sha256=" + e.projection_sha256 : "HOLD | projection_sha256=missing"}
 
 Revalidation
 HISTORY_N ${rv.history_n ?? 0}
