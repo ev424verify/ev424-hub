@@ -1,0 +1,36 @@
+{
+  "canonical": {
+    "format": "pdf",
+    "path": "public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf",
+    "role": "CANONICAL_DOCUMENT",
+    "sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6"
+  },
+  "deterministic": true,
+  "document_id": "EV424_Public_Overview",
+  "language": "EN",
+  "policy": {
+    "canonical_pdf_remains_authoritative": true,
+    "html_txt_do_not_replace_pdf": true,
+    "integrity_only_not_content_judgment": true,
+    "no_internal_path_exposure": true,
+    "public_data_untouched": true
+  },
+  "projection_source": "CANONICAL_PDF_TEXT_EXTRACTION",
+  "projections": [
+    {
+      "format": "html",
+      "path": "public_docs/overview/EV424_Public_Overview_v1.0.5_EN.html",
+      "role": "READABILITY_PROJECTION",
+      "sha256": "bd4d48e9954b2fe15317787feca65722b008176a50577c1aa462c2b5c5b2a20e"
+    },
+    {
+      "format": "txt",
+      "path": "public_docs/overview/EV424_Public_Overview_v1.0.5_EN.txt",
+      "role": "PLAIN_TEXT_FALLBACK",
+      "sha256": "497b3ead34c2804300dcf093d30f6c9c8d216c970599403431a8d1a36156bd97"
+    }
+  ],
+  "schema": "EV424_AI_READABILITY_MANIFEST_V1",
+  "status": "AI_READABILITY_PUBLIC_SURFACE_PASS",
+  "version": "v1.0.5"
+}
