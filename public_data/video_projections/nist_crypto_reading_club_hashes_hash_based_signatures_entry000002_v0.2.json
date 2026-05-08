@@ -1,0 +1,29 @@
+{
+  "schema": "EV424_VIDEO_PUBLIC_MINIMAL_PROJECTION_V0_1",
+  "video_entry_id": "EV424-VIDEO-ENTRY-000002",
+  "provider": "NIST",
+  "official_source_domain": "www.nist.gov",
+  "official_video_url": "https://www.nist.gov/video/crypto-reading-club-2022-10-19-basics-md-hashes-and-hash-based-signatures-and-breaking",
+  "final_url_after_redirect": "https://www.nist.gov/video/crypto-reading-club-2022-10-19-basics-md-hashes-and-hash-based-signatures-and-breaking",
+  "display_label": "nist.gov › Crypto Reading Club › Hashes and Hash-Based Signatures",
+  "title": "Crypto Reading Club 2022-10-19: \"Basics of MD Hashes and Hash-Based Signatures\" and \"Breaking Category Five SPHINCS+ with SHA-256\" | NIST",
+  "passport_scope": "PUBLIC_VIDEO_PAGE_STATE_PROJECTION_ONLY",
+  "verification_boundary": "integrity_reproducibility_non_custody",
+  "non_custody": {
+    "original_video_stored": false,
+    "manifest_stored": false,
+    "media_stored": false,
+    "segment_stored": false,
+    "raw_html_public": false
+  },
+  "status": "BASELINE_NO_REVALIDATION_YET",
+  "issued_at_kst": "2026-05-08T16:13:41+0900",
+  "revalidation": {
+    "history_n": 0,
+    "last_status": "BASELINE_NO_REVALIDATION_YET",
+    "next_due_at_kst": "2026-05-15T16:13:41+0900"
+  },
+  "public_note": "This is a minimal public projection. It does not store or publish original video, manifest, media, segment, or page body.",
+  "projection_candidate_version": "v0.2",
+  "previous_candidate_sha256": "cdb64891b75f810820119ffee3e72c3a36cd2f98d7cf3479dc6e8bda19a79129"
+}

@@ -23,6 +23,19 @@
         "last_status": "BASELINE_NO_REVALIDATION_YET",
         "baseline_contract_sha256": "5f21414aec05a0fd5b40aa5a530f7f8ffa0d7e19ad504bec1f61d2e3f60cf9f1"
       }
+    },
+    {
+      "date": "2026-05-08",
+      "video_entry_id": "EV424-VIDEO-ENTRY-000002",
+      "url_display_label": "nist.gov › Crypto Reading Club › Hashes and Hash-Based Signatures",
+      "url_href_exact": "https://www.nist.gov/video/crypto-reading-club-2022-10-19-basics-md-hashes-and-hash-based-signatures-and-breaking",
+      "open_target": "_blank",
+      "json_target": "public_data/video_projections/nist_crypto_reading_club_hashes_hash_based_signatures_entry000002_v0.2.json",
+      "projection_sha256": "0b7b73f638a269b15a033dae5f09ee82c8f46c04fa1b02f3f8dd55d12bd8b16f",
+      "revalidation": {
+        "history_n": 0,
+        "last_status": "BASELINE_NO_REVALIDATION_YET"
+      }
     }
   ]
 }
