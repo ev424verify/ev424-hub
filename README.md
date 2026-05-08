@@ -10,7 +10,11 @@ EV424 is a non-custodial integrity verification infrastructure for official publ
 
 It records whether an official digital artifact can be re-verified as the same bytes — without storing, mirroring, redistributing, or interpreting the original.
 
-[Live Verify](https://ev424verify.com) · [Public Evidence Index](https://ev424verify.com/public_data/) · [Whitepaper](https://ev424verify.com/whitepaper.html) · [Legal Notice](LEGAL_NOTICE.md) · [Contact](mailto:ev424.verify@gmail.com)
+EV424 now maintains public evidence rails for both Document Passport and Video Passport v0.1, under the same constitutional boundary:
+
+**Integrity. Reproducibility. Non-custody.**
+
+[Live Verify](https://ev424verify.com) · [Public Evidence Index](https://ev424verify.com/public_data/) · [Video Verify](https://ev424verify.com/video/) · [Whitepaper](https://ev424verify.com/whitepaper.html) · [Legal Notice](LEGAL_NOTICE.md) · [Contact](mailto:ev424.verify@gmail.com)
 
 ---
 
@@ -152,6 +156,7 @@ It is an integrity and reproducibility structure.
 |---|---|---|
 | [EV424-ENTRY-000006](https://ev424verify.com/?q=EV424-ENTRY-000006) | NIST.SP.800-228.pdf | Stable reference entry with revalidation continuity |
 | [EV424-ENTRY-000155](https://ev424verify.com/?q=EV424-ENTRY-000155) | 2026-official-baseball-rules.pdf | Recent public document passport example |
+| [EV424-VIDEO-ENTRY-000002](https://ev424verify.com/video/?q=EV424-VIDEO-ENTRY-000002) | NIST video public projection | Video Passport v0.1 public evidence rail example |
 
 ---
 
@@ -193,6 +198,31 @@ That question becomes more important as AI-generated summaries, citations, docum
 
 ---
 
+## Video Passport v0.1
+
+EV424 Video Passport extends the same verification philosophy from documents to official public video-source references.
+
+A Video Passport does **not** host, copy, mirror, download, or redistribute the original video.
+
+Instead, it publishes a non-custodial public projection that can include:
+
+- provider
+- official public source reference
+- VIDEO_ENTRY_ID
+- receipt / projection metadata
+- reproducible integrity signals
+- re-verification path
+
+The purpose is not to judge whether a video is true, safe, legal, authentic, edited, or endorsed.
+
+The purpose is to create a reproducible, non-custodial evidence rail so future observations can be compared against a closed public verification record.
+
+Public example:
+
+- https://ev424verify.com/video/?q=EV424-VIDEO-ENTRY-000002
+
+---
+
 ## Public / Private Boundary
 
 This repository is a public verification surface, not the full internal engine.
@@ -216,9 +246,9 @@ Internal implementation details remain private to protect the verification engin
 
 | Stage | Direction |
 |---|---|
-| 2026 Foundation | Document Passport, public receipts, exact-search |
-| 2027 Productization | Video Passport, API/SDK, enterprise verification workflow |
-| 2028 Infrastructure | Multi-type verification, institutional integration, independent engine |
+| 2026 Foundation | Document Passport, Video Passport v0.1, public receipts, exact-search |
+| 2027 Productization | API/SDK, enterprise verification workflow, multi-type re-verification |
+| 2028 Infrastructure | Institutional integration, independent verification engine |
 | Always | Non-custody, no-overwrite, reproducible evidence |
 
 ---
