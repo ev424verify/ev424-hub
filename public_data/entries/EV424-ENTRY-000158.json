@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000158",
+  "type": "doc_passport",
+  "source": "ch3.pdf",
+  "source_label": "IMF",
+  "url": "https://www.imf.org/-/media/files/publications/esr/2025/english/ch3.pdf",
+  "issued_date": "2026-05-08T10:08:32+0900",
+  "fingerprint_sha256": "cc59c40fd640c1c42ba4804a7e6d8139958a663f44c1dd92eec6ae91b982c2ee",
+  "result_rep_sha256": "64b2c45f0b66d9e46b1b77499a2166c9fdc2c74963b43167542ec4c074981a99",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ch3.pdf\nISSUED_DATE  2026-05-08T10:08:32+0900\nFINGERPRINT  cc59c40fd640c1c42ba4804a7e6d8139958a663f44c1dd92eec6ae91b982c2ee\nURL          https://www.imf.org/-/media/files/publications/esr/2025/english/ch3.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=64b2c45f0b66d9e46b1b77499a2166c9fdc2c74963b43167542ec4c074981a99\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

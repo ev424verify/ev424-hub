@@ -1830,6 +1830,18 @@
       "result_rep_sha256": "c283c6642a54aa44f33bb4ce7eb4440fe061762de24801707872aa3fa7c7a56e",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000158",
+      "issued_kst": "2026-05-08T10:08:32+0900",
+      "month_id": "2026-05",
+      "url": "https://www.imf.org/-/media/files/publications/esr/2025/english/ch3.pdf",
+      "source_domain": "www.imf.org",
+      "filename": "IMF",
+      "display_title": "IMF",
+      "result_rep_sha256": "64b2c45f0b66d9e46b1b77499a2166c9fdc2c74963b43167542ec4c074981a99",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
