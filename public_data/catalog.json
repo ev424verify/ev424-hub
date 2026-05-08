@@ -1842,6 +1842,18 @@
       "result_rep_sha256": "64b2c45f0b66d9e46b1b77499a2166c9fdc2c74963b43167542ec4c074981a99",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000159",
+      "issued_kst": "2026-05-09T08:53:29+0900",
+      "month_id": "2026-05",
+      "url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf",
+      "source_domain": "cdn.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "56c482ad6bda7d25f8ddc73cfa41ac8f9ecc02ba210f31ee695fe8bb6c7342ae",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

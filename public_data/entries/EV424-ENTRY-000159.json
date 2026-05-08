@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000159",
+  "type": "doc_passport",
+  "source": "the-ai-jobs-transition-framework_report.pdf",
+  "source_label": "OPENAI",
+  "url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf",
+  "issued_date": "2026-05-09T08:53:29+0900",
+  "fingerprint_sha256": "5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28",
+  "result_rep_sha256": "56c482ad6bda7d25f8ddc73cfa41ac8f9ecc02ba210f31ee695fe8bb6c7342ae",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       the-ai-jobs-transition-framework_report.pdf\nISSUED_DATE  2026-05-09T08:53:29+0900\nFINGERPRINT  5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28\nURL          https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=56c482ad6bda7d25f8ddc73cfa41ac8f9ecc02ba210f31ee695fe8bb6c7342ae\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
