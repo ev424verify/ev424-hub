@@ -4,5 +4,17 @@
   "source_url": "https://www.cisa.gov/sites/default/files/publications/Chatting%2520with%2520Kids%2520Booklet_0.pdf",
   "fingerprint_sha256": "9a4e122e9a9ba668e1d725df2ae1a105d4b27a191a8578f12213c98e47ec416c",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-10T10:06:06+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

@@ -4,5 +4,17 @@
   "source_url": "https://images.nvidia.com/aem-dam/Solutions/geforce/blackwell/nvidia-rtx-blackwell-gpu-architecture.pdf",
   "fingerprint_sha256": "906ff2a409d7a7e4cbc56f5d3a179d574120d19aaba99520670e1a0c064595fa",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-09T11:31:55+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

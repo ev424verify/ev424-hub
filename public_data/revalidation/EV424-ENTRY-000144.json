@@ -4,5 +4,17 @@
   "source_url": "https://www.ema.europa.eu/en/documents/other/overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
   "fingerprint_sha256": "0f321059a2f330b43193ddc03ea9987aa772c7365a130bbbbc9210b50a3cb19e",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-06T17:28:52+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

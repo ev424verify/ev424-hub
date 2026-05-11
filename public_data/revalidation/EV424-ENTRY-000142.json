@@ -4,5 +4,17 @@
   "source_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
   "fingerprint_sha256": "02b2b6f13b199cdc9a1d95392e6a90ef2fd8a4ae76198d59b8b4f3f0795a4332",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-05T10:40:34+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }
