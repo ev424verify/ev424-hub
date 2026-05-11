@@ -1866,6 +1866,18 @@
       "result_rep_sha256": "671fb73acc4a4c72fcad544561cdcf8193d2a4d7073a3e844da406b64ec99d74",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000161",
+      "issued_kst": "2026-05-11T12:42:38+0900",
+      "month_id": "2026-05",
+      "url": "https://www.fda.gov/media/76323/download",
+      "source_domain": "www.fda.gov",
+      "filename": "FDA",
+      "display_title": "FDA",
+      "result_rep_sha256": "bc61a3032cd804e066c399f040aad2135a47eacc3bbd1c538b78f4bfb19f7678",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

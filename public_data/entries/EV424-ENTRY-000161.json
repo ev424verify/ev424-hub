@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000161",
+  "type": "doc_passport",
+  "source": "download",
+  "source_label": "FDA",
+  "url": "https://www.fda.gov/media/76323/download",
+  "issued_date": "2026-05-11T12:42:38+0900",
+  "fingerprint_sha256": "1cb1270c292cd212f91135bc0093d9a8f37c787859cf2644aa29e2771beca830",
+  "result_rep_sha256": "bc61a3032cd804e066c399f040aad2135a47eacc3bbd1c538b78f4bfb19f7678",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       download\nISSUED_DATE  2026-05-11T12:42:38+0900\nFINGERPRINT  1cb1270c292cd212f91135bc0093d9a8f37c787859cf2644aa29e2771beca830\nURL          https://www.fda.gov/media/76323/download\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=bc61a3032cd804e066c399f040aad2135a47eacc3bbd1c538b78f4bfb19f7678\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
