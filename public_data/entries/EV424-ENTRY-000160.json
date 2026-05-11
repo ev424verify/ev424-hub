@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000160",
+  "type": "doc_passport",
+  "source": "Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf",
+  "source_label": "OPENAI",
+  "url": "https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf",
+  "issued_date": "2026-05-11T11:48:04+0900",
+  "fingerprint_sha256": "be00a4eb0ac5f8c6c11017366ed16a0ad00d69e6041e5da470be43e8f0a8f3b1",
+  "result_rep_sha256": "671fb73acc4a4c72fcad544561cdcf8193d2a4d7073a3e844da406b64ec99d74",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf\nISSUED_DATE  2026-05-11T11:48:04+0900\nFINGERPRINT  be00a4eb0ac5f8c6c11017366ed16a0ad00d69e6041e5da470be43e8f0a8f3b1\nURL          https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=671fb73acc4a4c72fcad544561cdcf8193d2a4d7073a3e844da406b64ec99d74\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

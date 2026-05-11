@@ -1854,6 +1854,18 @@
       "result_rep_sha256": "56c482ad6bda7d25f8ddc73cfa41ac8f9ecc02ba210f31ee695fe8bb6c7342ae",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000160",
+      "issued_kst": "2026-05-11T11:48:04+0900",
+      "month_id": "2026-05",
+      "url": "https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf",
+      "source_domain": "cdn.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "671fb73acc4a4c72fcad544561cdcf8193d2a4d7073a3e844da406b64ec99d74",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
