@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000163",
+  "type": "doc_passport",
+  "source": "gpt-5-5.pdf",
+  "source_label": "OPENAI",
+  "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
+  "issued_date": "2026-05-12T12:59:47+0900",
+  "fingerprint_sha256": "50c7c11439c316732dbccd0f7df01be65cd46926ad21436ab7cd36735ac15106",
+  "result_rep_sha256": "f6a090ca3fe717e7190987292529f24bdbd3a2856167bbaef8a889c2f1052b05",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       gpt-5-5.pdf\nISSUED_DATE  2026-05-12T12:59:47+0900\nFINGERPRINT  50c7c11439c316732dbccd0f7df01be65cd46926ad21436ab7cd36735ac15106\nURL          https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=f6a090ca3fe717e7190987292529f24bdbd3a2856167bbaef8a889c2f1052b05\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

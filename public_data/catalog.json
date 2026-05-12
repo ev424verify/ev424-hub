@@ -1890,6 +1890,18 @@
       "result_rep_sha256": "b9b8986c4fe29aa2e4de1c6cfaf5285ce1f40963a9cfa20553256e294bc7522e",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000163",
+      "issued_kst": "2026-05-12T12:59:47+0900",
+      "month_id": "2026-05",
+      "url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
+      "source_domain": "deploymentsafety.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "f6a090ca3fe717e7190987292529f24bdbd3a2856167bbaef8a889c2f1052b05",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
