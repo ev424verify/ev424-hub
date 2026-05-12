@@ -1878,6 +1878,18 @@
       "result_rep_sha256": "bc61a3032cd804e066c399f040aad2135a47eacc3bbd1c538b78f4bfb19f7678",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000162",
+      "issued_kst": "2026-05-12T09:55:35+0900",
+      "month_id": "2026-05",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.jpn.pdf",
+      "source_domain": "nvlpubs.nist.gov",
+      "filename": "NIST",
+      "display_title": "NIST",
+      "result_rep_sha256": "b9b8986c4fe29aa2e4de1c6cfaf5285ce1f40963a9cfa20553256e294bc7522e",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
