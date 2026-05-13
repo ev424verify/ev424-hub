@@ -1962,6 +1962,18 @@
       "result_rep_sha256": "b1977c58778ded1672d4fb2c6a7fdf6bb23b599e2d1fd2fca32bc6c00f4e971b",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000169",
+      "issued_kst": "2026-05-13T16:31:09+0900",
+      "month_id": "2026-05",
+      "url": "https://www.energy.gov/sites/default/files/2025-08/National%20USEER_08282025.pdf",
+      "source_domain": "www.energy.gov",
+      "filename": "DOE",
+      "display_title": "DOE",
+      "result_rep_sha256": "f88d20d87fb8c2068ff685baa78efb80914201c78ce23d1007ceaf71a48183f2",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
