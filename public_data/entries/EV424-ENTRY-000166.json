@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000166",
+  "type": "doc_passport",
+  "source": "oai_ai-as-a-scientific-collaborator_jan-2026.pdf",
+  "source_label": "OPENAI",
+  "url": "https://cdn.openai.com/pdf/f4b4a5da-b2de-418d-9fcd-6b293e9dc157/oai_ai-as-a-scientific-collaborator_jan-2026.pdf",
+  "issued_date": "2026-05-13T09:47:21+0900",
+  "fingerprint_sha256": "f49721b22837d9de4ad4aca40f257f0fdbae0e9b9b234edb5961fd40d6608f10",
+  "result_rep_sha256": "f5ca7f3ab6cba20e7a3f765eec39545d90c1134495331d75a6a8a26101cebf64",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       oai_ai-as-a-scientific-collaborator_jan-2026.pdf\nISSUED_DATE  2026-05-13T09:47:21+0900\nFINGERPRINT  f49721b22837d9de4ad4aca40f257f0fdbae0e9b9b234edb5961fd40d6608f10\nURL          https://cdn.openai.com/pdf/f4b4a5da-b2de-418d-9fcd-6b293e9dc157/oai_ai-as-a-scientific-collaborator_jan-2026.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=f5ca7f3ab6cba20e7a3f765eec39545d90c1134495331d75a6a8a26101cebf64\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
