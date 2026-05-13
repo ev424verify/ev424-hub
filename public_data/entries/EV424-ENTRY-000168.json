@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000168",
+  "type": "doc_passport",
+  "source": "ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf",
+  "source_label": "ENISA",
+  "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf",
+  "issued_date": "2026-05-13T14:38:17+0900",
+  "fingerprint_sha256": "f6230d748ed49fb879cf7bd19005853a07f08ca1853d22f7348cd7feb58de30c",
+  "result_rep_sha256": "b1977c58778ded1672d4fb2c6a7fdf6bb23b599e2d1fd2fca32bc6c00f4e971b",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf\nISSUED_DATE  2026-05-13T14:38:17+0900\nFINGERPRINT  f6230d748ed49fb879cf7bd19005853a07f08ca1853d22f7348cd7feb58de30c\nURL          https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=b1977c58778ded1672d4fb2c6a7fdf6bb23b599e2d1fd2fca32bc6c00f4e971b\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

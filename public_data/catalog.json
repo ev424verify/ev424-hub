@@ -1950,6 +1950,18 @@
       "result_rep_sha256": "9b899599e416bb820e24baef40729a658647fb60a7b59264e73b4cc3b919a6d1",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000168",
+      "issued_kst": "2026-05-13T14:38:17+0900",
+      "month_id": "2026-05",
+      "url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf",
+      "source_domain": "www.enisa.europa.eu",
+      "filename": "ENISA",
+      "display_title": "ENISA",
+      "result_rep_sha256": "b1977c58778ded1672d4fb2c6a7fdf6bb23b599e2d1fd2fca32bc6c00f4e971b",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
