@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000170",
+  "type": "doc_passport",
+  "source": "NIS%20Investments%202025%20-%20Main%20report.pdf",
+  "source_label": "ENISA",
+  "url": "https://www.enisa.europa.eu/sites/default/files/2026-02/NIS%20Investments%202025%20-%20Main%20report.pdf",
+  "issued_date": "2026-05-14T14:23:25+0900",
+  "fingerprint_sha256": "4143386dbd68a7efb08c6cfc59a3aa7504f21300d4eb4f73d3ac79e260698661",
+  "result_rep_sha256": "a257d73afc63dfa893863d2dc578fcfabfd5e181759808925441f2af15b665f5",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIS%20Investments%202025%20-%20Main%20report.pdf\nISSUED_DATE  2026-05-14T14:23:25+0900\nFINGERPRINT  4143386dbd68a7efb08c6cfc59a3aa7504f21300d4eb4f73d3ac79e260698661\nURL          https://www.enisa.europa.eu/sites/default/files/2026-02/NIS%20Investments%202025%20-%20Main%20report.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=a257d73afc63dfa893863d2dc578fcfabfd5e181759808925441f2af15b665f5\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
