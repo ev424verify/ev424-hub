@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000173",
+  "type": "doc_passport",
+  "source": "rfc1918.txt.pdf",
+  "source_label": "RFC",
+  "url": "https://www.rfc-editor.org/rfc/pdfrfc/rfc1918.txt.pdf",
+  "issued_date": "2026-05-15T13:21:52+0900",
+  "fingerprint_sha256": "214003e14440c3910648e3420569a7dae76831186569a1005b55fa68739d3a98",
+  "result_rep_sha256": "2acc4eb6899588991c64c3655315b0f736b0cdac61a6fc5a3384060e56b9d6aa",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       rfc1918.txt.pdf\nISSUED_DATE  2026-05-15T13:21:52+0900\nFINGERPRINT  214003e14440c3910648e3420569a7dae76831186569a1005b55fa68739d3a98\nURL          https://www.rfc-editor.org/rfc/pdfrfc/rfc1918.txt.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=2acc4eb6899588991c64c3655315b0f736b0cdac61a6fc5a3384060e56b9d6aa\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

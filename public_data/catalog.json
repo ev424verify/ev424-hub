@@ -2010,6 +2010,18 @@
       "result_rep_sha256": "09f5e0b1e748d6abe43e147d9491e2f6e7486281bcc02c3070cbc39fa25d41af",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000173",
+      "issued_kst": "2026-05-15T13:21:52+0900",
+      "month_id": "2026-05",
+      "url": "https://www.rfc-editor.org/rfc/pdfrfc/rfc1918.txt.pdf",
+      "source_domain": "www.rfc-editor.org",
+      "filename": "RFC",
+      "display_title": "RFC",
+      "result_rep_sha256": "2acc4eb6899588991c64c3655315b0f736b0cdac61a6fc5a3384060e56b9d6aa",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
