@@ -1986,6 +1986,18 @@
       "result_rep_sha256": "a257d73afc63dfa893863d2dc578fcfabfd5e181759808925441f2af15b665f5",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000171",
+      "issued_kst": "2026-05-15T11:43:15+0900",
+      "month_id": "2026-05",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf",
+      "source_domain": "nvlpubs.nist.gov",
+      "filename": "NIST",
+      "display_title": "NIST",
+      "result_rep_sha256": "c7f16766ce75506014c1b433a30a2d8ee23168f6bbdc3f12180e3afd394bf1f5",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
