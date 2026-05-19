@@ -2022,6 +2022,18 @@
       "result_rep_sha256": "2acc4eb6899588991c64c3655315b0f736b0cdac61a6fc5a3384060e56b9d6aa",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000174",
+      "issued_kst": "2026-05-19T12:46:51+0900",
+      "month_id": "2026-05",
+      "url": "https://cdn.openai.com/pdf/oai_nonprofit-jam-report.pdf",
+      "source_domain": "cdn.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "b055830dc7acbf1d99f7c9b21643149a95e0dc577e9ff707b33fb8eed90cea05",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

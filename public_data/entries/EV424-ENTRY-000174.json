@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000174",
+  "type": "doc_passport",
+  "source": "oai_nonprofit-jam-report.pdf",
+  "source_label": "OPENAI",
+  "url": "https://cdn.openai.com/pdf/oai_nonprofit-jam-report.pdf",
+  "issued_date": "2026-05-19T12:46:51+0900",
+  "fingerprint_sha256": "0275de148b5c60c65051814a5fb6655ce6d6a06f67319ace64648df81ca46275",
+  "result_rep_sha256": "b055830dc7acbf1d99f7c9b21643149a95e0dc577e9ff707b33fb8eed90cea05",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       oai_nonprofit-jam-report.pdf\nISSUED_DATE  2026-05-19T12:46:51+0900\nFINGERPRINT  0275de148b5c60c65051814a5fb6655ce6d6a06f67319ace64648df81ca46275\nURL          https://cdn.openai.com/pdf/oai_nonprofit-jam-report.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=b055830dc7acbf1d99f7c9b21643149a95e0dc577e9ff707b33fb8eed90cea05\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
