@@ -4,5 +4,17 @@
   "source_url": "https://www.imf.org/-/media/files/publications/esr/2025/english/ch3.pdf",
   "fingerprint_sha256": "cc59c40fd640c1c42ba4804a7e6d8139958a663f44c1dd92eec6ae91b982c2ee",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-15T10:08:32+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

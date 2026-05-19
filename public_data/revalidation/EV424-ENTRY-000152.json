@@ -4,5 +4,17 @@
   "source_url": "https://www.cisa.gov/sites/default/files/publications/Parents%2520and%2520Educators%2520Tip%2520Card_0.pdf",
   "fingerprint_sha256": "ac395c1d5aea548b30b686c6d2bdbc84ff85bcbf2d70f9a41ab10fc64d0104db",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-12T21:39:34+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

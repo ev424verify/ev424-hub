@@ -4,5 +4,17 @@
   "source_url": "https://mktg.mlbstatic.com/mlb/official-information/2026-official-baseball-rules.pdf",
   "fingerprint_sha256": "f85860f3b754dfb5e07269e9d3a86c77c89b856376f6e3ba8345af36db997859",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-13T11:36:14+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }

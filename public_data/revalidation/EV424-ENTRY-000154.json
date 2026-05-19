@@ -4,5 +4,17 @@
   "source_url": "https://www.imf.org/-/media/files/publications/weo/2024/october/english/ch2.pdf",
   "fingerprint_sha256": "135fe2f76427bad26a3cf363015693181b836c96bebf4536460992afcf2a36d1",
   "revalidation_policy": "NONE",
-  "events": []
+  "events": [
+    {
+      "observed_at_kst": "2026-05-13T10:45:56+09:00",
+      "final_status": "PASS",
+      "checks": [
+        "LOCAL_SHA",
+        "SRC_RECORD",
+        "REDOWNLOAD",
+        "CHAIN"
+      ],
+      "note": "Weekly auto Observed Event"
+    }
+  ]
 }
