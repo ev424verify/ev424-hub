@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000175",
+  "type": "doc_passport",
+  "source": "economic-research-chatgpt-usage-paper.pdf",
+  "source_label": "OPENAI",
+  "url": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf",
+  "issued_date": "2026-05-21T14:05:57+0900",
+  "fingerprint_sha256": "520987fffd87b88ce3866ef9139f90f1a270cf522c1bd96f6f52745feb457a6e",
+  "result_rep_sha256": "75ebb5b99700d4ffc155795c1e24d4398c0d4c58bccc5dffb09b92e4b3867371",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       economic-research-chatgpt-usage-paper.pdf\nISSUED_DATE  2026-05-21T14:05:57+0900\nFINGERPRINT  520987fffd87b88ce3866ef9139f90f1a270cf522c1bd96f6f52745feb457a6e\nURL          https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=75ebb5b99700d4ffc155795c1e24d4398c0d4c58bccc5dffb09b92e4b3867371\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

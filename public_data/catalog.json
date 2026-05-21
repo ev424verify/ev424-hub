@@ -2034,6 +2034,18 @@
       "result_rep_sha256": "b055830dc7acbf1d99f7c9b21643149a95e0dc577e9ff707b33fb8eed90cea05",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000175",
+      "issued_kst": "2026-05-21T14:05:57+0900",
+      "month_id": "2026-05",
+      "url": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf",
+      "source_domain": "cdn.openai.com",
+      "filename": "OPENAI",
+      "display_title": "OPENAI",
+      "result_rep_sha256": "75ebb5b99700d4ffc155795c1e24d4398c0d4c58bccc5dffb09b92e4b3867371",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
