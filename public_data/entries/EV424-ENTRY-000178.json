@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000178",
+  "type": "doc_passport",
+  "source": "man-pages-6.8.pdf",
+  "source_label": "man-pages-6.8.pdf",
+  "url": "https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.8.pdf",
+  "issued_date": "2026-05-30T19:45:16+0900",
+  "fingerprint_sha256": "25c576dd0e743d255f13dcec139f6886b87683e25916c37858d739776e6c4943",
+  "result_rep_sha256": "77076c378aa4a67686ccd192b86e4bb23528e61d8e245c0424fa4bfad31428dd",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       man-pages-6.8.pdf\nISSUED_DATE  2026-05-30T19:45:16+0900\nFINGERPRINT  25c576dd0e743d255f13dcec139f6886b87683e25916c37858d739776e6c4943\nURL          https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.8.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=77076c378aa4a67686ccd192b86e4bb23528e61d8e245c0424fa4bfad31428dd\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

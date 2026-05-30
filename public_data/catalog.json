@@ -2070,6 +2070,18 @@
       "result_rep_sha256": "148c1d6ee16037eeb522df7ad726d6252dbc672e86be9f4a9a70d9e90b0279af",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000178",
+      "issued_kst": "2026-05-30T19:45:16+0900",
+      "month_id": "2026-05",
+      "url": "https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.8.pdf",
+      "source_domain": "www.kernel.org",
+      "filename": "man-pages-6.8.pdf",
+      "display_title": "man-pages-6.8",
+      "result_rep_sha256": "77076c378aa4a67686ccd192b86e4bb23528e61d8e245c0424fa4bfad31428dd",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
