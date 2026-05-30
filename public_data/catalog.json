@@ -2046,6 +2046,18 @@
       "result_rep_sha256": "75ebb5b99700d4ffc155795c1e24d4398c0d4c58bccc5dffb09b92e4b3867371",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000176",
+      "issued_kst": "2026-05-30T14:39:38+0900",
+      "month_id": "2026-05",
+      "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+      "source_domain": "refspecs.linuxfoundation.org",
+      "filename": "FHS_3_0",
+      "display_title": "FHS_3_0",
+      "result_rep_sha256": "cb1259772f6cb6a620dbfd82f51fe241688331518d5e9b6c73404a97f31b62e0",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

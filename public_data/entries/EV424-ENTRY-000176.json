@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000176",
+  "type": "doc_passport",
+  "source": "fhs-3.0.pdf",
+  "source_label": "FHS_3_0",
+  "url": "https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf",
+  "issued_date": "2026-05-30T14:39:38+0900",
+  "fingerprint_sha256": "53d239e569a2d7b31a74fa09d585368c0f5a164e4624723fa2894660dd10fd23",
+  "result_rep_sha256": "cb1259772f6cb6a620dbfd82f51fe241688331518d5e9b6c73404a97f31b62e0",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       fhs-3.0.pdf\nISSUED_DATE  2026-05-30T14:39:38+0900\nFINGERPRINT  53d239e569a2d7b31a74fa09d585368c0f5a164e4624723fa2894660dd10fd23\nURL          https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=cb1259772f6cb6a620dbfd82f51fe241688331518d5e9b6c73404a97f31b62e0\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
