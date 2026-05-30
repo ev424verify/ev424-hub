@@ -2058,6 +2058,18 @@
       "result_rep_sha256": "cb1259772f6cb6a620dbfd82f51fe241688331518d5e9b6c73404a97f31b62e0",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000177",
+      "issued_kst": "2026-05-30T18:30:06+0900",
+      "month_id": "2026-05",
+      "url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf",
+      "source_domain": "www.gnu.org",
+      "filename": "coreutils.pdf",
+      "display_title": "coreutils",
+      "result_rep_sha256": "148c1d6ee16037eeb522df7ad726d6252dbc672e86be9f4a9a70d9e90b0279af",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

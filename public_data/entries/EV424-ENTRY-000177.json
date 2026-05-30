@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000177",
+  "type": "doc_passport",
+  "source": "coreutils.pdf",
+  "source_label": "coreutils.pdf",
+  "url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf",
+  "issued_date": "2026-05-30T18:30:06+0900",
+  "fingerprint_sha256": "4b57ce70e935dd7562b88ca17e938f24d4736c45c9cd12ed820a1f3e246bb7fe",
+  "result_rep_sha256": "148c1d6ee16037eeb522df7ad726d6252dbc672e86be9f4a9a70d9e90b0279af",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       coreutils.pdf\nISSUED_DATE  2026-05-30T18:30:06+0900\nFINGERPRINT  4b57ce70e935dd7562b88ca17e938f24d4736c45c9cd12ed820a1f3e246bb7fe\nURL          https://www.gnu.org/software/coreutils/manual/coreutils.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=148c1d6ee16037eeb522df7ad726d6252dbc672e86be9f4a9a70d9e90b0279af\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
