@@ -2082,6 +2082,18 @@
       "result_rep_sha256": "77076c378aa4a67686ccd192b86e4bb23528e61d8e245c0424fa4bfad31428dd",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000179",
+      "issued_kst": "2026-05-31T15:57:39+0900",
+      "month_id": "2026-05",
+      "url": "https://www.enisa.europa.eu/sites/default/files/2026-05/ENISA%20NIS360%202026.pdf",
+      "source_domain": "www.enisa.europa.eu",
+      "filename": "ENISA",
+      "display_title": "ENISA",
+      "result_rep_sha256": "cb9fb9e5b18d14baaaab6976f7a13c841940e0cc0b125e35d4e045a7a11c1f04",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000179",
+  "type": "doc_passport",
+  "source": "ENISA%20NIS360%202026.pdf",
+  "source_label": "ENISA",
+  "url": "https://www.enisa.europa.eu/sites/default/files/2026-05/ENISA%20NIS360%202026.pdf",
+  "issued_date": "2026-05-31T15:57:39+0900",
+  "fingerprint_sha256": "968a690f5cbd8c606eeb66d3a33169f12c20816463aa64aab68f6261f0c86022",
+  "result_rep_sha256": "cb9fb9e5b18d14baaaab6976f7a13c841940e0cc0b125e35d4e045a7a11c1f04",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       ENISA%20NIS360%202026.pdf\nISSUED_DATE  2026-05-31T15:57:39+0900\nFINGERPRINT  968a690f5cbd8c606eeb66d3a33169f12c20816463aa64aab68f6261f0c86022\nURL          https://www.enisa.europa.eu/sites/default/files/2026-05/ENISA%20NIS360%202026.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=cb9fb9e5b18d14baaaab6976f7a13c841940e0cc0b125e35d4e045a7a11c1f04\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
