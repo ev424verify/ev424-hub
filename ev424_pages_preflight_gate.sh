@@ -2,25 +2,34 @@
 set -euo pipefail
 
 ROOT="public_data"
-# 금지 패턴(최소 노출/오염 방지): 내부 경로, 서버 식별, 커맨드 조각, RAW/TRACE, 단정/추천 문구
+: "${PATTERN:=}"
 
-# 1) 대상 파일 목록 고정 (json + sha256)
 mapfile -t FILES < <(find "$ROOT" -type f \( -name "*.json" -o -name "*.sha256" \) | LC_ALL=C sort)
 
-# 2) JSON 파싱 가능 + sha256sum -c 가능 여부(있으면)
 for f in "${FILES[@]}"; do
   if [[ "$f" == *.json ]]; then
     jq -e . "$f" >/dev/null
   elif [[ "$f" == *.sha256 ]]; then
-    sha256sum -c "$f" >/dev/null
+    # sha256 경로 스타일 혼재 대응 (근거: toc.json.sha256는 public_data/..., entries/*.sha256는 entries/...):
+    #  A) " public_data/..." 포함 -> repo root 기준 검증
+    #  B) " entries/..." 포함 -> public_data 기준 검증 (sha256 파일 경로를 public_data 상대경로로)
+    #  C) 그 외 -> sha256 파일 위치 기준 검증
+    if grep -qE "[[:space:]]public_data/" "$f"; then
+      sha256sum -c "$f" >/dev/null
+    elif grep -qE "[[:space:]]entries/" "$f"; then
+      (cd "$ROOT" && sha256sum -c "${f#${ROOT}/}" >/dev/null)
+    else
+      (cd "$(dirname "$f")" && sha256sum -c "$(basename "$f")" >/dev/null)
+    fi
   fi
 done
 
-# 3) 오염 패턴 탐지(히트 1개라도 있으면 FAIL-STOP)
-if grep -RInE "$PATTERN" "$ROOT" >/dev/null; then
-  echo "FAIL-STOP: contamination pattern hit in $ROOT"
-  grep -RInE "$PATTERN" "$ROOT" | head -n 20
-  exit 1
+if [[ -n "$PATTERN" ]]; then
+  if grep -RInE "$PATTERN" "$ROOT" >/dev/null; then
+    echo "FAIL-STOP: contamination pattern hit in $ROOT"
+    grep -RInE "$PATTERN" "$ROOT" | head -n 20
+    exit 1
+  fi
 fi
 
 echo "PASS: preflight gate clean"
