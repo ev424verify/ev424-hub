@@ -54,6 +54,16 @@
       "counts": {
         "EVIDENCE": 34
       }
+    },
+    {
+      "month": "2026-06",
+      "href": "/public_data/index_2026-06.json",
+      "sha256": "7db211747e07eef30a5e18527ebd23d2f823aa54c264ee1cf483393f4fd000c7",
+      "sha256_file": "/public_data/index_2026-06.json.sha256",
+      "count": 1,
+      "counts": {
+        "EVIDENCE": 1
+      }
     }
   ],
   "rails": {

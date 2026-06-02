@@ -2094,6 +2094,12 @@
       "result_rep_sha256": "cb9fb9e5b18d14baaaab6976f7a13c841940e0cc0b125e35d4e045a7a11c1f04",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000180",
+      "title": "",
+      "issued_kst": "2026-06-02T20:12:35+0900",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-3.pdf"
     }
   ]
 }
