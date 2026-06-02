@@ -356,7 +356,8 @@
         for(const m of (toc?.months || [])){
           const href = m?.href || "";
           if(!href) continue;
-          const idx = await loadJSON("/public_data/" + href.replace(/^\/+/,""));
+          const url = href.startsWith("/public_data/") ? href : ("/public_data/" + href.replace(/^\/+/,""));
+            const idx = await loadJSON(url);
           monthIdxMap.set(href, idx);
 
           // count evidence-like entries
