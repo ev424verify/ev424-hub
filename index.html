@@ -748,7 +748,7 @@ function endLoading(seq){
         const monthIdxList = await Promise.all(months.map(async (m) => {
           const href = String(m?.href || "").trim();
           if (!href) return null;
-          const idxUrl = "/public_data/" + href.replace(/^\/+/, "");
+          const idxUrl = href.startsWith("/public_data/") ? href : ("/public_data/" + href.replace(/^\/+/, ""));
           const idx = await fetchJSON(idxUrl);
           return { month: m?.month || null, href, idxUrl, idx };
         }));
@@ -829,7 +829,7 @@ function endLoading(seq){
             const monthIdxListR = await Promise.all(months2.map(async (mm) => {
               const href2 = String(mm?.href || "").trim();
               if (!href2) return null;
-              const idxUrl2 = "/public_data/" + href2.replace(/^\/+/, "");
+              const idxUrl2 = href2.startsWith("/public_data/") ? href2 : ("/public_data/" + href2.replace(/^\/+/, ""));
               try { sessionStorage.removeItem("EV424:JSONCACHE:v2:" + idxUrl2); } catch (e) {}
               const idx2 = await fetchJSON(idxUrl2);
               return { month: mm?.month || null, href: href2, idxUrl: idxUrl2, idx: idx2 };
