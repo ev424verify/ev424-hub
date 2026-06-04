@@ -109,7 +109,7 @@ Stable reference entry:
 
 Recent public entry:
 
-- https://ev424verify.com/?q=EV424-ENTRY-000180
+- https://ev424verify.com/?q=EV424-ENTRY-000181
 
 ---
 
@@ -155,7 +155,7 @@ It is an integrity and reproducibility structure.
 | Entry | Source | Meaning |
 |---|---|---|
 | [EV424-ENTRY-000006](https://ev424verify.com/?q=EV424-ENTRY-000006) | NIST.SP.800-228.pdf | Stable reference entry with revalidation continuity |
-| [EV424-ENTRY-000180](https://ev424verify.com/?q=EV424-ENTRY-000180) | NIST.AI.100-2e2025.pdf | Recent public document passport example |
+| [EV424-ENTRY-000181](https://ev424verify.com/?q=EV424-ENTRY-000181) | ch1.pdf | Recent public document passport example |
 | [EV424-VIDEO-ENTRY-000002](https://ev424verify.com/video/?q=EV424-VIDEO-ENTRY-000002) | NIST video public projection | Video Passport v0.1 public evidence rail example |
 
 ---
