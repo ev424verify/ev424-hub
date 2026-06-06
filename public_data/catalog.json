@@ -2097,9 +2097,27 @@
     },
     {
       "entry_id": "EV424-ENTRY-000180",
-      "title": "",
       "issued_kst": "2026-06-02T20:12:35+0900",
-      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-3.pdf"
+      "month_id": "2026-06",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-3.pdf",
+      "source_domain": "nvlpubs.nist.gov",
+      "filename": "NIST.AI.800-3_2026.pdf",
+      "display_title": "NIST.AI.800-3_2026",
+      "result_rep_sha256": "6adee55307e5d6dbac5deb870180ba8eafb84b295b270bb5c321adae4221b4c4",
+      "has_receipt": true,
+      "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000181",
+      "issued_kst": "2026-06-03T11:21:46+0900",
+      "month_id": "2026-06",
+      "url": "https://www.imf.org/-/media/files/publications/esr/2025/english/ch1.pdf",
+      "source_domain": "www.imf.org",
+      "filename": "ch1.pdf",
+      "display_title": "ch1",
+      "result_rep_sha256": "fc3c14a62b237f85a8e98765fa5c638388af22c8ba944040e3907223d17fb172",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
