@@ -1,2 +1,7 @@
 bin/ffmpeg
 bin/
+public_docs/*.before_*.html
+public_docs/pdfviewer/*.before_*.html
+whitepaper.before_*.html
+whitepaper.before_*.html.sha256
+whitepaper.policy_*_*.sha256
