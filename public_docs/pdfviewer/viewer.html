@@ -1,196 +1,201 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="dark" />
-  <title>EV424 PDF Viewer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EV424 PDF Preview</title>
   <style>
-    :root{
-      --bg:#070b0e; --panel:#0f1720; --stroke:#22313f; --text:#e7edf6; --muted:#a6b3c3; --blue:#57a6ff;
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      background: #0b1116;
+      color: #111;
+      overflow: auto;
+      font-family: Arial, Helvetica, sans-serif;
     }
-    html,body{height:100%;margin:0;background:var(--bg);color:var(--text);font:14px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
-    *{box-sizing:border-box}
-    .bar{
-      position:fixed; top:0; left:0; right:0; z-index:10;
-      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
-      padding:10px 12px;
-      background:rgba(7,11,14,.92);
-      border-bottom:1px solid var(--stroke);
-      backdrop-filter: blur(6px);
+
+    body {
+      box-sizing: border-box;
     }
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:8px 10px; border-radius:12px;
-      border:1px solid var(--stroke); background:var(--panel);
-      color:var(--blue); text-decoration:none; user-select:none; cursor:pointer;
-      font-weight:700;
+
+    #toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 12px;
+      background: #ffffff;
+      border-bottom: 1px solid #d9e2d9;
+      color: #111;
     }
-    .btn:active{transform:translateY(1px)}
-    .meta{color:var(--muted); font-size:12px}
-    .spacer{flex:1}
-    .wrap{
-      position:fixed; top:58px; left:0; right:0; bottom:0;
-      overflow:auto;
-      padding:14px 12px 24px;
+
+    #status {
+      font-size: 13px;
+      color: #555;
     }
-    .stage{
-      max-width:980px;
-      margin:0 auto;
-      background:var(--panel);
-      border:1px solid var(--stroke);
-      border-radius:14px;
-      padding:10px;
+
+    #openOriginal {
+      color: #1b5e20;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      white-space: nowrap;
     }
-    canvas{display:block; width:100%; height:auto; background:#fff; border-radius:10px;}
-    .err{
-      max-width:980px; margin:16px auto; padding:14px;
-      border:1px solid #663; border-radius:14px; background:#201a10; color:#ffd;
-      white-space:pre-wrap;
+
+    #openOriginal:hover {
+      text-decoration: underline;
+    }
+
+    #viewerContainer {
+      width: 100%;
+      height: auto;
+      min-height: calc(100vh - 42px);
+      overflow-y: auto;
+      overflow-x: auto;
+      padding: 18px 0 34px;
+      background: #0b1116;
+    }
+
+    #pages {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .pageWrap {
+      width: min(96vw, 1040px);
+      background: #ffffff;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.35);
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #ffffff;
+    }
+
+    #error {
+      display: none;
+      margin: 20px;
+      padding: 14px;
+      background: #fff4f4;
+      border: 1px solid #f0b4b4;
+      color: #7a0000;
+      border-radius: 10px;
+      white-space: pre-wrap;
     }
   </style>
-  <script src="/public_docs/pdfjs/build/pdf.min.js"></script>
 </head>
 <body>
-  <div class="bar">
-    <button class="btn" id="prev">Prev</button>
-    <button class="btn" id="next">Next</button>
-    <span class="meta">Page <span id="p">-</span> / <span id="n">-</span></span>
-
-    <span class="spacer"></span>
-
-    <button class="btn" id="zoomOut">–</button>
-    <button class="btn" id="zoomIn">+</button>
-    <span class="meta" id="z">fit</span>
+  <div id="toolbar">
+    <div id="status">Loading PDF...</div>
+    <a id="openOriginal" href="#" rel="noopener">Open original PDF</a>
   </div>
 
-  <div class="wrap">
-    <div id="err" class="err" style="display:none;"></div>
-    <div class="stage">
-      <canvas id="c"></canvas>
-    </div>
+  <div id="viewerContainer">
+    <div id="error"></div>
+    <div id="pages"></div>
   </div>
 
+  <script src="/public_docs/pdfjs/build/pdf.js"></script>
   <script>
-  (function(){
-    // Worker
-    if (window.pdfjsLib && pdfjsLib.GlobalWorkerOptions) {
-      pdfjsLib.GlobalWorkerOptions.workerSrc = "/public_docs/pdfjs/build/pdf.worker.min.js";
-    }
+    (function () {
+      "use strict";
 
-    var qs = new URLSearchParams(location.search);
-    var file = qs.get("file");          // required (URL-encoded)
-    var pageParam = parseInt(qs.get("page") || "1", 10);
+      var params = new URLSearchParams(window.location.search);
+      var file = params.get("file");
 
-    var err = document.getElementById("err");
-    function showErr(msg){
-      err.style.display = "block";
-      err.textContent = msg;
-    }
-    if(!file){
-      showErr("Missing ?file=... parameter");
-      return;
-    }
+      var status = document.getElementById("status");
+      var openOriginal = document.getElementById("openOriginal");
+      var pages = document.getElementById("pages");
+      var error = document.getElementById("error");
 
-    // Normalize: allow absolute /relative
-    try { file = decodeURIComponent(file); } catch(e){}
-    if(file[0] !== "/") file = "/" + file;
+      function showError(message) {
+        error.style.display = "block";
+        error.textContent = message;
+        status.textContent = "PDF preview error";
+      }
 
-    var canvas = document.getElementById("c");
-    var ctx = canvas.getContext("2d", { alpha:false });
+      if (!file) {
+        showError("Missing PDF file parameter.");
+        return;
+      }
 
-    var btnPrev = document.getElementById("prev");
-    var btnNext = document.getElementById("next");
-    var btnZI = document.getElementById("zoomIn");
-    var btnZO = document.getElementById("zoomOut");
+      openOriginal.href = file;
 
-    var elP = document.getElementById("p");
-    var elN = document.getElementById("n");
-    var elZ = document.getElementById("z");
+      if (!window.pdfjsLib) {
+        showError("PDF.js library was not loaded.");
+        return;
+      }
 
-    var pdfDoc = null;
-    var pageNum = Math.max(1, pageParam || 1);
-    var renderTask = null;
-    var zoomMul = 1.0; // user multiplier on top of fit-width
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "/public_docs/pdfjs/build/pdf.worker.js";
 
-    function fitScale(page){
-      var viewport = page.getViewport({ scale: 1 });
-      var stage = document.querySelector(".stage");
-      var avail = stage.clientWidth - 20; // padding slack
-      var s = avail / viewport.width;
-      // clamp
-      if (s < 0.25) s = 0.25;
-      if (s > 3.0) s = 3.0;
-      return s * zoomMul;
-    }
+      function pageTargetWidth() {
+        return Math.min(window.innerWidth * 0.96, 1040);
+      }
 
-    function render(){
-      if(!pdfDoc) return;
-      pdfDoc.getPage(pageNum).then(function(page){
-        if(renderTask){ try{ renderTask.cancel(); }catch(e){} }
+      function renderPage(pdf, pageNumber) {
+        return pdf.getPage(pageNumber).then(function (page) {
+          var initialViewport = page.getViewport({ scale: 1 });
+          var targetWidth = pageTargetWidth();
+          var scale = targetWidth / initialViewport.width;
+          var viewport = page.getViewport({ scale: scale });
 
-        var scale = fitScale(page);
-        var viewport = page.getViewport({ scale: scale });
+          var wrap = document.createElement("div");
+          wrap.className = "pageWrap";
 
-        // HiDPI
-        var dpr = window.devicePixelRatio || 1;
-        canvas.width = Math.floor(viewport.width * dpr);
-        canvas.height = Math.floor(viewport.height * dpr);
-        canvas.style.width = Math.floor(viewport.width) + "px";
-        canvas.style.height = Math.floor(viewport.height) + "px";
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+          var canvas = document.createElement("canvas");
+          var context = canvas.getContext("2d", { alpha: false });
 
-        elP.textContent = String(pageNum);
-        elN.textContent = String(pdfDoc.numPages);
-        elZ.textContent = (zoomMul === 1.0 ? "fit" : ("x" + zoomMul.toFixed(2)));
+          var outputScale = window.devicePixelRatio || 1;
 
-        renderTask = page.render({ canvasContext: ctx, viewport: viewport });
-        return renderTask.promise;
-      }).catch(function(e){
-        showErr(String(e && e.message ? e.message : e));
+          canvas.width = Math.floor(viewport.width * outputScale);
+          canvas.height = Math.floor(viewport.height * outputScale);
+          canvas.style.width = Math.floor(viewport.width) + "px";
+          canvas.style.height = Math.floor(viewport.height) + "px";
+
+          context.setTransform(outputScale, 0, 0, outputScale, 0, 0);
+
+          wrap.appendChild(canvas);
+          pages.appendChild(wrap);
+
+          return page.render({
+            canvasContext: context,
+            viewport: viewport
+          }).promise;
+        });
+      }
+
+      pdfjsLib.getDocument(file).promise.then(function (pdf) {
+        status.textContent = "Loading " + pdf.numPages + " page(s)...";
+
+        var chain = Promise.resolve();
+
+        for (var i = 1; i <= pdf.numPages; i += 1) {
+          (function (pageNumber) {
+            chain = chain.then(function () {
+              status.textContent = "Rendering page " + pageNumber + " / " + pdf.numPages;
+              return renderPage(pdf, pageNumber);
+            });
+          })(i);
+        }
+
+        return chain.then(function () {
+          status.textContent = "Preview ready · " + pdf.numPages + " page(s)";
+        });
+      }).catch(function (err) {
+        showError(String(err && err.message ? err.message : err));
       });
-    }
-
-    function clampPage(){
-      if(!pdfDoc) return;
-      if(pageNum < 1) pageNum = 1;
-      if(pageNum > pdfDoc.numPages) pageNum = pdfDoc.numPages;
-    }
-
-    btnPrev.addEventListener("click", function(){
-      if(!pdfDoc) return;
-      pageNum -= 1; clampPage(); render();
-      history.replaceState(null,"", "?file=" + encodeURIComponent(file) + "&page=" + pageNum);
-    });
-    btnNext.addEventListener("click", function(){
-      if(!pdfDoc) return;
-      pageNum += 1; clampPage(); render();
-      history.replaceState(null,"", "?file=" + encodeURIComponent(file) + "&page=" + pageNum);
-    });
-    btnZI.addEventListener("click", function(){
-      zoomMul = Math.min(2.0, zoomMul * 1.15);
-      render();
-    });
-    btnZO.addEventListener("click", function(){
-      zoomMul = Math.max(0.6, zoomMul / 1.15);
-      render();
-    });
-
-    // Re-render on resize
-    var t = null;
-    window.addEventListener("resize", function(){
-      clearTimeout(t);
-      t = setTimeout(render, 120);
-    });
-
-    pdfjsLib.getDocument({ url: file }).promise.then(function(pdf){
-      pdfDoc = pdf;
-      clampPage();
-      render();
-    }).catch(function(e){
-      showErr("Failed to load PDF:\n" + file + "\n\n" + String(e && e.message ? e.message : e));
-    });
-  })();
+    })();
   </script>
 </body>
 </html>

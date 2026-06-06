@@ -20,7 +20,7 @@
     .card{background:var(--panel);border:1px solid var(--stroke);border-radius:14px;padding:12px;}
     .btn{display:inline-block;padding:8px 12px;border-radius:12px;border:1px solid var(--stroke);color:var(--blue);text-decoration:none;user-select:none;}
     .btn:active{transform:translateY(1px);}
-    .viewer{width:100%;height:78vh;border:1px solid var(--stroke);border-radius:14px;background:#0b1116;}
+    .viewer{width:100%;height:calc(100vh - 180px);min-height:980px;border:1px solid var(--stroke);border-radius:14px;background:#0b1116;overflow:auto;}
   </style>
 </head>
 <body class="">
@@ -39,8 +39,8 @@
 
 
     <!-- Inline preview: custom viewer (mobile-safe) -->
-    <iframe id="docFrame" class="viewer"
-      src="/public_docs/pdfviewer/viewer.html?file=%2Fpublic_docs%2Fidentity%2FEV424_Identity_SSOT_EN.pdf"
+    <iframe scrolling="yes" id="docFrame" class="viewer"
+      src="/public_docs/pdfviewer/viewer.html?file=%2Fpublic_docs%2Fopen-page1%2FEV424_Public_Docs_Open_Page1_2026-06-06T175619%2B0900_BASEW_V1.pdf#page=1&zoom=page-width&pagemode=none"
       title="EV424 Public Doc"></iframe>
     </div>
 
@@ -52,20 +52,20 @@
     var c = document.getElementById("openPage3");
     var d = document.getElementById("openPage4");
       // Page mapping (full-view targets)
-    var P1 = "/public_docs/identity/EV424_Identity_SSOT_EN.pdf";
-    var P2 = "/public_docs/summary/EV424_Product_Summary_1Page_2026-01.pdf";
-    var P3 = "/public_docs/page3/EV424_Page3.pdf?v=6b73d1d3469721e4bf32b89e086b3aedd861fd954058004a7624051c93c00113";
-    var P4 = "/public_docs/usecase-qa/";
+    var P1 = "/public_docs/open-page1/EV424_Public_Docs_Open_Page1_2026-06-06T175619+0900_BASEW_V1.pdf";
+    var P2 = "/public_docs/open-page2/EV424_Public_Docs_Open_Page2_2026-06-06T175619+0900_BASEW_V1.pdf";
+    var P3 = "/public_docs/open-page3/EV424_Public_Docs_Open_Page3_2026-06-06T175619+0900_BASEW_V1.pdf";
+    var P4 = "/public_docs/open-page4/EV424_Public_Docs_Open_Page4_2026-06-06T175619+0900_BASEW_V1.pdf";
       // Inline preview uses pdf.js viewer
     var VIEWER = "/public_docs/pdfviewer/viewer.html?file=";
-    function v(p){ return VIEWER + encodeURIComponent(p); }
+    function v(p){ return VIEWER + encodeURIComponent(p) + "#page=1&zoom=page-width&pagemode=none"; }
     function setInline(p){ if(frame) frame.src = v(p); }
 
-    // Buttons: full view in new tab (keep current behavior)
-    if(a){ a.addEventListener("click", function(e){ e.preventDefault(); window.open(P1, "_blank", "noopener"); }); }
-    if(b){ b.addEventListener("click", function(e){ e.preventDefault(); window.open(P2, "_blank", "noopener"); }); }
-    if(c){ c.addEventListener("click", function(e){ e.preventDefault(); window.open(P3, "_blank", "noopener"); }); }
-    if(d){ d.addEventListener("click", function(e){ e.preventDefault(); window.open(P4, "_blank", "noopener"); }); }
+    // Buttons: inline scroll-view through pdf.js viewer
+    if(a){ a.addEventListener("click", function(e){ e.preventDefault(); setInline(P1); }); }
+    if(b){ b.addEventListener("click", function(e){ e.preventDefault(); setInline(P2); }); }
+    if(c){ c.addEventListener("click", function(e){ e.preventDefault(); setInline(P3); }); }
+    if(d){ d.addEventListener("click", function(e){ e.preventDefault(); setInline(P4); }); }
       // Default inline preview
     setInline(P1);
   })();

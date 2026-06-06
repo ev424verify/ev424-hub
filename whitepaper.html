@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>EV424 Whitepaper (RAW)</title>
+  <title>정책 및 백서</title>
   <style>
     :root{--bd:#cfd8dc;--btn:#1b5e20;}
     body{margin:0;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;background:#ffffff;color:#000}
@@ -21,15 +21,13 @@
 <body>
   <div class="wrap">
     <div class="top">
-      <div class="title">EV424 Whitepaper (RAW, EN-only)</div>
+      <div class="title">정책 및 백서</div>
       <a class="btn" href="/index.html">Back</a>
     </div>
 
     <div class="grid" id="wpTabs">
-      <button class="btn" id="openPage1" type="button">Open Page1</button>
-      <button class="btn" id="openPage2" type="button">Open Page2</button>
-      <button class="btn" id="openPage3" type="button">Open Page3</button>
-      <button class="btn" id="openPage4" type="button">Open Page4</button>
+      <button class="btn" id="openWhitepaper" type="button">백서</button>
+      <button class="btn" id="openPolicy" type="button">정책</button>
     </div>
 
     <pre id="rawView">Loading...</pre>
@@ -37,11 +35,9 @@
 
 <script>
 (function(){
-  // SOURCE = latest rebuild dir (picked at deploy-time)
-  var P1 = "/public_docs/whitepaper/EV424_Whitepaper_Page1_EN.md";
-  var P2 = "/public_docs/whitepaper/EV424_Whitepaper_Page2_EN.md";
-  var P3 = "/public_docs/whitepaper/EV424_Whitepaper_Page3_EN.md";
-  var P4 = "/public_docs/whitepaper/EV424_Whitepaper_Page4_RAW_EN.md"; // composite raw
+    // SOURCE = existing public whitepaper markdown files
+    var WHITEPAPER = "/public_docs/whitepaper/EV424_Whitepaper_Page4_RAW_EN.md"; // composite raw
+    var POLICY = "/public_docs/page3/EV424_Page3_7D_ReVerification_Policy_RAW_EN_2026-06-06T203925+0900_BASEW_V1.md?v=76d863ddd29523e477dc5c5bc6f638e9d793600c66ccda3e5bdbccf6e2d89a38";
 
   var raw = document.getElementById("rawView");
   var tabs = document.getElementById("wpTabs");
@@ -69,13 +65,11 @@
     });
   }
 
-  document.getElementById("openPage1").onclick = function(){ show(P1,"openPage1"); };
-  document.getElementById("openPage2").onclick = function(){ show(P2,"openPage2"); };
-  document.getElementById("openPage3").onclick = function(){ show(P3,"openPage3"); };
-  document.getElementById("openPage4").onclick = function(){ show(P4,"openPage4"); };
+    document.getElementById("openWhitepaper").onclick = function(){ show(WHITEPAPER,"openWhitepaper"); };
+    document.getElementById("openPolicy").onclick = function(){ show(POLICY,"openPolicy"); };
 
   // default
-  show(P1,"openPage1");
+    show(WHITEPAPER,"openWhitepaper");
 })();
 </script>
 </body>
