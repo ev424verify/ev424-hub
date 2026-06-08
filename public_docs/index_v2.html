@@ -7,12 +7,19 @@
   <title>EV424 — Public Docs</title>
   <meta name="description" content="EV424 public documents viewer." />
   <style>
+    /* # Public docs mobile scroll render gate */
+
+    /* # Theme tokens */
     :root{--bg:#070b0e;--panel:#0f1720;--stroke:#22313f;--text:#e7edf6;--muted:#a6b3c3;--blue:#57a6ff;}
-    html,body{height:100%;margin:0;padding:0;overflow:hidden;overscroll-behavior:none;}
+
+    /* # Mobile scroll gate */
+    html,body{min-height:100%;margin:0;padding:0;overflow-x:hidden;overflow-y:auto;overscroll-behavior-y:auto;}
+
+    /* # Base layout */
     *{box-sizing:border-box}
-    body{background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;}
+    body{background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;min-height:100vh;}
     ::-webkit-scrollbar{width:0;height:0} *{scrollbar-width:none}
-    .wrap{max-width:980px;margin:32px auto;padding:0 16px;}
+    .wrap{max-width:980px;margin:32px auto;padding:0 16px 24px;}
     .h{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;}
     .h h1{font-size:22px;margin:0;}
     .h .m{color:var(--muted);font-size:13px;}
@@ -20,7 +27,19 @@
     .card{background:var(--panel);border:1px solid var(--stroke);border-radius:14px;padding:12px;}
     .btn{display:inline-block;padding:8px 12px;border-radius:12px;border:1px solid var(--stroke);color:var(--blue);text-decoration:none;user-select:none;}
     .btn:active{transform:translateY(1px);}
-    .viewer{width:100%;height:calc(100vh - 180px);min-height:980px;border:1px solid var(--stroke);border-radius:14px;background:#0b1116;overflow:auto;}
+
+    /* # Public docs iframe viewer */
+    .viewer{width:100%;height:78vh;height:78dvh;min-height:420px;border:1px solid var(--stroke);border-radius:14px;background:#0b1116;overflow:auto;-webkit-overflow-scrolling:touch;}
+
+    /* # Narrow viewport tuning */
+    @media (max-width:720px){
+      .wrap{margin:18px auto 24px;padding:0 12px 18px;}
+      .h{flex-direction:column;align-items:flex-start;gap:4px;margin-bottom:14px;}
+      .cards{gap:8px;margin:10px 0 14px;}
+      .card{padding:8px;}
+      .btn{padding:9px 10px;}
+      .viewer{height:72vh;height:72dvh;min-height:420px;border-radius:12px;}
+    }
   </style>
 </head>
 <body class="">
@@ -37,12 +56,11 @@
       <div class="card"><a class="btn notranslate" id="openPage4" href="#" translate="no" lang="en">Open Page4</a></div>
     </div>
 
-
     <!-- Inline preview: custom viewer (mobile-safe) -->
     <iframe scrolling="yes" id="docFrame" class="viewer"
       src="/public_docs/pdfviewer/viewer.html?file=%2Fpublic_docs%2Fopen-page1%2FEV424_Public_Docs_Open_Page1_2026-06-06T175619%2B0900_BASEW_V1.pdf#page=1&zoom=page-width&pagemode=none"
       title="EV424 Public Doc"></iframe>
-    </div>
+  </div>
 
   <script>
   (function(){
@@ -51,12 +69,14 @@
     var b = document.getElementById("openPage2");
     var c = document.getElementById("openPage3");
     var d = document.getElementById("openPage4");
-      // Page mapping (full-view targets)
+
+    // Page mapping (full-view paths)
     var P1 = "/public_docs/open-page1/EV424_Public_Docs_Open_Page1_2026-06-06T175619+0900_BASEW_V1.pdf";
     var P2 = "/public_docs/open-page2/EV424_Public_Docs_Open_Page2_2026-06-06T175619+0900_BASEW_V1.pdf";
     var P3 = "/public_docs/open-page3/EV424_Public_Docs_Open_Page3_2026-06-06T175619+0900_BASEW_V1.pdf";
     var P4 = "/public_docs/open-page4/EV424_Public_Docs_Open_Page4_2026-06-06T175619+0900_BASEW_V1.pdf";
-      // Inline preview uses pdf.js viewer
+
+    // Inline preview uses pdf.js viewer
     var VIEWER = "/public_docs/pdfviewer/viewer.html?file=";
     function v(p){ return VIEWER + encodeURIComponent(p) + "#page=1&zoom=page-width&pagemode=none"; }
     function setInline(p){ if(frame) frame.src = v(p); }
@@ -66,7 +86,8 @@
     if(b){ b.addEventListener("click", function(e){ e.preventDefault(); setInline(P2); }); }
     if(c){ c.addEventListener("click", function(e){ e.preventDefault(); setInline(P3); }); }
     if(d){ d.addEventListener("click", function(e){ e.preventDefault(); setInline(P4); }); }
-      // Default inline preview
+
+    // Default inline preview
     setInline(P1);
   })();
   </script>
