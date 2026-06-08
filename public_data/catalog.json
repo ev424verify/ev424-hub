@@ -2118,6 +2118,18 @@
       "result_rep_sha256": "fc3c14a62b237f85a8e98765fa5c638388af22c8ba944040e3907223d17fb172",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000182",
+      "issued_kst": "2026-06-08T15:47:33+0900",
+      "month_id": "2026-06",
+      "url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf",
+      "source_domain": "www.debian.org",
+      "filename": "debian-reference.en.pdf",
+      "display_title": "debian-reference.en",
+      "result_rep_sha256": "41d23e925f09960eefbd4895a3f9b0632ae62df592baa2ed6ca1bd50be07f742",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

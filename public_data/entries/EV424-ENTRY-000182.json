@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000182",
+  "type": "doc_passport",
+  "source": "debian-reference.en.pdf",
+  "source_label": "debian-reference.en.pdf",
+  "url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf",
+  "issued_date": "2026-06-08T15:47:33+0900",
+  "fingerprint_sha256": "af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963",
+  "result_rep_sha256": "41d23e925f09960eefbd4895a3f9b0632ae62df592baa2ed6ca1bd50be07f742",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       debian-reference.en.pdf\nISSUED_DATE  2026-06-08T15:47:33+0900\nFINGERPRINT  af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963\nURL          https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=41d23e925f09960eefbd4895a3f9b0632ae62df592baa2ed6ca1bd50be07f742\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
