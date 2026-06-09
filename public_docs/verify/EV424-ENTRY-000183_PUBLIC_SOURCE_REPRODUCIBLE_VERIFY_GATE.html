@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EV424 ENTRY 000183 Public Source Reproducible Verify Gate</title>
+<style>
+  :root { color-scheme: dark; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #0b0f14;
+    color: #f5f7fb;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px 14px 40px;
+  }
+  h1, h2, p {
+    overflow-wrap: anywhere;
+  }
+  .card {
+    border: 1px solid #2a3441;
+    border-radius: 14px;
+    padding: 14px;
+    margin: 14px 0;
+    background: #111823;
+  }
+  .mono, code, pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+  pre {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 12px;
+    border-radius: 10px;
+    background: #05070a;
+    border: 1px solid #263241;
+  }
+  .ev424-blue { color: #4aa3ff; font-weight: 700; }
+  .gate-white { color: #f5f7fb; }
+  .pass-green { color: #4ade80; font-weight: 800; }
+</style>
+</head>
+<body>
+<main>
+<h1>EV424 ENTRY 000183</h1>
+<h2>Public Source Reproducible Verify Gate</h2>
+
+<p>QR: scan to open this public command guide.</p>
+
+<section class="card">
+<p><strong>EV424 ENTRY 000183 public reproducible verify QR</strong></p>
+<p class="mono">EV424|TYPE=RECEIPT|NO=000183|SHA12=8B3A74EA24B3|GATE=PUBLIC_SOURCE_REPRODUCIBLE_VERIFY</p>
+</section>
+
+<section class="card">
+<p><strong>TYPE:</strong> RECEIPT</p>
+<p><strong>OBJECT:</strong> NIST.AI.100-4.pdf</p>
+<p><strong>SOURCE:</strong> NIST official public PDF URL</p>
+<p><strong>EXPECTED SHA256:</strong></p>
+<p class="mono">a387a4977db70d65cdbc178c8b0cb8aa5dedb85fa80d6f473c244e2767a4fd54</p>
+<p><strong>SHA12:</strong> <span class="mono">8B3A74EA24B3</span></p>
+</section>
+
+<section class="card">
+<h2>Command guide</h2>
+<p>Paste the command below into a Linux/Unix terminal. It downloads the public source PDF, verifies the SHA256 checksum, then prints the EV424 public reproducible verify gate PASS label.</p>
+<pre>/usr/bin/env -C '/tmp' /bin/sh -c "/usr/bin/curl -fL -o 'NIST.AI.100-4.pdf' 'https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf' &amp;&amp; /usr/bin/printf '%s  %s\n' 'a387a4977db70d65cdbc178c8b0cb8aa5dedb85fa80d6f473c244e2767a4fd54' 'NIST.AI.100-4.pdf' | /usr/bin/sha256sum -c - &amp;&amp; /usr/bin/printf '\033[34m%s\033[97m%s\033[0m\n\033[32m%s\033[0m\n' 'EV424' '_PUBLIC_SOURCE_REPRODUCIBLE_VERIFY_GATE=' 'PASS'"</pre>
+</section>
+
+<section class="card">
+<h2>Expected output</h2>
+<pre>NIST.AI.100-4.pdf: OK
+<span class="ev424-blue">EV424</span><span class="gate-white">_PUBLIC_SOURCE_REPRODUCIBLE_VERIFY_GATE=</span>
+<span class="pass-green">PASS</span></pre>
+<p>Linux/GNU tool result: <strong>OK</strong></p>
+<p>EV424 gate result: <span class="pass-green">PASS</span></p>
+<p>OK is the native Linux/GNU sha256sum verification result.</p>
+<p>PASS is the EV424 public source reproducible verify gate result.</p>
+</section>
+</main>
+</body>
+</html>
