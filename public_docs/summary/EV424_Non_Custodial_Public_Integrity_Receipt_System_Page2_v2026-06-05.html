@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EV424 Page 2 — Non-Custodial Public Integrity Receipt System</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55;max-width:920px;margin:40px auto;padding:0 22px;color:#111;}
+    pre{white-space:pre-wrap;font-family:inherit;font-size:16px;}
+  </style>
+</head>
+<body>
+<pre>
+Page 2
+
+EV424 — Non-Custodial Public Integrity Receipt System
+Version / Date (KST): v2026-06-05 / 2026-06-05
+Maintained by: EV424 / Wonseo Lee
+
+Public Website: https://ev424verify.com
+Public Git Repository: https://github.com/ev424verify/ev424-hub
+
+Table of Contents
+
+1. Purpose
+2. Core Definition
+3. Current Public Baseline
+4. Public Reference Corpus
+5. Public Record Method
+6. What EV424 Verifies
+7. What EV424 Does Not Verify
+8. Why It Matters
+9. Public / Non-Public Boundary
+10. Verification Entry Point
+11. Article 0
+
+1. Purpose
+
+EV424 is a non-custodial public integrity receipt structure
+that records different public-source documents under the same
+SHA-256 receipt standard.
+
+EV424 does not store, mirror, or redistribute source documents.
+
+The purpose of EV424 is not to judge the content, meaning, status,
+legal effect, or policy validity of a document.
+
+Its purpose is to leave a public reference point showing
+what fingerprint was recorded from bytes observed at a referenced public source,
+and whether later retrieved bytes match that recorded fingerprint.
+
+The core value of EV424 is not a single document example.
+
+The core value is that different types of public documents can be recorded
+under the same receipt standard and checked later through the same public method.
+
+2. Core Definition
+
+EV424 generates public receipt evidence from source bytes observed
+within a referenced public source scope.
+
+Each receipt is structured around the following public record elements:
+
+- referenced public source URL
+- public receipt timestamp
+- source-byte SHA-256 fingerprint
+- receipt metadata
+- SHA-256 verification file
+- FINAL RECEIPT
+- entry JSON
+- monthly index JSON
+- weekly index JSON
+
+EV424 is not a document host, source archive, mirror site, publisher,
+certification body, or content-judgment system.
+
+3. Current Public Baseline
+
+As of 2026-06-05 KST, the EV424 public entry sequence has reached
+EV424-ENTRY-000181.
+
+The current public_data-derived active and indexed receipt counts
+must be verified from the current public record layer.
+
+At the time of this Page 2 correction boundary review, the observed
+public_data structure showed:
+
+- entry JSON count: 179
+- first entry ID: EV424-ENTRY-000001
+- last entry ID: EV424-ENTRY-000181
+- EV424-ENTRY-000181 present: yes
+- missing entry JSON within 000001 to 000181:
+  EV424-ENTRY-000014.json and EV424-ENTRY-000015.json
+- quarantined tombstone entries:
+  EV424-ENTRY-000128.json and EV424-ENTRY-000129.json
+
+This means EV424-ENTRY-000181 may be used as the reached entry sequence,
+but 181 must not be written as a verified active public receipt count
+until the public_data baseline is resolved.
+
+When new receipts are added or old public_data records are classified,
+the public baseline may be updated according to the public_data record layer.
+
+4. Public Reference Corpus
+
+The EV424 public record is not a single example or a demo page.
+
+As of 2026-06-05 KST, EV424 has recorded different types of public-source PDFs
+under the same non-custodial SHA-256 receipt standard.
+
+Even when the source, institution, subject, filename, or URL structure differs,
+EV424 records the same public receipt elements:
+
+- referenced public source URL
+- source-byte SHA-256 fingerprint
+- SHA-256 verification file
+- entry JSON
+- monthly index JSON
+- weekly index JSON
+- FINAL RECEIPT
+
+The key point is that the verification method does not change
+because the document type changes.
+
+EV424 does not create a different explanation format or verification format
+for each document.
+
+Because different public documents are recorded under the same receipt standard,
+users can inspect public records through the same method:
+
+- Entry ID
+- SHA-256 fingerprint
+- index layer
+- FINAL RECEIPT
+
+The public record layer forms a public integrity receipt reference corpus:
+different public-source PDFs recorded under one consistent EV424 receipt method.
+
+5. Public Record Method
+
+EV424 does not rely on claims alone.
+
+Public receipt evidence is recorded through public_data entry JSON,
+index JSON, SHA-256 verification files, and FINAL RECEIPT records.
+
+The public website reflects the public receipt surface.
+
+The public Git repository preserves the publication history
+of public artifacts.
+
+Before and after publication, public record consistency is checked
+through terminal verification.
+
+EV424 does not treat website display alone as public PASS.
+
+Public PASS requires the public Git record, website public surface,
+public_data verification records, SHA-256 verification files,
+FINAL RECEIPT, and terminal verification result to align under the same
+public receipt standard.
+
+6. What EV424 Verifies
+
+EV424 verifies byte identity and receipt reproducibility,
+not document meaning.
+
+Within a referenced receipt scope, EV424 checks:
+
+- what SHA-256 fingerprint was produced by the observed source bytes
+- whether later retrieved bytes match the recorded fingerprint
+- whether public entry, index, and receipt records remain traceable
+  under the same public receipt standard
+- whether a byte-level mismatch can be detected when the bytes differ
+
+If the later retrieved bytes match the recorded fingerprint,
+they can be treated as having the same byte identity as the recorded receipt.
+
+If they do not match, the later retrieved bytes are not identical
+to the recorded fingerprint.
+
+7. What EV424 Does Not Verify
+
+EV424 does not verify or guarantee:
+
+- truth of document content
+- interpretation of document meaning
+- validity of policies, standards, or reports
+- legal effect
+- safety
+- completeness
+- institutional endorsement
+- authorship certification
+- future availability of the same bytes at the same URL
+- investment, medical, legal, or political meaning
+- whether a document is socially correct or valid
+
+EV424 PASS does not mean content approval.
+
+EV424 PASS means that the defined public integrity verification procedure
+passed within the referenced receipt scope.
+
+8. Why It Matters
+
+Public PDFs may be replaced, corrected, moved, deleted, republished,
+version-changed, or disputed over time.
+
+In such cases, an EV424 receipt provides a public reference point
+for the following questions:
+
+- which public source URL was referenced
+- when the bytes were observed
+- what SHA-256 fingerprint those bytes produced
+- which entry and index recorded the receipt
+- whether later retrieved bytes are the same as, or different from,
+  the recorded fingerprint
+
+The advantage of EV424 is that different public document types
+can be recorded and checked under the same receipt standard.
+
+Even when the source, subject, PDF type, or URL structure differs,
+EV424 records the fingerprint, verification file, entry JSON,
+index JSON, and FINAL RECEIPT through the same method.
+
+EV424 aims to leave a comparable integrity reference point
+for public-source bytes without storing the original document.
+
+9. Public / Non-Public Boundary
+
+EV424 separates public records from the non-public operating area.
+
+The public surface displays public receipt evidence only.
+
+The non-public operating area is not part of the public artifact surface.
+
+10. Verification Entry Point
+
+Users can inspect public receipts through an Entry ID
+or SHA-256 fingerprint.
+
+A public receipt may expose:
+
+- source URL reference
+- entry JSON
+- index layer
+- SHA-256 verification file
+- FINAL RECEIPT
+
+The basic EV424 verification question is simple:
+
+"What fingerprint was recorded from bytes observed at this public source,
+and do the currently comparable bytes match that record?"
+
+11. Article 0
+
+Article 0 — EV424 Core Constitution
+
+Accuracy(4)=Truth(2)=Life(4)
+</pre>
+</body>
+</html>
