@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EV424 ENTRY 000182 Public Reproducible Verify Gate</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55;margin:24px;max-width:980px}
+    code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+    pre{white-space:pre-wrap;word-break:break-word;background:#111;color:#eee;padding:16px;border-radius:10px;overflow:auto}
+    .ok{color:#0a7}
+    .pass{color:#0a0;font-weight:700}
+    .muted{color:#666}
+    .box{border:1px solid #ddd;border-radius:12px;padding:16px;margin:16px 0}
+    .ai{font-size:14px;word-break:break-word;background:#f6f6f6;padding:12px;border-radius:8px}
+  </style>
+</head>
+<body>
+  <h1>EV424 ENTRY 000182</h1>
+  <h2>Public Source Reproducible Verify Gate</h2>
+
+  <div class="box">
+    <p><strong>QR</strong>: scan to open this public command guide.</p>
+    <img src="qr.png" alt="EV424 ENTRY 000182 public reproducible verify QR" width="220" height="220">
+    <p class="ai">EV424|TYPE=RECEIPT|NO=000182|SHA12=41D23E925F09|GATE=PUBLIC_SOURCE_REPRODUCIBLE_VERIFY</p>
+  </div>
+
+  <div class="box">
+    <p><strong>TYPE</strong>: RECEIPT</p>
+    <p><strong>OBJECT</strong>: debian-reference.en.pdf</p>
+    <p><strong>SOURCE</strong>: Debian official public PDF URL</p>
+    <p><strong>EXPECTED SHA256</strong>: <code>af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963</code></p>
+    <p><strong>SHA12</strong>: <code>41D23E925F09</code></p>
+  </div>
+
+  <h2>목차명령어</h2>
+  <p>아래 명령어를 Linux/Unix 터미널에 그대로 붙여넣으면 공개 원천에서 PDF를 다운로드하고, SHA256 검증 후 EV424 공개 재현 검증 게이트 PASS 라벨을 표시합니다.</p>
+
+  <pre><code>/usr/bin/env -C '/tmp' /bin/sh -c "/usr/bin/curl -fL -o 'debian-reference.en.pdf' 'https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf' &amp;&amp; /usr/bin/printf '%s  %s\n' 'af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963' 'debian-reference.en.pdf' | /usr/bin/sha256sum -c - &amp;&amp; /usr/bin/printf '\033[34m%s\033[97m%s\033[32m%s\033[0m\n' 'EV424' '_PUBLIC_SOURCE_REPRODUCIBLE_VERIFY_GATE=' 'PASS'"</code></pre>
+
+  <h2>기대 출력</h2>
+  <pre><code>debian-reference.en.pdf: OK
+EV424_PUBLIC_SOURCE_REPRODUCIBLE_VERIFY_GATE=PASS</code></pre>
+
+  <div class="box">
+    <p><strong>Linux/GNU tool result</strong>: <span class="ok">OK</span></p>
+    <p><strong>EV424 gate result</strong>: <span class="pass">PASS</span></p>
+    <p class="muted">OK는 Linux/GNU sha256sum 원검증 결과이고, PASS는 EV424 공개 원천 재현 검증 게이트 판정입니다.</p>
+  </div>
+
+</body>
+</html>
