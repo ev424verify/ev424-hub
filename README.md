@@ -109,7 +109,15 @@ Stable reference entry:
 
 Recent public entry:
 
-- https://ev424verify.com/?q=EV424-ENTRY-000182
+- https://ev424verify.com/?q=EV424-ENTRY-000183
+
+---
+
+## QR Delivery Rail
+
+A QR delivery rail helps third parties reproduce verification on Linux/Unix systems.
+
+Complete verification receipts remain available through the EV424 public verification page.
 
 ---
 
@@ -117,11 +125,14 @@ Recent public entry:
 
 PASS means:
 
+- Integrity, Reproducibility, and Non-Custody were reproduced together
 - the defined integrity procedure passed
 - the official source bytes were hashed
 - the recorded fingerprint was reproduced
 - the re-download match was checked
 - the receipt was closed under the EV424 procedure
+
+If any required component fails, PASS is not granted.
 
 PASS does **not** mean:
 
@@ -155,7 +166,7 @@ It is an integrity and reproducibility structure.
 | Entry | Source | Meaning |
 |---|---|---|
 | [EV424-ENTRY-000006](https://ev424verify.com/?q=EV424-ENTRY-000006) | NIST.SP.800-228.pdf | Stable reference entry with revalidation continuity |
-| [EV424-ENTRY-000182](https://ev424verify.com/?q=EV424-ENTRY-000182) | debian-reference.en.pdf | Recent public document passport example |
+| [EV424-ENTRY-000183](https://ev424verify.com/?q=EV424-ENTRY-000183) | NIST.AI.100-4.pdf | Recent public document passport example |
 | [EV424-VIDEO-ENTRY-000002](https://ev424verify.com/video/?q=EV424-VIDEO-ENTRY-000002) | NIST video public projection | Video Passport v0.1 public evidence rail example |
 
 ---
