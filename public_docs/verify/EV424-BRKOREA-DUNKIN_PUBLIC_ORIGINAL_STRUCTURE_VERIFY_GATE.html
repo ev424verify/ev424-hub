@@ -16,7 +16,7 @@ code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;word
 .grid{display:grid;grid-template-columns:1fr;gap:10px}
 .item{background:#ffffff;border:1px solid #d1d5db;border-radius:12px;padding:12px}
 .small{font-size:14px;color:#4b5563}
-.ev424-blue{color:#2563eb;font-weight:800}.gate-white{color:#111827}.pass-green{color:#16a34a;font-weight:900;font-size:1.35em;display:inline-block;margin-top:4px}
+.ev424-blue{color:#2563eb;font-weight:800}.gate-white{color:#111827}.pass-green{color:#16a34a;font-weight:900}
 hr{border:0;border-top:1px solid #334155;margin:22px 0}
 </style>
 </head>
@@ -24,7 +24,13 @@ hr{border:0;border-top:1px solid #334155;margin:22px 0}
 <main>
 <section>
 <h1>비알코리아(던킨) EV424 공개 원문 구조화 검증 예시</h1>
-<p><span class="badge">EV424_PUBLIC_STORE_RECORD_GATE=<br><span class="pass-green">PASS</span></span></p>
+<p><span class="badge">대표 검증 객체 OK</span></p>
+<div class="grid">
+<div class="item"><b>공식 원문 HTML</b><br><span class="mono">OBJECT_001_DUNKIN_STORE_PAGE.html</span> <span class="pass-green">OK</span></div>
+<div class="item"><b>원더스 강남 분리 JSON</b><br><span class="mono">OBJECT_001A_DK_WONDERS_GANGNAM_PUBLIC_STORE_RECORD.json</span> <span class="pass-green">OK</span></div>
+<div class="item"><b>체인 영수증</b><br><span class="mono">EV424_DK_WONDERS_GANGNAM_PUBLIC_STORE_RECORD_CHAIN_RECEIPT.txt</span> <span class="pass-green">OK</span></div>
+<div class="item"><b>PASS 게이트</b><br><span class="mono">EV424_DK_WONDERS_GANGNAM_PUBLIC_STORE_RECORD_PASS_GATE.txt</span> <span class="pass-green">OK</span></div>
+</div>
 <p>본 예시는 던킨 공식 홈페이지의 공개 매장 페이지에서 <b>원더스 강남</b> 단일 매장 기록을 분리하고, 그 결과가 <b>무결성·재현성·비보관</b> 기준으로 검증 가능함을 실제 파일과 해시(SHA256 기반 암호학적 디지털 지문)로 확인한 사례입니다.</p>
 <p><b>검증 범위:</b><br><span class="mono">던킨 공식 공개 매장 페이지 → 원더스 강남 단일 공개 매장 기록</span></p>
 <p class="small">본 예시는 던킨 전체 운영상태, 위생상태, 매출개선, 비용절감액을 검증한 것이 아닙니다. 해당 항목들은 기업 내부 원문 객체가 제공될 경우 같은 구조로 확장 검증할 수 있습니다.</p>
