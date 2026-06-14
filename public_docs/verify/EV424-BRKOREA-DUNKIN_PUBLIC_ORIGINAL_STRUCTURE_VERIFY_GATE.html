@@ -1,0 +1,148 @@
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>비알코리아(던킨) EV424 공개 원문 구조화 검증 예시</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.65;margin:0;background:#0b1020;color:#f5f7fb}
+main{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+section{background:#121a33;border:1px solid #28345c;border-radius:16px;padding:20px;margin:16px 0}
+h1{font-size:28px;line-height:1.25;margin:0 0 14px}
+h2{font-size:21px;margin:0 0 12px;color:#93c5fd}
+h3{font-size:17px;margin:18px 0 8px;color:#bbf7d0}
+code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;word-break:break-all}
+.badge{display:inline-block;background:#064e3b;color:#d1fae5;border:1px solid #34d399;border-radius:999px;padding:5px 10px;font-weight:700}
+.warn{background:#2a1f12;border-color:#7c4a03}
+.grid{display:grid;grid-template-columns:1fr;gap:10px}
+.item{background:#0f172a;border:1px solid #334155;border-radius:12px;padding:12px}
+.small{font-size:14px;color:#cbd5e1}
+.ev424-blue{color:#60a5fa;font-weight:800}.gate-white{color:#f8fafc}.pass-green{color:#22c55e;font-weight:900}
+hr{border:0;border-top:1px solid #334155;margin:22px 0}
+</style>
+</head>
+<body>
+<main>
+<section>
+<h1>비알코리아(던킨) EV424 공개 원문 구조화 검증 예시</h1>
+<p><span class="badge">EV424_PUBLIC_STORE_RECORD_GATE=PASS</span></p>
+<p>본 예시는 던킨 공식 홈페이지의 공개 매장 페이지에서 <b>원더스 강남</b> 단일 매장 기록을 분리하고, 그 결과가 <b>무결성·재현성·비보관</b> 기준으로 검증 가능함을 실제 파일과 해시(SHA256 기반 암호학적 디지털 지문)로 확인한 사례입니다.</p>
+<p><b>검증 범위:</b><br><span class="mono">던킨 공식 공개 매장 페이지 → 원더스 강남 단일 공개 매장 기록</span></p>
+<p class="small">본 예시는 던킨 전체 운영상태, 위생상태, 매출개선, 비용절감액을 검증한 것이 아닙니다. 해당 항목들은 기업 내부 원문 객체가 제공될 경우 같은 구조로 확장 검증할 수 있습니다.</p>
+</section>
+
+<section>
+<h2>왜 지금 EV424인가</h2>
+<p>AI로 자료가 빠르게 생성되고 유통되는 시대에는, “누가 더 많이 만들 수 있는가”보다 “누가 더 믿을 수 있는 검증체계를 갖추었는가”가 중요해집니다.</p>
+<p>EV424는 원문을 대신 주장하는 구조가 아니라, 원문 객체와 해시(SHA256 기반 암호학적 디지털 지문), 라벨, 체인 영수증, PASS 게이트를 통해 자료의 무결성·재현성·비보관 기준을 확인하는 구조입니다.</p>
+<p>이번 비알코리아(던킨) 예시는 던킨 공식 공개 매장 페이지에서 <b>원더스 강남</b> 단일 매장 기록을 분리하고, 그 결과가 검증 가능한 객체로 닫힐 수 있음을 보여주는 실제 공개 원문 기반 예시입니다.</p>
+</section>
+
+<section>
+<h2>이번 데모의 실제 확인 대상</h2>
+<div class="grid">
+<div class="item"><b>브랜드 참조</b><br>비알코리아 던킨</div>
+<div class="item"><b>공개 원문 출처</b><br>던킨 공식 홈페이지 매장 페이지</div>
+<div class="item"><b>매장명</b><br>원더스 강남</div>
+<div class="item"><b>STORECODE</b><br>21076</div>
+<div class="item"><b>주소</b><br>강남대로 373 (서초동, 홍우빌딩)</div>
+<div class="item"><b>전화번호</b><br>02-3475-1031</div>
+<div class="item"><b>공개 원문 필드 DIRECT_DIV</b><br>Y</div>
+<div class="item"><b>공개 운영시간</b><br>07:00 ~ 23:00 / 토·일·공휴일 07:00 ~ 22:30</div>
+<div class="item"><b>공개 휴무정보</b><br>연중무휴</div>
+<div class="item"><b>공개 좌표값</b><br>37.4960817, 127.0279393</div>
+</div>
+</section>
+
+<section>
+<h2>EV424가 이번 데모에서 검증한 것</h2>
+<h3>1. 무결성</h3>
+<p>각 파일이 처음 확정한 원문 또는 생성 기준파일과 1글자도 바뀌지 않았는지 확인했습니다. 해시(SHA256)는 그 일치 여부를 확인하는 암호학적 디지털 지문입니다.</p>
+<h3>2. 재현성</h3>
+<p>던킨 공식 공개 매장 페이지 원문에서 같은 기준으로 원더스 강남 매장 기록을 다시 분리했을 때, 기존 JSON 객체와 바이트 단위로 동일한지 확인했습니다.</p>
+<p class="mono">RECONSTRUCT_BYTES_MATCH=YES</p>
+<h3>3. 비보관</h3>
+<p>EV424가 기업 내부 원본을 보관하거나 원본 권위를 대체하는 구조가 아니라, 원문 출처·해시·라벨·명령·영수증·PASS 게이트를 통해 검증 경로를 남기는 구조임을 확인했습니다.</p>
+</section>
+
+<section>
+<h2>이번 데모에서 확인한 실제 수치</h2>
+<ul>
+<li>공식 원문 HTML 크기: <span class="mono">198188 bytes</span></li>
+<li>원더스 강남 분리 JSON 크기: <span class="mono">1476 bytes</span></li>
+<li>PASS 대상 묶음: <span class="mono">6개 객체 + 6개 sidecar = 12개</span></li>
+<li>전체 디렉터리 경계: <span class="mono">17개 파일</span></li>
+<li>모든 sidecar 검증 결과: <span class="mono">OK</span></li>
+<li>원더스 강남 JSON 재구성 결과: <span class="mono">RECONSTRUCT_BYTES_MATCH=YES</span></li>
+</ul>
+<h3>주요 해시값</h3>
+<p>원더스 강남 분리 JSON SHA256:<br><span class="mono">970438657128eb9411119de7be82315ccd89afa987f29287708474fa9fc3117d</span></p>
+<p>PASS 게이트 SHA256:<br><span class="mono">fff3a74768215709ea46d22904444b7361a05601f318a7dc9d2c490662cc83e4</span></p>
+<p>최종 매니페스트 SHA256:<br><span class="mono">9283825d6c0f488321aa055d286f512bc67f6fb5df17870e5dd8afe4cbaca093</span></p>
+<p>최종 매니페스트 SHA12:<br><span class="mono">9283825d6c0f</span></p>
+</section>
+
+<section>
+<h2>EV424 협업 시 비교 8개 항목</h2>
+
+<h3>1. 기업에 주는 직접 이득</h3>
+<p><b>현시점:</b> 문제가 발생했을 때 기록 확정 시점, 변경 여부, 재확인 가능성을 설명하기 위해 반복적인 확인 비용이 발생할 수 있습니다.</p>
+<p><b>EV424 협업 시:</b> 원문 기록을 객체 단위로 고정하고 해시·라벨·체인 영수증·PASS 게이트로 묶어, 처음 확정한 파일과 현재 파일이 같은지 빠르게 확인할 수 있습니다.</p>
+
+<h3>2. 무엇을 줄여주는가</h3>
+<p><b>현시점:</b> 원본 찾기, 담당자 확인, 파일 변경 여부 확인, 부서 간 반복 설명, 사후 소명 자료 정리 비용이 발생할 수 있습니다.</p>
+<p><b>EV424 협업 시:</b> 원문 객체별 SHA256 기반 디지털 지문으로 파일 동일성 확인 구조를 만듭니다.</p>
+
+<h3>3. 어디에 바로 적용되는가</h3>
+<p><b>현시점:</b> 이번 데모는 던킨 공식 홈페이지 공개 매장 페이지에 적용했습니다.</p>
+<p><b>EV424 협업 시:</b> 원문이 제공되면 위생점검표, 냉장·냉동 온도기록, 폐기·유통기한 기록, 슈퍼바이저 보고서, CS 클레임, 매출·비용 자료, 내부관리 기록으로 확장 가능합니다.</p>
+
+<h3>4. 기존 시스템을 바꾸지 않아도 되는가</h3>
+<p><b>현시점:</b> 기업은 이미 홈페이지, 내부 시스템, CP, VOC, 점검 시스템, 보고 체계 등을 운영하고 있을 수 있습니다.</p>
+<p><b>EV424 협업 시:</b> 기존 시스템을 대체하지 않고, 기존 시스템에서 나온 원문 객체 위에 검증층을 추가합니다.</p>
+
+<h3>5. EV424는 어떤 구조인가</h3>
+<p><b>현시점:</b> 단순 저장·캡처·백업만으로는 처음 파일과 지금 파일이 같은지, 같은 기준으로 다시 확인 가능한지, 외부가 원본을 보관하지 않고도 검증 가능한지 자동 설명되지 않습니다.</p>
+<p><b>EV424 협업 시:</b> 무결성·재현성·비보관을 함께 닫는 검증 구조를 제공합니다.</p>
+
+<h3>6. 기업 입장에서 왜 안전한가</h3>
+<p><b>현시점:</b> 외부 검증을 위해 원본을 넘기면 보관, 유출, 권한, 책임 문제가 발생할 수 있습니다.</p>
+<p><b>EV424 협업 시:</b> 원본은 원래의 출처 또는 기업 내부 시스템에 남고, EV424는 해시·라벨·영수증·재현 경로 중심으로 작동합니다.</p>
+
+<h3>7. 기존 방식 대비 차이</h3>
+<p><b>현시점:</b> 문서관리나 로그관리만으로는 PASS 범위와 제외 범위를 명확히 나누기 어렵습니다.</p>
+<p><b>EV424 협업 시:</b> 원문 객체, 생성 기준파일, SHA256, 라벨, 체인 영수증, PASS 게이트, 최종 매니페스트, 제외 경계노트로 검증 범위를 닫습니다.</p>
+
+<h3>8. 도입 판단 요약 및 미래 확장</h3>
+<p><b>현시점:</b> 이번 데모는 공개 원문 1개에서 단일 매장 기록 1개를 분리해 검증 가능하게 닫은 예시입니다.</p>
+<p><b>EV424 협업 시:</b> 기업 내부 원문이 제공되면 매장별·지역별·브랜드별 원문 검증 구조로 확장할 수 있습니다.</p>
+</section>
+
+<section>
+<h2>비용 효과 산식</h2>
+<p>파일럿 전에는 비용 절감액을 확정할 수 없습니다. 다만 계산 구조는 다음처럼 설정할 수 있습니다.</p>
+<p class="mono">연간 절감 후보 = 적용 매장 수 × 매장당 월 반복 누수 차단액 × 12개월</p>
+<p>예시:</p>
+<p class="mono">2,400개 매장 × 월 70,000원 × 12개월 = 연 2,016,000,000원</p>
+<p class="small">위 수치는 확정 효과가 아니라, 내부 파일럿에서 실제 적용 매장 수와 반복 누수 차단액을 확인하기 위한 계산 예시입니다.</p>
+</section>
+
+<section class="warn">
+<h2>이번 데모에서 검증하지 않은 항목</h2>
+<p>내부 운영기록, 위생상태, 온도기록, 폐기기록, CS 클레임, 매출·비용 자료는 이번 데모 범위가 아닙니다.</p>
+<p>그러나 해당 항목들은 EV424 구조로 검증 불가능한 것이 아닙니다. 이번 공개 데모에 해당 원문 객체가 제공되지 않았기 때문에 검증 범위에 포함하지 않은 것입니다.</p>
+<p>법적 책임 여부는 EV424가 단독 판단하는 영역이 아닙니다. EV424는 법적 판단에 필요한 원문 기록의 무결성·재현성·비보관 검증 구조를 제공합니다.</p>
+</section>
+
+<section>
+<h2>최종 정리</h2>
+<p>이번 예시는 “던킨 전체를 검증했다”는 뜻이 아닙니다.</p>
+<p>정확한 의미는, 던킨 공식 공개 매장 페이지 원문에서 <b>원더스 강남</b> 단일 매장 기록을 분리하고, 그 결과가 무결성·재현성·비보관 기준으로 검증 가능하다는 것을 실제 파일과 해시(SHA256 기반 암호학적 디지털 지문)로 확인한 EV424 공개 원문 구조화 예시입니다.</p>
+<p><b>본 데모의 최종 범위:</b><br><span class="mono">던킨 공식 공개 매장 페이지 → 원더스 강남 단일 공개 매장 기록 → 무결성·재현성·비보관 구조 검증</span></p>
+<p><b>본 데모의 최종 게이트:</b><br><span class="mono"><span class="ev424-blue">EV424</span><span class="gate-white">_PUBLIC_STORE_RECORD_GATE=</span><span class="pass-green">PASS</span></span></p>
+<hr>
+<p class="mono">AI_READ=EV424|TYPE=PUBLIC_ORIGINAL_DEMO|BRAND=DUNKIN|OBJECT=DK_WONDERS_GANGNAM|MANIFEST_SHA12=9283825D6C0F|GATE=PUBLIC_STORE_RECORD_VERIFY</p>
+<p class="mono">정확성(4)=진실(2)=생명(4)</p>
+</section>
+</main>
+</body>
+</html>
