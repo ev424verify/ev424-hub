@@ -169,6 +169,13 @@
         "CHAIN"
       ],
       "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-06-14T15:40:19+09:00",
+      "final_status": "FAIL",
+      "fail_reason": "CHANGE_DETECTED",
+      "prev_ledger_sha256": "57eff9ff13e1c7f28cf3b4b4a8fe4e9ca260066a938e671aee62d5de8dc6e1d5",
+      "public_surface": "EV424-ENTRY-000006 FAIL REASON=CHANGE_DETECTED OBSERVED_AT=2026-06-14T15:40:19+09:00"
     }
   ]
 }
