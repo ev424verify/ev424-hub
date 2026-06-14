@@ -4,19 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>비알코리아(던킨) EV424 공개 원문 구조화 검증 예시</title>
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.65;margin:0;background:#0b1020;color:#f5f7fb}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;line-height:1.65;margin:0;background:#ffffff;color:#111827}
 main{max-width:980px;margin:0 auto;padding:28px 18px 60px}
-section{background:#121a33;border:1px solid #28345c;border-radius:16px;padding:20px;margin:16px 0}
+section{background:#f8fafc;border:1px solid #d1d5db;border-radius:16px;padding:20px;margin:16px 0}
 h1{font-size:28px;line-height:1.25;margin:0 0 14px}
-h2{font-size:21px;margin:0 0 12px;color:#93c5fd}
-h3{font-size:17px;margin:18px 0 8px;color:#bbf7d0}
+h2{font-size:21px;margin:0 0 12px;color:#1d4ed8}
+h3{font-size:17px;margin:18px 0 8px;color:#047857}
 code,.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;word-break:break-all}
-.badge{display:inline-block;background:#064e3b;color:#d1fae5;border:1px solid #34d399;border-radius:999px;padding:5px 10px;font-weight:700}
-.warn{background:#2a1f12;border-color:#7c4a03}
+.badge{display:inline-block;background:#ecfdf5;color:#065f46;border:1px solid #22c55e;border-radius:14px;padding:8px 12px;font-weight:700;max-width:100%;overflow-wrap:anywhere}
+.warn{background:#fffbeb;border-color:#f59e0b}
 .grid{display:grid;grid-template-columns:1fr;gap:10px}
-.item{background:#0f172a;border:1px solid #334155;border-radius:12px;padding:12px}
-.small{font-size:14px;color:#cbd5e1}
-.ev424-blue{color:#60a5fa;font-weight:800}.gate-white{color:#f8fafc}.pass-green{color:#22c55e;font-weight:900}
+.item{background:#ffffff;border:1px solid #d1d5db;border-radius:12px;padding:12px}
+.small{font-size:14px;color:#4b5563}
+.ev424-blue{color:#2563eb;font-weight:800}.gate-white{color:#111827}.pass-green{color:#16a34a;font-weight:900;font-size:1.35em;display:inline-block;margin-top:4px}
 hr{border:0;border-top:1px solid #334155;margin:22px 0}
 </style>
 </head>
@@ -24,7 +24,7 @@ hr{border:0;border-top:1px solid #334155;margin:22px 0}
 <main>
 <section>
 <h1>비알코리아(던킨) EV424 공개 원문 구조화 검증 예시</h1>
-<p><span class="badge">EV424_PUBLIC_STORE_RECORD_GATE=PASS</span></p>
+<p><span class="badge">EV424_PUBLIC_STORE_RECORD_GATE=<br><span class="pass-green">PASS</span></span></p>
 <p>본 예시는 던킨 공식 홈페이지의 공개 매장 페이지에서 <b>원더스 강남</b> 단일 매장 기록을 분리하고, 그 결과가 <b>무결성·재현성·비보관</b> 기준으로 검증 가능함을 실제 파일과 해시(SHA256 기반 암호학적 디지털 지문)로 확인한 사례입니다.</p>
 <p><b>검증 범위:</b><br><span class="mono">던킨 공식 공개 매장 페이지 → 원더스 강남 단일 공개 매장 기록</span></p>
 <p class="small">본 예시는 던킨 전체 운영상태, 위생상태, 매출개선, 비용절감액을 검증한 것이 아닙니다. 해당 항목들은 기업 내부 원문 객체가 제공될 경우 같은 구조로 확장 검증할 수 있습니다.</p>
@@ -138,7 +138,7 @@ hr{border:0;border-top:1px solid #334155;margin:22px 0}
 <p>이번 예시는 “던킨 전체를 검증했다”는 뜻이 아닙니다.</p>
 <p>정확한 의미는, 던킨 공식 공개 매장 페이지 원문에서 <b>원더스 강남</b> 단일 매장 기록을 분리하고, 그 결과가 무결성·재현성·비보관 기준으로 검증 가능하다는 것을 실제 파일과 해시(SHA256 기반 암호학적 디지털 지문)로 확인한 EV424 공개 원문 구조화 예시입니다.</p>
 <p><b>본 데모의 최종 범위:</b><br><span class="mono">던킨 공식 공개 매장 페이지 → 원더스 강남 단일 공개 매장 기록 → 무결성·재현성·비보관 구조 검증</span></p>
-<p><b>본 데모의 최종 게이트:</b><br><span class="mono"><span class="ev424-blue">EV424</span><span class="gate-white">_PUBLIC_STORE_RECORD_GATE=</span><span class="pass-green">PASS</span></span></p>
+<p><b>본 데모의 최종 게이트:</b><br><span class="mono"><span class="ev424-blue">EV424</span><span class="gate-white">_PUBLIC_STORE_RECORD_GATE=</span><br><span class="pass-green">PASS</span></span></p>
 <hr>
 <p class="mono">AI_READ=EV424|TYPE=PUBLIC_ORIGINAL_DEMO|BRAND=DUNKIN|OBJECT=DK_WONDERS_GANGNAM|MANIFEST_SHA12=9283825D6C0F|GATE=PUBLIC_STORE_RECORD_VERIFY</p>
 <p class="mono">정확성(4)=진실(2)=생명(4)</p>
