@@ -3,7 +3,7 @@
   "issued_date": "2026-03-30T17:07:58+0900",
   "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/scaling-artificial-intelligence-in-health_77610b12/a436e12d-en.pdf",
   "fingerprint_sha256": "1e71a3daef00912f438ce62e83f7c6a7669bc02fe4635d4fcc2c0838dc020f15",
-  "revalidation_policy": "NONE",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
   "events": [
     {
       "observed_at_kst": "2026-04-06T17:07:58+09:00",
@@ -81,6 +81,39 @@
         "CHAIN"
       ],
       "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-06-15T11:14:59+09:00",
+      "final_status": "FAIL",
+      "prev_ledger_sha256": "77687c7530b1fe3ea38d8acadcde21174ec89fee6328cdcacdea7cfb8abe0ef0",
+      "fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "skip_reason": "OBJECT_ALREADY_FAILED_AND_FAIL_RECORD_EXISTS",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+      "http_code": "200",
+      "content_type": "application/pdf",
+      "effective_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/04/scaling-artificial-intelligence-in-health_77610b12/a436e12d-en.pdf",
+      "size": "1877087",
+      "magic": "%PDF-",
+      "expected_sha256": "1e71a3daef00912f438ce62e83f7c6a7669bc02fe4635d4fcc2c0838dc020f15",
+      "current_sha256": "719dbdf1aa91dda55a2ab5ccfedf6c19ea07df51dab4cb59147cc60b392389d5",
+      "expected_sha12": "1e71a3daef00",
+      "current_sha12": "719dbdf1aa91",
+      "public_surface": "EV424-ENTRY-000084 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=1e71a3daef00 CURRENT_SHA12=719dbdf1aa91 LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "revalidation_skip_after_fail_record": true,
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+  "last_fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+  "last_fail_one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+  "last_expected_sha12": "1e71a3daef00",
+  "last_current_sha12": "719dbdf1aa91",
+  "last_public_surface": "EV424-ENTRY-000084 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=1e71a3daef00 CURRENT_SHA12=719dbdf1aa91 LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00",
+  "fail_recorded_at_kst": "2026-06-15T11:14:59+09:00"
 }

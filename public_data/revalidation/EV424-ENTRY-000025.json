@@ -3,7 +3,7 @@
   "issued_date": "2026-02-17T19:35:34+0900",
   "source_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI(2026)782651_EN.pdf",
   "fingerprint_sha256": "55fde3822a3492aecf1930aaabbb95574186878991525d4d4dce912c8cbfcb7b",
-  "revalidation_policy": "NONE",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
   "events": [
     {
       "observed_at_kst": "2026-02-24T19:35:34+09:00",
@@ -136,6 +136,39 @@
         "CHAIN"
       ],
       "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-06-15T11:14:59+09:00",
+      "final_status": "FAIL",
+      "prev_ledger_sha256": "a3f34f69c4578a7f2b43f7cea2b3e095bb58b722c212f2000b17da37919e4e1b",
+      "fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "skip_reason": "OBJECT_ALREADY_FAILED_AND_FAIL_RECORD_EXISTS",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+      "http_code": "200",
+      "content_type": "application/pdf",
+      "effective_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/782651/EPRS_BRI(2026)782651_EN.pdf",
+      "size": "248193",
+      "magic": "%PDF-",
+      "expected_sha256": "55fde3822a3492aecf1930aaabbb95574186878991525d4d4dce912c8cbfcb7b",
+      "current_sha256": "e47e8c68d63cd3e539d62ab912255bd5a382aa6aa143dd8dd1bf9b910c47d6ea",
+      "expected_sha12": "55fde3822a34",
+      "current_sha12": "e47e8c68d63c",
+      "public_surface": "EV424-ENTRY-000025 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=55fde3822a34 CURRENT_SHA12=e47e8c68d63c LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "revalidation_skip_after_fail_record": true,
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+  "last_fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+  "last_fail_one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+  "last_expected_sha12": "55fde3822a34",
+  "last_current_sha12": "e47e8c68d63c",
+  "last_public_surface": "EV424-ENTRY-000025 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=55fde3822a34 CURRENT_SHA12=e47e8c68d63c LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00",
+  "fail_recorded_at_kst": "2026-06-15T11:14:59+09:00"
 }

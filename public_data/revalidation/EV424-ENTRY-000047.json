@@ -3,7 +3,7 @@
   "issued_date": "2026-03-11T11:47:50+0900",
   "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-03/ENISA%20Technical%20Advisory%20-%20Package_Managers_Final.pdf",
   "fingerprint_sha256": "be50dab618a9c87ce91cec4dc808043047d89d0f6514687888a64cb6d12e416f",
-  "revalidation_policy": "NONE",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
   "events": [
     {
       "observed_at_kst": "2026-03-18T11:47:50+09:00",
@@ -103,6 +103,39 @@
         "CHAIN"
       ],
       "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-06-15T11:14:59+09:00",
+      "final_status": "FAIL",
+      "prev_ledger_sha256": "f6600535c5760988a2a2ad12a31d7829a03add318b19f66e2e79d3904dffc133",
+      "fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "skip_reason": "OBJECT_ALREADY_FAILED_AND_FAIL_RECORD_EXISTS",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+      "http_code": "200",
+      "content_type": "application/pdf",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/2026-03/ENISA%20Technical%20Advisory%20-%20Package_Managers_Final.pdf",
+      "size": "1492177",
+      "magic": "%PDF-",
+      "expected_sha256": "be50dab618a9c87ce91cec4dc808043047d89d0f6514687888a64cb6d12e416f",
+      "current_sha256": "87a21cee9c9bf65ab5c50395f0b3db7c5384d579b680604ab36cf953609e47fb",
+      "expected_sha12": "be50dab618a9",
+      "current_sha12": "87a21cee9c9b",
+      "public_surface": "EV424-ENTRY-000047 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=be50dab618a9 CURRENT_SHA12=87a21cee9c9b LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "revalidation_skip_after_fail_record": true,
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+  "last_fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+  "last_fail_one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+  "last_expected_sha12": "be50dab618a9",
+  "last_current_sha12": "87a21cee9c9b",
+  "last_public_surface": "EV424-ENTRY-000047 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=be50dab618a9 CURRENT_SHA12=87a21cee9c9b LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00",
+  "fail_recorded_at_kst": "2026-06-15T11:14:59+09:00"
 }

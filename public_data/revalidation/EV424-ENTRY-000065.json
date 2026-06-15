@@ -3,7 +3,7 @@
   "issued_date": "2026-03-19T10:16:22+0900",
   "source_url": "https://unevoc.unesco.org/pub/wysd_survey_report_2025.pdf",
   "fingerprint_sha256": "c3feaab8752fe09d3a7c3995c26534a38e9adf17bfecc795cfde7815c3e086a0",
-  "revalidation_policy": "NONE",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
   "events": [
     {
       "observed_at_kst": "2026-03-26T10:16:22+09:00",
@@ -92,6 +92,39 @@
         "CHAIN"
       ],
       "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-06-15T11:14:59+09:00",
+      "final_status": "FAIL",
+      "prev_ledger_sha256": "f6d9af442f7347ec3970114fefd1736f8a6b03711626d029e2f7ac1a28b54d8f",
+      "fail_reason": "B_CURRENT_URL_RETURNS_NON_PDF_OBJECT",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "skip_reason": "OBJECT_ALREADY_FAILED_AND_FAIL_RECORD_EXISTS",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "one_line_reason": "CURRENT_URL_RETURNS_HTML_OR_NON_PDF_OBJECT_INSTEAD_OF_RECORDED_PDF_OBJECT",
+      "http_code": "200",
+      "content_type": "text/html; charset=UTF-8",
+      "effective_url": "https://www.unevoc.unesco.org/en/world-youth-skills-day-2025",
+      "size": "78415",
+      "magic": "<!DOC",
+      "expected_sha256": "c3feaab8752fe09d3a7c3995c26534a38e9adf17bfecc795cfde7815c3e086a0",
+      "current_sha256": "caf0c2d01e5a1f7c096cdb7c0eccd14ee0207ac09e7c109391b6cd92ec71c53d",
+      "expected_sha12": "c3feaab8752f",
+      "current_sha12": "caf0c2d01e5a",
+      "public_surface": "EV424-ENTRY-000065 FAIL REASON=B_CURRENT_URL_RETURNS_NON_PDF_OBJECT EXPECTED_SHA12=c3feaab8752f CURRENT_SHA12=caf0c2d01e5a LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "revalidation_skip_after_fail_record": true,
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+  "last_fail_reason": "B_CURRENT_URL_RETURNS_NON_PDF_OBJECT",
+  "last_fail_one_line_reason": "CURRENT_URL_RETURNS_HTML_OR_NON_PDF_OBJECT_INSTEAD_OF_RECORDED_PDF_OBJECT",
+  "last_expected_sha12": "c3feaab8752f",
+  "last_current_sha12": "caf0c2d01e5a",
+  "last_public_surface": "EV424-ENTRY-000065 FAIL REASON=B_CURRENT_URL_RETURNS_NON_PDF_OBJECT EXPECTED_SHA12=c3feaab8752f CURRENT_SHA12=caf0c2d01e5a LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00",
+  "fail_recorded_at_kst": "2026-06-15T11:14:59+09:00"
 }

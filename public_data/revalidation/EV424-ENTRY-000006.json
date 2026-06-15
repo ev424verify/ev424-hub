@@ -3,7 +3,7 @@
   "issued_date": "2026-02-01T12:09:49+0900",
   "source_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-228.pdf",
   "fingerprint_sha256": "9b018dd8b0cf21292898430681589d2263d6a74cb8d2dae1a1dea9bf0e77fd51",
-  "revalidation_policy": "NONE",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
   "events": [
     {
       "observed_at_kst": "2026-02-08T12:09:49+09:00",
@@ -173,9 +173,35 @@
     {
       "observed_at_kst": "2026-06-14T15:40:19+09:00",
       "final_status": "FAIL",
-      "fail_reason": "CHANGE_DETECTED",
+      "fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
       "prev_ledger_sha256": "57eff9ff13e1c7f28cf3b4b4a8fe4e9ca260066a938e671aee62d5de8dc6e1d5",
-      "public_surface": "EV424-ENTRY-000006 FAIL REASON=CHANGE_DETECTED OBSERVED_AT=2026-06-14T15:40:19+09:00"
+      "public_surface": "EV424-ENTRY-000006 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=9b018dd8b0cf CURRENT_SHA12=c553a071cbc7 LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-14T15:40:19+09:00",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "skip_reason": "OBJECT_ALREADY_FAILED_AND_FAIL_RECORD_EXISTS",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+      "expected_sha12": "9b018dd8b0cf",
+      "current_sha12": "c553a071cbc7",
+      "http_code": "200",
+      "content_type": "application/pdf",
+      "effective_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-228.pdf",
+      "size": "1746104",
+      "magic": "%PDF-",
+      "expected_sha256": "9b018dd8b0cf21292898430681589d2263d6a74cb8d2dae1a1dea9bf0e77fd51",
+      "current_sha256": "c553a071cbc7535d586c9cdbafb41ec6ddf79594043ae51c86e07a7cea907fb4"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "revalidation_skip_after_fail_record": true,
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+  "last_fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+  "last_fail_one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+  "last_expected_sha12": "9b018dd8b0cf",
+  "last_current_sha12": "c553a071cbc7",
+  "last_public_surface": "EV424-ENTRY-000006 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=9b018dd8b0cf CURRENT_SHA12=c553a071cbc7 LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-14T15:40:19+09:00",
+  "fail_recorded_at_kst": "2026-06-15T11:14:59+09:00"
 }

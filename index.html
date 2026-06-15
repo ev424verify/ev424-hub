@@ -600,6 +600,11 @@ a.btn.ghost[href="/video/"],
     <div><span style="color:#7db4ff;font-weight:700;">HISTORY_N</span>   ${historyN}</div>
     <div><span style="color:#7db4ff;font-weight:700;">TIMELINE</span>    ${escapePanelText(timeline)}</div>
     <div><span style="color:#7db4ff;font-weight:700;">LAST_STATUS</span> ${escapePanelText(lastStatus)}</div>
+    ${(last.fail_reason || reval.last_fail_reason || "") ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_REASON</span> ${escapePanelText(last.fail_reason || reval.last_fail_reason || "")}</div>` : ``}
+    ${(last.fail_label || reval.fail_record_label || "") ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_LABEL</span> ${escapePanelText(last.fail_label || reval.fail_record_label || "")}</div>` : ``}
+    ${(last.skip_label || reval.revalidation_skip_label || "") ? `<div><span style="color:#7db4ff;font-weight:700;">SKIP_LABEL</span> ${escapePanelText(last.skip_label || reval.revalidation_skip_label || "")}</div>` : ``}
+    ${(last.future_7d_revalidation_action || reval.future_7d_revalidation_action || "") ? `<div><span style="color:#7db4ff;font-weight:700;">NEXT_ACTION</span> ${escapePanelText(last.future_7d_revalidation_action || reval.future_7d_revalidation_action || "")}</div>` : ``}
+    ${(last.public_surface || reval.last_public_surface || "") ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_SURFACE</span> ${escapePanelText(last.public_surface || reval.last_public_surface || "")}</div>` : ``}
   </div>`;
       resultExtra.style.display = "";
     }

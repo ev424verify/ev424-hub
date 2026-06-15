@@ -3,7 +3,7 @@
   "issued_date": "2026-03-12T21:17:00+0900",
   "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf",
   "fingerprint_sha256": "71c73d00906c931b0633ec55346b88e0fbaa6c274fd32f2608341caa891c68f9",
-  "revalidation_policy": "NONE",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
   "events": [
     {
       "observed_at_kst": "2026-03-19T21:17:00+09:00",
@@ -103,6 +103,39 @@
         "CHAIN"
       ],
       "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-06-15T11:14:59+09:00",
+      "final_status": "FAIL",
+      "prev_ledger_sha256": "96440e53c016b5d39553a554aa6130b7370e65449d86cc897800c208f5d8d800",
+      "fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "skip_reason": "OBJECT_ALREADY_FAILED_AND_FAIL_RECORD_EXISTS",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+      "http_code": "200",
+      "content_type": "application/pdf",
+      "effective_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/oecd-due-diligence-guidance-for-responsible-ai_7831bb49/41671712-en.pdf",
+      "size": "2316401",
+      "magic": "%PDF-",
+      "expected_sha256": "71c73d00906c931b0633ec55346b88e0fbaa6c274fd32f2608341caa891c68f9",
+      "current_sha256": "2d240a9471ceeebf3e60fcda376ff3401bb00393c4fc4335350d92ad52fa7858",
+      "expected_sha12": "71c73d00906c",
+      "current_sha12": "2d240a9471ce",
+      "public_surface": "EV424-ENTRY-000052 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=71c73d00906c CURRENT_SHA12=2d240a9471ce LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "revalidation_skip_after_fail_record": true,
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+  "last_fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+  "last_fail_one_line_reason": "PDF_RETURNED_BUT_CURRENT_SHA256_DOES_NOT_MATCH_RECORDED_FINGERPRINT_SHA256",
+  "last_expected_sha12": "71c73d00906c",
+  "last_current_sha12": "2d240a9471ce",
+  "last_public_surface": "EV424-ENTRY-000052 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=71c73d00906c CURRENT_SHA12=2d240a9471ce LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00",
+  "fail_recorded_at_kst": "2026-06-15T11:14:59+09:00"
 }

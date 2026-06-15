@@ -3,7 +3,7 @@
   "issued_date": "2026-03-28T10:35:16+0900",
   "source_url": "https://unevoc.unesco.org/up/WYSD_Survey_Results_2025.pdf",
   "fingerprint_sha256": "710d83b6b276e3f42c7d1b23b51a6ac6d0b3aa8520f4e871fca03caad015eb76",
-  "revalidation_policy": "NONE",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
   "events": [
     {
       "observed_at_kst": "2026-04-04T10:35:16+09:00",
@@ -81,6 +81,39 @@
         "CHAIN"
       ],
       "note": "Weekly auto Observed Event"
+    },
+    {
+      "observed_at_kst": "2026-06-15T11:14:59+09:00",
+      "final_status": "FAIL",
+      "prev_ledger_sha256": "35845db98f42d8de31d949f3d1caee141ba5b46f21316adad33a84faa27f41c0",
+      "fail_reason": "B_CURRENT_URL_RETURNS_NON_PDF_OBJECT",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "skip_reason": "OBJECT_ALREADY_FAILED_AND_FAIL_RECORD_EXISTS",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "one_line_reason": "CURRENT_URL_RETURNS_HTML_OR_NON_PDF_OBJECT_INSTEAD_OF_RECORDED_PDF_OBJECT",
+      "http_code": "200",
+      "content_type": "text/html; charset=UTF-8",
+      "effective_url": "https://www.unevoc.unesco.org/en",
+      "size": "72619",
+      "magic": "<!DOC",
+      "expected_sha256": "710d83b6b276e3f42c7d1b23b51a6ac6d0b3aa8520f4e871fca03caad015eb76",
+      "current_sha256": "5121308fc33a78203690052420d629dc16c3bdc4139fb9affdaaa3bd54f3491b",
+      "expected_sha12": "710d83b6b276",
+      "current_sha12": "5121308fc33a",
+      "public_surface": "EV424-ENTRY-000080 FAIL REASON=B_CURRENT_URL_RETURNS_NON_PDF_OBJECT EXPECTED_SHA12=710d83b6b276 CURRENT_SHA12=5121308fc33a LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "revalidation_skip_after_fail_record": true,
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "ev424_fail_meaning": "SOURCE_OBJECT_FINGERPRINT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+  "last_fail_reason": "B_CURRENT_URL_RETURNS_NON_PDF_OBJECT",
+  "last_fail_one_line_reason": "CURRENT_URL_RETURNS_HTML_OR_NON_PDF_OBJECT_INSTEAD_OF_RECORDED_PDF_OBJECT",
+  "last_expected_sha12": "710d83b6b276",
+  "last_current_sha12": "5121308fc33a",
+  "last_public_surface": "EV424-ENTRY-000080 FAIL REASON=B_CURRENT_URL_RETURNS_NON_PDF_OBJECT EXPECTED_SHA12=710d83b6b276 CURRENT_SHA12=5121308fc33a LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD NEXT=SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL OBSERVED_AT=2026-06-15T11:14:59+09:00",
+  "fail_recorded_at_kst": "2026-06-15T11:14:59+09:00"
 }
