@@ -1,6 +1,6 @@
 {
   "type": "weekly_index_v1",
-  "updated_kst": "2026-06-08T12:07:19+09:00",
+  "updated_kst": "2026-06-15T11:59:10+09:00",
   "weeks": [
     {
       "href": "/public_data/weekly/EV424-WEEK-2026-06.json",
@@ -85,7 +85,13 @@
       "issued_kst": "2026-06-01T00:10:00+09:00",
       "manifest_sha256_file": "EV424-WEEK-2026-23.manifest.sha256",
       "week_id": "EV424-WEEK-2026-23"
+    },
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-24.json",
+      "issued_kst": "2026-06-08T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-24.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-24"
     }
   ],
-  "weeks_n": 14
+  "weeks_n": 15
 }
