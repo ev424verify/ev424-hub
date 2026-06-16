@@ -1,8 +1,27 @@
 {
   "entry_id": "EV424-ENTRY-000169",
-  "issued_date": "2026-05-13T16:31:09+0900",
-  "source_url": "https://www.energy.gov/sites/default/files/2025-08/National%20USEER_08282025.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T16:31:09+09:00",
+      "effective_url": "https://www.energy.gov/sites/default/files/2025-08/National%20USEER_08282025.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "5d9f608c766713455f4f3255904ef2a4479b1a79e6de2ea03e44f86aea74ca1b",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000169.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-06-16T14:00:42+09:00",
+      "observed_sha256": "5d9f608c766713455f4f3255904ef2a4479b1a79e6de2ea03e44f86aea74ca1b",
+      "prev_ledger_sha256": "46c9971f34767d42a388ae46213f6c43fa77edd9034eb1e2f30b30c534420027",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "21157532",
+      "source_url": "https://www.energy.gov/sites/default/files/2025-08/National%20USEER_08282025.pdf"
+    }
+  ],
   "fingerprint_sha256": "5d9f608c766713455f4f3255904ef2a4479b1a79e6de2ea03e44f86aea74ca1b",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-05-13T16:31:09+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.energy.gov/sites/default/files/2025-08/National%20USEER_08282025.pdf"
 }

@@ -1,8 +1,27 @@
 {
   "entry_id": "EV424-ENTRY-000182",
-  "issued_date": "2026-06-08T15:47:33+0900",
-  "source_url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-15T15:47:33+09:00",
+      "effective_url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000182.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-06-16T14:05:28+09:00",
+      "observed_sha256": "af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963",
+      "prev_ledger_sha256": "4f1547cfd3820294a308b529716b414314f02900ba14b90f0c489abe900d5757",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1323574",
+      "source_url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf"
+    }
+  ],
   "fingerprint_sha256": "af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-06-08T15:47:33+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf"
 }

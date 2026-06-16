@@ -1,8 +1,27 @@
 {
   "entry_id": "EV424-ENTRY-000175",
-  "issued_date": "2026-05-21T14:05:57+0900",
-  "source_url": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-28T14:05:57+09:00",
+      "effective_url": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "520987fffd87b88ce3866ef9139f90f1a270cf522c1bd96f6f52745feb457a6e",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000175.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-06-16T14:04:59+09:00",
+      "observed_sha256": "520987fffd87b88ce3866ef9139f90f1a270cf522c1bd96f6f52745feb457a6e",
+      "prev_ledger_sha256": "0fb8b4d40cfcb46c11d29291afee457049580032ebdf57771ada400284dcf33a",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "9635019",
+      "source_url": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf"
+    }
+  ],
   "fingerprint_sha256": "520987fffd87b88ce3866ef9139f90f1a270cf522c1bd96f6f52745feb457a6e",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-05-21T14:05:57+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf"
 }

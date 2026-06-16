@@ -1,8 +1,27 @@
 {
   "entry_id": "EV424-ENTRY-000177",
-  "issued_date": "2026-05-30T18:30:06+0900",
-  "source_url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-06T18:30:06+09:00",
+      "effective_url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "4b57ce70e935dd7562b88ca17e938f24d4736c45c9cd12ed820a1f3e246bb7fe",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000177.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-06-16T14:05:05+09:00",
+      "observed_sha256": "4b57ce70e935dd7562b88ca17e938f24d4736c45c9cd12ed820a1f3e246bb7fe",
+      "prev_ledger_sha256": "5c61891f5d075c3c63480853af358b6c315d99b1616ec711f5e803db4b6cb89b",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1260273",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf"
+    }
+  ],
   "fingerprint_sha256": "4b57ce70e935dd7562b88ca17e938f24d4736c45c9cd12ed820a1f3e246bb7fe",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-05-30T18:30:06+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf"
 }

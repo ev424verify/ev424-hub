@@ -1,8 +1,27 @@
 {
   "entry_id": "EV424-ENTRY-000168",
-  "issued_date": "2026-05-13T14:38:17+0900",
-  "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T14:38:17+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "f6230d748ed49fb879cf7bd19005853a07f08ca1853d22f7348cd7feb58de30c",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000168.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-06-16T14:00:40+09:00",
+      "observed_sha256": "f6230d748ed49fb879cf7bd19005853a07f08ca1853d22f7348cd7feb58de30c",
+      "prev_ledger_sha256": "5ed924694ca6940818649c37c5678c9d2790f0b5773d7e17eeb73535fa3b4b84",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1869795",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf"
+    }
+  ],
   "fingerprint_sha256": "f6230d748ed49fb879cf7bd19005853a07f08ca1853d22f7348cd7feb58de30c",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-05-13T14:38:17+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20-%20Cybersecurity%20Certification%20Market%20Study.pdf"
 }

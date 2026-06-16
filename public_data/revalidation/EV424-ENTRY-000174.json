@@ -1,8 +1,27 @@
 {
   "entry_id": "EV424-ENTRY-000174",
-  "issued_date": "2026-05-19T12:46:51+0900",
-  "source_url": "https://cdn.openai.com/pdf/oai_nonprofit-jam-report.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-26T12:46:51+09:00",
+      "effective_url": "https://cdn.openai.com/pdf/oai_nonprofit-jam-report.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "0275de148b5c60c65051814a5fb6655ce6d6a06f67319ace64648df81ca46275",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000174.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-06-16T14:00:52+09:00",
+      "observed_sha256": "0275de148b5c60c65051814a5fb6655ce6d6a06f67319ace64648df81ca46275",
+      "prev_ledger_sha256": "eb1e82e413de73816b5b95ae77c4ab200cfd63cb7d57aa98203daadb238a4678",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "14701287",
+      "source_url": "https://cdn.openai.com/pdf/oai_nonprofit-jam-report.pdf"
+    }
+  ],
   "fingerprint_sha256": "0275de148b5c60c65051814a5fb6655ce6d6a06f67319ace64648df81ca46275",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-05-19T12:46:51+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://cdn.openai.com/pdf/oai_nonprofit-jam-report.pdf"
 }

@@ -1,8 +1,27 @@
 {
   "entry_id": "EV424-ENTRY-000178",
-  "issued_date": "2026-05-30T19:45:16+0900",
-  "source_url": "https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.8.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-06T19:45:16+09:00",
+      "effective_url": "https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.8.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "25c576dd0e743d255f13dcec139f6886b87683e25916c37858d739776e6c4943",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000178.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-06-16T14:05:25+09:00",
+      "observed_sha256": "25c576dd0e743d255f13dcec139f6886b87683e25916c37858d739776e6c4943",
+      "prev_ledger_sha256": "1ec96b2f4a35f3360964edde92d80d2f7310e43cd6d5e77bbe85d3b1bb957ec4",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "8916033",
+      "source_url": "https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.8.pdf"
+    }
+  ],
   "fingerprint_sha256": "25c576dd0e743d255f13dcec139f6886b87683e25916c37858d739776e6c4943",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-05-30T19:45:16+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.8.pdf"
 }

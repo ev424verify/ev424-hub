@@ -1,0 +1,21 @@
+EV424_7D_DUE_SCAN_REGRESSION_CHECK_V1
+NOW_KST=2026-06-16T143634+0900
+CHECK=index.html renderRevalidationPanel last object fallback
+   592	      const safeReval = (reval && typeof reval === "object") ? reval : {};
+   593	      const events = Array.isArray(safeReval.events) ? safeReval.events : [];
+   594	      const historyN = events.length;
+   595	      const last = (historyN && events[historyN - 1] && typeof events[historyN - 1] === "object") ? events[historyN - 1] : {};
+--- POST_APPLY_READONLY_HEAD ---
+EV424_7D_DUE_SCAN_EXECUTOR_V1
+MODE=READONLY
+NOW_KST=2026-06-16T14:36:34+09:00
+TOTAL=162
+ELIGIBLE_OPEN=143
+EMPTY_DUE=6
+NONEMPTY_DUE=136
+NOT_DUE=1
+TERMINATED_FAIL=13
+BAD_OR_INELIGIBLE=6
+READONLY_EMPTY_DUE entry_id=EV424-ENTRY-000164 file=EV424-ENTRY-000164.json due_at_kst=2026-05-19T13:24:59+09:00 expected_sha256=76a6d6e05fcc06617a952fe382a0e973aad86ed3712ee3cbe7e5f24f07cb13d8 source_url=https://www.fda.gov/media/88423/download
+READONLY_EMPTY_DUE entry_id=EV424-ENTRY-000165 file=EV424-ENTRY-000165.json due_at_kst=2026-05-19T13:36:04+09:00 expected_sha256=bf5ee8ba3d3a405d6e9c9b1c211ca5af73d9afe0af7831969b36e190338acd37 source_url=https://www.fda.gov/media/138075/download?attachment
+REGRESSION_DONE=YES
