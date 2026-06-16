@@ -589,22 +589,28 @@ a.btn.ghost[href="/video/"],
         resultExtra.style.display = "none";
         return;
       }
-      const events = (reval && Array.isArray(reval.events)) ? reval.events : [];
+      const safeReval = (reval && typeof reval === "object") ? reval : {};
+      const events = Array.isArray(safeReval.events) ? safeReval.events : [];
       const historyN = events.length;
-      const last = historyN ? events[historyN - 1] : null;
-      const timeline = last && last.observed_at_kst ? last.observed_at_kst : "NONE";
-      const lastStatus = last && last.final_status ? last.final_status : "NONE";
+      const last = (historyN && events[historyN - 1] && typeof events[historyN - 1] === "object") ? events[historyN - 1] : {};
+      const timeline = last.observed_at_kst || "NONE";
+      const lastStatus = last.final_status || "NONE";
+      const failReason = last.fail_reason || safeReval.last_fail_reason || "";
+      const failLabel = last.fail_label || safeReval.fail_record_label || "";
+      const skipLabel = last.skip_label || safeReval.revalidation_skip_label || "";
+      const nextAction = last.future_7d_revalidation_action || safeReval.future_7d_revalidation_action || "";
+      const failSurface = last.public_surface || safeReval.last_public_surface || "";
       resultExtra.innerHTML = `
   <div style="font-size:12px;line-height:1.6;color:#d7e2ef;">
     <div style="font-weight:900;margin-bottom:8px;">Revalidation</div>
     <div><span style="color:#7db4ff;font-weight:700;">HISTORY_N</span>   ${historyN}</div>
     <div><span style="color:#7db4ff;font-weight:700;">TIMELINE</span>    ${escapePanelText(timeline)}</div>
     <div><span style="color:#7db4ff;font-weight:700;">LAST_STATUS</span> ${escapePanelText(lastStatus)}</div>
-    ${(last.fail_reason || reval.last_fail_reason || "") ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_REASON</span> ${escapePanelText(last.fail_reason || reval.last_fail_reason || "")}</div>` : ``}
-    ${(last.fail_label || reval.fail_record_label || "") ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_LABEL</span> ${escapePanelText(last.fail_label || reval.fail_record_label || "")}</div>` : ``}
-    ${(last.skip_label || reval.revalidation_skip_label || "") ? `<div><span style="color:#7db4ff;font-weight:700;">SKIP_LABEL</span> ${escapePanelText(last.skip_label || reval.revalidation_skip_label || "")}</div>` : ``}
-    ${(last.future_7d_revalidation_action || reval.future_7d_revalidation_action || "") ? `<div><span style="color:#7db4ff;font-weight:700;">NEXT_ACTION</span> ${escapePanelText(last.future_7d_revalidation_action || reval.future_7d_revalidation_action || "")}</div>` : ``}
-    ${(last.public_surface || reval.last_public_surface || "") ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_SURFACE</span> ${escapePanelText(last.public_surface || reval.last_public_surface || "")}</div>` : ``}
+    ${failReason ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_REASON</span> ${escapePanelText(failReason)}</div>` : ``}
+    ${failLabel ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_LABEL</span> ${escapePanelText(failLabel)}</div>` : ``}
+    ${skipLabel ? `<div><span style="color:#7db4ff;font-weight:700;">SKIP_LABEL</span> ${escapePanelText(skipLabel)}</div>` : ``}
+    ${nextAction ? `<div><span style="color:#7db4ff;font-weight:700;">NEXT_ACTION</span> ${escapePanelText(nextAction)}</div>` : ``}
+    ${failSurface ? `<div><span style="color:#7db4ff;font-weight:700;">FAIL_SURFACE</span> ${escapePanelText(failSurface)}</div>` : ``}
   </div>`;
       resultExtra.style.display = "";
     }
