@@ -2142,6 +2142,18 @@
       "result_rep_sha256": "8b3a74ea24b3c317392624933625c53c3a07cbd57e6aee6e6069a6de16f4c471",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000184",
+      "issued_kst": "2026-07-14",
+      "month_id": "2026-07",
+      "url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf",
+      "source_domain": "ev424verify.pages.dev",
+      "filename": "EV424",
+      "display_title": "EV424",
+      "result_rep_sha256": "2bb1d1a4958de498d7cee40a1ac5b47e9deb7c6614f5398af0aef1e5fea368bc",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

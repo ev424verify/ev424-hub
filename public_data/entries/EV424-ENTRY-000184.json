@@ -1,0 +1,27 @@
+{
+  "entry_id": "EV424-ENTRY-000184",
+  "type": "doc_passport",
+  "source": "EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf",
+  "source_label": "EV424",
+  "url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf",
+  "issued_date": "2026-07-14",
+  "fingerprint_sha256": "73602e37f6192afec4b38a4a1b536a2a068826dc12787b33a5c339d63f5e795d",
+  "result_rep_sha256": "2bb1d1a4958de498d7cee40a1ac5b47e9deb7c6614f5398af0aef1e5fea368bc",
+  "repro_mode": "LOCAL_READONLY_SECOND_COPY",
+  "network_access": "NOT_USED",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "NOT_USED",
+    "second_read": "OK",
+    "chain": "OK",
+    "owner_visual": "OK"
+  },
+  "receipt_text": "==[EV424 LOCAL DOCUMENT PASSPORT FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified\nPASS         All declared checks confirmed\nMODE         LOCAL_REPRO\nNETWORK      NOT_USED\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf\nISSUED_DATE  2026-07-14\nFINGERPRINT  73602e37f6192afec4b38a4a1b536a2a068826dc12787b33a5c339d63f5e795d\nSOURCE_KIND  LOCAL_READONLY_PDF\nREPRO_MODE   LOCAL_READONLY_SECOND_COPY\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] SOURCE_MANIFEST  [OK] LOCAL_COPY  [OK] SECOND_READ  [OK] CHAIN  [OK] OWNER_VISUAL\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=2bb1d1a4958de498d7cee40a1ac5b47e9deb7c6614f5398af0aef1e5fea368bc\n\nAccuracy(4)=Truth(2)=Life(4)",
+  "receipt_bind": {
+    "mode": "LOCAL_DOCUMENT_PASSPORT",
+    "network_access": "NOT_USED",
+    "source_receipt": "FINAL_RECEIPT.txt",
+    "state": "PASS"
+  }
+}

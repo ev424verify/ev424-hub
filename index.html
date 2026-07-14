@@ -621,6 +621,62 @@ a.btn.ghost[href="/video/"],
     try { return await fetchJSON(url); } catch (e) { return null; }
   }
 
+  function appendEntrySourceLink(entry){
+    if (!entry || typeof entry !== "object") return;
+
+    const rawUrl = (typeof entry.url === "string")
+      ? entry.url.trim()
+      : "";
+
+    if (!rawUrl) return;
+
+    let parsedUrl;
+
+    try {
+      parsedUrl = new URL(rawUrl, window.location.origin);
+    } catch (e) {
+      return;
+    }
+
+    if (parsedUrl.protocol !== "https:" && parsedUrl.protocol !== "http:") {
+      return;
+    }
+
+    const wrap = document.createElement("div");
+    wrap.setAttribute("data-entry-source-link", "true");
+    wrap.style.marginTop = "18px";
+    wrap.style.paddingTop = "14px";
+    wrap.style.borderTop = "1px solid rgba(255,255,255,.14)";
+
+    const label = document.createElement("div");
+    label.textContent = "SOURCE DOCUMENT";
+    label.style.color = "#7db4ff";
+    label.style.fontWeight = "900";
+    label.style.marginBottom = "6px";
+
+    const anchor = document.createElement("a");
+    anchor.href = parsedUrl.href;
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+    anchor.textContent = "Open source document";
+    anchor.style.color = "#8fd3ff";
+    anchor.style.fontWeight = "800";
+    anchor.style.textDecoration = "underline";
+    anchor.style.overflowWrap = "anywhere";
+
+    const urlText = document.createElement("div");
+    urlText.textContent = parsedUrl.href;
+    urlText.style.marginTop = "6px";
+    urlText.style.color = "#d7e2ef";
+    urlText.style.fontSize = "12px";
+    urlText.style.overflowWrap = "anywhere";
+
+    wrap.appendChild(label);
+    wrap.appendChild(anchor);
+    wrap.appendChild(urlText);
+    resultBody.appendChild(wrap);
+  }
+
   function showResult(tag, title, obj) {
     resultWrap.hidden = false;
     try{ resultWrap.scrollIntoView({block:"start"}); }catch(e){}
@@ -640,6 +696,7 @@ a.btn.ghost[href="/video/"],
     // If obj has receipt_text: render it as-is (colorized)
     if (obj && typeof obj === "object" && typeof obj.receipt_text === "string") {
       resultBody.innerHTML = formatReceipt(obj.receipt_text);
+      appendEntrySourceLink(obj);
       renderRevalidationPanel(obj, obj._revalidation || null);
       return;
     }
