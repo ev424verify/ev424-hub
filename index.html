@@ -88,12 +88,14 @@ body{
   display:flex; align-items:center; gap:10px;
   font-weight:700;
 }
-.dot{
-  width:10px; height:10px; border-radius:999px;
-  background:var(--green);
-  box-shadow:0 0 18px rgba(54,211,122,.35);
+.brandidentity{
+  white-space:pre;
+  letter-spacing:.2px;
 }
-.brandname{letter-spacing:.2px}
+.branddot{
+  color:var(--blue);
+  text-shadow:0 0 18px rgba(87,166,255,.35);
+}
 
 .topright{
   display:flex;
@@ -403,8 +405,7 @@ a.btn.ghost[href="/video/"],
   <main class="wrap">
     <header class="topbar">
       <div class="brand">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="brandname">EV424</span>
+        <span class="brandidentity">──────── <span class="branddot" aria-hidden="true">●</span> ────────    EV424  Verification Kernel</span>
       </div>
 
       <div class="topright">
