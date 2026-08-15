@@ -383,12 +383,67 @@ a.btn.ghost[href="/video/"],
   border:1px solid var(--green);
 }
 
+.btn.kernelDownload{
+  border:1px solid var(--blue);
+  margin-left:auto;
+}
+
 /* responsive */
 @media (max-width:820px){
   .cards{grid-template-columns:1fr}
   .inputrow{flex-direction:column}
   .btn{width:100%}
-  .toplinks{gap:10px}
+
+  .topbar{
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+    gap:10px;
+  }
+
+  .brand{
+    width:100%;
+    min-width:0;
+    justify-content:center;
+  }
+
+  .brandidentity{
+    max-width:100%;
+    font-size:clamp(10px,3.7vw,14px);
+    white-space:pre-wrap;
+    text-align:center;
+    overflow-wrap:anywhere;
+  }
+
+  .topright{
+    width:100%;
+    min-width:0;
+    margin-left:0;
+    justify-content:center;
+  }
+
+  .toplinks{
+    width:100%;
+    min-width:0;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px 10px;
+  }
+
+  .pill{
+    max-width:100%;
+    min-width:0;
+  }
+
+  .toplink{
+    max-width:100%;
+    overflow-wrap:anywhere;
+    word-break:break-word;
+  }
+
+  .kernelDownload{
+    margin-left:0;
+  }
 }
   
   .motto{ text-align:center; width:100%; margin:18px 0 0; color:rgba(166,179,195,.55); font-size:11px; letter-spacing:.3px; }
@@ -461,6 +516,7 @@ a.btn.ghost[href="/video/"],
         <a class="btn ghost" href="/public_docs/index_v2.html" target="_blank" rel="noopener">Public Docs (Viewer)</a>
         <a class="btn ghost" href="/whitepaper.html" target="_blank" rel="noopener">Whitepaper (EN)</a>
         <a class="btn ghost" href="/video/" target="_blank" rel="noopener">Video Passport</a>
+        <span class="btn ghost kernelDownload">EV424 Kernel Download</span>
       </div>
 
       <div class="note">
