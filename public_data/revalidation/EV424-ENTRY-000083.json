@@ -1,86 +1,105 @@
 {
   "entry_id": "EV424-ENTRY-000083",
-  "issued_date": "2026-03-30T15:58:59+0900",
-  "source_url": "https://cdn.openai.com/pdf/23eca107-a9b1-4d2c-b156-7deb4fbc697c/GPT-5-3-Codex-System-Card-02.pdf",
-  "fingerprint_sha256": "aff555bf6845d4011ccd390d4730c9583233948fdfc75842fc2e7f4b7c7a8b5b",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-06T15:58:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-06T15:58:59+09:00"
     },
     {
-      "observed_at_kst": "2026-04-13T15:58:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-13T15:58:59+09:00"
     },
     {
-      "observed_at_kst": "2026-04-20T15:58:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-20T15:58:59+09:00"
     },
     {
-      "observed_at_kst": "2026-04-27T15:58:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-27T15:58:59+09:00"
     },
     {
-      "observed_at_kst": "2026-05-04T15:58:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-04T15:58:59+09:00"
     },
     {
-      "observed_at_kst": "2026-05-11T15:58:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-11T15:58:59+09:00"
     },
     {
-      "observed_at_kst": "2026-05-18T15:58:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-18T15:58:59+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-25T15:58:59+09:00",
+      "effective_url": "https://cdn.openai.com/pdf/23eca107-a9b1-4d2c-b156-7deb4fbc697c/GPT-5-3-Codex-System-Card-02.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "aff555bf6845d4011ccd390d4730c9583233948fdfc75842fc2e7f4b7c7a8b5b",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000083.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:38+09:00",
+      "observed_sha256": "aff555bf6845d4011ccd390d4730c9583233948fdfc75842fc2e7f4b7c7a8b5b",
+      "prev_ledger_sha256": "12566b9faee59df5b232a8417382ff60230a68a89ce6c2d1a5a6935924ef48fd",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1047716",
+      "source_url": "https://cdn.openai.com/pdf/23eca107-a9b1-4d2c-b156-7deb4fbc697c/GPT-5-3-Codex-System-Card-02.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "aff555bf6845d4011ccd390d4730c9583233948fdfc75842fc2e7f4b7c7a8b5b",
+  "issued_date": "2026-03-30T15:58:59+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://cdn.openai.com/pdf/23eca107-a9b1-4d2c-b156-7deb4fbc697c/GPT-5-3-Codex-System-Card-02.pdf"
 }

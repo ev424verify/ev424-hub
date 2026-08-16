@@ -1,97 +1,116 @@
 {
   "entry_id": "EV424-ENTRY-000067",
-  "issued_date": "2026-03-20T13:06:57+0900",
-  "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf",
-  "fingerprint_sha256": "9953e8d2e70b18c5bf0af3b2b2a1e96de0555f51cbb39a625497b434e19fb43a",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-27T13:06:57+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-27T13:06:57+09:00"
     },
     {
-      "observed_at_kst": "2026-04-03T13:06:57+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-03T13:06:57+09:00"
     },
     {
-      "observed_at_kst": "2026-04-10T13:06:57+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-10T13:06:57+09:00"
     },
     {
-      "observed_at_kst": "2026-04-17T13:06:57+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-17T13:06:57+09:00"
     },
     {
-      "observed_at_kst": "2026-04-24T13:06:57+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-24T13:06:57+09:00"
     },
     {
-      "observed_at_kst": "2026-05-01T13:06:57+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-01T13:06:57+09:00"
     },
     {
-      "observed_at_kst": "2026-05-08T13:06:57+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-08T13:06:57+09:00"
     },
     {
-      "observed_at_kst": "2026-05-15T13:06:57+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-15T13:06:57+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-22T13:06:57+09:00",
+      "effective_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "9953e8d2e70b18c5bf0af3b2b2a1e96de0555f51cbb39a625497b434e19fb43a",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000067.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:28+09:00",
+      "observed_sha256": "9953e8d2e70b18c5bf0af3b2b2a1e96de0555f51cbb39a625497b434e19fb43a",
+      "prev_ledger_sha256": "6729ba23f630ad43768e54c09aaed857bf501519551208f928da3efacdc2fd25",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "940068",
+      "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "9953e8d2e70b18c5bf0af3b2b2a1e96de0555f51cbb39a625497b434e19fb43a",
+  "issued_date": "2026-03-20T13:06:57+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/GOOG-10-K-2025.pdf"
 }

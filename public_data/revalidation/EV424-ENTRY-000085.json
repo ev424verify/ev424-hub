@@ -1,75 +1,94 @@
 {
   "entry_id": "EV424-ENTRY-000085",
-  "issued_date": "2026-03-31T12:46:44+0900",
-  "source_url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf",
-  "fingerprint_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-07T12:46:44+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-07T12:46:44+09:00"
     },
     {
-      "observed_at_kst": "2026-04-14T12:46:44+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-14T12:46:44+09:00"
     },
     {
-      "observed_at_kst": "2026-04-21T12:46:44+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-21T12:46:44+09:00"
     },
     {
-      "observed_at_kst": "2026-04-28T12:46:44+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-28T12:46:44+09:00"
     },
     {
-      "observed_at_kst": "2026-05-05T12:46:44+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-05T12:46:44+09:00"
     },
     {
-      "observed_at_kst": "2026-05-12T12:46:44+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-12T12:46:44+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-19T12:46:44+09:00",
+      "effective_url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000085.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:39+09:00",
+      "observed_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",
+      "prev_ledger_sha256": "272b04f986c374f1bdd50aa0f3e90acc4755ce6e0705ba01def92fb26e534763",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "6043801",
+      "source_url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",
+  "issued_date": "2026-03-31T12:46:44+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf"
 }

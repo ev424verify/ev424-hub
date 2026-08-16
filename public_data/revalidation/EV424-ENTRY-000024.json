@@ -1,152 +1,186 @@
 {
   "entry_id": "EV424-ENTRY-000024",
-  "issued_date": "2026-02-16T08:23:24+0900",
-  "source_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/698792/EPRS_BRI(2021)698792_EN.pdf",
-  "fingerprint_sha256": "3b6e4a36dbb4912f51ace82fb5054a805aea6716f4008e76756ac22b75642a88",
-  "revalidation_policy": "NONE",
+  "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
   "events": [
     {
-      "observed_at_kst": "2026-02-23T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-02-23T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-03-02T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-02T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-03-09T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-09T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-03-16T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-16T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-03-23T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-23T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-03-30T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-30T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-04-06T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-06T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-04-13T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-13T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-04-20T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-20T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-04-27T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-27T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-05-04T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-04T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-05-11T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-11T08:23:24+09:00"
     },
     {
-      "observed_at_kst": "2026-05-18T08:23:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-18T08:23:24+09:00"
+    },
+    {
+      "content_type": "text/html; charset=UTF-8",
+      "due_at_kst": "2026-05-25T08:23:24+09:00",
+      "effective_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/698792/EPRS_BRI(2021)698792_EN.pdf",
+      "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "3b6e4a36dbb4912f51ace82fb5054a805aea6716f4008e76756ac22b75642a88",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "fail_reason": "B_CURRENT_URL_RETURNS_NON_PDF_OBJECT",
+      "final_status": "FAIL",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "http_code": "202",
+      "magic": "",
+      "native_check": "B_CURRENT_URL_RETURNS_NON_PDF_OBJECT",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:31:52+09:00",
+      "observed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "prev_ledger_sha256": "cf952feac0c5fcfa42895ae97c230c91a225480b1c81c181e904fbddde1b48ae",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "0",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "source_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/698792/EPRS_BRI(2021)698792_EN.pdf"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "fail_recorded_at_kst": "2026-08-16T09:31:52+09:00",
+  "fingerprint_sha256": "3b6e4a36dbb4912f51ace82fb5054a805aea6716f4008e76756ac22b75642a88",
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "issued_date": "2026-02-16T08:23:24+0900",
+  "last_current_sha12": "e3b0c44298fc",
+  "last_expected_sha12": "3b6e4a36dbb4",
+  "last_fail_reason": "B_CURRENT_URL_RETURNS_NON_PDF_OBJECT",
+  "last_public_surface": "EV424-ENTRY-000024 FAIL REASON=B_CURRENT_URL_RETURNS_NON_PDF_OBJECT EXPECTED_SHA12=3b6e4a36dbb4 CURRENT_SHA12=e3b0c44298fc LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD OBSERVED_AT=2026-08-16T09:31:52+09:00",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "revalidation_skip_after_fail_record": "YES",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "source_url": "https://www.europarl.europa.eu/RegData/etudes/BRIE/2021/698792/EPRS_BRI(2021)698792_EN.pdf"
 }

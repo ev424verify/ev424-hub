@@ -18,6 +18,25 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "3193804",
       "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-02/NIS%20Investments%202025%20-%20Main%20report.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-23T14:00:44+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/2026-02/NIS%20Investments%202025%20-%20Main%20report.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "4143386dbd68a7efb08c6cfc59a3aa7504f21300d4eb4f73d3ac79e260698661",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000170.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:34+09:00",
+      "observed_sha256": "4143386dbd68a7efb08c6cfc59a3aa7504f21300d4eb4f73d3ac79e260698661",
+      "prev_ledger_sha256": "f0758d8abd923551b3096c8a21830adf1a581625dfa82a7ea67f7f5657b95b9d",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "3193804",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-02/NIS%20Investments%202025%20-%20Main%20report.pdf"
     }
   ],
   "fingerprint_sha256": "4143386dbd68a7efb08c6cfc59a3aa7504f21300d4eb4f73d3ac79e260698661",

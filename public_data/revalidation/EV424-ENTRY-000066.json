@@ -1,97 +1,116 @@
 {
   "entry_id": "EV424-ENTRY-000066",
-  "issued_date": "2026-03-19T13:24:58+0900",
-  "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
-  "fingerprint_sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-26T13:24:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-26T13:24:58+09:00"
     },
     {
-      "observed_at_kst": "2026-04-02T13:24:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-02T13:24:58+09:00"
     },
     {
-      "observed_at_kst": "2026-04-09T13:24:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-09T13:24:58+09:00"
     },
     {
-      "observed_at_kst": "2026-04-16T13:24:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-16T13:24:58+09:00"
     },
     {
-      "observed_at_kst": "2026-04-23T13:24:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-23T13:24:58+09:00"
     },
     {
-      "observed_at_kst": "2026-04-30T13:24:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-30T13:24:58+09:00"
     },
     {
-      "observed_at_kst": "2026-05-07T13:24:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-07T13:24:58+09:00"
     },
     {
-      "observed_at_kst": "2026-05-14T13:24:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-14T13:24:58+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-21T13:24:58+09:00",
+      "effective_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000066.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:26+09:00",
+      "observed_sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+      "prev_ledger_sha256": "9933ad0efdfc578a421baf7ede264b6fa6dbae496d2f9ecc5b0861fd08fc291b",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1174643",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "6e73620ab6b64e90ef2c04bf0e0d6246185a2f4b1b13cab0df494496cff89b6a",
+  "issued_date": "2026-03-19T13:24:58+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
 }

@@ -18,6 +18,25 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "21157532",
       "source_url": "https://www.energy.gov/sites/default/files/2025-08/National%20USEER_08282025.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-23T14:00:42+09:00",
+      "effective_url": "https://www.energy.gov/sites/default/files/2025-08/National%20USEER_08282025.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "5d9f608c766713455f4f3255904ef2a4479b1a79e6de2ea03e44f86aea74ca1b",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000169.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:32+09:00",
+      "observed_sha256": "5d9f608c766713455f4f3255904ef2a4479b1a79e6de2ea03e44f86aea74ca1b",
+      "prev_ledger_sha256": "0f9e8970a3ff7aec569afc7ebf722bfb0c5352dcf5563f3d772056fe8c5ad0de",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "21157532",
+      "source_url": "https://www.energy.gov/sites/default/files/2025-08/National%20USEER_08282025.pdf"
     }
   ],
   "fingerprint_sha256": "5d9f608c766713455f4f3255904ef2a4479b1a79e6de2ea03e44f86aea74ca1b",

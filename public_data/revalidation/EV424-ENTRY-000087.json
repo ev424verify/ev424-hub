@@ -1,75 +1,94 @@
 {
   "entry_id": "EV424-ENTRY-000087",
-  "issued_date": "2026-04-02T10:12:15+0900",
-  "source_url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook_FACT%20SHEET.pdf",
-  "fingerprint_sha256": "856b75cf92a32f1ccf1c10bb220461f275c73243709e0e3f3ef6fed14d7c3fd0",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-09T10:12:15+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-09T10:12:15+09:00"
     },
     {
-      "observed_at_kst": "2026-04-16T10:12:15+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-16T10:12:15+09:00"
     },
     {
-      "observed_at_kst": "2026-04-23T10:12:15+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-23T10:12:15+09:00"
     },
     {
-      "observed_at_kst": "2026-04-30T10:12:15+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-30T10:12:15+09:00"
     },
     {
-      "observed_at_kst": "2026-05-07T10:12:15+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-07T10:12:15+09:00"
     },
     {
-      "observed_at_kst": "2026-05-14T10:12:15+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-14T10:12:15+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-21T10:12:15+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook_FACT%20SHEET.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "856b75cf92a32f1ccf1c10bb220461f275c73243709e0e3f3ef6fed14d7c3fd0",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000087.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:52+09:00",
+      "observed_sha256": "856b75cf92a32f1ccf1c10bb220461f275c73243709e0e3f3ef6fed14d7c3fd0",
+      "prev_ledger_sha256": "792a8c64ae76186ba712bc96d9966dcc0609ed5eeffc5aa03da22a157c92e22e",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "614433",
+      "source_url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook_FACT%20SHEET.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "856b75cf92a32f1ccf1c10bb220461f275c73243709e0e3f3ef6fed14d7c3fd0",
+  "issued_date": "2026-04-02T10:12:15+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook_FACT%20SHEET.pdf"
 }

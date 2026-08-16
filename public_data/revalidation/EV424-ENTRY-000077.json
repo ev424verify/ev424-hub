@@ -1,86 +1,120 @@
 {
   "entry_id": "EV424-ENTRY-000077",
-  "issued_date": "2026-03-26T09:39:11+0900",
-  "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf",
-  "fingerprint_sha256": "157d1689c6069d9b2dfd297288b358edfbc0722bf317909ce2baeaba7a6ea148",
-  "revalidation_policy": "NONE",
+  "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
   "events": [
     {
-      "observed_at_kst": "2026-04-02T09:39:11+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-02T09:39:11+09:00"
     },
     {
-      "observed_at_kst": "2026-04-09T09:39:11+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-09T09:39:11+09:00"
     },
     {
-      "observed_at_kst": "2026-04-16T09:39:11+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-16T09:39:11+09:00"
     },
     {
-      "observed_at_kst": "2026-04-23T09:39:11+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-23T09:39:11+09:00"
     },
     {
-      "observed_at_kst": "2026-04-30T09:39:11+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-30T09:39:11+09:00"
     },
     {
-      "observed_at_kst": "2026-05-07T09:39:11+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-07T09:39:11+09:00"
     },
     {
-      "observed_at_kst": "2026-05-14T09:39:11+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-14T09:39:11+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-21T09:39:11+09:00",
+      "effective_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf",
+      "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "157d1689c6069d9b2dfd297288b358edfbc0722bf317909ce2baeaba7a6ea148",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+      "final_status": "FAIL",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "A_SOURCE_PDF_SHA_MISMATCH",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:34+09:00",
+      "observed_sha256": "bfd62986966f9179dffc06ccc8aba6b86333d61fdbe4abdba529be1ea21e212f",
+      "prev_ledger_sha256": "a825c934a92a4240218ed7af82c009e644c0f01eb1a6f809bba914a66c242a11",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2819492",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf"
     }
-  ]
+  ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "fail_recorded_at_kst": "2026-08-16T09:32:34+09:00",
+  "fingerprint_sha256": "157d1689c6069d9b2dfd297288b358edfbc0722bf317909ce2baeaba7a6ea148",
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+  "issued_date": "2026-03-26T09:39:11+0900",
+  "last_current_sha12": "bfd62986966f",
+  "last_expected_sha12": "157d1689c606",
+  "last_fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+  "last_public_surface": "EV424-ENTRY-000077 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=157d1689c606 CURRENT_SHA12=bfd62986966f LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD OBSERVED_AT=2026-08-16T09:32:34+09:00",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "revalidation_skip_after_fail_record": "YES",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+  "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf"
 }

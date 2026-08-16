@@ -1,20 +1,39 @@
 {
   "entry_id": "EV424-ENTRY-000162",
-  "issued_date": "2026-05-12T09:55:35+0900",
-  "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.jpn.pdf",
-  "fingerprint_sha256": "06b9b65415ed7c289b904a6ece00ea755a03a2f6a21ede660c68c8a8db10adbb",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-05-19T09:55:35+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-19T09:55:35+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-26T09:55:35+09:00",
+      "effective_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.jpn.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "06b9b65415ed7c289b904a6ece00ea755a03a2f6a21ede660c68c8a8db10adbb",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000162.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:27+09:00",
+      "observed_sha256": "06b9b65415ed7c289b904a6ece00ea755a03a2f6a21ede660c68c8a8db10adbb",
+      "prev_ledger_sha256": "f462cb048df52c00d8eb90672a16ab0c3078cc304d4dda4edd69598a5a71854f",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2054827",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.jpn.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "06b9b65415ed7c289b904a6ece00ea755a03a2f6a21ede660c68c8a8db10adbb",
+  "issued_date": "2026-05-12T09:55:35+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.jpn.pdf"
 }

@@ -1,53 +1,72 @@
 {
   "entry_id": "EV424-ENTRY-000115",
-  "issued_date": "2026-04-15T21:08:27+0900",
-  "source_url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf",
-  "fingerprint_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-22T21:08:27+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-22T21:08:27+09:00"
     },
     {
-      "observed_at_kst": "2026-04-29T21:08:27+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-29T21:08:27+09:00"
     },
     {
-      "observed_at_kst": "2026-05-06T21:08:27+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-06T21:08:27+09:00"
     },
     {
-      "observed_at_kst": "2026-05-13T21:08:27+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-13T21:08:27+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T21:08:27+09:00",
+      "effective_url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000115.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:08+09:00",
+      "observed_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",
+      "prev_ledger_sha256": "f43b0e94d3a6ef02a65bf280d9ec471e1c31496e5712c4c5852164d7d42a167b",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "4785559",
+      "source_url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",
+  "issued_date": "2026-04-15T21:08:27+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf"
 }

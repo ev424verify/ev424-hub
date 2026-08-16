@@ -1,86 +1,105 @@
 {
   "entry_id": "EV424-ENTRY-000078",
-  "issued_date": "2026-03-27T09:34:59+0900",
-  "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
-  "fingerprint_sha256": "a341279839a160bda4d081dd6a25b8daca67b090f88f8e783ac9d4d93b4f8844",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-03T09:34:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-03T09:34:59+09:00"
     },
     {
-      "observed_at_kst": "2026-04-10T09:34:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-10T09:34:59+09:00"
     },
     {
-      "observed_at_kst": "2026-04-17T09:34:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-17T09:34:59+09:00"
     },
     {
-      "observed_at_kst": "2026-04-24T09:34:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-24T09:34:59+09:00"
     },
     {
-      "observed_at_kst": "2026-05-01T09:34:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-01T09:34:59+09:00"
     },
     {
-      "observed_at_kst": "2026-05-08T09:34:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-08T09:34:59+09:00"
     },
     {
-      "observed_at_kst": "2026-05-15T09:34:59+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-15T09:34:59+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-22T09:34:59+09:00",
+      "effective_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "a341279839a160bda4d081dd6a25b8daca67b090f88f8e783ac9d4d93b4f8844",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000078.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:35+09:00",
+      "observed_sha256": "a341279839a160bda4d081dd6a25b8daca67b090f88f8e783ac9d4d93b4f8844",
+      "prev_ledger_sha256": "8caae54ba348c74dd4829d0fc21985bfbc5d96dab3607088651bf11643714136",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "20437459",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "a341279839a160bda4d081dd6a25b8daca67b090f88f8e783ac9d4d93b4f8844",
+  "issued_date": "2026-03-27T09:34:59+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Sustainability-Report-PDF.pdf"
 }

@@ -1,108 +1,127 @@
 {
   "entry_id": "EV424-ENTRY-000051",
-  "issued_date": "2026-03-12T17:56:56+0900",
-  "source_url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf",
-  "fingerprint_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-19T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-19T17:56:56+09:00"
     },
     {
-      "observed_at_kst": "2026-03-26T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-26T17:56:56+09:00"
     },
     {
-      "observed_at_kst": "2026-04-02T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-02T17:56:56+09:00"
     },
     {
-      "observed_at_kst": "2026-04-09T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-09T17:56:56+09:00"
     },
     {
-      "observed_at_kst": "2026-04-16T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-16T17:56:56+09:00"
     },
     {
-      "observed_at_kst": "2026-04-23T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-23T17:56:56+09:00"
     },
     {
-      "observed_at_kst": "2026-04-30T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-30T17:56:56+09:00"
     },
     {
-      "observed_at_kst": "2026-05-07T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-07T17:56:56+09:00"
     },
     {
-      "observed_at_kst": "2026-05-14T17:56:56+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-14T17:56:56+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-21T17:56:56+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000051.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:15+09:00",
+      "observed_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",
+      "prev_ledger_sha256": "1934b7518e2eea27d0d86c64fdfc3ac19532e73dbce7ee4a20d5bf2b59f17d36",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "11852141",
+      "source_url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",
+  "issued_date": "2026-03-12T17:56:56+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf"
 }

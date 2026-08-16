@@ -1,64 +1,83 @@
 {
   "entry_id": "EV424-ENTRY-000093",
-  "issued_date": "2026-04-07T14:38:58+0900",
-  "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf",
-  "fingerprint_sha256": "08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-14T14:38:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-14T14:38:58+09:00"
     },
     {
-      "observed_at_kst": "2026-04-21T14:38:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-21T14:38:58+09:00"
     },
     {
-      "observed_at_kst": "2026-04-28T14:38:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-28T14:38:58+09:00"
     },
     {
-      "observed_at_kst": "2026-05-05T14:38:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-05T14:38:58+09:00"
     },
     {
-      "observed_at_kst": "2026-05-12T14:38:58+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-12T14:38:58+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-19T14:38:58+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000093.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:55+09:00",
+      "observed_sha256": "08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe",
+      "prev_ledger_sha256": "dd3866d5cfe614fc0bea02a690e983e9a010a37bd9fa2b8d8b04a07b8394b541",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1143394",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe",
+  "issued_date": "2026-04-07T14:38:58+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf"
 }

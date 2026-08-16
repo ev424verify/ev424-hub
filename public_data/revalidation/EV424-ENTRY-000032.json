@@ -1,130 +1,149 @@
 {
   "entry_id": "EV424-ENTRY-000032",
-  "issued_date": "2026-02-24T21:50:18+0900",
-  "source_url": "https://www.nccoe.nist.gov/sites/default/files/2025-03/trusted-iot-onboarding-fact-sheet.pdf",
-  "fingerprint_sha256": "0961ddb6f543b177a612e4084b778a6fb57b2de9acbb037a96d027824fd571cd",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-03T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-03T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-03-10T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-10T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-03-17T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-17T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-03-24T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-24T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-03-31T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-31T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-04-07T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-07T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-04-14T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-14T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-04-21T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-21T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-04-28T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-28T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-05-05T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-05T21:50:18+09:00"
     },
     {
-      "observed_at_kst": "2026-05-12T21:50:18+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-12T21:50:18+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-19T21:50:18+09:00",
+      "effective_url": "https://www.nccoe.nist.gov/sites/default/files/2025-03/trusted-iot-onboarding-fact-sheet.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "0961ddb6f543b177a612e4084b778a6fb57b2de9acbb037a96d027824fd571cd",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000032.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:31:59+09:00",
+      "observed_sha256": "0961ddb6f543b177a612e4084b778a6fb57b2de9acbb037a96d027824fd571cd",
+      "prev_ledger_sha256": "9eed5d5cfdee484ade522506cd25fd8140c673caf695d0c8ff8f58df5d2f8a12",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "331075",
+      "source_url": "https://www.nccoe.nist.gov/sites/default/files/2025-03/trusted-iot-onboarding-fact-sheet.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "0961ddb6f543b177a612e4084b778a6fb57b2de9acbb037a96d027824fd571cd",
+  "issued_date": "2026-02-24T21:50:18+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.nccoe.nist.gov/sites/default/files/2025-03/trusted-iot-onboarding-fact-sheet.pdf"
 }

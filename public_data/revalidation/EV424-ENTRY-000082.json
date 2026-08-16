@@ -1,86 +1,105 @@
 {
   "entry_id": "EV424-ENTRY-000082",
-  "issued_date": "2026-03-29T11:58:13+0900",
-  "source_url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q4-2025-Update.pdf",
-  "fingerprint_sha256": "05a5eb4fff82710fafa5639deb2127d531b297fd6f6d93af58e72a2869926a18",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-05T11:58:13+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-05T11:58:13+09:00"
     },
     {
-      "observed_at_kst": "2026-04-12T11:58:13+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-12T11:58:13+09:00"
     },
     {
-      "observed_at_kst": "2026-04-19T11:58:13+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-19T11:58:13+09:00"
     },
     {
-      "observed_at_kst": "2026-04-26T11:58:13+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-26T11:58:13+09:00"
     },
     {
-      "observed_at_kst": "2026-05-03T11:58:13+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-03T11:58:13+09:00"
     },
     {
-      "observed_at_kst": "2026-05-10T11:58:13+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-10T11:58:13+09:00"
     },
     {
-      "observed_at_kst": "2026-05-17T11:58:13+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-17T11:58:13+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-24T11:58:13+09:00",
+      "effective_url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q4-2025-Update.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "05a5eb4fff82710fafa5639deb2127d531b297fd6f6d93af58e72a2869926a18",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000082.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:37+09:00",
+      "observed_sha256": "05a5eb4fff82710fafa5639deb2127d531b297fd6f6d93af58e72a2869926a18",
+      "prev_ledger_sha256": "0f350cfed46904d5342c1440ce4a1f6da266d5e02836d6dc533711fd659a8254",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "5648867",
+      "source_url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q4-2025-Update.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "05a5eb4fff82710fafa5639deb2127d531b297fd6f6d93af58e72a2869926a18",
+  "issued_date": "2026-03-29T11:58:13+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q4-2025-Update.pdf"
 }

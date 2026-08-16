@@ -1,152 +1,171 @@
 {
   "entry_id": "EV424-ENTRY-000019",
-  "issued_date": "2026-02-11T09:30:30+0900",
-  "source_url": "https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf",
-  "fingerprint_sha256": "405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-02-18T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-02-18T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-02-25T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-02-25T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-03-04T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-04T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-03-11T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-11T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-03-18T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-18T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-03-25T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-25T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-04-01T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-01T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-04-08T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-08T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-04-15T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-15T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-04-22T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-22T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-04-29T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-29T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-05-06T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-06T09:30:30+09:00"
     },
     {
-      "observed_at_kst": "2026-05-13T09:30:30+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-13T09:30:30+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T09:30:30+09:00",
+      "effective_url": "https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000019.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:31:45+09:00",
+      "observed_sha256": "405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045",
+      "prev_ledger_sha256": "48993d5bd6f89cef638dd6f3010302e121a4850a4a8e5556b886373a33032a15",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "453458",
+      "source_url": "https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045",
+  "issued_date": "2026-02-11T09:30:30+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf"
 }

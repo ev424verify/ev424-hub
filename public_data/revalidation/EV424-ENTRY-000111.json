@@ -1,64 +1,83 @@
 {
   "entry_id": "EV424-ENTRY-000111",
-  "issued_date": "2026-04-13T14:22:24+0900",
-  "source_url": "https://documents1.worldbank.org/curated/en/099122225162037208/pdf/P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf",
-  "fingerprint_sha256": "2d53df4bed14b1c9b29039f263eb76878b03d5902b8e8c46b23898d7123b5873",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-20T14:22:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-20T14:22:24+09:00"
     },
     {
-      "observed_at_kst": "2026-04-27T14:22:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-27T14:22:24+09:00"
     },
     {
-      "observed_at_kst": "2026-05-04T14:22:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-04T14:22:24+09:00"
     },
     {
-      "observed_at_kst": "2026-05-11T14:22:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-11T14:22:24+09:00"
     },
     {
-      "observed_at_kst": "2026-05-18T14:22:24+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-18T14:22:24+09:00"
+    },
+    {
+      "content_type": "application/pdf;charset=utf-8",
+      "due_at_kst": "2026-05-25T14:22:24+09:00",
+      "effective_url": "https://documents1.worldbank.org/curated/en/099122225162037208/pdf/P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "2d53df4bed14b1c9b29039f263eb76878b03d5902b8e8c46b23898d7123b5873",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000111.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:06+09:00",
+      "observed_sha256": "2d53df4bed14b1c9b29039f263eb76878b03d5902b8e8c46b23898d7123b5873",
+      "prev_ledger_sha256": "9fc9e15b86c8eec33187fdb57420c78ee1dd056302aa6d1dd7da2de99bebde3a",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "8463412",
+      "source_url": "https://documents1.worldbank.org/curated/en/099122225162037208/pdf/P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "2d53df4bed14b1c9b29039f263eb76878b03d5902b8e8c46b23898d7123b5873",
+  "issued_date": "2026-04-13T14:22:24+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://documents1.worldbank.org/curated/en/099122225162037208/pdf/P165236-a536f876-71a7-4abb-b204-80ef88d247a1.pdf"
 }

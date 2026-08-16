@@ -1,163 +1,182 @@
 {
   "entry_id": "EV424-ENTRY-000011",
-  "issued_date": "2026-02-04T12:57:26+0900",
-  "source_url": "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf",
-  "fingerprint_sha256": "aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-02-11T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-02-11T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-02-18T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-02-18T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-02-25T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-02-25T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-03-04T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-04T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-03-11T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-11T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-03-18T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-18T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-03-25T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-25T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-04-01T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-01T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-04-08T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-08T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-04-15T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-15T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-04-22T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-22T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-04-29T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-29T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-05-06T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-06T12:57:26+09:00"
     },
     {
-      "observed_at_kst": "2026-05-13T12:57:26+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-13T12:57:26+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T12:57:26+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000011.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:31:43+09:00",
+      "observed_sha256": "aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3",
+      "prev_ledger_sha256": "5b4da7cbfba4399793c8c9f7fb40266984d66d0002ee2429eb40ac5d72503de9",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "390677",
+      "source_url": "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3",
+  "issued_date": "2026-02-04T12:57:26+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf"
 }

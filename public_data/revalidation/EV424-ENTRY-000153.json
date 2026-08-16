@@ -1,20 +1,39 @@
 {
   "entry_id": "EV424-ENTRY-000153",
-  "issued_date": "2026-05-05T22:02:03+0900",
-  "source_url": "https://www.rfc-editor.org/rfc/rfc9281.pdf",
-  "fingerprint_sha256": "90c91f35ad84977ecd150f18f4b21375777227d0ba4c95622fb36326def6b371",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-05-12T22:02:03+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-12T22:02:03+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-19T22:02:03+09:00",
+      "effective_url": "https://www.rfc-editor.org/rfc/rfc9281.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "90c91f35ad84977ecd150f18f4b21375777227d0ba4c95622fb36326def6b371",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000153.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:17+09:00",
+      "observed_sha256": "90c91f35ad84977ecd150f18f4b21375777227d0ba4c95622fb36326def6b371",
+      "prev_ledger_sha256": "96053f51f24c89194cb7eda6e24071f57771b01860d821534439144fb492b317",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "179470",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9281.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "90c91f35ad84977ecd150f18f4b21375777227d0ba4c95622fb36326def6b371",
+  "issued_date": "2026-05-05T22:02:03+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.rfc-editor.org/rfc/rfc9281.pdf"
 }

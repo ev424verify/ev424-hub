@@ -1,108 +1,127 @@
 {
   "entry_id": "EV424-ENTRY-000049",
-  "issued_date": "2026-03-11T23:13:34+0900",
-  "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%202023.pdf",
-  "fingerprint_sha256": "ac6a1718ab44ce2eb2959fbea77804b6662df7c3a3e81f71e8fb2690572cf51c",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-18T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-18T23:13:34+09:00"
     },
     {
-      "observed_at_kst": "2026-03-25T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-25T23:13:34+09:00"
     },
     {
-      "observed_at_kst": "2026-04-01T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-01T23:13:34+09:00"
     },
     {
-      "observed_at_kst": "2026-04-08T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-08T23:13:34+09:00"
     },
     {
-      "observed_at_kst": "2026-04-15T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-15T23:13:34+09:00"
     },
     {
-      "observed_at_kst": "2026-04-22T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-22T23:13:34+09:00"
     },
     {
-      "observed_at_kst": "2026-04-29T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-29T23:13:34+09:00"
     },
     {
-      "observed_at_kst": "2026-05-06T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-06T23:13:34+09:00"
     },
     {
-      "observed_at_kst": "2026-05-13T23:13:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-13T23:13:34+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T23:13:34+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%202023.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "ac6a1718ab44ce2eb2959fbea77804b6662df7c3a3e81f71e8fb2690572cf51c",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000049.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:12+09:00",
+      "observed_sha256": "ac6a1718ab44ce2eb2959fbea77804b6662df7c3a3e81f71e8fb2690572cf51c",
+      "prev_ledger_sha256": "21db4879a58a7c894c63866470f6410b7bbdca7957e85369f435a7122388a049",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "8319314",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%202023.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "ac6a1718ab44ce2eb2959fbea77804b6662df7c3a3e81f71e8fb2690572cf51c",
+  "issued_date": "2026-03-11T23:13:34+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Threat%20Landscape%202023.pdf"
 }

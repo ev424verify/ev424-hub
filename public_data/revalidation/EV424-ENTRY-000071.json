@@ -1,97 +1,116 @@
 {
   "entry_id": "EV424-ENTRY-000071",
-  "issued_date": "2026-03-22T12:57:52+0900",
-  "source_url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf",
-  "fingerprint_sha256": "65dd654744c3d7cfad92dbee66706a6f7e808b59adbb213cdffcdedeb968135a",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-29T12:57:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-29T12:57:52+09:00"
     },
     {
-      "observed_at_kst": "2026-04-05T12:57:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-05T12:57:52+09:00"
     },
     {
-      "observed_at_kst": "2026-04-12T12:57:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-12T12:57:52+09:00"
     },
     {
-      "observed_at_kst": "2026-04-19T12:57:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-19T12:57:52+09:00"
     },
     {
-      "observed_at_kst": "2026-04-26T12:57:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-26T12:57:52+09:00"
     },
     {
-      "observed_at_kst": "2026-05-03T12:57:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-03T12:57:52+09:00"
     },
     {
-      "observed_at_kst": "2026-05-10T12:57:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-10T12:57:52+09:00"
     },
     {
-      "observed_at_kst": "2026-05-17T12:57:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-17T12:57:52+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-24T12:57:52+09:00",
+      "effective_url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "65dd654744c3d7cfad92dbee66706a6f7e808b59adbb213cdffcdedeb968135a",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000071.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:29+09:00",
+      "observed_sha256": "65dd654744c3d7cfad92dbee66706a6f7e808b59adbb213cdffcdedeb968135a",
+      "prev_ledger_sha256": "cbc650567c71d3ce6f733452ccfe34f3d974860b3669103031ebdf0b87322810",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1028642",
+      "source_url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "65dd654744c3d7cfad92dbee66706a6f7e808b59adbb213cdffcdedeb968135a",
+  "issued_date": "2026-03-22T12:57:52+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf"
 }

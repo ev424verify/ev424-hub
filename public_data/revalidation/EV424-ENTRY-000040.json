@@ -1,130 +1,149 @@
 {
   "entry_id": "EV424-ENTRY-000040",
-  "issued_date": "2026-03-01T16:17:19+0900",
-  "source_url": "https://dcc.ligo.org/public/0201/P2500461/007/paper.pdf",
-  "fingerprint_sha256": "dc5b7765287d90beadfaa5bbb4fe9b633d019221d836bdc4fe500d43f1191e7c",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-08T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-08T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-03-15T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-15T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-03-22T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-22T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-03-29T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-29T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-04-05T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-05T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-04-12T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-12T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-04-19T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-19T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-04-26T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-26T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-05-03T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-03T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-05-10T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-10T16:17:19+09:00"
     },
     {
-      "observed_at_kst": "2026-05-17T16:17:19+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-17T16:17:19+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-24T16:17:19+09:00",
+      "effective_url": "https://dcc.ligo.org/public/0201/P2500461/007/paper.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "dc5b7765287d90beadfaa5bbb4fe9b633d019221d836bdc4fe500d43f1191e7c",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000040.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:03+09:00",
+      "observed_sha256": "dc5b7765287d90beadfaa5bbb4fe9b633d019221d836bdc4fe500d43f1191e7c",
+      "prev_ledger_sha256": "5d40f9a57ac2d236b08ebb65914ca0041b6d0de7b725418f6c6988c85ce003e9",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1229825",
+      "source_url": "https://dcc.ligo.org/public/0201/P2500461/007/paper.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "dc5b7765287d90beadfaa5bbb4fe9b633d019221d836bdc4fe500d43f1191e7c",
+  "issued_date": "2026-03-01T16:17:19+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://dcc.ligo.org/public/0201/P2500461/007/paper.pdf"
 }

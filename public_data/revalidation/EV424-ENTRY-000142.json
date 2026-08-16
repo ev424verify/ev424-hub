@@ -1,42 +1,61 @@
 {
   "entry_id": "EV424-ENTRY-000142",
-  "issued_date": "2026-04-28T10:40:34+0900",
-  "source_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
-  "fingerprint_sha256": "02b2b6f13b199cdc9a1d95392e6a90ef2fd8a4ae76198d59b8b4f3f0795a4332",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-05-05T10:40:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-05T10:40:34+09:00"
     },
     {
-      "observed_at_kst": "2026-05-12T10:40:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-12T10:40:34+09:00"
     },
     {
-      "observed_at_kst": "2026-05-19T10:40:34+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-19T10:40:34+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-26T10:40:34+09:00",
+      "effective_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "02b2b6f13b199cdc9a1d95392e6a90ef2fd8a4ae76198d59b8b4f3f0795a4332",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000142.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:11+09:00",
+      "observed_sha256": "02b2b6f13b199cdc9a1d95392e6a90ef2fd8a4ae76198d59b8b4f3f0795a4332",
+      "prev_ledger_sha256": "eafa4e39754fbde027a9f71553cad092a78bfe544d78b7c1e57163492700ce2c",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "104844",
+      "source_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "02b2b6f13b199cdc9a1d95392e6a90ef2fd8a4ae76198d59b8b4f3f0795a4332",
+  "issued_date": "2026-04-28T10:40:34+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf"
 }

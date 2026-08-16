@@ -1,20 +1,39 @@
 {
   "entry_id": "EV424-ENTRY-000159",
-  "issued_date": "2026-05-09T08:53:29+0900",
-  "source_url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf",
-  "fingerprint_sha256": "5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-05-16T08:53:29+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-16T08:53:29+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-23T08:53:29+09:00",
+      "effective_url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000159.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:21+09:00",
+      "observed_sha256": "5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28",
+      "prev_ledger_sha256": "a8e4db705dead1796183ad4d75aadce1be39a319d6b2a4711c44e8bb7911d54d",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "18346534",
+      "source_url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28",
+  "issued_date": "2026-05-09T08:53:29+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf"
 }

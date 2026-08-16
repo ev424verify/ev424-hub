@@ -1,64 +1,83 @@
 {
   "entry_id": "EV424-ENTRY-000109",
-  "issued_date": "2026-04-13T14:08:22+0900",
-  "source_url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf",
-  "fingerprint_sha256": "06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-04-20T14:08:22+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-20T14:08:22+09:00"
     },
     {
-      "observed_at_kst": "2026-04-27T14:08:22+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-27T14:08:22+09:00"
     },
     {
-      "observed_at_kst": "2026-05-04T14:08:22+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-04T14:08:22+09:00"
     },
     {
-      "observed_at_kst": "2026-05-11T14:08:22+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-11T14:08:22+09:00"
     },
     {
-      "observed_at_kst": "2026-05-18T14:08:22+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-18T14:08:22+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-25T14:08:22+09:00",
+      "effective_url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000109.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:02+09:00",
+      "observed_sha256": "06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd",
+      "prev_ledger_sha256": "01230faaf20e89cb464302dd566c3e9c845e87e97407717475037af66ff71d09",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "22032751",
+      "source_url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd",
+  "issued_date": "2026-04-13T14:08:22+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf"
 }

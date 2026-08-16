@@ -1,108 +1,127 @@
 {
   "entry_id": "EV424-ENTRY-000060",
-  "issued_date": "2026-03-16T19:02:09+0900",
-  "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf",
-  "fingerprint_sha256": "4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-23T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-23T19:02:09+09:00"
     },
     {
-      "observed_at_kst": "2026-03-30T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-30T19:02:09+09:00"
     },
     {
-      "observed_at_kst": "2026-04-06T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-06T19:02:09+09:00"
     },
     {
-      "observed_at_kst": "2026-04-13T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-13T19:02:09+09:00"
     },
     {
-      "observed_at_kst": "2026-04-20T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-20T19:02:09+09:00"
     },
     {
-      "observed_at_kst": "2026-04-27T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-27T19:02:09+09:00"
     },
     {
-      "observed_at_kst": "2026-05-04T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-04T19:02:09+09:00"
     },
     {
-      "observed_at_kst": "2026-05-11T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-11T19:02:09+09:00"
     },
     {
-      "observed_at_kst": "2026-05-18T19:02:09+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-18T19:02:09+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-25T19:02:09+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000060.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:21+09:00",
+      "observed_sha256": "4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe",
+      "prev_ledger_sha256": "031eaf478197f01b7a5ee33f396296f87928728aca4557fff696b78218f88995",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2947752",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe",
+  "issued_date": "2026-03-16T19:02:09+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf"
 }

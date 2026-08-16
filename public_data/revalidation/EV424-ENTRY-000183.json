@@ -1,8 +1,28 @@
 {
   "entry_id": "EV424-ENTRY-000183",
-  "issued_date": "2026-06-09T21:32:13+0900",
-  "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-16T21:32:13+09:00",
+      "effective_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "a387a4977db70d65cdbc178c8b0cb8aa5dedb85fa80d6f473c244e2767a4fd54",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000183.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T08:53:32+09:00",
+      "observed_sha256": "a387a4977db70d65cdbc178c8b0cb8aa5dedb85fa80d6f473c244e2767a4fd54",
+      "prev_ledger_sha256": "d1240d22e4a5bc1525bc0d792af5090b5163fed3b40b7ea66b156be7e6bde7c7",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "4306208",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf"
+    }
+  ],
   "fingerprint_sha256": "a387a4977db70d65cdbc178c8b0cb8aa5dedb85fa80d6f473c244e2767a4fd54",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-06-09T21:32:13+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf"
 }

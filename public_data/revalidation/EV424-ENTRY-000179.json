@@ -18,6 +18,25 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "4078944",
       "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-05/ENISA%20NIS360%202026.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-23T14:05:25+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/2026-05/ENISA%20NIS360%202026.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "968a690f5cbd8c606eeb66d3a33169f12c20816463aa64aab68f6261f0c86022",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000179.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:35:00+09:00",
+      "observed_sha256": "968a690f5cbd8c606eeb66d3a33169f12c20816463aa64aab68f6261f0c86022",
+      "prev_ledger_sha256": "2f4e7d909ee121980c77ff5a8f4e7477b44e33aab75e4774e3d385f8874961d6",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "4078944",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-05/ENISA%20NIS360%202026.pdf"
     }
   ],
   "fingerprint_sha256": "968a690f5cbd8c606eeb66d3a33169f12c20816463aa64aab68f6261f0c86022",

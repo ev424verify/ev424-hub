@@ -1,119 +1,138 @@
 {
   "entry_id": "EV424-ENTRY-000045",
-  "issued_date": "2026-03-08T17:15:48+0900",
-  "source_url": "https://commission.europa.eu/document/download/e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf",
-  "fingerprint_sha256": "26264213edd1c6a509b3ac00b6cba8c414a46393c67f5b556e320cb4623daf9f",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-03-15T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-15T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-03-22T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-22T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-03-29T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-03-29T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-04-05T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-05T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-04-12T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-12T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-04-19T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-19T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-04-26T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-04-26T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-05-03T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-03T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-05-10T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-10T17:15:48+09:00"
     },
     {
-      "observed_at_kst": "2026-05-17T17:15:48+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-17T17:15:48+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-24T17:15:48+09:00",
+      "effective_url": "https://commission.europa.eu/document/download/e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "26264213edd1c6a509b3ac00b6cba8c414a46393c67f5b556e320cb4623daf9f",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000045.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:32:10+09:00",
+      "observed_sha256": "26264213edd1c6a509b3ac00b6cba8c414a46393c67f5b556e320cb4623daf9f",
+      "prev_ledger_sha256": "456517ea83c83848c62cd0009a93564f45983bc042cd0cdb6f381cded181ab68",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "362841",
+      "source_url": "https://commission.europa.eu/document/download/e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "26264213edd1c6a509b3ac00b6cba8c414a46393c67f5b556e320cb4623daf9f",
+  "issued_date": "2026-03-08T17:15:48+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://commission.europa.eu/document/download/e6d5db69-e0ab-4bec-9dc0-3867b4373019_en?filename=White+paper+for+European+defence+%E2%80%93+Readiness+2030.pdf"
 }

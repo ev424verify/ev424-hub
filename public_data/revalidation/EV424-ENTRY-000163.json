@@ -18,6 +18,25 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "2367063",
       "source_url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-23T14:00:37+09:00",
+      "effective_url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "50c7c11439c316732dbccd0f7df01be65cd46926ad21436ab7cd36735ac15106",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000163.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:29+09:00",
+      "observed_sha256": "50c7c11439c316732dbccd0f7df01be65cd46926ad21436ab7cd36735ac15106",
+      "prev_ledger_sha256": "c9f427204fd6176f437e30303af0d223d6da2358aeb6226ec14025fd4b6de3d3",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2367063",
+      "source_url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf"
     }
   ],
   "fingerprint_sha256": "50c7c11439c316732dbccd0f7df01be65cd46926ad21436ab7cd36735ac15106",

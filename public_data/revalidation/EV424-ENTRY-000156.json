@@ -1,20 +1,39 @@
 {
   "entry_id": "EV424-ENTRY-000156",
-  "issued_date": "2026-05-06T19:01:21+0900",
-  "source_url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf",
-  "fingerprint_sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-05-13T19:01:21+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-13T19:01:21+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T19:01:21+09:00",
+      "effective_url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000156.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:19+09:00",
+      "observed_sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6",
+      "prev_ledger_sha256": "b8c0f63003d2922f912ff38cc6d26ae6a84ac6c46102737e40f9263ef8c1f74f",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "85748",
+      "source_url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6",
+  "issued_date": "2026-05-06T19:01:21+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf"
 }

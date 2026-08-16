@@ -1,31 +1,50 @@
 {
   "entry_id": "EV424-ENTRY-000143",
-  "issued_date": "2026-04-29T09:40:36+0900",
-  "source_url": "https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf",
-  "fingerprint_sha256": "b2b5beba3ed386a58de760e664f5c98b90a6ce1275c7ee66da8beb70e106e0f2",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-05-06T09:40:36+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-06T09:40:36+09:00"
     },
     {
-      "observed_at_kst": "2026-05-13T09:40:36+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-13T09:40:36+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T09:40:36+09:00",
+      "effective_url": "https://www-cdn.anthropic.com/9fa30625273bafdf5af82c93719d7ca606485a16.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "b2b5beba3ed386a58de760e664f5c98b90a6ce1275c7ee66da8beb70e106e0f2",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000143.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:13+09:00",
+      "observed_sha256": "b2b5beba3ed386a58de760e664f5c98b90a6ce1275c7ee66da8beb70e106e0f2",
+      "prev_ledger_sha256": "fdba44c1f3044b9ae6e2772af9b6b8f896a619a2995bdd25a82f011501f86eb9",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1017533",
+      "source_url": "https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "b2b5beba3ed386a58de760e664f5c98b90a6ce1275c7ee66da8beb70e106e0f2",
+  "issued_date": "2026-04-29T09:40:36+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://assets.anthropic.com/m/4c024b86c698d3d4/original/Claude-4-1-System-Card.pdf"
 }

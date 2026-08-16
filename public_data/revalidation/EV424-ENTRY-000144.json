@@ -1,31 +1,50 @@
 {
   "entry_id": "EV424-ENTRY-000144",
-  "issued_date": "2026-04-29T17:28:52+0900",
-  "source_url": "https://www.ema.europa.eu/en/documents/other/overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
-  "fingerprint_sha256": "0f321059a2f330b43193ddc03ea9987aa772c7365a130bbbbc9210b50a3cb19e",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-05-06T17:28:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-06T17:28:52+09:00"
     },
     {
-      "observed_at_kst": "2026-05-13T17:28:52+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-13T17:28:52+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-20T17:28:52+09:00",
+      "effective_url": "https://www.ema.europa.eu/en/documents/other/overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "0f321059a2f330b43193ddc03ea9987aa772c7365a130bbbbc9210b50a3cb19e",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000144.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:13+09:00",
+      "observed_sha256": "0f321059a2f330b43193ddc03ea9987aa772c7365a130bbbbc9210b50a3cb19e",
+      "prev_ledger_sha256": "4e9983df9c29b2fc7b9d354855e8e42ddd4a6c8b60d5cfc571c1ff852fdf0dd0",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "200970",
+      "source_url": "https://www.ema.europa.eu/en/documents/other/overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "0f321059a2f330b43193ddc03ea9987aa772c7365a130bbbbc9210b50a3cb19e",
+  "issued_date": "2026-04-29T17:28:52+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://www.ema.europa.eu/en/documents/other/overview-comments-received-draft-guideline-procedure-eu-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf"
 }

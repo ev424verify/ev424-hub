@@ -1,5 +1,6 @@
 {
   "entry_id": "EV424-ENTRY-000182",
+  "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
   "events": [
     {
       "content_type": "application/pdf",
@@ -18,10 +19,43 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1323574",
       "source_url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-06-23T14:05:28+09:00",
+      "effective_url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf",
+      "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+      "final_status": "FAIL",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "A_SOURCE_PDF_SHA_MISMATCH",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:35:03+09:00",
+      "observed_sha256": "d4c894b4aa85b5741c11062484b9c44052037b5d3b1652e8c16485a4cc20ecb2",
+      "prev_ledger_sha256": "3957f3e2a190ae22691204f8cc9e6cd0c305bb9ff4c95bdf4fcd0f9b42a9f16f",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1368130",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "source_url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf"
     }
   ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "fail_recorded_at_kst": "2026-08-16T09:35:03+09:00",
   "fingerprint_sha256": "af0239b8206536706af95dbe55ec8259c3595617c74dea7d9be7101ebe9cc963",
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
   "issued_date": "2026-06-08T15:47:33+0900",
+  "last_current_sha12": "d4c894b4aa85",
+  "last_expected_sha12": "af0239b82065",
+  "last_fail_reason": "A_SOURCE_PDF_SHA_MISMATCH",
+  "last_public_surface": "EV424-ENTRY-000182 FAIL REASON=A_SOURCE_PDF_SHA_MISMATCH EXPECTED_SHA12=af0239b82065 CURRENT_SHA12=d4c894b4aa85 LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD OBSERVED_AT=2026-08-16T09:35:03+09:00",
   "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "revalidation_skip_after_fail_record": "YES",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
   "source_url": "https://www.debian.org/doc/manuals/debian-reference/debian-reference.en.pdf"
 }

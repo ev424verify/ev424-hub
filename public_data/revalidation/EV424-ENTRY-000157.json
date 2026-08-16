@@ -1,20 +1,39 @@
 {
   "entry_id": "EV424-ENTRY-000157",
-  "issued_date": "2026-05-07T08:36:23+0900",
-  "source_url": "https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf",
-  "fingerprint_sha256": "932b5c967b77ac5a90bdeec9dfda9a84c686d7b8ef83de8ebdb20e0455bb4ff4",
-  "revalidation_policy": "NONE",
   "events": [
     {
-      "observed_at_kst": "2026-05-14T08:36:23+09:00",
-      "final_status": "PASS",
       "checks": [
         "LOCAL_SHA",
         "SRC_RECORD",
         "REDOWNLOAD",
         "CHAIN"
       ],
-      "note": "Weekly auto Observed Event"
+      "final_status": "PASS",
+      "note": "Weekly auto Observed Event",
+      "observed_at_kst": "2026-05-14T08:36:23+09:00"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-05-21T08:36:23+09:00",
+      "effective_url": "https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V2",
+      "expected_sha256": "932b5c967b77ac5a90bdeec9dfda9a84c686d7b8ef83de8ebdb20e0455bb4ff4",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000157.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T09:33:19+09:00",
+      "observed_sha256": "932b5c967b77ac5a90bdeec9dfda9a84c686d7b8ef83de8ebdb20e0455bb4ff4",
+      "prev_ledger_sha256": "b128eb68704c04e4faf00876382aba937baa4ec2e382626e6edd71647aa00a12",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "10179487",
+      "source_url": "https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf"
     }
-  ]
+  ],
+  "fingerprint_sha256": "932b5c967b77ac5a90bdeec9dfda9a84c686d7b8ef83de8ebdb20e0455bb4ff4",
+  "issued_date": "2026-05-07T08:36:23+0900",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf"
 }

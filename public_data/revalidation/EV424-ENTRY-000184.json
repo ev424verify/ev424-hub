@@ -1,8 +1,28 @@
 {
   "entry_id": "EV424-ENTRY-000184",
-  "issued_date": "2026-07-14",
-  "source_url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf",
+  "events": [
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-07-21T00:00:00+09:00",
+      "effective_url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "73602e37f6192afec4b38a4a1b536a2a068826dc12787b33a5c339d63f5e795d",
+      "final_status": "PASS",
+      "http_code": "200",
+      "magic": "%PDF-",
+      "native_check": "EV424-ENTRY-000184.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-08-16T08:53:34+09:00",
+      "observed_sha256": "73602e37f6192afec4b38a4a1b536a2a068826dc12787b33a5c339d63f5e795d",
+      "prev_ledger_sha256": "ae300e0d8237f349a06c4563b6ea61f9c3c1417533f79316687997f2fb0c955b",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "469686",
+      "source_url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf"
+    }
+  ],
   "fingerprint_sha256": "73602e37f6192afec4b38a4a1b536a2a068826dc12787b33a5c339d63f5e795d",
-  "revalidation_policy": "NONE",
-  "events": []
+  "issued_date": "2026-07-14",
+  "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "source_url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf"
 }
