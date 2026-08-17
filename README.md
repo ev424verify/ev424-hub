@@ -16,6 +16,89 @@ EV424 now maintains public evidence rails for both Document Passport and Video P
 
 [Live Verify](https://ev424verify.com) · [Public Evidence Index](https://ev424verify.com/public_data/) · [Video Verify](https://ev424verify.com/video/) · [Whitepaper](https://ev424verify.com/whitepaper.html) · [Legal Notice](LEGAL_NOTICE.md) · [Contact](mailto:ev424.verify@gmail.com)
 
+## EV424 Verification Kernel
+
+EV424 provides a public Linux Verification Kernel for reproducible byte-level verification from official public PDF sources.
+
+### Current Public Linux Release
+
+`EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz`
+
+### Linux Download and Verification
+
+```bash
+set -euo pipefail
+/usr/bin/mkdir --mode=0755 -- /tmp/EV424_PUBLIC_INSTALL_V2
+/usr/bin/curl --fail --location --silent --show-error --output /tmp/EV424_PUBLIC_INSTALL_V2/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz -- https://ev424verify.pages.dev/download/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz
+/usr/bin/printf "%s  %s\n" "a2c25ebf2a6e35aaee326a9239f4cf9d3ab20b2f57704b4dbca5afdb47060b22" "/tmp/EV424_PUBLIC_INSTALL_V2/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz" | /usr/bin/sha256sum --check -
+```
+
+**Download → Verify SHA-256 → Install → Run `ev424`**
+
+For the complete qualified installation sequence, see [INSTALL.md](INSTALL.md).
+
+### Run
+
+After completing the qualified installation sequence:
+
+```bash
+ev424
+```
+
+A successful startup opens the EV424 Verification Kernel:
+
+### Kernel Startup Screen
+
+```text
+──────── ● ────────    EV424  Verification Kernel
+
+AVAILABLE KERNEL  DOCUMENT
+BUILD IDENTITY    BOUND
+
+[1] Document Verification
+[2] Evidence Review
+[H] Help
+[I] Build Identity
+[Q] Exit
+
+─────────────────────────────
+Quick Start
+Paste official PDF URL
+─────────────────────────────
+
+EV424 >
+```
+
+### Document Verification
+
+Use the direct official PDF URL. The URL must begin with `http://` or `https://`.
+
+Use the official PDF source, not a search result or a third-party mirror.
+
+Example format:
+
+`https://official-domain.example/path/document.pdf`
+
+### Evidence Review
+
+Review evidence from a completed verification run. The current session Evidence ID is used when available; otherwise, enter the exact Evidence ID.
+
+### Build Identity
+
+`[I] Build Identity` shows the installed public executable identity and the bound request-runner identity.
+
+### Verification Boundary
+
+EV424 verifies reproducible byte-level integrity from an official public source.
+
+PASS does not mean the document is true, safe, legal, authentic, or endorsed.
+
+EV424 does not interpret document meaning.
+
+### Release Boundary
+
+V2 is the current public Linux release. Existing V1 installations are not automatically updated.
+
 ---
 
 ## What EV424 Is
