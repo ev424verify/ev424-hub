@@ -4,7 +4,7 @@
 
 02 IDENTITY
 - WEEK_ID=EV424-WEEK-2026-29
-- WEEKLY_DIR=/home/desktop/experiment_A/ev424_hub_ops/state/ev424_pages_site_week29_sync_clean_successor_v1_20260817T1520+0900/public_data/weekly
+- WEEKLY_DIR=/public_data/weekly
 
 03 VERIFY
 - REVERIFY_BY=sha256sum -c <week_id>.manifest.sha256 && sha256sum -c index.json.sha256
