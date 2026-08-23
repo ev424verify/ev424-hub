@@ -1,48 +1,72 @@
 # EV424 Linux Installation
 
-## Authority
+## Qualified environment
 
-CANONICAL_PUBLIC_ARCHIVE_SHA256=a2c25ebf2a6e35aaee326a9239f4cf9d3ab20b2f57704b4dbca5afdb47060b22
-PUBLIC_ENTRYPOINT_SHA256=c84d734aee03bc9b0194738e07a8952aa4be8a51c0b297cfdcd1d3d79cfa5fdf
-DIRECT_BINDING_SHA256=706ee9a7d49adb647c5d31fe50ccdf045442de16c2df155eadeb3fa5ee96ff77
-HOST_ROOT_INSTALL_QUALIFICATION_FINAL_MANIFEST_SHA256=662ede834964b7cb1656071dee04491b393028cb43a1264acc0b16fca7efe311
+- Ubuntu 24.04
+- Installation and kernel execution are separate.
 
-## Qualified installation contract
+## V3 identities
 
-- /opt/ev424/bin: root:root, mode 0755
-- 7 executable payload files: root:root, mode 0755
-- 2 read-only payload files: root:root, mode 0644
-- /usr/local/bin/ev424: root:root, mode 0755
-- /var/lib/ev424: same UID/GID as the EV424 runtime caller, mode 0755
-- DIRECT_BINDING reproduction: PASS 10/10
-- Launcher startup and Q exit smoke: PASS
+- Installer: `ev424-install-v3`
+- Installer SHA-256: `874b2e03389d439621cafd1ef78d4e5198666b5b8c843dbe67b528d6c46b2f41`
+- Archive: `EV424_PUBLIC_LINUX_DISTRIBUTION_V3.tar.gz`
+- Archive SHA-256: `0556c6360d0abadb78828101fff5f7eb7f925c1fe0b8331af211c85773d1862c`
+
+## One-command installation
+
+```bash
+/usr/bin/bash -c 'set -euo pipefail; p=$(/usr/bin/mktemp -- /tmp/ev424-install-v3.XXXXXXXXXX); trap '\''/usr/bin/rm -f -- "$p"'\'' EXIT; /usr/bin/curl --fail --location --silent --show-error --output "$p" -- https://ev424verify.pages.dev/download/ev424-install-v3; /usr/bin/printf "%s  %s\n" "874b2e03389d439621cafd1ef78d4e5198666b5b8c843dbe67b528d6c46b2f41" "$p" | /usr/bin/sha256sum --check --status; /usr/bin/chmod 0755 -- "$p"; /usr/bin/sudo -- "$p"'
+```
+
+The temporary installer is removed on exit.
+
+The installer does not start the EV424 kernel automatically.
+
+A successful installation ends with:
+
+```text
+NEXT: ev424
+```
+
+## Installer verification sequence
+
+The V3 installer:
+
+1. Downloads the V3 archive when no archive path is supplied.
+2. Verifies the archive SHA-256.
+3. Verifies `PORTABLE_DIRECT_BINDING.sha256`.
+4. Runs dependency preflight before installation.
+5. Requires:
+   - `COMMON_RUNTIME_FINAL_STATE=PASS`
+   - `DOCUMENT_VERIFICATION_FINAL_STATE=AVAILABLE`
+   - `EVIDENCE_REVIEW_FINAL_STATE=AVAILABLE`
+   - `DEPENDENCY_PREFLIGHT=COMPLETE_NONQUALIFYING_OBSERVATION`
+6. Requires root installation authority.
+7. Requires valid `SUDO_UID` and `SUDO_GID`.
+8. Installs the V3 files.
+9. Verifies installed SHA-256 identities and metadata.
+10. Prints `NEXT: ev424`.
+
+## Installation paths
+
+- `/opt/ev424/bin`: root:root, mode 0755
+- 8 executable files under `/opt/ev424/bin`: root:root, mode 0755
+- 2 read-only files under `/opt/ev424/bin`: root:root, mode 0644
+- `/usr/local/bin/ev424`: root:root, mode 0755
+- `/var/lib/ev424`: mode 0755, bound to the `SUDO_UID` / `SUDO_GID` caller identity
+
+## Run EV424
+
+After installation completes:
+
+```bash
+ev424
+```
 
 ## Scope boundary
 
-- 문서역권중복검수 is an optional publication duplicate-inspection function and is excluded from third-party installation qualification.
-- Kernel payload bytes must not be modified during installation.
-- DOCW remains CLOSED_IMMUTABLE.
-
-## Installation commands
-
-
-Run this sequence as the EV424 runtime caller. The staging path must not already exist.
-
-```bash
-set -euo pipefail
-/usr/bin/mkdir --mode=0755 -- /tmp/EV424_PUBLIC_INSTALL_V2
-/usr/bin/curl --fail --location --silent --show-error --output /tmp/EV424_PUBLIC_INSTALL_V2/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz -- https://ev424verify.pages.dev/download/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz
-/usr/bin/printf "%s  %s\n" "a2c25ebf2a6e35aaee326a9239f4cf9d3ab20b2f57704b4dbca5afdb47060b22" "/tmp/EV424_PUBLIC_INSTALL_V2/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz" | /usr/bin/sha256sum --check -
-/usr/bin/mkdir --mode=0755 -- /tmp/EV424_PUBLIC_INSTALL_V2/extracted
-/usr/bin/tar --extract --gzip --no-same-owner --file /tmp/EV424_PUBLIC_INSTALL_V2/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz --directory /tmp/EV424_PUBLIC_INSTALL_V2/extracted
-cd /tmp/EV424_PUBLIC_INSTALL_V2/extracted
-/usr/bin/sha256sum --check DIRECT_BINDING.sha256
-/usr/bin/sudo /usr/bin/install --directory --mode=0755 --owner=root --group=root /opt/ev424/bin
-/usr/bin/sudo /usr/bin/install --mode=0755 --owner=root --group=root --target-directory /opt/ev424/bin opt/ev424/bin/새문서전송사전검사 opt/ev424/bin/문서역권 opt/ev424/bin/문서역권2 opt/ev424/bin/문서역권3 opt/ev424/bin/문서역권4 opt/ev424/bin/문서역권5 opt/ev424/bin/새문서요청검증.PUBLIC_V7_EXECUTABLE_BINDING_SUCCESSOR_V1
-/usr/bin/sudo /usr/bin/install --mode=0644 --owner=root --group=root --target-directory /opt/ev424/bin opt/ev424/bin/ev424.PUBLIC_V7_EVIDENCE_REVIEW_9ITEM_READ_ONLY_SUCCESSOR_V1 opt/ev424/bin/EV424_PUBLIC_V7_SINGLE_GAWK_CONSUMER_EVIDENCE_ID_TRANSPORT_HARD_CAP_REMOVAL_SUCCESSOR_V1_20260814T1756+0900.awk
-/usr/bin/sudo /usr/bin/install --directory --mode=0755 --owner=root --group=root /usr/local/bin
-/usr/bin/sudo /usr/bin/install --mode=0755 --owner=root --group=root usr/local/bin/ev424 /usr/local/bin/ev424
-/usr/bin/sudo /usr/bin/install --directory --mode=0755 --owner="$UID" --group="${GROUPS[0]}" /var/lib/ev424
-cd /
-/usr/bin/sha256sum --check /tmp/EV424_PUBLIC_INSTALL_V2/extracted/DIRECT_BINDING.sha256
-```
+- Installation does not equal kernel execution.
+- Kernel payload bytes are verified during installation.
+- DOCW remains `CLOSED_IMMUTABLE`.
+- V1/V2 release files remain preserved as publication history.
+- This V3 document remains a nonactive publication candidate until operating deployment verification is complete.

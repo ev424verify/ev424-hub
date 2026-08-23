@@ -1,0 +1,358 @@
+#!/usr/bin/bash
+set -euo pipefail
+
+readonly EXPECTED_ARCHIVE_SHA256='0556c6360d0abadb78828101fff5f7eb7f925c1fe0b8331af211c85773d1862c'
+readonly CANONICAL_ARCHIVE_URL='https://f96995b3.ev424verify.pages.dev/download/EV424_PUBLIC_LINUX_DISTRIBUTION_V3.tar.gz'
+readonly TOP_LEVEL='EV424_PUBLIC_LINUX_V3'
+REMOTE_DOWNLOAD_ROOT=''
+ARCHIVE_PATH=''
+
+fail() {
+    /usr/bin/printf 'EV424_INSTALLER_FAIL_STOP: %s\n' "$1" >&2
+    exit 1
+}
+
+if [[ "$#" -gt 1 ]]; then
+    fail 'ZERO_OR_ONE_ARCHIVE_PATH_ALLOWED'
+fi
+
+cleanup_remote() {
+    if [[ -n "$REMOTE_DOWNLOAD_ROOT" && -d "$REMOTE_DOWNLOAD_ROOT" && ! -L "$REMOTE_DOWNLOAD_ROOT" ]]; then
+        /usr/bin/rm -rf -- "$REMOTE_DOWNLOAD_ROOT"
+    fi
+}
+trap cleanup_remote EXIT
+
+if [[ "$#" -eq 0 ]]; then
+    if [[ ! -x /usr/bin/curl ]]; then
+        fail 'REMOTE_MODE_REQUIRES_USR_BIN_CURL'
+    fi
+
+    REMOTE_DOWNLOAD_ROOT="/tmp/ev424-v3-remote-install.$$"
+    if [[ -e "$REMOTE_DOWNLOAD_ROOT" || -L "$REMOTE_DOWNLOAD_ROOT" ]]; then
+        fail 'REMOTE_DOWNLOAD_PATH_COLLISION'
+    fi
+
+    /usr/bin/mkdir --mode=0700 -- "$REMOTE_DOWNLOAD_ROOT"
+    ARCHIVE_PATH="$REMOTE_DOWNLOAD_ROOT/EV424_PUBLIC_LINUX_DISTRIBUTION_V3.tar.gz"
+
+    /usr/bin/curl \
+        --fail \
+        --location \
+        --silent \
+        --show-error \
+        --output "$ARCHIVE_PATH" \
+        -- "$CANONICAL_ARCHIVE_URL"
+else
+    ARCHIVE_PATH="$1"
+    case "$ARCHIVE_PATH" in
+        /*) ;;
+        *) fail 'ARCHIVE_PATH_MUST_BE_ABSOLUTE' ;;
+    esac
+fi
+
+readonly ARCHIVE_PATH
+
+if [[ ! -f "$ARCHIVE_PATH" || -L "$ARCHIVE_PATH" ]]; then
+    fail 'ARCHIVE_MUST_BE_A_REGULAR_FILE_AND_NOT_A_SYMLINK'
+fi
+
+ACTUAL_ARCHIVE_SHA256=$(/usr/bin/sha256sum -- "$ARCHIVE_PATH")
+ACTUAL_ARCHIVE_SHA256=${ACTUAL_ARCHIVE_SHA256%% *}
+
+if [[ "$ACTUAL_ARCHIVE_SHA256" != "$EXPECTED_ARCHIVE_SHA256" ]]; then
+    fail 'ARCHIVE_SHA256_MISMATCH_BEFORE_EXTRACTION'
+fi
+
+readonly EXPECTED_MEMBERS='EV424_PUBLIC_LINUX_V3/
+EV424_PUBLIC_LINUX_V3/ARCHIVE_LAYOUT_CONTRACT_CANDIDATE.tsv
+EV424_PUBLIC_LINUX_V3/ARCHIVE_LAYOUT_MEMBER_REGISTRY_CANDIDATE.tsv
+EV424_PUBLIC_LINUX_V3/PORTABLE_DIRECT_BINDING.sha256
+EV424_PUBLIC_LINUX_V3/V3_INSTALL_CONTRACT_SUCCESSOR.tsv
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/EV424_PUBLIC_V7_SINGLE_GAWK_CONSUMER_EVIDENCE_ID_TRANSPORT_HARD_CAP_REMOVAL_SUCCESSOR_V1_20260814T1756+0900.awk
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/ev424.PUBLIC_V7_EVIDENCE_REVIEW_9ITEM_READ_ONLY_SUCCESSOR_V1
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/ev424_dependency_preflight.sh
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권2
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권3
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권4
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권5
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/새문서요청검증.PUBLIC_V7_EXECUTABLE_BINDING_SUCCESSOR_V1
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/새문서전송사전검사
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/usr/
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/usr/local/
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/usr/local/bin/
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_CANDIDATE/usr/local/bin/ev424
+EV424_PUBLIC_LINUX_V3/V3_PAYLOAD_MANIFEST_SUCCESSOR.sha256'
+
+ACTUAL_MEMBERS=$(/usr/bin/tar -tzf "$ARCHIVE_PATH")
+
+if [[ "$ACTUAL_MEMBERS" != "$EXPECTED_MEMBERS" ]]; then
+    fail 'ARCHIVE_MEMBER_REGISTRY_EXACT_MATCH_FAILED'
+fi
+
+TYPE_COUNT=0
+while IFS= read -r HEADER_LINE; do
+    case "$HEADER_LINE" in
+        d*|-*) ;;
+        *) fail 'PROHIBITED_ARCHIVE_MEMBER_TYPE' ;;
+    esac
+    TYPE_COUNT=$((TYPE_COUNT + 1))
+done < <(/usr/bin/tar --numeric-owner -tvzf "$ARCHIVE_PATH")
+
+if [[ "$TYPE_COUNT" -ne 24 ]]; then
+    fail 'ARCHIVE_MEMBER_COUNT_NOT_24'
+fi
+
+EXTRACTION_ROOT=$(/usr/bin/mktemp -d -- /tmp/ev424-nonpublic-install.XXXXXXXXXX)
+/usr/bin/chmod 0700 -- "$EXTRACTION_ROOT"
+
+OPT_PARENT_CREATED=0
+LOCAL_BIN_CREATED=0
+RUNTIME_PARENT_CREATED=0
+BIN_BACKED_UP=0
+BIN_COMMITTED=0
+ENTRY_BACKED_UP=0
+ENTRY_COMMITTED=0
+INSTALL_SUCCESS=0
+NEW_BIN=''
+NEW_ENTRY=''
+BIN_BACKUP=''
+ENTRY_BACKUP=''
+
+cleanup() {
+    EXIT_STATUS=$?
+    trap - EXIT
+
+    if [[ "$INSTALL_SUCCESS" -ne 1 ]]; then
+        if [[ "$ENTRY_COMMITTED" -eq 1 && ( -e /usr/local/bin/ev424 || -L /usr/local/bin/ev424 ) ]]; then
+            /usr/bin/rm -f -- /usr/local/bin/ev424
+        fi
+        if [[ "$ENTRY_BACKED_UP" -eq 1 && ( -e "$ENTRY_BACKUP" || -L "$ENTRY_BACKUP" ) ]]; then
+            /usr/bin/mv -- "$ENTRY_BACKUP" /usr/local/bin/ev424
+        fi
+        if [[ "$BIN_COMMITTED" -eq 1 && ( -e /opt/ev424/bin || -L /opt/ev424/bin ) ]]; then
+            /usr/bin/rm -rf -- /opt/ev424/bin
+        fi
+        if [[ "$BIN_BACKED_UP" -eq 1 && ( -e "$BIN_BACKUP" || -L "$BIN_BACKUP" ) ]]; then
+            /usr/bin/mv -- "$BIN_BACKUP" /opt/ev424/bin
+        fi
+    fi
+
+    if [[ -n "$NEW_BIN" && ( -e "$NEW_BIN" || -L "$NEW_BIN" ) ]]; then
+        /usr/bin/rm -rf -- "$NEW_BIN"
+    fi
+    if [[ -n "$NEW_ENTRY" && ( -e "$NEW_ENTRY" || -L "$NEW_ENTRY" ) ]]; then
+        /usr/bin/rm -f -- "$NEW_ENTRY"
+    fi
+    if [[ -n "$EXTRACTION_ROOT" && -d "$EXTRACTION_ROOT" && ! -L "$EXTRACTION_ROOT" ]]; then
+        /usr/bin/rm -rf -- "$EXTRACTION_ROOT"
+    fi
+    if [[ "$INSTALL_SUCCESS" -ne 1 && "$LOCAL_BIN_CREATED" -eq 1 ]]; then
+        /usr/bin/rmdir -- /usr/local/bin 2>/dev/null || true
+    fi
+    if [[ "$INSTALL_SUCCESS" -ne 1 && "$OPT_PARENT_CREATED" -eq 1 ]]; then
+        /usr/bin/rmdir -- /opt/ev424 2>/dev/null || true
+    fi
+    if [[ "$INSTALL_SUCCESS" -ne 1 && "$RUNTIME_PARENT_CREATED" -eq 1 ]]; then
+        /usr/bin/rmdir -- /var/lib/ev424 2>/dev/null || true
+    fi
+
+    cleanup_remote
+
+    exit "$EXIT_STATUS"
+}
+trap cleanup EXIT
+
+/usr/bin/tar -xzf "$ARCHIVE_PATH" -C "$EXTRACTION_ROOT" --no-same-owner
+
+readonly EXTRACTED_ROOT="$EXTRACTION_ROOT/$TOP_LEVEL"
+
+if [[ ! -d "$EXTRACTED_ROOT" || -L "$EXTRACTED_ROOT" ]]; then
+    fail 'EXTRACTED_TOP_LEVEL_DIRECTORY_INVALID'
+fi
+
+BINDING_LINE_COUNT=$(/usr/bin/wc -l < "$EXTRACTED_ROOT/PORTABLE_DIRECT_BINDING.sha256")
+if [[ "$BINDING_LINE_COUNT" -ne 15 ]]; then
+    fail 'PORTABLE_DIRECT_BINDING_ENTRY_COUNT_NOT_15'
+fi
+
+/usr/bin/env -C "$EXTRACTED_ROOT" /usr/bin/sha256sum -c -- PORTABLE_DIRECT_BINDING.sha256
+
+readonly PREFLIGHT_PATH="$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/ev424_dependency_preflight.sh"
+readonly PREFLIGHT_OUTPUT="$EXTRACTION_ROOT/DEPENDENCY_PREFLIGHT.stdout"
+
+if ! /usr/bin/bash "$PREFLIGHT_PATH" > "$PREFLIGHT_OUTPUT"; then
+    /usr/bin/cat -- "$PREFLIGHT_OUTPUT"
+    fail 'DEPENDENCY_PREFLIGHT_EXECUTION_FAILED_BEFORE_INSTALL'
+fi
+
+/usr/bin/cat -- "$PREFLIGHT_OUTPUT"
+
+for REQUIRED_PREFLIGHT_LINE in \
+    'COMMON_RUNTIME_FINAL_STATE=PASS' \
+    'DOCUMENT_VERIFICATION_FINAL_STATE=AVAILABLE' \
+    'EVIDENCE_REVIEW_FINAL_STATE=AVAILABLE' \
+    'DEPENDENCY_PREFLIGHT=COMPLETE_NONQUALIFYING_OBSERVATION'
+do
+    if ! /usr/bin/grep --fixed-strings --line-regexp --quiet -- "$REQUIRED_PREFLIGHT_LINE" "$PREFLIGHT_OUTPUT"; then
+        fail "DEPENDENCY_PREFLIGHT_REQUIRED_STATE_ABSENT:$REQUIRED_PREFLIGHT_LINE"
+    fi
+done
+
+if [[ "$(/usr/bin/id -u)" != '0' ]]; then
+    fail 'ROOT_INSTALL_AUTHORITY_REQUIRED'
+fi
+
+case "${SUDO_UID:-}" in
+    ''|*[!0-9]*) fail 'SUDO_CALLER_UID_INVALID' ;;
+esac
+case "${SUDO_GID:-}" in
+    ''|*[!0-9]*) fail 'SUDO_CALLER_GID_INVALID' ;;
+esac
+
+if [[ -L /var/lib/ev424 ]]; then
+    fail 'RUNTIME_PARENT_SYMLINK_PROHIBITED'
+fi
+if [[ ! -e /var/lib/ev424 ]]; then
+    /usr/bin/install \
+        --directory \
+        --mode=0755 \
+        --owner="$SUDO_UID" \
+        --group="$SUDO_GID" \
+        -- \
+        /var/lib/ev424
+    RUNTIME_PARENT_CREATED=1
+elif [[ ! -d /var/lib/ev424 ]]; then
+    fail 'RUNTIME_PARENT_NOT_DIRECTORY'
+elif ! /usr/bin/find \
+    /var/lib/ev424 \
+    -maxdepth 0 \
+    -type d \
+    -uid "$SUDO_UID" \
+    -gid "$SUDO_GID" \
+    -perm 0755 \
+    -print \
+    -quit \
+    | /usr/bin/grep --quiet --fixed-strings -- '/var/lib/ev424'
+then
+    fail 'RUNTIME_PARENT_METADATA_MISMATCH'
+fi
+
+if [[ -L /opt/ev424 ]]; then
+    fail 'OPT_EV424_PARENT_SYMLINK_PROHIBITED'
+fi
+if [[ ! -e /opt/ev424 ]]; then
+    /usr/bin/install -d -m 0755 -o root -g root -- /opt/ev424
+    OPT_PARENT_CREATED=1
+elif [[ ! -d /opt/ev424 ]]; then
+    fail 'OPT_EV424_PARENT_NOT_DIRECTORY'
+fi
+
+if [[ -L /usr/local/bin ]]; then
+    fail 'USR_LOCAL_BIN_SYMLINK_PROHIBITED'
+fi
+if [[ ! -e /usr/local/bin ]]; then
+    /usr/bin/install -d -m 0755 -o root -g root -- /usr/local/bin
+    LOCAL_BIN_CREATED=1
+elif [[ ! -d /usr/local/bin ]]; then
+    fail 'USR_LOCAL_BIN_NOT_DIRECTORY'
+fi
+
+NEW_BIN="/opt/ev424/.ev424-bin-new.$$"
+BIN_BACKUP="/opt/ev424/.ev424-bin-rollback.$$"
+ENTRY_BACKUP="/usr/local/bin/.ev424-rollback.$$"
+
+if [[ -e "$NEW_BIN" || -L "$NEW_BIN" || -e "$BIN_BACKUP" || -L "$BIN_BACKUP" || -e "$ENTRY_BACKUP" || -L "$ENTRY_BACKUP" ]]; then
+    fail 'INSTALL_TRANSACTION_PATH_COLLISION'
+fi
+
+/usr/bin/install -d -m 0755 -o root -g root -- "$NEW_BIN"
+
+/usr/bin/install -m 0644 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/EV424_PUBLIC_V7_SINGLE_GAWK_CONSUMER_EVIDENCE_ID_TRANSPORT_HARD_CAP_REMOVAL_SUCCESSOR_V1_20260814T1756+0900.awk" "$NEW_BIN/EV424_PUBLIC_V7_SINGLE_GAWK_CONSUMER_EVIDENCE_ID_TRANSPORT_HARD_CAP_REMOVAL_SUCCESSOR_V1_20260814T1756+0900.awk"
+/usr/bin/install -m 0644 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/ev424.PUBLIC_V7_EVIDENCE_REVIEW_9ITEM_READ_ONLY_SUCCESSOR_V1" "$NEW_BIN/ev424.PUBLIC_V7_EVIDENCE_REVIEW_9ITEM_READ_ONLY_SUCCESSOR_V1"
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/ev424_dependency_preflight.sh" "$NEW_BIN/ev424_dependency_preflight.sh"
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권" "$NEW_BIN/문서역권"
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권2" "$NEW_BIN/문서역권2"
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권3" "$NEW_BIN/문서역권3"
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권4" "$NEW_BIN/문서역권4"
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/문서역권5" "$NEW_BIN/문서역권5"
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/새문서요청검증.PUBLIC_V7_EXECUTABLE_BINDING_SUCCESSOR_V1" "$NEW_BIN/새문서요청검증.PUBLIC_V7_EXECUTABLE_BINDING_SUCCESSOR_V1"
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/opt/ev424/bin/새문서전송사전검사" "$NEW_BIN/새문서전송사전검사"
+
+NEW_ENTRY=$(/usr/bin/mktemp -- /usr/local/bin/.ev424-new.XXXXXXXXXX)
+/usr/bin/install -m 0755 -o root -g root -- "$EXTRACTED_ROOT/V3_PAYLOAD_CANDIDATE/usr/local/bin/ev424" "$NEW_ENTRY"
+
+if [[ -e /opt/ev424/bin || -L /opt/ev424/bin ]]; then
+    /usr/bin/mv -- /opt/ev424/bin "$BIN_BACKUP"
+    BIN_BACKED_UP=1
+fi
+/usr/bin/mv -- "$NEW_BIN" /opt/ev424/bin
+BIN_COMMITTED=1
+
+if [[ -e /usr/local/bin/ev424 || -L /usr/local/bin/ev424 ]]; then
+    /usr/bin/mv -- /usr/local/bin/ev424 "$ENTRY_BACKUP"
+    ENTRY_BACKED_UP=1
+fi
+/usr/bin/mv -- "$NEW_ENTRY" /usr/local/bin/ev424
+ENTRY_COMMITTED=1
+
+verify_hash() {
+    EXPECTED_HASH="$1"
+    INSTALLED_PATH="$2"
+    ACTUAL_HASH=$(/usr/bin/sha256sum -- "$INSTALLED_PATH")
+    ACTUAL_HASH=${ACTUAL_HASH%% *}
+    if [[ "$ACTUAL_HASH" != "$EXPECTED_HASH" ]]; then
+        fail "INSTALLED_SHA256_MISMATCH:$INSTALLED_PATH"
+    fi
+}
+
+verify_metadata() {
+    EXPECTED_METADATA="$1"
+    INSTALLED_PATH="$2"
+    ACTUAL_METADATA=$(/usr/bin/stat -c '%a:%u:%g' -- "$INSTALLED_PATH")
+    if [[ "$ACTUAL_METADATA" != "$EXPECTED_METADATA" ]]; then
+        fail "INSTALLED_METADATA_MISMATCH:$INSTALLED_PATH"
+    fi
+}
+
+verify_hash 'a88de62962328c0f051f740ed90502f220ef405d519033b083a0633b4d0444bc' '/opt/ev424/bin/EV424_PUBLIC_V7_SINGLE_GAWK_CONSUMER_EVIDENCE_ID_TRANSPORT_HARD_CAP_REMOVAL_SUCCESSOR_V1_20260814T1756+0900.awk'
+verify_hash 'eb8413983d7c70ac5d0a3471a3de25f86096b986ea7384c5f1cc8c601be3f9df' '/opt/ev424/bin/ev424.PUBLIC_V7_EVIDENCE_REVIEW_9ITEM_READ_ONLY_SUCCESSOR_V1'
+verify_hash '7a566c5402b484ec54f295d5b742f172834b4ce6331543c48257fbcec09cfeed' '/opt/ev424/bin/ev424_dependency_preflight.sh'
+verify_hash '2b8048bb4458af909a03119726ebf350acb6982445555eb2bae138756ae5072f' '/opt/ev424/bin/문서역권'
+verify_hash '2c45ac04c7749b76e73b64c6dee7a9426bd846acf971af86e0edd79f8f189076' '/opt/ev424/bin/문서역권2'
+verify_hash 'c6fd411e008d148abb7efc5328522029d7ebbb4346317c1a86ae4d01e4045701' '/opt/ev424/bin/문서역권3'
+verify_hash '31b2f75b5e2e351055edc202274431c1b8c50c55bba963cceeca1216d447826a' '/opt/ev424/bin/문서역권4'
+verify_hash '3bd04133cfe1ec82c30118e617850bc866966720fb0d453d228cd85008cef995' '/opt/ev424/bin/문서역권5'
+verify_hash '7d6aea40033cf33235d223a60a53d3554cc13cba967dfcecdf9027f5b478a27a' '/opt/ev424/bin/새문서요청검증.PUBLIC_V7_EXECUTABLE_BINDING_SUCCESSOR_V1'
+verify_hash 'bb1d2bdcb83009fb4c38499e0b1e0b2eb593fb2cd01b1153bae81283cbf89036' '/opt/ev424/bin/새문서전송사전검사'
+verify_hash '6bff44e22bba33edbfeb2e73fdc803089e5a24ef2cda5bd732fe25bca5cee619' '/usr/local/bin/ev424'
+
+verify_metadata '755:0:0' '/opt/ev424/bin'
+verify_metadata '644:0:0' '/opt/ev424/bin/EV424_PUBLIC_V7_SINGLE_GAWK_CONSUMER_EVIDENCE_ID_TRANSPORT_HARD_CAP_REMOVAL_SUCCESSOR_V1_20260814T1756+0900.awk'
+verify_metadata '644:0:0' '/opt/ev424/bin/ev424.PUBLIC_V7_EVIDENCE_REVIEW_9ITEM_READ_ONLY_SUCCESSOR_V1'
+verify_metadata '755:0:0' '/opt/ev424/bin/ev424_dependency_preflight.sh'
+verify_metadata '755:0:0' '/opt/ev424/bin/문서역권'
+verify_metadata '755:0:0' '/opt/ev424/bin/문서역권2'
+verify_metadata '755:0:0' '/opt/ev424/bin/문서역권3'
+verify_metadata '755:0:0' '/opt/ev424/bin/문서역권4'
+verify_metadata '755:0:0' '/opt/ev424/bin/문서역권5'
+verify_metadata '755:0:0' '/opt/ev424/bin/새문서요청검증.PUBLIC_V7_EXECUTABLE_BINDING_SUCCESSOR_V1'
+verify_metadata '755:0:0' '/opt/ev424/bin/새문서전송사전검사'
+verify_metadata '755:0:0' '/usr/local/bin/ev424'
+
+INSTALL_SUCCESS=1
+if [[ "$BIN_BACKED_UP" -eq 1 ]]; then
+    /usr/bin/rm -rf -- "$BIN_BACKUP"
+    BIN_BACKED_UP=0
+fi
+if [[ "$ENTRY_BACKED_UP" -eq 1 ]]; then
+    /usr/bin/rm -f -- "$ENTRY_BACKUP"
+    ENTRY_BACKED_UP=0
+fi
+
+/usr/bin/printf 'NEXT: ev424\n'
