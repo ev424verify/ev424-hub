@@ -22,24 +22,35 @@ EV424 provides a public Linux Verification Kernel for reproducible byte-level ve
 
 ### Current Public Linux Release
 
-`EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz`
+`EV424_PUBLIC_LINUX_DISTRIBUTION_V3.tar.gz`
 
-### Linux Download and Verification
+**Qualified environment:** Ubuntu 24.04
+
+### One-command Installation
 
 ```bash
-set -euo pipefail
-/usr/bin/mkdir --mode=0755 -- /tmp/EV424_PUBLIC_INSTALL_V2
-/usr/bin/curl --fail --location --silent --show-error --output /tmp/EV424_PUBLIC_INSTALL_V2/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz -- https://ev424verify.pages.dev/download/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz
-/usr/bin/printf "%s  %s\n" "a2c25ebf2a6e35aaee326a9239f4cf9d3ab20b2f57704b4dbca5afdb47060b22" "/tmp/EV424_PUBLIC_INSTALL_V2/EV424_PUBLIC_LINUX_DISTRIBUTION_V2.tar.gz" | /usr/bin/sha256sum --check -
+/usr/bin/bash -c 'set -euo pipefail; p=$(/usr/bin/mktemp -- /tmp/ev424-install-v3.XXXXXXXXXX); trap '\''/usr/bin/rm -f -- "$p"'\'' EXIT; /usr/bin/curl --fail --location --silent --show-error --output "$p" -- https://ev424verify.pages.dev/download/ev424-install-v3; /usr/bin/printf "%s  %s\n" "874b2e03389d439621cafd1ef78d4e5198666b5b8c843dbe67b528d6c46b2f41" "$p" | /usr/bin/sha256sum --check --status; /usr/bin/chmod 0755 -- "$p"; /usr/bin/sudo -- "$p"'
 ```
 
-**Download → Verify SHA-256 → Install → Run `ev424`**
+Installer SHA-256:
 
-For the complete qualified installation sequence, see [INSTALL.md](INSTALL.md).
+`874b2e03389d439621cafd1ef78d4e5198666b5b8c843dbe67b528d6c46b2f41`
+
+Archive SHA-256:
+
+`0556c6360d0abadb78828101fff5f7eb7f925c1fe0b8331af211c85773d1862c`
+
+Installation and kernel execution are separate.
+
+A successful installation ends with:
+
+```text
+NEXT: ev424
+```
+
+For the complete qualified installation contract, see [INSTALL.md](INSTALL.md).
 
 ### Run
-
-After completing the qualified installation sequence:
 
 ```bash
 ev424
