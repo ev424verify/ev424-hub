@@ -2166,6 +2166,18 @@
       "result_rep_sha256": "96101db2f725e4ac36909794a8f0ec7b75020bad173d5cec4bca355ef6cef18a",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000186",
+      "issued_kst": "2026-11-18T23:13:58+0900",
+      "month_id": "2026-11",
+      "url": "https://zenodo.org/records/24125544/files/EV424_PI_Main_Zenodo_654751B.pdf",
+      "source_domain": "zenodo.org",
+      "filename": "EV424 π",
+      "display_title": "EV424 π",
+      "result_rep_sha256": "b367063e625cc9d7a2dbacf1d852e01200034baeece3e5263e2cd2a2ec4b757c",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

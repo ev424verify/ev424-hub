@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000186",
+  "type": "doc_passport",
+  "source": "EV424_PI_Main_Zenodo_654751B.pdf",
+  "source_label": "EV424 π",
+  "url": "https://zenodo.org/records/24125544/files/EV424_PI_Main_Zenodo_654751B.pdf",
+  "issued_date": "2026-11-18T23:13:58+0900",
+  "fingerprint_sha256": "d24deb7f73b455a9b034988f881989dc2ad0895226ef93feffdae40321e87b6b",
+  "result_rep_sha256": "b367063e625cc9d7a2dbacf1d852e01200034baeece3e5263e2cd2a2ec4b757c",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_PI_Main_Zenodo_654751B.pdf\nISSUED_DATE  2026-11-18T23:13:58+0900\nFINGERPRINT  d24deb7f73b455a9b034988f881989dc2ad0895226ef93feffdae40321e87b6b\nURL          https://zenodo.org/records/24125544/files/EV424_PI_Main_Zenodo_654751B.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=b367063e625cc9d7a2dbacf1d852e01200034baeece3e5263e2cd2a2ec4b757c\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
