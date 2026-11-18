@@ -74,6 +74,16 @@
       "counts": {
         "EVIDENCE": 1
       }
+    },
+    {
+      "month": "2026-11",
+      "href": "index_2026-11.json",
+      "sha256": "00d89ee6abfadbf85b5d145de6a076c43cf985d3173111f2c818122a7c74153b",
+      "sha256_file": "index_2026-11.json.sha256",
+      "count": 1,
+      "counts": {
+        "EVIDENCE": 1
+      }
     }
   ],
   "rails": {

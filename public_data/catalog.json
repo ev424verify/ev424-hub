@@ -2154,6 +2154,18 @@
       "result_rep_sha256": "2bb1d1a4958de498d7cee40a1ac5b47e9deb7c6614f5398af0aef1e5fea368bc",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000185",
+      "issued_kst": "2026-11-18T21:05:04+0900",
+      "month_id": "2026-11",
+      "url": "https://zenodo.org/records/24319221/files/EV424_Hawking_Radiation_Independent_Reverification_EN_V1.pdf",
+      "source_domain": "zenodo.org",
+      "filename": "EV424",
+      "display_title": "EV424",
+      "result_rep_sha256": "96101db2f725e4ac36909794a8f0ec7b75020bad173d5cec4bca355ef6cef18a",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

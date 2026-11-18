@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000185",
+  "type": "doc_passport",
+  "source": "EV424_Hawking_Radiation_Independent_Reverification_EN_V1.pdf",
+  "source_label": "EV424",
+  "url": "https://zenodo.org/records/24319221/files/EV424_Hawking_Radiation_Independent_Reverification_EN_V1.pdf",
+  "issued_date": "2026-11-18T21:05:04+0900",
+  "fingerprint_sha256": "6ba73c3543d28a8511bf2eda29ed224809a9d2823d63457ecf3f1b83988cf046",
+  "result_rep_sha256": "96101db2f725e4ac36909794a8f0ec7b75020bad173d5cec4bca355ef6cef18a",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_Hawking_Radiation_Independent_Reverification_EN_V1.pdf\nISSUED_DATE  2026-11-18T21:05:04+0900\nFINGERPRINT  6ba73c3543d28a8511bf2eda29ed224809a9d2823d63457ecf3f1b83988cf046\nURL          https://zenodo.org/records/24319221/files/EV424_Hawking_Radiation_Independent_Reverification_EN_V1.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=96101db2f725e4ac36909794a8f0ec7b75020bad173d5cec4bca355ef6cef18a\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

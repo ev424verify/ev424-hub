@@ -701,8 +701,14 @@ a.btn.ghost[href="/video/"],
     label.style.fontWeight = "900";
     label.style.marginBottom = "6px";
 
+    const zenodoPdf = parsedUrl.origin === "https://zenodo.org" &&
+      /^\/records\/\d+\/files\/[^/]+\.pdf$/i.test(parsedUrl.pathname);
+    const previewUrl = zenodoPdf
+      ? new URL(parsedUrl.pathname.replace("/files/", "/preview/"), parsedUrl.origin).href
+      : parsedUrl.href;
+
     const anchor = document.createElement("a");
-    anchor.href = parsedUrl.href;
+    anchor.href = previewUrl;
     anchor.target = "_blank";
     anchor.rel = "noopener noreferrer";
     anchor.textContent = "Open source document";
@@ -720,6 +726,13 @@ a.btn.ghost[href="/video/"],
 
     wrap.appendChild(label);
     wrap.appendChild(anchor);
+    if (zenodoPdf) {
+      const download = document.createElement("a");
+      download.href = parsedUrl.href;
+      download.textContent = "Download original PDF";
+      download.style.display = "block";
+      wrap.appendChild(download);
+    }
     wrap.appendChild(urlText);
     resultBody.appendChild(wrap);
   }
