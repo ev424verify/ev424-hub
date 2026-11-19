@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000188",
+  "type": "doc_passport",
+  "source": "EV424_Kuramoto_Independent_Reverification_Zenodo_EN_V2.pdf",
+  "source_label": "EV424",
+  "url": "https://zenodo.org/records/24363563/files/EV424_Kuramoto_Independent_Reverification_Zenodo_EN_V2.pdf",
+  "issued_date": "2026-11-19T17:47:31+0900",
+  "fingerprint_sha256": "0fa1747bca759ea6930fd149ba2acc0ede2d496502267252d85743343c2ebecc",
+  "result_rep_sha256": "e8db0932c01570402ae1284fe6d5ed782f3e7aebd0f7cf03f8a302a674ccea7c",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_Kuramoto_Independent_Reverification_Zenodo_EN_V2.pdf\nISSUED_DATE  2026-11-19T17:47:31+0900\nFINGERPRINT  0fa1747bca759ea6930fd149ba2acc0ede2d496502267252d85743343c2ebecc\nURL          https://zenodo.org/records/24363563/files/EV424_Kuramoto_Independent_Reverification_Zenodo_EN_V2.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=e8db0932c01570402ae1284fe6d5ed782f3e7aebd0f7cf03f8a302a674ccea7c\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

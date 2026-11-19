@@ -2190,6 +2190,18 @@
       "result_rep_sha256": "612fe922fb29584b9a575ed3206a07d1724caf10659cb454294a6508fd50d5c3",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000188",
+      "issued_kst": "2026-11-19T17:47:31+0900",
+      "month_id": "2026-11",
+      "url": "https://zenodo.org/records/24363563/files/EV424_Kuramoto_Independent_Reverification_Zenodo_EN_V2.pdf",
+      "source_domain": "zenodo.org",
+      "filename": "EV424",
+      "display_title": "EV424",
+      "result_rep_sha256": "e8db0932c01570402ae1284fe6d5ed782f3e7aebd0f7cf03f8a302a674ccea7c",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
