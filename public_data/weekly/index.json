@@ -1,12 +1,24 @@
 {
   "type": "weekly_index_v1",
-  "updated_kst": "2026-08-17T15:27:54+09:00",
+  "updated_kst": "2026-11-19T13:06:40+09:00",
   "weeks": [
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-05.json",
+      "issued_kst": "2026-01-26T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-05.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-05"
+    },
     {
       "href": "/public_data/weekly/EV424-WEEK-2026-06.json",
       "issued_kst": "2026-02-02T00:10:00+09:00",
       "manifest_sha256_file": "EV424-WEEK-2026-06.manifest.sha256",
       "week_id": "EV424-WEEK-2026-06"
+    },
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-07.json",
+      "issued_kst": "2026-02-09T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-07.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-07"
     },
     {
       "href": "/public_data/weekly/EV424-WEEK-2026-08.json",
@@ -57,6 +69,12 @@
       "week_id": "EV424-WEEK-2026-15"
     },
     {
+      "href": "/public_data/weekly/EV424-WEEK-2026-16.json",
+      "issued_kst": "2026-04-13T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-16.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-16"
+    },
+    {
       "href": "/public_data/weekly/EV424-WEEK-2026-17.json",
       "issued_kst": "2026-04-20T00:10:00+09:00",
       "manifest_sha256_file": "EV424-WEEK-2026-17.manifest.sha256",
@@ -81,6 +99,18 @@
       "week_id": "EV424-WEEK-2026-20"
     },
     {
+      "href": "/public_data/weekly/EV424-WEEK-2026-21.json",
+      "issued_kst": "2026-05-18T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-21.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-21"
+    },
+    {
+      "href": "/public_data/weekly/EV424-WEEK-2026-22.json",
+      "issued_kst": "2026-05-25T00:10:00+09:00",
+      "manifest_sha256_file": "EV424-WEEK-2026-22.manifest.sha256",
+      "week_id": "EV424-WEEK-2026-22"
+    },
+    {
       "href": "/public_data/weekly/EV424-WEEK-2026-23.json",
       "issued_kst": "2026-06-01T00:10:00+09:00",
       "manifest_sha256_file": "EV424-WEEK-2026-23.manifest.sha256",
@@ -99,5 +129,5 @@
       "week_id": "EV424-WEEK-2026-29"
     }
   ],
-  "weeks_n": 16
+  "weeks_n": 21
 }
