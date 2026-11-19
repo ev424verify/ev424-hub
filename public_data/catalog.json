@@ -2178,6 +2178,18 @@
       "result_rep_sha256": "b367063e625cc9d7a2dbacf1d852e01200034baeece3e5263e2cd2a2ec4b757c",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000187",
+      "issued_kst": "2026-11-19T11:49:26+0900",
+      "month_id": "2026-11",
+      "url": "https://zenodo.org/records/24284685/files/EV424_Independent_Reverification_of_the_Poincare_Conjecture.pdf",
+      "source_domain": "zenodo.org",
+      "filename": "EV424 푼카레 재검증",
+      "display_title": "EV424 푼카레 재검증",
+      "result_rep_sha256": "612fe922fb29584b9a575ed3206a07d1724caf10659cb454294a6508fd50d5c3",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
