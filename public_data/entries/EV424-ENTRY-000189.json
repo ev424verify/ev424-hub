@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000189",
+  "type": "doc_passport",
+  "source": "EV424_Brain_Atlas_Demo_EN.pdf",
+  "source_label": "EV424",
+  "url": "https://zenodo.org/records/24367465/files/EV424_Brain_Atlas_Demo_EN.pdf",
+  "issued_date": "2026-11-19T20:31:44+0900",
+  "fingerprint_sha256": "7a42ccd62a1b237ef71aa41e29d45babddd6bcf93a9122ad2b8fb4c7389fdc01",
+  "result_rep_sha256": "b16e58edb1693b9f15e92d0caff04c7496ca8e3c54a673062766d7941fa41373",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_Brain_Atlas_Demo_EN.pdf\nISSUED_DATE  2026-11-19T20:31:44+0900\nFINGERPRINT  7a42ccd62a1b237ef71aa41e29d45babddd6bcf93a9122ad2b8fb4c7389fdc01\nURL          https://zenodo.org/records/24367465/files/EV424_Brain_Atlas_Demo_EN.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=b16e58edb1693b9f15e92d0caff04c7496ca8e3c54a673062766d7941fa41373\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
