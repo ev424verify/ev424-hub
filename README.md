@@ -108,7 +108,7 @@ EV424 does not interpret document meaning.
 
 ### Release Boundary
 
-V2 is the current public Linux release. Existing V1 installations are not automatically updated.
+The installer documented above targets V3. Existing installations do not update automatically. Check the installed executable and request-runner identities with `[I] Build Identity`.
 
 ---
 
@@ -192,18 +192,32 @@ A PASS result requires all required gates to pass. No discretionary override is 
 ## Verify in 30 Seconds
 
 1. Open a public EV424 entry.
-2. Inspect the FINAL RECEIPT.
+2. Inspect the FINAL RECEIPT and the latest Revalidation status, when available.
 3. Re-download the official public source.
 4. Compute SHA-256.
 5. Check whether the hash matches.
 
-Stable reference entry:
+Historical reference with a recorded revalidation failure:
 
 - https://ev424verify.com/?q=EV424-ENTRY-000006
 
-Recent public entry:
+Latest public document passport as of 2026-11-19 KST:
 
-- https://ev424verify.com/?q=EV424-ENTRY-000183
+- [EV424-ENTRY-000187 — Poincaré Conjecture](https://ev424verify.com/?q=EV424-ENTRY-000187)
+
+---
+
+## Seven-Day Revalidation
+
+The final receipt preserves the issuance result. The Revalidation section records later source checks. An issuance PASS can appear alongside a later revalidation FAIL.
+
+The first check becomes due seven days after issuance. Each subsequent check becomes due seven days after the latest revalidation PASS. Due checks are run in manual batches.
+
+| Outcome | Public record |
+|---|---|
+| PASS | The retrieved PDF matches the issuance SHA-256. A PASS event is added and the seven-day interval starts again. |
+| FAIL | The retrieved file passes PDF structure checks and its SHA-256 differs. A FAIL event closes recurring checks for that entry. A new source object or an approved reopening is required for further review. |
+| HOLD | The fetch or PDF evidence is inconclusive. The public history receives no event, and the check remains eligible for a later manual batch. |
 
 ---
 
@@ -259,8 +273,11 @@ It is an integrity and reproducibility structure.
 
 | Entry | Source | Meaning |
 |---|---|---|
-| [EV424-ENTRY-000006](https://ev424verify.com/?q=EV424-ENTRY-000006) | NIST.SP.800-228.pdf | Stable reference entry with revalidation continuity |
-| [EV424-ENTRY-000183](https://ev424verify.com/?q=EV424-ENTRY-000183) | NIST.AI.100-4.pdf | Recent public document passport example |
+| [EV424-ENTRY-000006](https://ev424verify.com/?q=EV424-ENTRY-000006) | NIST.SP.800-228.pdf | Issuance PASS with a later source-hash mismatch |
+| [EV424-ENTRY-000183](https://ev424verify.com/?q=EV424-ENTRY-000183) | NIST.AI.100-4.pdf | NIST public document passport example |
+| [EV424-ENTRY-000185](https://ev424verify.com/?q=EV424-ENTRY-000185) | `EV424_Hawking_Radiation_Independent_Reverification_EN_V1.pdf` | Hawking radiation re-verification |
+| [EV424-ENTRY-000186](https://ev424verify.com/?q=EV424-ENTRY-000186) | `EV424_PI_Main_Zenodo_654751B.pdf` | EV424 π document passport |
+| [EV424-ENTRY-000187](https://ev424verify.com/?q=EV424-ENTRY-000187) | `EV424_Independent_Reverification_of_the_Poincare_Conjecture.pdf` | Latest document passport as of 2026-11-19 KST |
 | [EV424-VIDEO-ENTRY-000002](https://ev424verify.com/video/?q=EV424-VIDEO-ENTRY-000002) | NIST video public projection | Video Passport v0.1 public evidence rail example |
 
 ---
