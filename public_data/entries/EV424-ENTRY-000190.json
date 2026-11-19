@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000190",
+  "type": "doc_passport",
+  "source": "EV424_Goldbach_01-25_Final_EN_v1.1_20261119.pdf",
+  "source_label": "EV424",
+  "url": "https://zenodo.org/records/24371241/files/EV424_Goldbach_01-25_Final_EN_v1.1_20261119.pdf",
+  "issued_date": "2026-11-19T23:12:03+0900",
+  "fingerprint_sha256": "96169a4d704ab9a31c4c13c088f3f327a3c3162653533a66b638fc8b079d836d",
+  "result_rep_sha256": "8e5dfc69fd8f38fc2b640659d47d80b536932029a179fc90549804b8076e1619",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_Goldbach_01-25_Final_EN_v1.1_20261119.pdf\nISSUED_DATE  2026-11-19T23:12:03+0900\nFINGERPRINT  96169a4d704ab9a31c4c13c088f3f327a3c3162653533a66b638fc8b079d836d\nURL          https://zenodo.org/records/24371241/files/EV424_Goldbach_01-25_Final_EN_v1.1_20261119.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=8e5dfc69fd8f38fc2b640659d47d80b536932029a179fc90549804b8076e1619\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

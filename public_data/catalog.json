@@ -2214,6 +2214,18 @@
       "result_rep_sha256": "b16e58edb1693b9f15e92d0caff04c7496ca8e3c54a673062766d7941fa41373",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000190",
+      "issued_kst": "2026-11-19T23:12:03+0900",
+      "month_id": "2026-11",
+      "url": "https://zenodo.org/records/24371241/files/EV424_Goldbach_01-25_Final_EN_v1.1_20261119.pdf",
+      "source_domain": "zenodo.org",
+      "filename": "EV424",
+      "display_title": "EV424",
+      "result_rep_sha256": "8e5dfc69fd8f38fc2b640659d47d80b536932029a179fc90549804b8076e1619",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
