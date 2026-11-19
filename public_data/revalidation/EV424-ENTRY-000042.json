@@ -129,6 +129,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1011404",
       "source_url": "https://www.cisa.gov/sites/default/files/2025-08/joint-guide-foundations-for-OT-cybersecurity-asset-inventory-guidance_508c.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:05+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2025-08/joint-guide-foundations-for-OT-cybersecurity-asset-inventory-guidance_508c.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "a40779754d1ca789cc6cb6f4a035175541986157528b4112e2d099cae1d90749",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000042.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:08+09:00",
+      "observed_sha256": "a40779754d1ca789cc6cb6f4a035175541986157528b4112e2d099cae1d90749",
+      "prev_ledger_sha256": "45fb74e6a9f48ed1e7ca1cc1784ed776e7c21647e1a43ec92effbe7f09c43e21",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1011404",
+      "source_url": "https://www.cisa.gov/sites/default/files/2025-08/joint-guide-foundations-for-OT-cybersecurity-asset-inventory-guidance_508c.pdf"
     }
   ],
   "fingerprint_sha256": "a40779754d1ca789cc6cb6f4a035175541986157528b4112e2d099cae1d90749",

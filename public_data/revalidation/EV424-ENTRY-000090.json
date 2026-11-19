@@ -85,6 +85,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1302275",
       "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.ara.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:53+09:00",
+      "effective_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.ara.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "caa672a14c337952fc8c1d42f58233c73a5a1c6520eee49ace337c67f6c0a79f",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000090.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:00+09:00",
+      "observed_sha256": "caa672a14c337952fc8c1d42f58233c73a5a1c6520eee49ace337c67f6c0a79f",
+      "prev_ledger_sha256": "7c1610e0d807eba720cc09d192cd9080e3c3a3a10c3e238143c0a6444739b594",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1302275",
+      "source_url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.ara.pdf"
     }
   ],
   "fingerprint_sha256": "caa672a14c337952fc8c1d42f58233c73a5a1c6520eee49ace337c67f6c0a79f",

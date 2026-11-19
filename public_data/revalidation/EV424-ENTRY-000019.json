@@ -162,6 +162,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "453458",
       "source_url": "https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:45+09:00",
+      "effective_url": "https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000019.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:47+09:00",
+      "observed_sha256": "405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045",
+      "prev_ledger_sha256": "b3dfdc56bcc1ff32228d1a49a774f632dc0b8956c84c90b7cebe43bec9d6fe93",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "453458",
+      "source_url": "https://www.england.nhs.uk/wp-content/uploads/2022/08/b1465-3-guide-to-responding-proportionately-to-patient-safety-incidents-v1.3.pdf"
     }
   ],
   "fingerprint_sha256": "405faa4cd79de3279ab5b268ecf3477044f09de96672e740eacff54af0d54045",

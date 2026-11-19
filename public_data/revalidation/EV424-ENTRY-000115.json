@@ -63,6 +63,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "4785559",
       "source_url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:08+09:00",
+      "effective_url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000115.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:26+09:00",
+      "observed_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",
+      "prev_ledger_sha256": "0681d9b8a500b56dbae960f6a875ecd35d7fcf47c00581d02d2b6e73eda5567a",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "4785559",
+      "source_url": "https://digitalhub.fifa.com/m/428d57940518eef/original/p0ppt4a5mrbb0zmvbl1g-pdf.pdf"
     }
   ],
   "fingerprint_sha256": "453c5e0c2409d32c6c17a1a24f1bf894bf60b8ff463b51e0df45e8d9fae6cf34",

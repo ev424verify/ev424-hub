@@ -74,6 +74,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "3959563",
       "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/the-oecd-going-digital-integrated-policy-framework-2026_f24b6963/0254ae07-en.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:57+09:00",
+      "effective_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/the-oecd-going-digital-integrated-policy-framework-2026_f24b6963/0254ae07-en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "31b55bc09b54959f69f0c98d4e9ce4dc4b3b3624dd5f94a56b89543fd15556d1",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000097.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:06+09:00",
+      "observed_sha256": "31b55bc09b54959f69f0c98d4e9ce4dc4b3b3624dd5f94a56b89543fd15556d1",
+      "prev_ledger_sha256": "1fe0200591a3f51e9b1a75af4e6a0d7f514e9fe61c8cde2f96f54f7ce4770682",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "3959563",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/the-oecd-going-digital-integrated-policy-framework-2026_f24b6963/0254ae07-en.pdf"
     }
   ],
   "fingerprint_sha256": "31b55bc09b54959f69f0c98d4e9ce4dc4b3b3624dd5f94a56b89543fd15556d1",

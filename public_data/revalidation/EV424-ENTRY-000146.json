@@ -41,6 +41,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "7979890",
       "source_url": "https://images.nvidia.com/aem-dam/en-zz/Solutions/data-center/nvidia-ampere-architecture-whitepaper.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:14+09:00",
+      "effective_url": "https://images.nvidia.com/aem-dam/en-zz/Solutions/data-center/nvidia-ampere-architecture-whitepaper.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "3a800ad7668ec37037fa5870a8e3bb681b75f19668b3d11492ab9b0da0d58815",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000146.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:33+09:00",
+      "observed_sha256": "3a800ad7668ec37037fa5870a8e3bb681b75f19668b3d11492ab9b0da0d58815",
+      "prev_ledger_sha256": "a9262532ae7fb4a1098dc1cd92c8fd1686a562971782e4444dc64cd9326f0a0f",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "7979890",
+      "source_url": "https://images.nvidia.com/aem-dam/en-zz/Solutions/data-center/nvidia-ampere-architecture-whitepaper.pdf"
     }
   ],
   "fingerprint_sha256": "3a800ad7668ec37037fa5870a8e3bb681b75f19668b3d11492ab9b0da0d58815",

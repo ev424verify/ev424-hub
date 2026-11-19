@@ -118,6 +118,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "2947752",
       "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:21+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000060.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:35+09:00",
+      "observed_sha256": "4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe",
+      "prev_ledger_sha256": "0b6d147c95fdb89fb6ef8f0a7b537c08fefcb41a24cd7aec74bd23e2f15f4be3",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2947752",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20Report%20on%20CSIRT-LE%20Cooperation%20-%20A%20study%20of%20the%20roles%20and%20synergies%20among%20selected%20countries.pdf"
     }
   ],
   "fingerprint_sha256": "4f00bb52cd9892b920496b4a07f018c3505d9a7aef6a2bbdfb6745d1a64614fe",

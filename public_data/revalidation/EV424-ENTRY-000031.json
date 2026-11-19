@@ -151,6 +151,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "184292",
       "source_url": "https://bitcoin.org/bitcoin.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:58+09:00",
+      "effective_url": "https://bitcoin.org/bitcoin.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000031.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:00+09:00",
+      "observed_sha256": "b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553",
+      "prev_ledger_sha256": "724b43dee9698be9dee9b0636d0ab6c95901798cf7b71a8ffd4b14df3f172ca3",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "184292",
+      "source_url": "https://bitcoin.org/bitcoin.pdf"
     }
   ],
   "fingerprint_sha256": "b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553",

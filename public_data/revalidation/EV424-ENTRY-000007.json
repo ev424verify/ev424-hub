@@ -184,6 +184,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "156786",
       "source_url": "https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part1-introduction/OpenDocument-v1.3-os-part1-introduction.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:39+09:00",
+      "effective_url": "https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part1-introduction/OpenDocument-v1.3-os-part1-introduction.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "d27dae85980c6b2c0c6d2a9a55338244c52e4f416c3573394311d3252916cafe",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000007.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:32+09:00",
+      "observed_sha256": "d27dae85980c6b2c0c6d2a9a55338244c52e4f416c3573394311d3252916cafe",
+      "prev_ledger_sha256": "66408bbe3ae845698c7ffe75d4c6222f99ecbd252dc0bcba2c5fc1e299e7aac0",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "156786",
+      "source_url": "https://docs.oasis-open.org/office/OpenDocument/v1.3/os/part1-introduction/OpenDocument-v1.3-os-part1-introduction.pdf"
     }
   ],
   "fingerprint_sha256": "d27dae85980c6b2c0c6d2a9a55338244c52e4f416c3573394311d3252916cafe",

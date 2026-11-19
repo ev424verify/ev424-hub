@@ -1,5 +1,6 @@
 {
   "entry_id": "EV424-ENTRY-000177",
+  "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
   "events": [
     {
       "content_type": "application/pdf",
@@ -37,10 +38,42 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1260273",
       "source_url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:34:58+09:00",
+      "effective_url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf",
+      "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "4b57ce70e935dd7562b88ca17e938f24d4736c45c9cd12ed820a1f3e246bb7fe",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "fail_reason": "SHA256_MISMATCH",
+      "final_status": "FAIL",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "http_code": "200",
+      "native_check": "SHA256_MISMATCH",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:08:14+09:00",
+      "observed_sha256": "5a11417f40dd8799f55e0efc83e9c7f212ea3d98b34a5a4957494cfb70726d85",
+      "prev_ledger_sha256": "2aaed1bfb5f6f0c94a90d572063f436ce51cbbd936d591e8428a927e59a92e50",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1196024",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "source_url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf"
     }
   ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "fail_recorded_at_kst": "2026-11-19T12:08:14+09:00",
   "fingerprint_sha256": "4b57ce70e935dd7562b88ca17e938f24d4736c45c9cd12ed820a1f3e246bb7fe",
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
   "issued_date": "2026-05-30T18:30:06+0900",
+  "last_current_sha12": "5a11417f40dd",
+  "last_expected_sha12": "4b57ce70e935",
+  "last_fail_reason": "SHA256_MISMATCH",
+  "last_public_surface": "EV424-ENTRY-000177 FAIL REASON=SHA256_MISMATCH EXPECTED_SHA12=4b57ce70e935 CURRENT_SHA12=5a11417f40dd LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD OBSERVED_AT=2026-11-19T12:08:14+09:00",
   "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "revalidation_skip_after_fail_record": "YES",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
   "source_url": "https://www.gnu.org/software/coreutils/manual/coreutils.pdf"
 }

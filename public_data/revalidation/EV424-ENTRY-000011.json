@@ -173,6 +173,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "390677",
       "source_url": "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:43+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000011.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:42+09:00",
+      "observed_sha256": "aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3",
+      "prev_ledger_sha256": "8a82a453621462750778548fce9a05a79d606a0b9505d6bbd3abaac4c4289503",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "390677",
+      "source_url": "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf"
     }
   ],
   "fingerprint_sha256": "aa5dcf898c4fa076c86193aaf7023f38380a395e5f495d361de06f665225dee3",

@@ -85,6 +85,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1755119",
       "source_url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/NVDA-F4Q26-Quarterly-Presentation.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:55+09:00",
+      "effective_url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/NVDA-F4Q26-Quarterly-Presentation.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "65a04e9c3325e9ff03619e3cfd5e2873e4f7cd297555a0eabf0628c35af0d585",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000092.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:01+09:00",
+      "observed_sha256": "65a04e9c3325e9ff03619e3cfd5e2873e4f7cd297555a0eabf0628c35af0d585",
+      "prev_ledger_sha256": "a7f0c79678f259fe064d44f982039b737bc9f2ed7fd48494b73d1b3cf98ad965",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1755119",
+      "source_url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q426/NVDA-F4Q26-Quarterly-Presentation.pdf"
     }
   ],
   "fingerprint_sha256": "65a04e9c3325e9ff03619e3cfd5e2873e4f7cd297555a0eabf0628c35af0d585",

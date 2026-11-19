@@ -107,6 +107,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1028642",
       "source_url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:29+09:00",
+      "effective_url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "65dd654744c3d7cfad92dbee66706a6f7e808b59adbb213cdffcdedeb968135a",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000071.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:42+09:00",
+      "observed_sha256": "65dd654744c3d7cfad92dbee66706a6f7e808b59adbb213cdffcdedeb968135a",
+      "prev_ledger_sha256": "ed312f7940f12890c3c33709ea1135cb1b6637aa3709c3e4f64346f39bb49f63",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1028642",
+      "source_url": "https://ir.tesla.com/_flysystem/s3/sec/000162828026003952/tsla-20251231-gen.pdf"
     }
   ],
   "fingerprint_sha256": "65dd654744c3d7cfad92dbee66706a6f7e808b59adbb213cdffcdedeb968135a",

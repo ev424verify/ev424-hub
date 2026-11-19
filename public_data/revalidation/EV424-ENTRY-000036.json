@@ -140,6 +140,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "2858365",
       "source_url": "https://www.rfc-editor.org/rfc/rfc9110.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:02+09:00",
+      "effective_url": "https://www.rfc-editor.org/rfc/rfc9110.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "60b30efa1048900833d1758440247fe8ac85a3134f2327388dcb24e07d814c89",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000036.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:04+09:00",
+      "observed_sha256": "60b30efa1048900833d1758440247fe8ac85a3134f2327388dcb24e07d814c89",
+      "prev_ledger_sha256": "fbd127d6d04d76a9f68badeb6b457f80c6358e3234f4afa4e7e6259b33282f06",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2858365",
+      "source_url": "https://www.rfc-editor.org/rfc/rfc9110.pdf"
     }
   ],
   "fingerprint_sha256": "60b30efa1048900833d1758440247fe8ac85a3134f2327388dcb24e07d814c89",

@@ -118,6 +118,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "213838",
       "source_url": "https://www.cisa.gov/sites/default/files/2022-09/cisa_insight_post_quantum_cryptography_508.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:19+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2022-09/cisa_insight_post_quantum_cryptography_508.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "5d91f0a8c65f01737c5deb23fb9f66cb850109dd6dfa22b3c20435095ac20034",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000058.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:31+09:00",
+      "observed_sha256": "5d91f0a8c65f01737c5deb23fb9f66cb850109dd6dfa22b3c20435095ac20034",
+      "prev_ledger_sha256": "5231a72744aebdfdcd08ac920317a76101e4499165b4cb9bd818680a2610800d",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "213838",
+      "source_url": "https://www.cisa.gov/sites/default/files/2022-09/cisa_insight_post_quantum_cryptography_508.pdf"
     }
   ],
   "fingerprint_sha256": "5d91f0a8c65f01737c5deb23fb9f66cb850109dd6dfa22b3c20435095ac20034",

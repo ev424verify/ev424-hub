@@ -151,6 +151,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "718595",
       "source_url": "https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/guideline-computerised-systems-and-electronic-data-clinical-trials_en.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:53+09:00",
+      "effective_url": "https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/guideline-computerised-systems-and-electronic-data-clinical-trials_en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "43a7673c4125519160c159b9c117a7a2437e93a51af39da47a8fe3f9c34b85b2",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000026.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:54+09:00",
+      "observed_sha256": "43a7673c4125519160c159b9c117a7a2437e93a51af39da47a8fe3f9c34b85b2",
+      "prev_ledger_sha256": "c8b26167f59ed0a69c65667014b02c38de29fa49f11029e63989de45be66d13a",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "718595",
+      "source_url": "https://www.ema.europa.eu/en/documents/regulatory-procedural-guideline/guideline-computerised-systems-and-electronic-data-clinical-trials_en.pdf"
     }
   ],
   "fingerprint_sha256": "43a7673c4125519160c159b9c117a7a2437e93a51af39da47a8fe3f9c34b85b2",

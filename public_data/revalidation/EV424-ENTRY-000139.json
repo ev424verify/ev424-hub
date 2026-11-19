@@ -52,6 +52,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "7291706",
       "source_url": "https://cdn.who.int/media/docs/default-source/medicines/regulatory-updates/rpq/who_rpq_annualreport2025.pdf?download=true&sfvrsn=afe3907_3"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:11+09:00",
+      "effective_url": "https://cdn.who.int/media/docs/default-source/medicines/regulatory-updates/rpq/who_rpq_annualreport2025.pdf?download=true&sfvrsn=afe3907_3",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "489f48ce81a7d8294ced574a7dad00a821de912b07cdb81437386854708895c3",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000139.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:29+09:00",
+      "observed_sha256": "489f48ce81a7d8294ced574a7dad00a821de912b07cdb81437386854708895c3",
+      "prev_ledger_sha256": "3bb61aab637eec74567b8c3d98e8f94d7a6df7ecd58e8219ca5fcc8847ae431c",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "7291706",
+      "source_url": "https://cdn.who.int/media/docs/default-source/medicines/regulatory-updates/rpq/who_rpq_annualreport2025.pdf?download=true&sfvrsn=afe3907_3"
     }
   ],
   "fingerprint_sha256": "489f48ce81a7d8294ced574a7dad00a821de912b07cdb81437386854708895c3",

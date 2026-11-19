@@ -118,6 +118,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "566906",
       "source_url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:17+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "facac39ddd4e020f7a3d743f3d14f69c2611ce756b4e6b0c28750f939b4fb671",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000055.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:27+09:00",
+      "observed_sha256": "facac39ddd4e020f7a3d743f3d14f69c2611ce756b4e6b0c28750f939b4fb671",
+      "prev_ledger_sha256": "b6b9318e59e19c9614f43680bbcc27e5181b2f8794e0cdff047a33ace822b29d",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "566906",
+      "source_url": "https://www.cisa.gov/sites/default/files/2025-01/JCDC%20AI%20Playbook.pdf"
     }
   ],
   "fingerprint_sha256": "facac39ddd4e020f7a3d743f3d14f69c2611ce756b4e6b0c28750f939b4fb671",

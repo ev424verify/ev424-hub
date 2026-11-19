@@ -30,6 +30,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "18346534",
       "source_url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:21+09:00",
+      "effective_url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000159.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:47+09:00",
+      "observed_sha256": "5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28",
+      "prev_ledger_sha256": "376e0bff0350c536c55eb34f3f427419183946ccaf29e09164de7d8d894e6c66",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "18346534",
+      "source_url": "https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf"
     }
   ],
   "fingerprint_sha256": "5cd921c76f1ef2f19b31afd97fbbffbe870b312642d895b331e310d0d8f6ce28",

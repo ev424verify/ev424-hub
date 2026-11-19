@@ -74,6 +74,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1143394",
       "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:55+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000093.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:03+09:00",
+      "observed_sha256": "08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe",
+      "prev_ledger_sha256": "1d5b665a8b76efb8dbd4f8a5a27bc8f7041827b10e44760e3cb25103b87d1fdf",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1143394",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/publications/ENISA%20-%205G%20Standards.pdf"
     }
   ],
   "fingerprint_sha256": "08e66cfbf945b2b9808aaaa7d5c6f8a9f67de18c0b22deaf1dfd3ad9355132fe",

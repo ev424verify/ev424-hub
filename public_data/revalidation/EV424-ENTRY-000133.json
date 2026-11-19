@@ -52,6 +52,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "268841",
       "source_url": "https://www.cisa.gov/sites/default/files/publications/Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:08+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/publications/Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "27abd683ce1f937387160c567f8a8518740ce0cd78dba65487cf8b0a2fb0597a",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000133.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:26+09:00",
+      "observed_sha256": "27abd683ce1f937387160c567f8a8518740ce0cd78dba65487cf8b0a2fb0597a",
+      "prev_ledger_sha256": "ff956446a41ff848e7711e2af5dd96bc4dcf5fc04037ac88e669992d44ddd46d",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "268841",
+      "source_url": "https://www.cisa.gov/sites/default/files/publications/Best%2520Practices%2520for%2520Creating%2520a%2520Password.pdf"
     }
   ],
   "fingerprint_sha256": "27abd683ce1f937387160c567f8a8518740ce0cd78dba65487cf8b0a2fb0597a",

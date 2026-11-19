@@ -96,6 +96,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "570508",
       "source_url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:33+09:00",
+      "effective_url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000076.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:47+09:00",
+      "observed_sha256": "6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517",
+      "prev_ledger_sha256": "425b6c3aa8e38382562d1ee3fc162e520436df9a0ee0de3c514fd7fbf5262554",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "570508",
+      "source_url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-07/guidelines_on_the_scope_of_the_obligations_for_generalpurpose_ai_models_established_by_regulation_1cx2atxgq79us4n3x8jfgyy1qlm_118340-3.pdf"
     }
   ],
   "fingerprint_sha256": "6809d563ec3df310f55002d3fcfbcea748877f2b2215a07e62a31a3c4bba5517",

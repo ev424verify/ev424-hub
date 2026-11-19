@@ -118,6 +118,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "11852141",
       "source_url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:15+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000051.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:24+09:00",
+      "observed_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",
+      "prev_ledger_sha256": "9eee1999a6a385712fd2706f4fe3fcc93a9bad648d291e35a5b89fecf0681e2e",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "11852141",
+      "source_url": "https://www.cisa.gov/sites/default/files/2023-10/SecureByDesign_1025_508c.pdf"
     }
   ],
   "fingerprint_sha256": "774b82b17e5cf7776d21389a95f7db4a61e0363840c1c1554d3428dabce583b6",

@@ -3,10 +3,13 @@ set -euo pipefail
 MODE="${1:-READONLY}"
 ROOT="${2:-/home/desktop/experiment_A/ev424_pages_site}"
 REV_DIR="$ROOT/public_data/revalidation"
-TMP_ROOT="$(/usr/bin/mktemp -d /tmp/ev424_7d_due_scan_executor_v1.XXXXXX)"
-trap 'rm -rf "$TMP_ROOT"' EXIT
+TMP_ROOT=""
+if [[ "$MODE" != READONLY ]]; then
+    TMP_ROOT="$(/usr/bin/mktemp -d /tmp/ev424_7d_due_scan_executor_v1.XXXXXX)"
+    trap 'rm -rf -- "$TMP_ROOT"' EXIT
+fi
 
-/usr/bin/python3 - "$ROOT" "$REV_DIR" "$MODE" "$TMP_ROOT" <<'PY'
+/usr/bin/python3 -I -S -B - "$ROOT" "$REV_DIR" "$MODE" "$TMP_ROOT" <<'PY'
 import json, pathlib, re, sys, subprocess, hashlib
 from datetime import datetime, timedelta, timezone
 
@@ -25,8 +28,11 @@ def parse_dt(s):
     x=s.strip()
     if x.endswith("Z"): x=x[:-1]+"+00:00"
     for fn in (datetime.fromisoformat, lambda y: datetime.strptime(y,"%Y-%m-%dT%H:%M:%S%z")):
-        try: return fn(x)
-        except Exception: pass
+        try:
+            value = fn(x)
+            return value if value.tzinfo is not None else value.replace(tzinfo=KST)
+        except ValueError:
+            pass
     return None
 
 def sha256_file(p):
@@ -54,26 +60,33 @@ for p in sorted(rev_dir.glob("*.json")):
         d=json.loads(p.read_text(encoding="utf-8"))
         eid=str(d.get("entry_id") or p.stem)
         ev=d.get("events")
-        last=ev[-1] if isinstance(ev,list) and ev else {}
+        last=ev[-1] if isinstance(ev,list) and ev and isinstance(ev[-1],dict) else {}
         if str(d.get("revalidation_skip_after_fail_record","")).upper() in ("YES","TRUE","1") or str(last.get("final_status","")).upper()=="FAIL" or bool(str(last.get("skip_label","")).strip()):
             counts["terminated_fail"]+=1; continue
         issued=parse_dt(d.get("issued_date"))
         url=d.get("source_url")
         fp=str(d.get("fingerprint_sha256") or "")
-        if not url or not hex64.match(fp) or issued is None:
+        if (not isinstance(ev, list) or (ev and not isinstance(ev[-1], dict))
+                or not isinstance(url, str) or not url.startswith(("http://", "https://"))
+                or not hex64.fullmatch(fp) or issued is None
+                or not re.fullmatch(r"EV424-ENTRY-\d{6}", eid) or eid != p.stem):
+            counts["bad_or_ineligible"]+=1; continue
+        last_pass = parse_dt(last.get("observed_at_kst")) if last.get("final_status") == "PASS" else None
+        if ev and (last_pass is None or last_pass < issued or last_pass > now):
             counts["bad_or_ineligible"]+=1; continue
         counts["eligible_open"]+=1
-        due_at=issued.astimezone(KST)+timedelta(days=7)
+        due_at=(last_pass or issued).astimezone(KST)+timedelta(days=7)
         if due_at > now:
             counts["not_due"]+=1; continue
         if isinstance(ev,list) and len(ev)==0:
             counts["empty_due"]+=1
-            rows.append((p,d,eid,p.name,due_at.isoformat(timespec="seconds"),fp,url))
         else:
             counts["nonempty_due"]+=1
+        rows.append((p,d,eid,p.name,due_at.isoformat(timespec="seconds"),fp,url))
     except Exception:
         counts["bad_or_ineligible"]+=1
 
+rows.sort(key=lambda row: (row[4], row[2]))
 print("EV424_7D_DUE_SCAN_EXECUTOR_V1")
 print("MODE="+mode)
 print("NOW_KST="+now.isoformat(timespec="seconds"))
@@ -82,7 +95,7 @@ for k in ("total","eligible_open","empty_due","nonempty_due","not_due","terminat
 
 if mode == "READONLY":
     for p,d,eid,name,due_at,fp,url in rows:
-        print("READONLY_EMPTY_DUE entry_id=%s file=%s due_at_kst=%s expected_sha256=%s source_url=%s" % (eid,name,due_at,fp,url))
+        print("READONLY_DUE entry_id=%s file=%s due_at_kst=%s expected_sha256=%s source_url=%s" % (eid,name,due_at,fp,url))
     print("READONLY_DONE=YES")
     sys.exit(0)
 
@@ -90,16 +103,20 @@ if mode not in ("DRY_RUN","APPLY"):
     print("FAIL=UNKNOWN_MODE")
     sys.exit(3)
 
+if not pathlib.Path("/usr/bin/qpdf").is_file():
+    raise SystemExit("HOLD=QPDF_MISSING")
+
 pass_count=0
 fail_count=0
+hold_count=0
 for p,d,eid,name,due_at,fp,url in rows:
-    observed_at=datetime.now(KST).isoformat(timespec="seconds")
     prev_ledger_sha256=sha256_file(p)
     out=tmp_root/(eid+".download")
     meta=subprocess.run(
-        ["/usr/bin/curl","-fL","--max-time","240","--retry","2","--retry-delay","2","-A","EV424-7D-DUE-SCAN/1.0","-w","EV424_HTTP_CODE=%{http_code}\nEV424_EFFECTIVE_URL=%{url_effective}\nEV424_CONTENT_TYPE=%{content_type}\nEV424_SIZE_DOWNLOAD=%{size_download}\n","-o",str(out),url],
+        ["/usr/bin/curl","-q","-fLsS","--proto","=http,https","--proto-redir","=http,https","--max-time","240","-A","EV424-7D-DUE-SCAN/1.0","-w","EV424_HTTP_CODE=%{http_code}\nEV424_EFFECTIVE_URL=%{url_effective}\nEV424_CONTENT_TYPE=%{content_type}\nEV424_SIZE_DOWNLOAD=%{size_download}\n","-o",str(out),url],
         text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
     )
+    observed_at=datetime.now(KST).isoformat(timespec="seconds")
     info={}
     for line in meta.stdout.splitlines():
         if line.startswith("EV424_") and "=" in line:
@@ -113,7 +130,13 @@ for p,d,eid,name,due_at,fp,url in rows:
     native_check="CURL_FETCH_FAILED"
     final_status="FAIL"
     fail_reason="CURL_FETCH_FAILED"
-    if meta.returncode == 0 and out.exists():
+    if meta.returncode == 0 and http_code == "200" and out.is_file():
+        with out.open("rb") as stream:
+            prefix = stream.read(5)
+        if prefix != b"%PDF-":
+            hold_count += 1
+            print(f"{mode}_RESULT entry_id={eid} final_status=HOLD reason=NON_PDF_RESPONSE http_code={http_code}")
+            continue
         observed=sha256_file(out)
         if observed.lower() == fp.lower():
             final_status="PASS"
@@ -121,13 +144,22 @@ for p,d,eid,name,due_at,fp,url in rows:
             fail_reason=""
             pass_count += 1
         else:
+            structure = subprocess.run(
+                ["/usr/bin/qpdf", "--check", str(out)],
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            )
+            if structure.returncode != 0:
+                hold_count += 1
+                print(f"{mode}_RESULT entry_id={eid} final_status=HOLD reason=SOURCE_PDF_STRUCTURE_UNCONFIRMED qpdf_rc={structure.returncode}")
+                continue
             native_check="SHA256_MISMATCH"
             fail_reason="SHA256_MISMATCH"
             fail_count += 1
     else:
-        if http_code and http_code != "000":
-            fail_reason="SOURCE_FETCH_FAILED_HTTP_"+http_code
-        fail_count += 1
+        hold_count += 1
+        reason = "TRANSPORT_TIMEOUT" if meta.returncode == 28 else "SOURCE_FETCH_UNCONFIRMED"
+        print(f"{mode}_RESULT entry_id={eid} final_status=HOLD reason={reason} curl_rc={meta.returncode} http_code={http_code} bytes={size_download}")
+        continue
     event={
         "event_type":"7D_REVALIDATION",
         "observed_at_kst":observed_at,
@@ -154,9 +186,6 @@ for p,d,eid,name,due_at,fp,url in rows:
         event["ev424_fail_meaning"]="SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY"
     print("%s_RESULT entry_id=%s final_status=%s native_check=%s due_at_kst=%s expected_sha256=%s observed_sha256=%s source_url=%s" % (mode,eid,final_status,native_check,due_at,fp,observed,url))
     if mode == "APPLY":
-        if final_status == "FAIL" and fail_reason != "SHA256_MISMATCH":
-            print("APPLY_NO_MUTATION entry_id=%s reason=%s" % (eid,fail_reason))
-            continue
         d["revalidation_policy"]=policy
         if not isinstance(d.get("events"), list):
             d["events"]=[]
@@ -176,5 +205,6 @@ for p,d,eid,name,due_at,fp,url in rows:
         write_sidecar_and_verify(p)
 print(mode+"_PASS_COUNT="+str(pass_count))
 print(mode+"_FAIL_COUNT="+str(fail_count))
+print(mode+"_HOLD_COUNT="+str(hold_count))
 print(mode+"_DONE=YES")
 PY

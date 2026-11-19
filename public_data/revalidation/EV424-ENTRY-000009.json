@@ -184,6 +184,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "2703130",
       "source_url": "https://www.cisa.gov/sites/default/files/2024-08/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:41+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2024-08/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "2277247542d844d2258c0f6892d649d6885f783fc629664924e60638086f47f0",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000009.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:40+09:00",
+      "observed_sha256": "2277247542d844d2258c0f6892d649d6885f783fc629664924e60638086f47f0",
+      "prev_ledger_sha256": "5dec6c908484a88aac8c1b21ea83d5f0e6a65cc30a3138d9550f10dc76fbc3cc",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2703130",
+      "source_url": "https://www.cisa.gov/sites/default/files/2024-08/Federal_Government_Cybersecurity_Incident_and_Vulnerability_Response_Playbooks_508C.pdf"
     }
   ],
   "fingerprint_sha256": "2277247542d844d2258c0f6892d649d6885f783fc629664924e60638086f47f0",

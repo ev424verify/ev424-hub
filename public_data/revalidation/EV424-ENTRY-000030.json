@@ -151,6 +151,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "534442",
       "source_url": "https://www.cisa.gov/sites/default/files/2025-02/secure-by-design-alert-eliminating-buffer-overflow-vulnerabilities-508c.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:58+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2025-02/secure-by-design-alert-eliminating-buffer-overflow-vulnerabilities-508c.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "7d8f8598cb678e2fe9b164cd96d2eeba829ae466747876e8e31fdbf8b05e5744",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000030.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:59+09:00",
+      "observed_sha256": "7d8f8598cb678e2fe9b164cd96d2eeba829ae466747876e8e31fdbf8b05e5744",
+      "prev_ledger_sha256": "c3667774e35609ef7da2ab9b0e8554ec5e0e7bcb566b6c10a88f8365cc080ece",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "534442",
+      "source_url": "https://www.cisa.gov/sites/default/files/2025-02/secure-by-design-alert-eliminating-buffer-overflow-vulnerabilities-508c.pdf"
     }
   ],
   "fingerprint_sha256": "7d8f8598cb678e2fe9b164cd96d2eeba829ae466747876e8e31fdbf8b05e5744",

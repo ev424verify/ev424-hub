@@ -173,6 +173,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "3873082",
       "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/enhancing-the-resilience-of-communication-networks_a47d78a1/d6920477-en.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:45+09:00",
+      "effective_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/enhancing-the-resilience-of-communication-networks_a47d78a1/d6920477-en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "49d4d31cc295bd77b702301fd4bf8543a5dfc3aa36bf1300f4fab2eca399d912",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000018.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:45+09:00",
+      "observed_sha256": "49d4d31cc295bd77b702301fd4bf8543a5dfc3aa36bf1300f4fab2eca399d912",
+      "prev_ledger_sha256": "04ae83a147c930312f644a19daae057055f96f74004533ca19664e2f8d3e30b8",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "3873082",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/05/enhancing-the-resilience-of-communication-networks_a47d78a1/d6920477-en.pdf"
     }
   ],
   "fingerprint_sha256": "49d4d31cc295bd77b702301fd4bf8543a5dfc3aa36bf1300f4fab2eca399d912",

@@ -129,6 +129,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "2839474",
       "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-02/The%20ENISA%20Cybersecurity%20Exercise%20Methodology.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:07+09:00",
+      "effective_url": "https://www.enisa.europa.eu/sites/default/files/2026-02/The%20ENISA%20Cybersecurity%20Exercise%20Methodology.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "57bd5551c30674733b340e3543bb57ff1f8d059b19c03dda78dc55c5c58326ff",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000044.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:13+09:00",
+      "observed_sha256": "57bd5551c30674733b340e3543bb57ff1f8d059b19c03dda78dc55c5c58326ff",
+      "prev_ledger_sha256": "746b816e778155dd2c2828680ac0b5a4d959c764de786ffc6d730a9cd3b90179",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2839474",
+      "source_url": "https://www.enisa.europa.eu/sites/default/files/2026-02/The%20ENISA%20Cybersecurity%20Exercise%20Methodology.pdf"
     }
   ],
   "fingerprint_sha256": "57bd5551c30674733b340e3543bb57ff1f8d059b19c03dda78dc55c5c58326ff",

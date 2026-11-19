@@ -1,5 +1,6 @@
 {
   "entry_id": "EV424-ENTRY-000163",
+  "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
   "events": [
     {
       "content_type": "application/pdf",
@@ -37,10 +38,42 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "2367063",
       "source_url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:29+09:00",
+      "effective_url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf",
+      "ev424_fail_meaning": "SOURCE_OBJECT_NOT_REPRODUCED_UNDER_7D_REVALIDATION_POLICY",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "50c7c11439c316732dbccd0f7df01be65cd46926ad21436ab7cd36735ac15106",
+      "fail_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+      "fail_reason": "SHA256_MISMATCH",
+      "final_status": "FAIL",
+      "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
+      "http_code": "200",
+      "native_check": "SHA256_MISMATCH",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:56+09:00",
+      "observed_sha256": "31133a3f53b520713b87ff9b92ddf90d3e699ac8b47f87c3e739b4365e8bfecf",
+      "prev_ledger_sha256": "aeca940cb892af94cae615f1681389e61c11ed345602e3bbb246c7e0d043a5cf",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2370043",
+      "skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
+      "source_url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf"
     }
   ],
+  "fail_record_label": "EV424_7D_REVALIDATION_FAIL_RECORDED",
+  "fail_recorded_at_kst": "2026-11-19T12:07:56+09:00",
   "fingerprint_sha256": "50c7c11439c316732dbccd0f7df01be65cd46926ad21436ab7cd36735ac15106",
+  "future_7d_revalidation_action": "SKIP_UNLESS_NEW_SOURCE_OBJECT_OR_HUMAN_REOPEN_APPROVAL",
   "issued_date": "2026-05-12T12:59:47+0900",
+  "last_current_sha12": "31133a3f53b5",
+  "last_expected_sha12": "50c7c11439c3",
+  "last_fail_reason": "SHA256_MISMATCH",
+  "last_public_surface": "EV424-ENTRY-000163 FAIL REASON=SHA256_MISMATCH EXPECTED_SHA12=50c7c11439c3 CURRENT_SHA12=31133a3f53b5 LABEL=EV424_7D_REVALIDATION_FAIL_RECORDED SKIP_LABEL=EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD OBSERVED_AT=2026-11-19T12:07:56+09:00",
   "revalidation_policy": "EV424_POLICY_7D_REVALIDATION_PASS_FAIL_ONLY_V2",
+  "revalidation_skip_after_fail_record": "YES",
+  "revalidation_skip_label": "EV424_7D_REVALIDATION_SKIP_AFTER_FAIL_RECORD",
   "source_url": "https://deploymentsafety.openai.com/gpt-5-5/gpt-5-5.pdf"
 }

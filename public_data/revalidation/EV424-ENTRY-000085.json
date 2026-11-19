@@ -85,6 +85,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "6043801",
       "source_url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:39+09:00",
+      "effective_url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000085.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:56+09:00",
+      "observed_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",
+      "prev_ledger_sha256": "a6d60cc04ac693c19c863e26d056151da6aba520ccf55fe036479e3c9bd228ae",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "6043801",
+      "source_url": "https://cdn.openai.com/signals/openai-signals-global-report.pdf"
     }
   ],
   "fingerprint_sha256": "aeb76a071a5fabbe7a63e41445b0b5742a3a78c2b49c4c7457695d930bb381b0",

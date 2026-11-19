@@ -118,6 +118,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1204912",
       "source_url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1.PDF"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:15+09:00",
+      "effective_url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1.PDF",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "298bf8677884b333fae6d5f84aac947f45a59dff6027ca038ba08615092fd82f",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000053.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:26+09:00",
+      "observed_sha256": "298bf8677884b333fae6d5f84aac947f45a59dff6027ca038ba08615092fd82f",
+      "prev_ledger_sha256": "a0b191373208e59a74bb19929f7e3879fa10d5dd7fa142b6c1156c8d563c9b68",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1204912",
+      "source_url": "https://ai-act-service-desk.ec.europa.eu/sites/default/files/2025-08/guidelines_on_prohibited_artificial_intelligence_practices_established_by_regulation_eu_20241689_ai_act_english_ied3r5nwo50xggpcfmwckm3nuc_112367-1.PDF"
     }
   ],
   "fingerprint_sha256": "298bf8677884b333fae6d5f84aac947f45a59dff6027ca038ba08615092fd82f",

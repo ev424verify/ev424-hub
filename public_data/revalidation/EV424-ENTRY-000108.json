@@ -74,6 +74,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "2134958",
       "source_url": "https://cdn.who.int/media/docs/default-source/evaluation-office/report_who-contribution-in-namibia-evaluation_web.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:01+09:00",
+      "effective_url": "https://cdn.who.int/media/docs/default-source/evaluation-office/report_who-contribution-in-namibia-evaluation_web.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "632f00e2828a0136e86b3bfb1073dbb9fc95fd5e6fdd95e49a637cf85df5e55d",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000108.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:17+09:00",
+      "observed_sha256": "632f00e2828a0136e86b3bfb1073dbb9fc95fd5e6fdd95e49a637cf85df5e55d",
+      "prev_ledger_sha256": "58d934fea53003ed72b998cc82a568e4656d1c12aa026f3035de96dd4958a38d",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2134958",
+      "source_url": "https://cdn.who.int/media/docs/default-source/evaluation-office/report_who-contribution-in-namibia-evaluation_web.pdf"
     }
   ],
   "fingerprint_sha256": "632f00e2828a0136e86b3bfb1073dbb9fc95fd5e6fdd95e49a637cf85df5e55d",

@@ -74,6 +74,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "1736451",
       "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/oecd-economic-outlook-interim-report-march-2026_254a8d56/d4623013-en.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:57+09:00",
+      "effective_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/oecd-economic-outlook-interim-report-march-2026_254a8d56/d4623013-en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "120d19d7919bb367971c2375e63e94d874730518b7e1334fa25a41a46aaf0f62",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000095.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:04+09:00",
+      "observed_sha256": "120d19d7919bb367971c2375e63e94d874730518b7e1334fa25a41a46aaf0f62",
+      "prev_ledger_sha256": "39360112532579637faf4018467ff9ec5c0fda019dc89d0e200b706d4e47c388",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "1736451",
+      "source_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/03/oecd-economic-outlook-interim-report-march-2026_254a8d56/d4623013-en.pdf"
     }
   ],
   "fingerprint_sha256": "120d19d7919bb367971c2375e63e94d874730518b7e1334fa25a41a46aaf0f62",

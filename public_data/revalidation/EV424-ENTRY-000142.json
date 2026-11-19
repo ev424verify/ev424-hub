@@ -52,6 +52,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "104844",
       "source_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:11+09:00",
+      "effective_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "02b2b6f13b199cdc9a1d95392e6a90ef2fd8a4ae76198d59b8b4f3f0795a4332",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000142.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:30+09:00",
+      "observed_sha256": "02b2b6f13b199cdc9a1d95392e6a90ef2fd8a4ae76198d59b8b4f3f0795a4332",
+      "prev_ledger_sha256": "5488cb9145ae19a3b012a6849aad01c685dfd669613de82f76e174c72a2d860d",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "104844",
+      "source_url": "https://www.ema.europa.eu/en/documents/scientific-guideline/procedure-european-union-guidelines-and-related-documents-within-pharmaceutical-legislative-framework_en.pdf"
     }
   ],
   "fingerprint_sha256": "02b2b6f13b199cdc9a1d95392e6a90ef2fd8a4ae76198d59b8b4f3f0795a4332",

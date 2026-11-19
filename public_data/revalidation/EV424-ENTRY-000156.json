@@ -30,6 +30,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "85748",
       "source_url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:19+09:00",
+      "effective_url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000156.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:40+09:00",
+      "observed_sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6",
+      "prev_ledger_sha256": "6ff72e82e1229532cd8fb129dbe261de2f09f5e965a231c853ff53acb39918e6",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "85748",
+      "source_url": "https://ev424verify.com/public_docs/overview/EV424_Public_Overview_v1.0.5_EN.pdf"
     }
   ],
   "fingerprint_sha256": "2d150ae43359dea485020dd219a59323e260871c9ae2bc7d5369382ca29758f6",

@@ -162,6 +162,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "2583319",
       "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024R1689"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:31:50+09:00",
+      "effective_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024R1689",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "bba630444b3278e881066774002a1d7824308934f49ccfa203e65be43692f55e",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000023.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:52+09:00",
+      "observed_sha256": "bba630444b3278e881066774002a1d7824308934f49ccfa203e65be43692f55e",
+      "prev_ledger_sha256": "3f59cea229e90f1bcea0d55e0de31fd9e83da2ff35dc275d9e1d6c2878b464f6",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "2583319",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32024R1689"
     }
   ],
   "fingerprint_sha256": "bba630444b3278e881066774002a1d7824308934f49ccfa203e65be43692f55e",

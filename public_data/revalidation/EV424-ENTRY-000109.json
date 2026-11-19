@@ -74,6 +74,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "22032751",
       "source_url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:02+09:00",
+      "effective_url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000109.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:20+09:00",
+      "observed_sha256": "06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd",
+      "prev_ledger_sha256": "11f1e0877e7d86ddab1fda15d3c00995b64c75dce95a9e075b0c9baf97b486f0",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "22032751",
+      "source_url": "https://www.un.org/sites/un2.un.org/files/sg_annual_report_2025_en.pdf"
     }
   ],
   "fingerprint_sha256": "06c02b3a1f770a6e4cdb2e3c16ffee30477573372c2fc512fcb336a31c7e99cd",

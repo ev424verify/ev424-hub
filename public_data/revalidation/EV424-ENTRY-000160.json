@@ -30,6 +30,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "4038690",
       "source_url": "https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:26+09:00",
+      "effective_url": "https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "be00a4eb0ac5f8c6c11017366ed16a0ad00d69e6041e5da470be43e8f0a8f3b1",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000160.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:49+09:00",
+      "observed_sha256": "be00a4eb0ac5f8c6c11017366ed16a0ad00d69e6041e5da470be43e8f0a8f3b1",
+      "prev_ledger_sha256": "3f90594f59606af22219412154604cbb63d5f03d42d480279cb8edf5d85f57c3",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "4038690",
+      "source_url": "https://cdn.openai.com/pdf/561e7512-253e-424b-9734-ef4098440601/Industrial%20Policy%20for%20the%20Intelligence%20Age.pdf"
     }
   ],
   "fingerprint_sha256": "be00a4eb0ac5f8c6c11017366ed16a0ad00d69e6041e5da470be43e8f0a8f3b1",

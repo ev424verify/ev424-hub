@@ -74,6 +74,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "3715809",
       "source_url": "https://nsf-gov-resources.nsf.gov/files/NAIRR-Sept-4th-webinar.pdf?VersionId=A8cZDQf8K53NHbJBvZjxw1X5qPfZHWFH"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:33:00+09:00",
+      "effective_url": "https://nsf-gov-resources.nsf.gov/files/NAIRR-Sept-4th-webinar.pdf?VersionId=A8cZDQf8K53NHbJBvZjxw1X5qPfZHWFH",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "d4d6ae8a3879b231ab5001636c156d60d52e1531255ab42b81cf47a370b4e589",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000105.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:13+09:00",
+      "observed_sha256": "d4d6ae8a3879b231ab5001636c156d60d52e1531255ab42b81cf47a370b4e589",
+      "prev_ledger_sha256": "8f9979a6230c1eb4aa8eae1ea858ae297d7a941080a1f2f714417deb3d4692f4",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "3715809",
+      "source_url": "https://nsf-gov-resources.nsf.gov/files/NAIRR-Sept-4th-webinar.pdf?VersionId=A8cZDQf8K53NHbJBvZjxw1X5qPfZHWFH"
     }
   ],
   "fingerprint_sha256": "d4d6ae8a3879b231ab5001636c156d60d52e1531255ab42b81cf47a370b4e589",

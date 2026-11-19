@@ -85,6 +85,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "151984",
       "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:55+09:00",
+      "effective_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "8bb2778772fc60c0290cfeac3b24d345a07b8918a7708ec8fcef7239243922f9",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000091.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:07:00+09:00",
+      "observed_sha256": "8bb2778772fc60c0290cfeac3b24d345a07b8918a7708ec8fcef7239243922f9",
+      "prev_ledger_sha256": "b3862ec2e13ba681a66178d29b991151c4c4b8549361d2785c77a7e1750ecb15",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "151984",
+      "source_url": "https://s206.q4cdn.com/479360582/files/doc_financials/2025/q4/2025q4-alphabet-earnings-release.pdf"
     }
   ],
   "fingerprint_sha256": "8bb2778772fc60c0290cfeac3b24d345a07b8918a7708ec8fcef7239243922f9",

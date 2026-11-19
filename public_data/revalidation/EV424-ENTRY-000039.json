@@ -140,6 +140,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "847237",
       "source_url": "https://www.cisa.gov/sites/default/files/2024-08/SecureByDemandGuide_080624_508c.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T09:32:03+09:00",
+      "effective_url": "https://www.cisa.gov/sites/default/files/2024-08/SecureByDemandGuide_080624_508c.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "4efa7d2e082dcb7f6d53f2812c9eeb4bb420b3e8d811df6df664021b13d9edca",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000039.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:06:04+09:00",
+      "observed_sha256": "4efa7d2e082dcb7f6d53f2812c9eeb4bb420b3e8d811df6df664021b13d9edca",
+      "prev_ledger_sha256": "b2df9403bb45632395e17d27ad2964242753c0b05c4410ebafb1221b573ab95f",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "847237",
+      "source_url": "https://www.cisa.gov/sites/default/files/2024-08/SecureByDemandGuide_080624_508c.pdf"
     }
   ],
   "fingerprint_sha256": "4efa7d2e082dcb7f6d53f2812c9eeb4bb420b3e8d811df6df664021b13d9edca",

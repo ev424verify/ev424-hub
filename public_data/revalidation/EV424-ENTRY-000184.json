@@ -19,6 +19,24 @@
       "scope": "integrity_and_reproducibility_only",
       "size": "469686",
       "source_url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf"
+    },
+    {
+      "content_type": "application/pdf",
+      "due_at_kst": "2026-08-23T08:53:34+09:00",
+      "effective_url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf",
+      "event_type": "7D_REVALIDATION",
+      "executor": "7D_DUE_SCAN_EXECUTOR_V1",
+      "expected_sha256": "73602e37f6192afec4b38a4a1b536a2a068826dc12787b33a5c339d63f5e795d",
+      "final_status": "PASS",
+      "http_code": "200",
+      "native_check": "EV424-ENTRY-000184.download: OK",
+      "note": "7D scheduled re-validation executed by source re-download and SHA256 comparison.",
+      "observed_at_kst": "2026-11-19T12:05:29+09:00",
+      "observed_sha256": "73602e37f6192afec4b38a4a1b536a2a068826dc12787b33a5c339d63f5e795d",
+      "prev_ledger_sha256": "48a053c4dd30228d82d398ff5a6c631fdb9e21abb7ad3912f4c9fcb9ef1bc9b4",
+      "scope": "integrity_and_reproducibility_only",
+      "size": "469686",
+      "source_url": "https://ev424verify.pages.dev/public_docs/mathw/EV424_PLANAR_GRAPH_STRUCTURAL_CONSISTENCY_VERIFICATION_PASSPORT_ORIGINAL_VISUAL_PRESERVED_CANDIDATE.pdf"
     }
   ],
   "fingerprint_sha256": "73602e37f6192afec4b38a4a1b536a2a068826dc12787b33a5c339d63f5e795d",
