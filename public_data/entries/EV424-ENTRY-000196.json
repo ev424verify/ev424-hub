@@ -1,17 +1,17 @@
 {
   "entry_id": "EV424-ENTRY-000196",
   "type": "doc_passport",
-  "source": "rfc9562.pdf?utm_source=chatgpt.com",
+  "source": "rfc9562.pdf",
   "source_label": "EV424",
-  "url": "https://www.rfc-editor.org/rfc/rfc9562.pdf?utm_source=chatgpt.com",
-  "issued_date": "2026-11-20T23:01:34+0900",
+  "url": "https://www.rfc-editor.org/rfc/rfc9562.pdf",
+  "issued_date": "2026-11-20T23:13:24+0900",
   "fingerprint_sha256": "10db61467c7e297463c184536efe162d46be60746e01c044ec601281492387e8",
-  "result_rep_sha256": "aeff51687a93a57cd40dfedfb826883f6cc31c92adb2ddefbeec6774583e7c56",
+  "result_rep_sha256": "c5fdb1ca227128daaf39888bd15ec36c4f794ca4d8050a955b9d0a8658995334",
   "verify": {
     "local_sha": "OK",
     "src_record": "OK",
     "redownload": "OK",
     "chain": "OK"
   },
-  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       rfc9562.pdf?utm_source=chatgpt.com\nISSUED_DATE  2026-11-20T23:01:34+0900\nFINGERPRINT  10db61467c7e297463c184536efe162d46be60746e01c044ec601281492387e8\nURL          https://www.rfc-editor.org/rfc/rfc9562.pdf?utm_source=chatgpt.com\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=aeff51687a93a57cd40dfedfb826883f6cc31c92adb2ddefbeec6774583e7c56\n\nAccuracy(4)=Truth(2)=Life(4)"
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       rfc9562.pdf\nISSUED_DATE  2026-11-20T23:13:24+0900\nFINGERPRINT  10db61467c7e297463c184536efe162d46be60746e01c044ec601281492387e8\nURL          https://www.rfc-editor.org/rfc/rfc9562.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=c5fdb1ca227128daaf39888bd15ec36c4f794ca4d8050a955b9d0a8658995334\n\nAccuracy(4)=Truth(2)=Life(4)"
 }

@@ -2289,13 +2289,13 @@
     },
     {
       "entry_id": "EV424-ENTRY-000196",
-      "issued_kst": "2026-11-20T23:01:34+0900",
+      "issued_kst": "2026-11-20T23:13:24+0900",
       "month_id": "2026-11",
-      "url": "https://www.rfc-editor.org/rfc/rfc9562.pdf?utm_source=chatgpt.com",
+      "url": "https://www.rfc-editor.org/rfc/rfc9562.pdf",
       "source_domain": "www.rfc-editor.org",
       "filename": "EV424",
       "display_title": "EV424",
-      "result_rep_sha256": "aeff51687a93a57cd40dfedfb826883f6cc31c92adb2ddefbeec6774583e7c56",
+      "result_rep_sha256": "c5fdb1ca227128daaf39888bd15ec36c4f794ca4d8050a955b9d0a8658995334",
       "has_receipt": true,
       "is_superseded": false
     }
