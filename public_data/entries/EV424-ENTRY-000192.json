@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000192",
+  "type": "doc_passport",
+  "source": "EV424_XRP_Market_Data_Validation_Reference_EN_V1_1.pdf?download=1",
+  "source_label": "EV424",
+  "url": "https://zenodo.org/records/24385798/files/EV424_XRP_Market_Data_Validation_Reference_EN_V1_1.pdf?download=1",
+  "issued_date": "2026-11-20T12:37:01+0900",
+  "fingerprint_sha256": "ebe5e853b3e719b665a1ee92ae5b475c6dc127540e6a3a285aadbe6be58fa465",
+  "result_rep_sha256": "e4aa875bc967e917995c80a28d27820ef90a4e04bf68a899a6ae287187617559",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_XRP_Market_Data_Validation_Reference_EN_V1_1.pdf?download=1\nISSUED_DATE  2026-11-20T12:37:01+0900\nFINGERPRINT  ebe5e853b3e719b665a1ee92ae5b475c6dc127540e6a3a285aadbe6be58fa465\nURL          https://zenodo.org/records/24385798/files/EV424_XRP_Market_Data_Validation_Reference_EN_V1_1.pdf?download=1\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=e4aa875bc967e917995c80a28d27820ef90a4e04bf68a899a6ae287187617559\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

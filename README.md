@@ -203,7 +203,7 @@ Historical reference with a recorded revalidation failure:
 
 Latest public document passport as of 2026-11-20 KST:
 
-- [EV424-ENTRY-000191 — Python–Z3 Cross Verification Report](https://ev424verify.com/?q=EV424-ENTRY-000191)
+- [EV424-ENTRY-000192 — XRP Market Data Validation Reference](https://ev424verify.com/?q=EV424-ENTRY-000192)
 
 ---
 
@@ -281,7 +281,8 @@ It is an integrity and reproducibility structure.
 | [EV424-ENTRY-000188](https://ev424verify.com/?q=EV424-ENTRY-000188) | `EV424_Kuramoto_Independent_Reverification_Zenodo_EN_V2.pdf` | Kuramoto model re-verification |
 | [EV424-ENTRY-000189](https://ev424verify.com/?q=EV424-ENTRY-000189) | `EV424_Brain_Atlas_Demo_EN.pdf` | Brain Atlas Demo document passport |
 | [EV424-ENTRY-000190](https://ev424verify.com/?q=EV424-ENTRY-000190) | `EV424_Goldbach_01-25_Final_EN_v1.1_20261119.pdf` | Goldbach finite re-verification |
-| [EV424-ENTRY-000191](https://ev424verify.com/?q=EV424-ENTRY-000191) | `EV424_Python_Z3_Cross_Verification_Report_EN_Final.pdf` | Latest document passport as of 2026-11-20 KST |
+| [EV424-ENTRY-000191](https://ev424verify.com/?q=EV424-ENTRY-000191) | `EV424_Python_Z3_Cross_Verification_Report_EN_Final.pdf` | Python–Z3 cross verification report |
+| [EV424-ENTRY-000192](https://ev424verify.com/?q=EV424-ENTRY-000192) | `EV424_XRP_Market_Data_Validation_Reference_EN_V1_1.pdf` | Latest document passport as of 2026-11-20 KST |
 | [EV424-VIDEO-ENTRY-000002](https://ev424verify.com/video/?q=EV424-VIDEO-ENTRY-000002) | NIST video public projection | Video Passport v0.1 public evidence rail example |
 
 ---

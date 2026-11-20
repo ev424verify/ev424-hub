@@ -2238,6 +2238,18 @@
       "result_rep_sha256": "74fc32ab889f802ae88096f90754ad4553a5da6e3016b593a8ffe0ecec5bf67d",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000192",
+      "issued_kst": "2026-11-20T12:37:01+0900",
+      "month_id": "2026-11",
+      "url": "https://zenodo.org/records/24385798/files/EV424_XRP_Market_Data_Validation_Reference_EN_V1_1.pdf?download=1",
+      "source_domain": "zenodo.org",
+      "filename": "EV424",
+      "display_title": "EV424",
+      "result_rep_sha256": "e4aa875bc967e917995c80a28d27820ef90a4e04bf68a899a6ae287187617559",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
