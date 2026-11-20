@@ -203,7 +203,7 @@ Historical reference with a recorded revalidation failure:
 
 Latest public document passport as of 2026-11-20 KST:
 
-- [EV424-ENTRY-000195 — NIST.IR.8628](https://ev424verify.com/?q=EV424-ENTRY-000195)
+- [EV424-ENTRY-000196 — rfc9562](https://ev424verify.com/?q=EV424-ENTRY-000196)
 
 ---
 
@@ -282,7 +282,8 @@ It is an integrity and reproducibility structure.
 
 | Entry | Source | Meaning |
 |---|---|---|
-| [EV424-ENTRY-000195](https://ev424verify.com/?q=EV424-ENTRY-000195) | `NIST.IR.8628.pdf` | Latest document passport as of 2026-11-20 KST |
+| [EV424-ENTRY-000196](https://ev424verify.com/?q=EV424-ENTRY-000196) | `rfc9562.pdf` | Latest document passport as of 2026-11-20 KST |
+| [EV424-ENTRY-000195](https://ev424verify.com/?q=EV424-ENTRY-000195) | `NIST.IR.8628.pdf` | NIST.IR.8628 |
 | [EV424-ENTRY-000194](https://ev424verify.com/?q=EV424-ENTRY-000194) | `LFResearch_35YearsofLinux_Report_2026.pdf` | LFResearch 35YearsofLinux Report 2026 |
 | [EV424-ENTRY-000193](https://ev424verify.com/?q=EV424-ENTRY-000193) | `NIST.IR.8616.pdf` | NIST.IR.8616 |
 | [EV424-ENTRY-000192](https://ev424verify.com/?q=EV424-ENTRY-000192) | `EV424_XRP_Market_Data_Validation_Reference_EN_V1_1.pdf` | XRP Market Data Validation Reference |
@@ -291,7 +292,6 @@ It is an integrity and reproducibility structure.
 | [EV424-ENTRY-000189](https://ev424verify.com/?q=EV424-ENTRY-000189) | `EV424_Brain_Atlas_Demo_EN.pdf` | Brain Atlas Demo document passport |
 | [EV424-ENTRY-000188](https://ev424verify.com/?q=EV424-ENTRY-000188) | `EV424_Kuramoto_Independent_Reverification_Zenodo_EN_V2.pdf` | Kuramoto model re-verification |
 | [EV424-ENTRY-000187](https://ev424verify.com/?q=EV424-ENTRY-000187) | `EV424_Independent_Reverification_of_the_Poincare_Conjecture.pdf` | Poincaré conjecture re-verification |
-| [EV424-ENTRY-000186](https://ev424verify.com/?q=EV424-ENTRY-000186) | `EV424_PI_Main_Zenodo_654751B.pdf` | EV424 π document passport |
 
 Older document passports remain available on the [evidence website](https://ev424verify.com/) and in Git history.
 
