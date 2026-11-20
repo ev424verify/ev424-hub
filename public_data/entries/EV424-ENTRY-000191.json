@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000191",
+  "type": "doc_passport",
+  "source": "EV424_Python_Z3_Cross_Verification_Report_EN_Final.pdf?download=1",
+  "source_label": "EV424",
+  "url": "https://zenodo.org/records/24382880/files/EV424_Python_Z3_Cross_Verification_Report_EN_Final.pdf?download=1",
+  "issued_date": "2026-11-20T09:12:41+0900",
+  "fingerprint_sha256": "cf51dbdc723dcb52a684d1b489f2d069d66cc4b75263d35fd44534f13c18b9af",
+  "result_rep_sha256": "74fc32ab889f802ae88096f90754ad4553a5da6e3016b593a8ffe0ecec5bf67d",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_Python_Z3_Cross_Verification_Report_EN_Final.pdf?download=1\nISSUED_DATE  2026-11-20T09:12:41+0900\nFINGERPRINT  cf51dbdc723dcb52a684d1b489f2d069d66cc4b75263d35fd44534f13c18b9af\nURL          https://zenodo.org/records/24382880/files/EV424_Python_Z3_Cross_Verification_Report_EN_Final.pdf?download=1\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=74fc32ab889f802ae88096f90754ad4553a5da6e3016b593a8ffe0ecec5bf67d\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
