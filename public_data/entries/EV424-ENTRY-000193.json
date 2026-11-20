@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000193",
+  "type": "doc_passport",
+  "source": "NIST.IR.8616.pdf",
+  "source_label": "EV424",
+  "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8616.pdf",
+  "issued_date": "2026-11-20T15:52:16+0900",
+  "fingerprint_sha256": "871d7c74696ce7058eb67a13158493cb21b80f2a0958a587be59faf5ae3234b6",
+  "result_rep_sha256": "380b0061f2d3e1de35f57f5a60c4e13a1812d6335a11074e0e96f34dc7503f20",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       NIST.IR.8616.pdf\nISSUED_DATE  2026-11-20T15:52:16+0900\nFINGERPRINT  871d7c74696ce7058eb67a13158493cb21b80f2a0958a587be59faf5ae3234b6\nURL          https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8616.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=380b0061f2d3e1de35f57f5a60c4e13a1812d6335a11074e0e96f34dc7503f20\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

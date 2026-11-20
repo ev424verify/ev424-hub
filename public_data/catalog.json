@@ -2250,6 +2250,18 @@
       "result_rep_sha256": "e4aa875bc967e917995c80a28d27820ef90a4e04bf68a899a6ae287187617559",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000193",
+      "issued_kst": "2026-11-20T15:52:16+0900",
+      "month_id": "2026-11",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8616.pdf",
+      "source_domain": "nvlpubs.nist.gov",
+      "filename": "EV424",
+      "display_title": "EV424",
+      "result_rep_sha256": "380b0061f2d3e1de35f57f5a60c4e13a1812d6335a11074e0e96f34dc7503f20",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
