@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000194",
+  "type": "doc_passport",
+  "source": "LFResearch_35YearsofLinux_Report_2026.pdf",
+  "source_label": "EV424",
+  "url": "https://www.linuxfoundation.org/hubfs/Research%20Reports/LFResearch_35YearsofLinux_Report_2026.pdf",
+  "issued_date": "2026-11-20T16:38:23+0900",
+  "fingerprint_sha256": "26aad0754ffa072ecfc9254ee0ed23dc8f75d87d910aa5141675c206a1e9cd1f",
+  "result_rep_sha256": "f766f3572c51a0d5f5a3edd7540af75bcc22f570eb521b86120a4f748b764d41",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       LFResearch_35YearsofLinux_Report_2026.pdf\nISSUED_DATE  2026-11-20T16:38:23+0900\nFINGERPRINT  26aad0754ffa072ecfc9254ee0ed23dc8f75d87d910aa5141675c206a1e9cd1f\nURL          https://www.linuxfoundation.org/hubfs/Research%20Reports/LFResearch_35YearsofLinux_Report_2026.pdf\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=f766f3572c51a0d5f5a3edd7540af75bcc22f570eb521b86120a4f748b764d41\n\nAccuracy(4)=Truth(2)=Life(4)"
+}

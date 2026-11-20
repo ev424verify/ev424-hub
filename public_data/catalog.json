@@ -2262,6 +2262,18 @@
       "result_rep_sha256": "380b0061f2d3e1de35f57f5a60c4e13a1812d6335a11074e0e96f34dc7503f20",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000194",
+      "issued_kst": "2026-11-20T16:38:23+0900",
+      "month_id": "2026-11",
+      "url": "https://www.linuxfoundation.org/hubfs/Research%20Reports/LFResearch_35YearsofLinux_Report_2026.pdf",
+      "source_domain": "www.linuxfoundation.org",
+      "filename": "EV424",
+      "display_title": "EV424",
+      "result_rep_sha256": "f766f3572c51a0d5f5a3edd7540af75bcc22f570eb521b86120a4f748b764d41",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }
