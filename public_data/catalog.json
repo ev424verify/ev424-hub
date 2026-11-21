@@ -2298,6 +2298,18 @@
       "result_rep_sha256": "c5fdb1ca227128daaf39888bd15ec36c4f794ca4d8050a955b9d0a8658995334",
       "has_receipt": true,
       "is_superseded": false
+    },
+    {
+      "entry_id": "EV424-ENTRY-000197",
+      "issued_kst": "2026-11-21T13:27:50+0900",
+      "month_id": "2026-11",
+      "url": "https://zenodo.org/records/24411204/files/EV424_Verification_of_Riemann_Zeta_Zeros_V1_1.pdf?download=1",
+      "source_domain": "zenodo.org",
+      "filename": "EV424",
+      "display_title": "EV424",
+      "result_rep_sha256": "18785a6510eda9c37d0d2e175324d169745d6629acbaa25de02c8bc2dc293023",
+      "has_receipt": true,
+      "is_superseded": false
     }
   ]
 }

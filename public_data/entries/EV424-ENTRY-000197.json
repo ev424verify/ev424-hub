@@ -1,0 +1,17 @@
+{
+  "entry_id": "EV424-ENTRY-000197",
+  "type": "doc_passport",
+  "source": "EV424_Verification_of_Riemann_Zeta_Zeros_V1_1.pdf?download=1",
+  "source_label": "EV424",
+  "url": "https://zenodo.org/records/24411204/files/EV424_Verification_of_Riemann_Zeta_Zeros_V1_1.pdf?download=1",
+  "issued_date": "2026-11-21T13:27:50+0900",
+  "fingerprint_sha256": "7970cb3f1af0582deaaffe4485fd843d7b9783e1673f7b26cb60b9c54f73ba95",
+  "result_rep_sha256": "18785a6510eda9c37d0d2e175324d169745d6629acbaa25de02c8bc2dc293023",
+  "verify": {
+    "local_sha": "OK",
+    "src_record": "OK",
+    "redownload": "OK",
+    "chain": "OK"
+  },
+  "receipt_text": "==[EV424 FINAL RECEIPT]==\n\n01)\nLEGEND\nOK           SHA-256 verified (sha256sum -c PASS)\nPASS         Printed only when all required checks are OK\nMODE         REPRO\n----------------------------------------\n\n02)\nIDENTITY\nSOURCE       EV424_Verification_of_Riemann_Zeta_Zeros_V1_1.pdf?download=1\nISSUED_DATE  2026-11-21T13:27:50+0900\nFINGERPRINT  7970cb3f1af0582deaaffe4485fd843d7b9783e1673f7b26cb60b9c54f73ba95\nURL          https://zenodo.org/records/24411204/files/EV424_Verification_of_Riemann_Zeta_Zeros_V1_1.pdf?download=1\nREVERIFY     +7d -> CONSISTENCY+REDOWNLOAD\n----------------------------------------\n\n03)\nVERIFY\nSTATUS       [OK] LOCAL_SHA  [OK] SRC_RECORD  [OK] REDOWNLOAD  [OK] CHAIN\n----------------------------------------\n\n04)\nRESULT\nPASS | sha256=18785a6510eda9c37d0d2e175324d169745d6629acbaa25de02c8bc2dc293023\n\nAccuracy(4)=Truth(2)=Life(4)"
+}
